@@ -1440,26 +1440,13 @@
     "url": "https://stardew-valley-expanded.fandom.com/wiki/Ancient_Fiber",
     "img": "sve_ancientfiber.png",
     "seasons": ["summer"],
-    "seeds": {
-      "sell": 145,
-      "pierre": 0,
-      "joja": 0,
-      "sve": 0,
-      "sveLoc": "Secret Woods",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "value":145,
+    "health":88,
+    "energy":39,
+    "type":"vegetable",
     "growth": {
       "initial": 12,
       "regrow": 0
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 145,
-      "jarType": "Pickles",
-      "kegType": "Juice"
     }
   },
   "butternutsquash": {
