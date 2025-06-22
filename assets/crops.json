@@ -134,27 +134,23 @@
     "name": "Grape",
     "url": "http://stardewvalleywiki.com/Grape",
     "img": "grape.png",
-    "seeds": {
-      "sell": 30,
-      "pierre": 60,
-      "joja": 75,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "type": "fruit",
+    "seasons": ["summer", "fall"],
+    "value": 80,
+    "health": 17,
+    "energy": 38,
     "growth": {
       "initial": 10,
       "regrow": 3
     },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 80,
-      "jarType": "Jelly",
-      "kegType": "Wine",
-      "dehydratorType": "Raisins"
+    "specialProduce": {
+      "dehydrator": {
+        "name": "Raisins",
+        "price": 600,
+        "time": "1 day",
+        "health": 56,
+        "energy": 125
+      }
     }
   },
   "hops": {
@@ -778,27 +774,23 @@
     "name": "Wheat",
     "url": "http://stardewvalleywiki.com/Wheat",
     "img": "wheat.png",
-    "seeds": {
-      "sell": 5,
-      "pierre": 10,
-      "joja": 12,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["summer", "fall"],
+    "type": "vegetable",
+    "value": 25,
+    "health": 0,
+    "energy": 0,
     "growth": {
       "initial": 4,
       "regrow": 0
     },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 25,
-      "keg": 200,
-      "jarType": "Pickles",
-      "kegType": "Beer"
+    "specialProduce": {
+      "keg": { 
+        "name": "Beer", 
+        "price": 200, 
+        "time": "1 day", 
+        "health": 22, 
+        "energy": 50 
+      }
     }
   },
   "radish": {
@@ -1093,27 +1085,14 @@
     "name": "Ancient Fruit",
     "url": "http://stardewvalleywiki.com/Ancient_Fruit",
     "img": "ancientfruit.png",
-    "seeds": {
-      "sell": 30,
-      "pierre": 0,
-      "joja": 0,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "Unpurchasable",
-      "specialUrl": "https://stardewvalleywiki.com/Ancient_Seeds"
-    },
+    "type": "fruit",
+    "seasons": ["spring", "summer", "fall"],
+    "value": 550,
+    "energy": 0,
+    "health": 0,
     "growth": {
       "initial": 28,
       "regrow": 7
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 550,
-      "jarType": "Jelly",
-      "kegType": "Wine",
-      "dehydratorType": "Dried Fruit"
     }
   },
   "cactusfruit": {

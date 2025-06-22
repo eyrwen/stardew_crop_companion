@@ -1,8 +1,14 @@
 {
-  "spring": {},
+  "spring": {
+    "img": "spring.png"
+  },
   "summer":{
     "img" : "summer.png"
   },
-  "fall": {},
-  "winter": {}
+  "fall": {
+    "img": "fall.png"
+  },
+  "winter": {
+    "img": "winter.png"
+  }
 }
