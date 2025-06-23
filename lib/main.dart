@@ -80,6 +80,7 @@ class CropPage extends StatelessWidget {
             img: crop['img'],
             seasons: crop['seasons'],
             url: crop['url'],
+            favorites: crop?['favorite'] ?? [],
           ),
           Column(
             spacing: 16.0,
@@ -120,16 +121,16 @@ class CropRawValues extends StatelessWidget {
   });
 
   get silverPrice => (basePrice * 1.25).floor();
-  get silverEnergy => (baseEnergy * 1.4).ceil();
-  get silverHealth => (baseHealth * 1.4).floor();
+  get silverEnergy => (baseEnergy * 1.4).floor();
+  get silverHealth => (baseHealth * 1.4).round();
 
   get goldPrice => (basePrice * 1.5).floor();
-  get goldEnergy => (baseEnergy * 1.8).ceil();
-  get goldHealth => (baseHealth * 1.8).floor();
+  get goldEnergy => (baseEnergy * 1.8).floor();
+  get goldHealth => (baseHealth * 1.8).round();
 
   get iridiumPrice => (basePrice * 2).floor();
-  get iridiumEnergy => (baseEnergy * 2.6).ceil();
-  get iridiumHealth => (baseHealth * 2.6).floor();
+  get iridiumEnergy => (baseEnergy * 2.6).floor();
+  get iridiumHealth => (baseHealth * 2.6).round();
 
   @override
   Widget build(BuildContext context) {
@@ -309,11 +310,13 @@ class CropProduceValues extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(8.0),
         child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           spacing: 16,
           children: [
             Column(
               children: [
                 Image.asset('assets/img/jar.png'),
+                SizedBox(height: 8),
                 Row(
                   spacing: 8.0,
                   children: [
@@ -340,7 +343,23 @@ class CropProduceValues extends StatelessWidget {
                     VerticalDivider(thickness: 2),
                     Column(
                       children: [
-                        Image.asset('assets/img/keg.png'),
+                        Stack(
+                          clipBehavior: Clip.none,
+                          alignment: Alignment.bottomLeft,
+                          children: [
+                            Image.asset('assets/img/keg.png'),
+                            if (special?['keg']?['img'] != null)
+                              Positioned(
+                                left: -8,
+                                bottom: -4,
+                                child: Image.asset(
+                                  'assets/img/${special!['keg']!['img']}',
+                                  scale: 2,
+                                ),
+                              ),
+                          ],
+                        ),
+                        SizedBox(height: 8),
                         Row(
                           spacing: 8.0,
                           children: [
@@ -368,7 +387,23 @@ class CropProduceValues extends StatelessWidget {
                     VerticalDivider(thickness: 2),
                     Column(
                       children: [
-                        Image.asset('assets/img/dehydrator.png'),
+                        Stack(
+                          clipBehavior: Clip.none,
+                          alignment: Alignment.bottomLeft,
+                          children: [
+                            Image.asset('assets/img/dehydrator.png'),
+                            if (special?['dehydrator']?['img'] != null)
+                              Positioned(
+                                left: -8,
+                                bottom: -4,
+                                child: Image.asset(
+                                  'assets/img/${special!['dehydrator']!['img']}',
+                                  scale: 2,
+                                ),
+                              ),
+                          ],
+                        ),
+                        SizedBox(height: 8),
                         Row(
                           spacing: 8.0,
                           children: [
@@ -390,6 +425,53 @@ class CropProduceValues extends StatelessWidget {
                       ],
                     ),
                   ]),
+            ...(special?['mill'] != null
+                ? [
+                    VerticalDivider(thickness: 2),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Stack(
+                          alignment: Alignment.bottomLeft,
+                          clipBehavior: Clip.none,
+                          children: [
+                            Image.asset('assets/img/mill.png', height: 96),
+                            if (special!['mill']!['img'] != null)
+                              Positioned(
+                                left: -8,
+                                bottom: -4,
+                                child: Image.asset(
+                                  'assets/img/${special!['mill']!['img']}',
+                                  scale: 2,
+                                ),
+                              ),
+                          ],
+                        ),
+                        SizedBox(height: 8),
+
+                        Row(
+                          spacing: 8.0,
+                          children: [
+                            Image.asset('assets/img/time.png', height: 16),
+                            Text(
+                              special!['mill']!['time'],
+                              style: TextStyle(
+                                fontSize: 12,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ],
+                        ),
+                        CropValueColumn(
+                          price: special!['mill']!['price'],
+                          energy: special!['mill']!['energy'],
+                          health: special!['mill']!['health'],
+                          quality: special!['mill']!['quality'],
+                        ),
+                      ],
+                    ),
+                  ]
+                : []),
           ],
         ),
       ),
@@ -451,28 +533,20 @@ class CropValueColumn extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        inedible
-            ? SizedBox.shrink()
-            : Row(
-                children: [
-                  _overlayedImage('energy.png'),
-                  Text(
-                    '$energy',
-                    style: TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                ],
-              ),
-        inedible
-            ? SizedBox.shrink()
-            : Row(
-                children: [
-                  _overlayedImage('health.png'),
-                  Text(
-                    '$health',
-                    style: TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                ],
-              ),
+        if (!inedible) ...[
+          Row(
+            children: [
+              _overlayedImage('energy.png'),
+              Text('$energy', style: TextStyle(fontWeight: FontWeight.bold)),
+            ],
+          ),
+          Row(
+            children: [
+              _overlayedImage('health.png'),
+              Text('$health', style: TextStyle(fontWeight: FontWeight.bold)),
+            ],
+          ),
+        ],
         Row(
           children: [
             _overlayedImage('gold.png'),
@@ -488,6 +562,7 @@ class CropGeneralDetails extends StatelessWidget {
   final String name;
   final String img;
   final List seasons;
+  final List favorites;
   final String url;
 
   const CropGeneralDetails({
@@ -496,6 +571,7 @@ class CropGeneralDetails extends StatelessWidget {
     required this.img,
     required this.seasons,
     required this.url,
+    required this.favorites,
   });
 
   @override
@@ -504,6 +580,7 @@ class CropGeneralDetails extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(8.0),
         child: Column(
+          spacing: 8,
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
@@ -531,6 +608,39 @@ class CropGeneralDetails extends StatelessWidget {
                 );
               }).toList(),
             ),
+            favorites.isNotEmpty
+                ? Row(
+                    spacing: 8,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Image.asset('assets/img/heart.png', height: 16),
+                      Column(
+                        children: favorites
+                            .map(
+                              (fav) => Row(
+                                spacing: 4,
+                                children: [
+                                  Image.asset(
+                                    'assets/img/${fav.toString().toLowerCase()}.png',
+                                    height: 16,
+                                  ),
+                                  Text(
+                                    fav.replaceFirst(
+                                      fav[0],
+                                      fav[0].toUpperCase(),
+                                    ),
+                                    style: Theme.of(
+                                      context,
+                                    ).textTheme.bodyMedium,
+                                  ),
+                                ],
+                              ),
+                            )
+                            .toList(),
+                      ),
+                    ],
+                  )
+                : SizedBox.shrink(),
           ],
         ),
       ),
