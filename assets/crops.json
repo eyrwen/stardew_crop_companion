@@ -614,26 +614,24 @@
     "name": "Unmilled Rice",
     "url": "http://stardewvalleywiki.com/Unmilled_Rice",
     "img": "unmilledrice.png",
-    "seeds": {
-      "sell": 20,
-      "pierre": 40,
-      "joja": 0,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 1000,
-      "specialLoc": "Travelling Cart",
-      "specialUrl": "http://stardewvalleywiki.com/Travelling_Cart"
-    },
+    "seasons": ["spring"],
+    "type": "vegetable",
+    "value": 30,
+    "health": 1,
+    "energy": 3,
     "growth": {
       "initial": 8,
       "regrow": 0
     },
-    "produce": {
-      "extra": 1,
-      "extraPerc": 0.11,
-      "price": 30,
-      "jarType": "Pickles",
-      "kegType": "Juice"
+    "specialProduce": {
+      "mill": {
+        "name": "Rice",
+        "img": "rice.png",
+        "price": 100,
+        "time": "1 day",
+        "health": 5,
+        "energy": 13
+      }
     }
   },
   "rhubarb": {
@@ -779,6 +777,7 @@
     "value": 25,
     "health": 0,
     "energy": 0,
+    "favorite": [],
     "growth": {
       "initial": 4,
       "regrow": 0
@@ -786,10 +785,20 @@
     "specialProduce": {
       "keg": { 
         "name": "Beer", 
+        "img": "beer.png",
         "price": 200, 
-        "time": "1 day", 
+        "time": "1-2 days", 
         "health": 22, 
-        "energy": 50 
+        "energy": 50,
+        "favorite": ["pam", "shane"]
+      },
+      "mill": {
+        "name": "Wheat Flour",
+        "img": "wheatflour.png",
+        "price": 50,
+        "time": "1 day",
+        "health": 0,
+        "energy": 0
       }
     }
   },
@@ -797,26 +806,9 @@
     "name": "Radish",
     "url": "http://stardewvalleywiki.com/Radish",
     "img": "radish.png",
-    "seeds": {
-      "sell": 20,
-      "pierre": 40,
-      "joja": 50,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
     "growth": {
       "initial": 6,
       "regrow": 0
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 90,
-      "jarType": "Pickles",
-      "kegType": "Juice"
     }
   },
   "redcabbage": {
@@ -1090,6 +1082,7 @@
     "value": 550,
     "energy": 0,
     "health": 0,
+    "favorite": [],
     "growth": {
       "initial": 28,
       "regrow": 7
@@ -1423,6 +1416,7 @@
     "health":88,
     "energy":39,
     "type":"vegetable",
+    "favorite": ["magnus"],
     "growth": {
       "initial": 12,
       "regrow": 0
