@@ -3,131 +3,70 @@
     "name": "Carrot",
     "url": "https://stardewvalleywiki.com/Carrot",
     "img": "carrot.png",
-    "seeds": {
-      "sell": 15,
-      "pierre": 0,
-      "joja": 0,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "Unpurchasable",
-      "specialUrl": "https://stardewvalleywiki.com/Carrot_Seeds"
-    },
+    "seasons": ["spring"],
+    "type": "vegetable",
+    "price": 35,
+    "health": 33,
+    "energy": 75,
     "growth": {
       "initial": 3,
       "regrow": 0
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 35,
-      "jarType": "Pickles",
-      "kegType": "Juice"
     }
   },
   "summersquash": {
     "name": "Summer Squash",
     "url": "https://stardewvalleywiki.com/Summer_Squash",
     "img": "summersquash.png",
-    "seeds": {
-      "sell": 20,
-      "pierre": 0,
-      "joja": 0,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "Unpurchasable",
-      "specialUrl": "https://stardewvalleywiki.com/Summer_Squash_Seeds"
-    },
+    "seasons": ["summer"],
+    "type": "vegetable",
+    "price": 45,
+    "health": 28,
+    "energy": 63,
     "growth": {
       "initial": 6,
       "regrow": 3
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 45,
-      "jarType": "Pickles",
-      "kegType": "Juice"
     }
   },
   "broccoli": {
     "name": "Broccoli",
     "url": "https://stardewvalleywiki.com/Broccoli",
     "img": "broccoli.png",
-    "seeds": {
-      "sell": 40,
-      "pierre": 0,
-      "joja": 0,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "Unpurchasable",
-      "specialUrl": "https://stardewvalleywiki.com/Broccoli_Seeds"
-    },
+    "seasons": ["fall"],
+    "type": "vegetable",
+    "price": 70,
+    "health": 28,
+    "energy": 63,
     "growth": {
       "initial": 8,
       "regrow": 4
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 70,
-      "jarType": "Pickles",
-      "kegType": "Juice"
     }
   },
   "powdermelon": {
     "name": "Powdermelon",
     "url": "https://stardewvalleywiki.com/Powdermelon",
     "img": "powdermelon.png",
-    "seeds": {
-      "sell": 20,
-      "pierre": 0,
-      "joja": 0,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "Unpurchasable",
-      "specialUrl": "https://stardewvalleywiki.com/Powdermelon_Seeds"
-    },
+    "seasons": ["winter"],
+    "type": "vegetable",
+    "price": 60,
+    "health": 28,
+    "energy": 63,
     "growth": {
       "initial": 7,
       "regrow": 0
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 70,
-      "jarType": "Jelly",
-      "kegType": "Wine",
-      "dehydratorType": "Dried Fruit"
     }
   },
   "amaranth": {
     "name": "Amaranth",
     "url": "http://stardewvalleywiki.com/Amaranth",
     "img": "amaranth.png",
-    "seeds": {
-      "sell": 35,
-      "pierre": 70,
-      "joja": 87,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["fall"],
+    "type": "vegetable",
+    "price": 150,
+    "health": 22,
+    "energy": 50,
     "growth": {
       "initial": 7,
       "regrow": 0
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 150,
-      "jarType": "Pickles",
-      "kegType": "Juice"
     }
   },
   "grape": {
@@ -136,9 +75,10 @@
     "img": "grape.png",
     "type": "fruit",
     "seasons": ["summer", "fall"],
-    "value": 80,
+    "price": 80,
     "health": 17,
     "energy": 38,
+    "favorite": ["vincent"],
     "growth": {
       "initial": 10,
       "regrow": 3
@@ -146,10 +86,12 @@
     "specialProduce": {
       "dehydrator": {
         "name": "Raisins",
-        "price": 600,
+        "img": "raisins.png",
+        "price": 120,
         "time": "1 day",
-        "health": 56,
-        "energy": 125
+        "health": 11,
+        "energy": 25,
+        "favorite": ["evelyn", "apples"]
       }
     }
   },
@@ -157,457 +99,301 @@
     "name": "Hops",
     "url": "http://stardewvalleywiki.com/Hops",
     "img": "hops.png",
-    "seeds": {
-      "sell": 30,
-      "pierre": 60,
-      "joja": 75,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["summer"],
+    "type": "vegetable",
+    "price": 25,
+    "health": 20,
+    "energy": 45,
     "growth": {
       "initial": 11,
       "regrow": 1
     },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 25,
-      "keg": 300,
-      "jarType": "Pickles",
-      "kegType": "Pale Ale"
+    "specialProduce": {
+      "keg": {
+        "name": "Pale Ale",
+        "img": "pale_ale.png",
+        "price": 300,
+        "time": "1-2 days",
+        "health": 22,
+        "energy": 50,
+        "favorite": ["pam", "andy"]
+      }
     }
   },
   "pineapple": {
     "name": "Pineapple",
     "url": "http://stardewvalleywiki.com/Pineapple",
     "img": "pineapple.png",
-    "seeds": {
-      "sell": 240,
-      "pierre": 0,
-      "joja": 0,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 400,
-      "specialLoc": "Island Trader",
-      "specialUrl": "http://stardewvalleywiki.com/Island_Trader"
-    },
+    "seasons": ["summer"],
+    "type": "fruit",
+    "price": 300,
+    "health": 62,
+    "energy": 138,
     "growth": {
       "initial": 14,
       "regrow": 7
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 300,
-      "jarType": "Jelly",
-      "kegType": "Wine",
-      "dehydratorType": "Dried Fruit"
     }
+    
   },
   "sweetgemberry": {
     "name": "Sweet Gem Berry",
     "url": "http://stardewvalleywiki.com/Sweet_Gem_Berry",
     "img": "sweetgemberry.png",
-    "seeds": {
-      "sell": 200,
-      "pierre": 0,
-      "joja": 0,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 1000,
-      "specialLoc": "Travelling Cart",
-      "specialUrl": "http://stardewvalleywiki.com/Travelling_Cart"
-    },
+    "seasons": ["fall"],
+    "type": "other",
+    "price": 3000,
+    "health": 0,
+    "energy": 0,
     "growth": {
       "initial": 24,
       "regrow": 0
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 3000
     }
   },
   "tealeaves": {
     "name": "Tea Leaves",
     "url": "http://stardewvalleywiki.com/Tea_Leaves",
     "img": "tealeaves.png",
-    "seeds": {
-      "sell": 0,
-      "pierre": 0,
-      "joja": 0,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 2500,
-      "specialLoc": "Travelling Cart",
-      "specialUrl": "http://stardewvalleywiki.com/Travelling_Cart"
-    },
+    "seasons": ["spring", "summer", "fall"],
+    "type": "vegetable",
+    "price": 50,
+    "health": 0,
+    "energy": 0,
+    "quality": false,
     "growth": {
       "initial": 20,
       "regrow": 1
     },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 50,
-      "keg": 100,
-      "jarType": "Pickles",
-      "kegType": "Tea"
+    "specialProduce": {
+      "keg": {
+        "name": "Green Tea",
+        "img": "green_tea.png",
+        "price": 100,
+        "time": "3 hrs",
+        "health": 5,
+        "energy": 13,
+        "favorite": ["caroline", "lewis", "claire"]
+      }
     }
   },
   "fairyrose": {
     "name": "Fairy Rose",
     "url": "http://stardewvalleywiki.com/Fairy_Rose",
     "img": "fairyrose.png",
-    "seeds": {
-      "sell": 100,
-      "pierre": 200,
-      "joja": 250,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["fall"],
+    "type": "flower",
+    "price": 290,
+    "health": 20,
+    "energy": 45,
+    "favorite": ["evelyn", "jas", "sophia"],
     "growth": {
       "initial": 12,
       "regrow": 0
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 290
     }
   },
   "tulip": {
     "name": "Tulip",
     "url": "http://stardewvalleywiki.com/Tulip",
     "img": "tulip.png",
-    "seeds": {
-      "sell": 10,
-      "pierre": 20,
-      "joja": 25,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["spring"],
+    "type": "flower",
+    "price": 30,
+    "health": 20,
+    "energy": 45,
+    "favorite": ["evelyn"],
     "growth": {
       "initial": 6,
       "regrow": 0
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 30
     }
   },
   "bluejazz": {
     "name": "Blue Jazz",
     "url": "http://stardewvalleywiki.com/Blue_Jazz",
     "img": "bluejazz.png",
-    "seeds": {
-      "sell": 15,
-      "pierre": 30,
-      "joja": 37,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["spring"],
+    "type": "flower",
+    "price": 50,
+    "health": 20,
+    "energy": 45,
     "growth": {
       "initial": 7,
       "regrow": 0
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 50
     }
   },
   "sunflower": {
     "name": "Sunflower",
     "url": "http://stardewvalleywiki.com/Sunflower",
     "img": "sunflower.png",
-    "seeds": {
-      "sell": 20,
-      "pierre": 200,
-      "joja": 125,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["summer", "fall"],
+    "type": "flower",
+    "price": 80,
+    "health": 20,
+    "energy": 45,
+    "favorite": ["haley", "claire"],
     "growth": {
       "initial": 8,
       "regrow": 0
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 80
+    }, 
+    "specialProduce": {
+      "oilMaker": {
+        "name": "Oil",
+        "img": "oil.png",
+        "price": 100,
+        "time": "1 hr",
+        "health": 5,
+        "energy": 13
+      }
     }
   },
   "coffeebean": {
     "name": "Coffee Bean",
     "url": "http://stardewvalleywiki.com/Coffee_Bean",
     "img": "coffeebean.png",
-    "seeds": {
-      "sell": 0,
-      "pierre": 0,
-      "joja": 0,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 2500,
-      "specialLoc": "Travelling Cart",
-      "specialUrl": "http://stardewvalleywiki.com/Travelling_Cart"
-    },
+    "seasons": ["spring", "summer"],
+    "type": "seed",
     "growth": {
       "initial": 10,
       "regrow": 2
     },
-    "produce": {
-      "extra": 3,
-      "extraPerc": 1,
-      "price": 15,
-      "keg": "150 / 5",
-      "kegType": "Coffee"
+    "specialProduce": {
+      "keg": {
+        "name": "Coffee",
+        "img": "coffee.png",
+        "price": 150,
+        "time": "2 hrs",
+        "health": 1,
+        "energy": 3,
+        "favorite": ["harvey"]
+      }
     }
   },
   "poppy": {
     "name": "Poppy",
     "url": "http://stardewvalleywiki.com/Poppy",
     "img": "poppy.png",
-    "seeds": {
-      "sell": 50,
-      "pierre": 100,
-      "joja": 125,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["summer"],
+    "type": "flower",
+    "price": 140,
+    "health": 20,
+    "energy": 45,
+    "favorite": ["penny"],
     "growth": {
       "initial": 7,
       "regrow": 0
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 140
     }
   },
   "summerspangle": {
     "name": "Summer Spangle",
     "url": "http://stardewvalleywiki.com/Summer_Spangle",
     "img": "summerspangle.png",
-    "seeds": {
-      "sell": 25,
-      "pierre": 50,
-      "joja": 62,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["summer"],
+    "type": "flower",
+    "price": 90,
+    "health": 20,
+    "energy": 45,
+    "favorite": ["caroline"],
     "growth": {
       "initial": 8,
       "regrow": 0
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 90
     }
   },
   "parsnip": {
     "name": "Parsnip",
     "url": "http://stardewvalleywiki.com/Parsnip",
     "img": "parsnip.png",
-    "seeds": {
-      "sell": 10,
-      "pierre": 20,
-      "joja": 25,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["spring"],
+    "type": "vegetable",
+    "price": 35,
+    "health": 11,
+    "energy": 25,
+    "favorite": ["pam"],
     "growth": {
       "initial": 4,
       "regrow": 0
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 35,
-      "jarType": "Pickles",
-      "kegType": "Juice"
     }
   },
   "greenbean": {
     "name": "Green Bean",
     "url": "http://stardewvalleywiki.com/Green_Bean",
     "img": "greenbean.png",
-    "seeds": {
-      "sell": 30,
-      "pierre": 60,
-      "joja": 75,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["spring"],
+    "type": "vegetable",
+    "price": 40,
+    "health": 11,
+    "energy": 25,
     "growth": {
       "initial": 10,
       "regrow": 3
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 40,
-      "jarType": "Pickles",
-      "kegType": "Juice"
     }
   },
   "cauliflower": {
     "name": "Cauliflower",
     "url": "http://stardewvalleywiki.com/Cauliflower",
     "img": "cauliflower.png",
-    "seeds": {
-      "sell": 40,
-      "pierre": 80,
-      "joja": 100,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["spring"],
+    "type": "vegetable",
+    "price": 175,
+    "health": 33,
+    "energy": 75,
+    "favorite": ["maru"],
     "growth": {
       "initial": 12,
       "regrow": 0
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 175,
-      "jarType": "Pickles",
-      "kegType": "Juice"
     }
   },
   "potato": {
     "name": "Potato",
     "url": "http://stardewvalleywiki.com/Potato",
     "img": "potato.png",
-    "seeds": {
-      "sell": 25,
-      "pierre": 50,
-      "joja": 62,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["spring"],
+    "type": "vegetable",
+    "price": 80,
+    "health": 11,
+    "energy": 25,
     "growth": {
       "initial": 6,
       "regrow": 0
-    },
-    "produce": {
-      "extra": 1,
-      "extraPerc": 0.25,
-      "price": 80,
-      "jarType": "Pickles",
-      "kegType": "Juice"
     }
   },
   "garlic": {
     "name": "Garlic",
     "url": "http://stardewvalleywiki.com/Garlic",
     "img": "garlic.png",
-    "seeds": {
-      "sell": 20,
-      "pierre": 40,
-      "joja": 0,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["spring"],
+    "type": "vegetable",
+    "price": 60,
+    "health": 9,
+    "energy": 20,
     "growth": {
       "initial": 4,
       "regrow": 0
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 60,
-      "jarType": "Pickles",
-      "kegType": "Juice"
     }
   },
   "taroroot": {
     "name": "Taro Root",
     "url": "http://stardewvalleywiki.com/Taro_Root",
     "img": "taroroot.png",
-    "seeds": {
-      "sell": 20,
-      "pierre": 0,
-      "joja": 0,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 24,
-      "specialLoc": "Island Trader",
-      "specialUrl": "http://stardewvalleywiki.com/Island_Trader"
-    },
+    "seasons": ["summer"],
+    "type": "vegetable",
+    "price": 100,
+    "health": 17,
+    "energy": 38,
     "growth": {
       "initial": 10,
       "regrow": 0
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 100,
-      "jarType": "Pickles",
-      "kegType": "Juice"
     }
   },
   "kale": {
     "name": "Kale",
     "url": "http://stardewvalleywiki.com/Kale",
     "img": "kale.png",
-    "seeds": {
-      "sell": 35,
-      "pierre": 70,
-      "joja": 87,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["spring"],
+    "type": "vegetable",
+    "price": 110,
+    "health": 22,
+    "energy": 50,
     "growth": {
       "initial": 6,
       "regrow": 0
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 110,
-      "jarType": "Pickles",
-      "kegType": "Juice"
     }
   },
   "unmilledrice": {
@@ -616,7 +402,7 @@
     "img": "unmilledrice.png",
     "seasons": ["spring"],
     "type": "vegetable",
-    "value": 30,
+    "price": 30,
     "health": 1,
     "energy": 3,
     "growth": {
@@ -638,134 +424,83 @@
     "name": "Rhubarb",
     "url": "http://stardewvalleywiki.com/Rhubarb",
     "img": "rhubarb.png",
-    "seeds": {
-      "sell": 50,
-      "pierre": 0,
-      "joja": 0,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 100,
-      "specialLoc": "Oasis",
-      "specialUrl": "http://stardewvalleywiki.com/Oasis"
-    },
+    "seasons": ["spring"],
+    "type": "fruit",
+    "price": 220,
+    "health": 0,
+    "energy": 0,
     "growth": {
       "initial": 13,
       "regrow": 0
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 220,
-      "jarType": "Jelly",
-      "kegType": "Wine",
-      "dehydratorType": "Dried Fruit"
     }
   },
   "melon": {
     "name": "Melon",
     "url": "http://stardewvalleywiki.com/Melon",
     "img": "melon.png",
-    "seeds": {
-      "sell": 40,
-      "pierre": 80,
-      "joja": 100,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["summer"],
+    "type": "fruit",
+    "price": 250,
+    "health": 50,
+    "energy": 113,
+    "favorite": ["penny"],
     "growth": {
       "initial": 12,
       "regrow": 0
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 250,
-      "jarType": "Jelly",
-      "kegType": "Wine",
-      "dehydratorType": "Dried Fruit"
     }
   },
   "tomato": {
     "name": "Tomato",
     "url": "http://stardewvalleywiki.com/Tomato",
     "img": "tomato.png",
-    "seeds": {
-      "sell": 25,
-      "pierre": 50,
-      "joja": 62,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["summer"],
+    "type": "vegetable",
+    "price": 60,
+    "health": 9,
+    "energy": 20,
     "growth": {
       "initial": 11,
       "regrow": 4
-    },
-    "produce": {
-      "extra": 1,
-      "extraPerc": 0.05,
-      "price": 60,
-      "jarType": "Pickles",
-      "kegType": "Juice"
     }
   },
   "blueberry": {
     "name": "Blueberry",
     "url": "http://stardewvalleywiki.com/Blueberry",
     "img": "blueberry.png",
-    "seeds": {
-      "sell": 40,
-      "pierre": 80,
-      "joja": 0,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["summer"],
+    "type": "fruit",
+    "price": 50,
+    "health": 11,
+    "energy": 25,
     "growth": {
       "initial": 13,
       "regrow": 4
-    },
-    "produce": {
-      "extra": 2,
-      "extraPerc": 1,
-      "price": 50,
-      "jarType": "Jelly",
-      "kegType": "Wine",
-      "dehydratorType": "Dried Fruit"
     }
   },
   "hotpepper": {
     "name": "Hot Pepper",
     "url": "http://stardewvalleywiki.com/Hot_Pepper",
     "img": "hotpepper.png",
-    "seeds": {
-      "sell": 20,
-      "pierre": 40,
-      "joja": 50,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["summer"],
+    "type": "fruit",
+    "price": 40,
+    "health": 5,
+    "energy": 13,
+    "favorite": ["lewis", "shane"],
     "growth": {
       "initial": 5,
       "regrow": 3
     },
-    "produce": {
-      "extra": 1,
-      "extraPerc": 0.03,
-      "price": 40,
-      "jarType": "Jelly",
-      "kegType": "Wine",
-      "dehydratorType": "Dried Fruit"
+    "specialProduce": {
+      "compactMill": {
+        "name": "Chili Powder",
+        "img": "cornucopia_chilipowder.png",
+        "price": 150,
+        "time": "2 hrs",
+        "health": 0,
+        "energy": 0,
+        "favorite": ["jodi"]
+      }
     }
   },
   "wheat": {
@@ -774,7 +509,7 @@
     "img": "wheat.png",
     "seasons": ["summer", "fall"],
     "type": "vegetable",
-    "value": 25,
+    "price": 25,
     "health": 0,
     "energy": 0,
     "favorite": [],
@@ -790,7 +525,7 @@
         "time": "1-2 days", 
         "health": 22, 
         "energy": 50,
-        "favorite": ["pam", "shane"]
+        "favorite": ["pam", "shane", "andy"]
       },
       "mill": {
         "name": "Wheat Flour",
@@ -806,6 +541,11 @@
     "name": "Radish",
     "url": "http://stardewvalleywiki.com/Radish",
     "img": "radish.png",
+    "seasons": ["summer"],
+    "type": "vegetable",
+    "price": 90,
+    "health": 20,
+    "energy": 45,
     "growth": {
       "initial": 6,
       "regrow": 0
@@ -815,262 +555,164 @@
     "name": "Red Cabbage",
     "url": "http://stardewvalleywiki.com/Red_Cabbage",
     "img": "redcabbage.png",
-    "seeds": {
-      "sell": 50,
-      "pierre": 100,
-      "joja": 0,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["summer"],
+    "type": "vegetable",
+    "price": 260,
+    "health": 33,
+    "energy": 75,
     "growth": {
       "initial": 9,
       "regrow": 0
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 260,
-      "jarType": "Pickles",
-      "kegType": "Juice"
     }
   },
   "starfruit": {
     "name": "Starfruit",
     "url": "http://stardewvalleywiki.com/Starfruit",
     "img": "starfruit.png",
-    "seeds": {
-      "sell": 200,
-      "pierre": 0,
-      "joja": 0,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 400,
-      "specialLoc": "Oasis",
-      "specialUrl": "http://stardewvalleywiki.com/Oasis"
-    },
+    "seasons": ["summer"],
+    "type": "fruit",
+    "price": 750,
+    "health": 56,
+    "energy": 125,
+    "favorite": ["apples"],
     "growth": {
       "initial": 13,
       "regrow": 0
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 750,
-      "jarType": "Jelly",
-      "kegType": "Wine",
-      "dehydratorType": "Dried Fruit"
     }
   },
   "corn": {
     "name": "Corn",
     "url": "http://stardewvalleywiki.com/Corn",
     "img": "corn.png",
-    "seeds": {
-      "sell": 75,
-      "pierre": 150,
-      "joja": 187,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["summer", "fall"],
+    "type": "vegetable",
+    "price": 50,
+    "health": 11,
+    "energy": 25,
     "growth": {
       "initial": 14,
       "regrow": 4
     },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 50,
-      "jarType": "Pickles",
-      "kegType": "Juice"
+    "specialProduce": {
+      "oilMaker": {
+        "name": "Oil",
+        "img": "oil.png",
+        "price": 100,
+        "time": "1 hr",
+        "health": 5,
+        "energy": 13
+      }
     }
   },
   "eggplant": {
     "name": "Eggplant",
     "url": "http://stardewvalleywiki.com/Eggplant",
     "img": "eggplant.png",
-    "seeds": {
-      "sell": 10,
-      "pierre": 20,
-      "joja": 25,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["fall"],
+    "type": "vegetable",
+    "price": 60,
+    "health": 9,
+    "energy": 20,
     "growth": {
       "initial": 5,
       "regrow": 5
-    },
-    "produce": {
-      "extra": 1,
-      "extraPerc": 0.002,
-      "price": 60,
-      "jarType": "Pickles",
-      "kegType": "Juice"
     }
   },
   "artichoke": {
     "name": "Artichoke",
     "url": "http://stardewvalleywiki.com/Artichoke",
     "img": "artichoke.png",
-    "seeds": {
-      "sell": 15,
-      "pierre": 30,
-      "joja": 0,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["fall"],
+    "type": "vegetable",
+    "price": 160,
+    "health": 13,
+    "energy": 30,
     "growth": {
       "initial": 8,
       "regrow": 0
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 160,
-      "jarType": "Pickles",
-      "kegType": "Juice"
     }
   },
   "pumpkin": {
     "name": "Pumpkin",
     "url": "http://stardewvalleywiki.com/Pumpkin",
     "img": "pumpkin.png",
-    "seeds": {
-      "sell": 50,
-      "pierre": 100,
-      "joja": 125,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["fall"],
+    "type": "vegetable",
+    "price": 320,
+    "health": 0,
+    "energy": 0,
+    "favorite": ["abigail", "krobus", "willy"],
     "growth": {
       "initial": 13,
       "regrow": 0
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 320,
-      "jarType": "Pickles",
-      "kegType": "Juice"
     }
   },
   "bokchoy": {
     "name": "Bok Choy",
     "url": "http://stardewvalleywiki.com/Bok_Choy",
     "img": "bokchoy.png",
-    "seeds": {
-      "sell": 25,
-      "pierre": 50,
-      "joja": 62,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["fall"],
+    "type": "vegetable",
+    "price": 80,
+    "health": 11,
+    "energy": 25,
     "growth": {
       "initial": 4,
       "regrow": 0
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 80,
-      "jarType": "Pickles",
-      "kegType": "Juice"
     }
   },
   "yam": {
     "name": "Yam",
     "url": "http://stardewvalleywiki.com/Yam",
     "img": "yam.png",
-    "seeds": {
-      "sell": 30,
-      "pierre": 60,
-      "joja": 75,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["fall"],
+    "type": "vegetable",
+    "price": 160,
+    "health": 20,
+    "energy": 45,
+    "favorite": ["linus"],
     "growth": {
       "initial": 10,
       "regrow": 0
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 160,
-      "jarType": "Pickles",
-      "kegType": "Juice"
     }
   },
   "cranberries": {
     "name": "Cranberries",
     "url": "http://stardewvalleywiki.com/Cranberries",
     "img": "cranberries.png",
-    "seeds": {
-      "sell": 60,
-      "pierre": 240,
-      "joja": 300,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["fall"],
+    "type": "fruit",
+    "price": 75,
+    "health": 17,
+    "energy": 38,
     "growth": {
       "initial": 7,
       "regrow": 5
-    },
-    "produce": {
-      "extra": 1,
-      "extraPerc": 1,
-      "price": 75,
-      "jarType": "Jelly",
-      "kegType": "Wine",
-      "dehydratorType": "Dried Fruit"
     }
   },
   "beet": {
     "name": "Beet",
     "url": "http://stardewvalleywiki.com/Beet",
     "img": "beet.png",
-    "seeds": {
-      "sell": 10,
-      "pierre": 0,
-      "joja": 0,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 20,
-      "specialLoc": "Oasis",
-      "specialUrl": "http://stardewvalleywiki.com/Oasis"
-    },
+    "seasons": ["fall"],
+    "type": "vegetable",
+    "price": 100,
+    "health": 13,
+    "energy": 30,
+    "favorite": ["evelyn"],
     "growth": {
       "initial": 6,
       "regrow": 0
     },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 100,
-      "jarType": "Pickles",
-      "kegType": "Juice"
+    "specialProduce": {
+      "mill": {
+        "name": "Sugar",
+        "img": "sugar.png",
+        "price": 150,
+        "time": "1 day",
+        "health": 0,
+        "energy": 0
+      }
     }
   },
   "ancientfruit": {
@@ -1079,7 +721,7 @@
     "img": "ancientfruit.png",
     "type": "fruit",
     "seasons": ["spring", "summer", "fall"],
-    "value": 550,
+    "price": 550,
     "energy": 0,
     "health": 0,
     "favorite": [],
@@ -1092,319 +734,117 @@
     "name": "Cactus Fruit",
     "url": "http://stardewvalleywiki.com/Cactus_Fruit",
     "img": "cactusfruit.png",
-    "seeds": {
-      "sell": 0,
-      "pierre": 0,
-      "joja": 0,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 150,
-      "specialLoc": "Oasis",
-      "specialUrl": "http://stardewvalleywiki.com/Oasis"
-    },
+    "seasons": ["spring", "summer", "fall", "winter"],
+    "type": "fruit",
+    "price": 75,
+    "health": 33,
+    "energy": 75,
+    "favorite": ["linus", "pam", "sam"],
     "growth": {
       "initial": 12,
       "regrow": 3
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 75,
-      "jarType": "Jelly",
-      "kegType": "Wine",
-      "dehydratorType": "Dried Fruit"
     }
   },
   "strawberry": {
     "name": "Strawberry",
     "url": "http://stardewvalleywiki.com/Strawberry",
     "img": "strawberry.png",
-    "seeds": {
-      "sell": 0,
-      "pierre": 0,
-      "joja": 0,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 100,
-      "specialLoc": "Egg Festival",
-      "specialUrl": "http://stardewvalleywiki.com/Egg_Festival"
-    },
+    "seasons": ["spring"],
+    "type": "fruit",
+    "price": 120,
+    "health": 22,
+    "energy": 50,
+    "favorite": ["demetrius", "maru"],
     "growth": {
       "initial": 8,
       "regrow": 4
-    },
-    "produce": {
-      "extra": 1,
-      "extraPerc": 0.02,
-      "price": 120,
-      "jarType": "Jelly",
-      "kegType": "Wine",
-      "dehydratorType": "Dried Fruit"
     }
-  },
-  "springseeds": {
-    "name": "Spring Seeds",
-    "url": "http://stardewvalleywiki.com/Spring_Seeds",
-    "img": "springseeds.png",
-    "seeds": {
-      "sell": 0,
-      "pierre": 0,
-      "joja": 0,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 1000,
-      "specialLoc": "Travelling Cart",
-      "specialUrl": "http://stardewvalleywiki.com/Travelling_Cart"
-    },
-    "growth": {
-      "initial": 7,
-      "regrow": 0
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": "(50 + 30 + 60 + 40) / 4"
-    },
-    "isWildseed": true
-  },
-  "summerseeds": {
-    "name": "Summer Seeds",
-    "url": "http://stardewvalleywiki.com/Summer_Seeds",
-    "img": "summerseeds.png",
-    "seeds": {
-      "sell": 0,
-      "pierre": 0,
-      "joja": 0,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 1000,
-      "specialLoc": "Travelling Cart",
-      "specialUrl": "http://stardewvalleywiki.com/Travelling_Cart"
-    },
-    "growth": {
-      "initial": 7,
-      "regrow": 0
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": "(80 + 80 + 50) / 3",
-      "jarType": "Jelly",
-      "kegType": "Wine"
-    },
-    "isWildseed": true
-  },
-  "fallseeds": {
-    "name": "Fall Seeds",
-    "url": "http://stardewvalleywiki.com/Fall_Seeds",
-    "img": "fallseeds.png",
-    "seeds": {
-      "sell": 0,
-      "pierre": 0,
-      "joja": 0,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 1000,
-      "specialLoc": "Travelling Cart",
-      "specialUrl": "http://stardewvalleywiki.com/Travelling_Cart"
-    },
-    "growth": {
-      "initial": 7,
-      "regrow": 0
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": "(20 + 40 + 90 + 80) / 4",
-      "jarType": "Jelly",
-      "kegType": "Wine"
-    },
-    "isWildseed": true
-  },
-  "winterseeds": {
-    "name": "Winter Seeds",
-    "url": "http://stardewvalleywiki.com/Winter_Seeds",
-    "img": "winterseeds.png",
-    "seeds": {
-      "sell": 0,
-      "pierre": 0,
-      "joja": 0,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 1000,
-      "specialLoc": "Travelling Cart",
-      "specialUrl": "http://stardewvalleywiki.com/Travelling_Cart"
-    },
-    "growth": {
-      "initial": 7,
-      "regrow": 0
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": "(60 + 150 + 100 + 70) / 4",
-      "jarType": "Jelly",
-      "kegType": "Wine"
-    },
-    "isWildseed": true
   },
   "cucumber": {
     "name": "Cucumber",
     "url": "https://stardew-valley-expanded.fandom.com/wiki/Cucumber",
     "img": "sve_cucumber.png",
-    "seeds": {
-      "sell": 35,
-      "pierre": 70,
-      "joja": 0,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["spring"],
+    "type": "vegetable",
+    "price": 45,
+    "health": 20,
+    "energy": 45,
+    "favorite": ["caroline"],
     "growth": {
       "initial": 12,
       "regrow": 2
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 20,
-      "jarType": "Pickles",
-      "kegType": "Juice"
     }
   },
   "goldcarrot": {
     "name": "Gold Carrot",
     "url": "https://stardew-valley-expanded.fandom.com/wiki/Gold_Carrot",
     "img": "sve_goldcarrot.png",
-    "seeds": {
-      "sell": 300,
-      "pierre": 0,
-      "joja": 0,
-      "sve": 0,
-      "sveLoc": "Desert Trader",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["spring", "summer", "fall"],
+    "type": "vegetable",
+    "price": 1000,
+    "health": 129,
+    "energy": 288,
     "growth": {
       "initial": 6,
       "regrow": 0
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 1140,
-      "jarType": "Pickles",
-      "kegType": "Juice"
     }
   },
   "jojaberry": {
     "name": "Joja Berry",
     "url": "https://stardew-valley-expanded.fandom.com/wiki/Joja_Berry",
     "img": "sve_jojaberry.png",
-    "seeds": {
-      "sell": 1000,
-      "pierre": 0,
-      "joja": 6500,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["spring", "summer", "fall"],
+    "type": "fruit",
+    "price": 650,
+    "health": 84,
+    "energy": 188,
     "growth": {
       "initial": 25,
       "regrow": 4
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 650,
-      "jarType": "Jelly",
-      "kegType": "Wine",
-      "dehydratorType": "Dried Fruit"
     }
   },
   "jojaveggie": {
     "name": "Joja Veggie",
     "url": "https://stardew-valley-expanded.fandom.com/wiki/Joja_Veggie",
     "img": "sve_jojaveggie.png",
-    "seeds": {
-      "sell": 200,
-      "pierre": 0,
-      "joja": 600,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["spring", "summer", "fall"],
+    "type": "vegetable",
+    "price": 1254,
+    "health": 224,
+    "energy": 500,
     "growth": {
       "initial": 13,
       "regrow": 0
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 1140,
-      "jarType": "Jelly",
-      "kegType": "Juice"
     }
   },
   "salalberry": {
     "name": "Salal Berry",
     "url": "https://stardew-valley-expanded.fandom.com/wiki/Salal_Berry",
     "img": "sve_salal.png",
-    "seeds": {
-      "sell": 75,
-      "pierre": 0,
-      "joja": 0,
-      "sve": 0,
-      "sveLoc": "Secret Woods", 
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["spring", "summer"],
+    "type": "fruit",
+    "price": 75,
+    "health": 31,
+    "energy": 70,
+    "favorite": ["leah"],
     "growth": {
       "initial": 14,
       "regrow": 4
-    },
-    "produce": {
-      "extra": 1,
-      "extraPerc": 0.03,
-      "price": 75,
-      "jarType": "Jelly",
-      "kegType": "Wine",
-      "dehydratorType": "Dried Fruit"
     }
   },
   "slimeberry": {
     "name": "Slime Berry",
     "url": "https://stardew-valley-expanded.fandom.com/wiki/Slime_Berry",
     "img": "sve_slimeberry.png",
-    "seeds": {
-      "sell": 75,
-      "pierre": 0,
-      "joja": 0,
-      "sve": 0,
-      "sveLoc": "Highlands", 
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["spring"],
+    "type": "fruit",
+    "price": 65,
+    "health": 0,
+    "energy": -25,
+    "favorite": ["marlon"],
     "growth": {
       "initial": 13,
       "regrow": 4
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0.1,
-      "price": 65,
-      "jarType": "Jelly",
-      "kegType": "Wine",
-      "dehydratorType": "Dried Fruit"
     }
   },
   "ancientfiber": {
@@ -1412,10 +852,10 @@
     "url": "https://stardew-valley-expanded.fandom.com/wiki/Ancient_Fiber",
     "img": "sve_ancientfiber.png",
     "seasons": ["summer"],
-    "value":145,
-    "health":88,
-    "energy":39,
-    "type":"vegetable",
+    "price": 145,
+    "health": 88,
+    "energy": 39,
+    "type": "vegetable",
     "favorite": ["magnus"],
     "growth": {
       "initial": 12,
@@ -1426,121 +866,70 @@
     "name": "Butternut Squash",
     "url": "https://stardew-valley-expanded.fandom.com/wiki/Butternut_Squash",
     "img": "sve_butternut.png",
-    "seeds": {
-      "sell": 30,
-      "pierre": 90,
-      "joja": 0,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["summer"],
+    "type": "vegetable",
+    "price": 200,
+    "health": 22,
+    "energy": 50,
     "growth": {
       "initial": 12,
       "regrow": 0
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 200,
-      "jarType": "Pickles",
-      "kegType": "Juice"
     }
   },
   "monsterfruit": {
     "name": "Monster Fruit",
     "url": "https://stardew-valley-expanded.fandom.com/wiki/Monster_Fruit",
     "img": "sve_monsterfruit.png",
-    "seeds": {
-      "sell": 0,
-      "pierre": 0,
-      "joja": 0,
-      "sve": 0,
-      "sveLoc": "Highlands",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["summer"],
+    "type": "fruit",
+    "price": 1525,
+    "health": 95,
+    "energy": 212,
+    "favorite": ["abigail"],
     "growth": {
       "initial": 25,
       "regrow": 0
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 1525,
-      "jarType": "Jelly",
-      "kegType": "Wine",
-      "dehydratorType": "Dried Fruit"
     }
   },
   "monstermushroom": {
       "name": "Monster Mushroom",
       "url": "https://stardew-valley-expanded.fandom.com/wiki/Monster_Mushroom",
       "img": "sve_monstermushroom.png",
-      "seeds": {
-        "sell": 0,
-        "pierre": 0,
-        "joja": 0,
-        "sve": 0,
-        "sveLoc": "Highland Ruins",
-        "special": 0,
-        "specialLoc": "",
-        "specialUrl": ""
-      },
+      "seasons": ["fall"],
+      "type": "mushroom",
+      "price": 850,
+      "health": 84,
+      "energy": 188,
+      "favorite": ["lance"],
       "growth": {
         "initial": 13,
         "regrow": 0
-      },
-      "produce": {
-        "extra": 0,
-        "extraPerc": 0,
-        "price": 850,
-        "jarType": "Pickles",
-        "kegType": "Juice"
       }
   },
   "sweetpotato": {
     "name": "Sweet Potato",
     "url": "https://stardew-valley-expanded.fandom.com/wiki/Sweet_Potato",
     "img": "sve_sweetpotato.png",
-    "seeds": {
-      "sell": 45,
-      "pierre": 134,
-      "joja": 0,
-      "sve": 0,
-      "sveLoc": "",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["fall"],
+    "type": "vegetable",
+    "price": 280,
+    "health": 22,
+    "energy": 50,
     "growth": {
       "initial": 12,
       "regrow": 0
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 280,
-      "jarType": "Pickles",
-      "kegType": "Juice"
     }
   },
   "voidroot": {
     "name": "Void Root",
     "url": "https://stardew-valley-expanded.fandom.com/wiki/Void_Root",
     "img": "sve_voidroot.png",
-    "seeds": {
-      "sell": 0,
-      "pierre": 0,
-      "joja": 0,
-      "sve": 0,
-      "sveLoc": "Highlands Cavern",
-      "special": 0,
-      "specialLoc": "",
-      "specialUrl": ""
-    },
+    "seasons": ["winter"],
+    "type": "vegetable",
+    "price": 235,
+    "health": 0,
+    "energy": -88,
+    "favorite": ["krobus", "magnus"],
     "growth": {
       "initial": 8,
       "regrow": 0
@@ -1551,6 +940,172 @@
       "price": 235,
       "jarType": "Pickles",
       "kegType": "Juice"
+    }
+  },
+  "adzukibean": {
+    "name": "Adzuki Bean",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Adzuki_Bean",
+    "img": "cornucopia_adzukibean.png",
+    "seasons": ["summer"],
+    "type": "vegetable",
+    "price": 60,
+    "health": 11,
+    "energy": 25,
+    "growth": {
+      "initial": 9,
+      "regrow": 4
+    }
+  },
+  "agave": {
+    "name": "Agave",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Agave",
+    "img": "cornucopia_agave.png",
+    "seasons": ["spring"],
+    "type": "vegetable",
+    "price": 270,
+    "health": 0,
+    "energy": 0,
+    "growth": {
+      "initial": 8,
+      "regrow": 0
+    }
+  },
+  "aloe": {
+    "name": "Aloe",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Aloe",
+    "img": "cornucopia_aloe.png",
+    "seasons": ["summer"],
+    "type": "herb",
+    "price": 170,
+    "health": 17,
+    "energy": 38,
+    "growth": {
+      "initial": 4,
+      "regrow": 0
+    }, 
+    "specialProduce": {
+      "compactMill": {
+        "name": "Aloe Gel",
+        "img": "cornucopia_aloe_gel.png",
+        "price": 150,
+        "time": "6 hrs",
+        "health": 0,
+        "energy": 0,
+        "favorite": ["harvey", "maru"]
+      }
+    }
+  },
+  "asparagus": {
+    "name": "Asparagus",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Asparagus",
+    "img": "cornucopia_asparagus.png",
+    "seasons": ["spring"],
+    "type": "vegetable",
+    "price": 140,
+    "health": 13,
+    "energy": 30,
+    "growth": {
+      "initial": 5,
+      "regrow": 0
+    }
+  },
+  "bamboo": {
+    "name": "Bamboo",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Bamboo",
+    "img": "cornucopia_bamboo.png",
+    "seasons": ["spring", "summer"],
+    "type": "vegetable",
+    "price": 65,
+    "health": 0,
+    "energy": 0,
+    "growth": {
+      "initial": 9,
+      "regrow": 0
+    }
+  },
+  "barley": {
+    "name": "Barley",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Barley",
+    "img": "cornucopia_barley.png",
+    "seasons": ["summer", "fall"],
+    "type": "vegetable",
+    "price": 25,
+    "health": 0,
+    "energy": 0,
+    "growth": {
+      "initial": 4,
+      "regrow": 0
+    },
+    "specialProduce": {
+      "keg": {
+        "name": "Stout",
+        "img": "cornucopia_stout.png",
+        "price": 250,
+        "time": "30 hrs",
+        "health": 22,
+        "energy": 50
+      },
+      "mill": {
+        "name": "Whole-Grain Flour",
+        "img": "cornucopia_whole_grain_flour.png",
+        "price": 50,
+        "time": "1 day",
+        "health": 5,
+        "energy": 13
+      }
+    }
+  },
+  "basil": {
+    "name": "Basil",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Basil",
+    "img": "cornucopia_basil.png",
+    "seasons": ["spring"],
+    "type": "herb",
+    "price": 30,
+    "health": 9,
+    "energy": 20,
+    "growth": {
+      "initial": 3,
+      "regrow": 0
+    }
+  },
+  "beebalm": {
+    "name": "Bee Balm",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Bee_Balm",
+    "img": "cornucopia_beebalm.png",
+    "seasons": ["fall"],
+    "type": "flower",
+    "price": 30,
+    "health": 20,
+    "energy": 45,
+    "growth": {
+      "initial": 8,
+      "regrow": 0
+    }
+  },
+  "bellpepper": {
+    "name": "Bell Pepper",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Bell_Pepper",
+    "img": "cornucopia_bellpepper.png",
+    "seasons": ["summer"],
+    "type": "fruit",
+    "price": 70,
+    "health": 17,
+    "energy": 38,
+    "growth": {
+      "initial": 10,
+      "regrow": 4
+    },
+    "specialProduce": {
+      "compactMill": {
+        "name": "paprika",
+        "img": "cornucopia_paprika.png",
+        "price": 140,
+        "time": "2 hrs",
+        "health": 0,
+        "energy": 0,
+        "favorite": ["jodi"]
+      }
     }
   }
 }
