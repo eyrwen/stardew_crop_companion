@@ -1,4 +1,372 @@
 {
+  "commonmushroom": {
+    "name": "Common Mushroom",
+    "url": "http://stardewvalleywiki.com/Common_Mushroom",
+    "img": "commonmushroom.png",
+    "seasons": ["spring", "fall"],
+    "type": "mushroom",
+    "price": 40,
+    "health": 17,
+    "energy": 38,
+    "growth": {
+      "initial": 7,
+      "regrow": 0
+    },
+    "specialProduce": {
+      "keg": false
+    }
+  },
+  "daffodil": {
+    "name": "Daffodil",
+    "url": "http://stardewvalleywiki.com/Daffodil",
+    "img": "daffodil.png",
+    "seasons": ["spring"],
+    "type": "forage",
+    "price": 30,
+    "health": 0,
+    "energy": 0,
+    "favorite": ["sandy"],
+    "growth": {
+      "initial": 7,
+      "regrow": 0
+    }
+  },
+  "dandelion": {
+    "name": "Dandelion",
+    "url": "http://stardewvalleywiki.com/Dandelion",
+    "img": "dandelion.png",
+    "seasons": ["spring"],
+    "type": "forage",
+    "price": 40,
+    "health": 11,
+    "energy": 25,
+    "growth": {
+      "initial": 7,
+      "regrow": 0
+    }
+  },
+  "leek": {
+    "name": "Leek",
+    "url": "http://stardewvalleywiki.com/Leek",
+    "img": "leek.png",
+    "seasons": ["spring"],
+    "type": "forage",
+    "price": 60,
+    "health": 18,
+    "energy": 40,
+    "favorite": ["george"]
+  },
+  "morel": {
+    "name": "Morel",
+    "url": "http://stardewvalleywiki.com/Morel",
+    "img": "morel.png",
+    "seasons": ["spring"],
+    "type": "mushroom",
+    "price": 150,
+    "health": 9,
+    "energy": 20,
+    "growth": {
+      "initial": 7,
+      "regrow": 0
+    }
+  },
+  "salmonberry": {
+    "name": "Salmonberry",
+    "url": "http://stardewvalleywiki.com/Salmonberry",
+    "img": "salmonberry.png",
+    "seasons": ["spring"],
+    "type": "fruit",
+    "price": 5,
+    "health": 11,
+    "energy": 25
+  },
+  "springonion": {
+    "name": "Spring Onion",
+    "url": "http://stardewvalleywiki.com/Spring_Onion",
+    "img": "springonion.png",
+    "seasons": ["spring"],
+    "type": "forage",
+    "price": 8,
+    "health": 5,
+    "energy": 13
+  },
+  "wildhorseradish": {
+    "name": "Wild Horseradish",
+    "url": "http://stardewvalleywiki.com/Wild_Horseradish",
+    "img": "wildhorseradish.png",
+    "seasons": ["spring"],
+    "type": "forage",
+    "price": 50,
+    "health": 5,
+    "energy": 13,
+    "favorite": ["krobus"],
+    "growth": {
+      "initial": 7,
+      "regrow": 0
+    }
+  },
+  "fiddleheadfern": {
+    "name": "Fiddlehead Fern",
+    "url": "http://stardewvalleywiki.com/Fiddlehead_Fern",
+    "img": "fiddleheadfern.png",
+    "seasons": ["summer"],
+    "type": "forage",
+    "price": 90,
+    "health": 11,
+    "energy": 25
+  },
+  "redmushroom": {
+    "name": "Red Mushroom",
+    "url": "http://stardewvalleywiki.com/Red_Mushroom",
+    "img": "redmushroom.png",
+    "seasons": ["summer", "fall"],
+    "type": "mushroom",
+    "price": 75,
+    "health": 0,
+    "energy": -50
+  },
+  "spiceberry": {
+    "name": "Spice Berry",
+    "url": "http://stardewvalleywiki.com/Spice_Berry",
+    "img": "spiceberry.png",
+    "seasons": ["summer"],
+    "type": "fruit",
+    "price": 80,
+    "health": 11,
+    "energy": 25,
+    "growth": {
+      "initial": 7,
+      "regrow": 0
+    }
+  },
+  "sweetpea": {
+    "name": "Sweet Pea",
+    "url": "http://stardewvalleywiki.com/Sweet_Pea",
+    "img": "sweetpea.png",
+    "seasons": ["summer"],
+    "type": "flower",
+    "price": 50,
+    "health": 0,
+    "energy": 0,
+    "favorite": ["sandy"],
+    "growth": {
+      "initial": 7,
+      "regrow": 0
+    }
+  },
+  "blackberry": {
+    "name": "Blackberry",
+    "url": "http://stardewvalleywiki.com/Blackberry",
+    "img": "blackberry.png",
+    "seasons": ["fall"],
+    "type": "fruit",
+    "price": 20,
+    "health": 11,
+    "energy": 25,
+    "growth": {
+      "initial": 7,
+      "regrow": 0
+    }
+  },
+  "chanterelle": {
+    "name": "Chanterelle",
+    "url": "http://stardewvalleywiki.com/Chanterelle",
+    "img": "chanterelle.png",
+    "seasons": ["fall"],
+    "type": "mushroom",
+    "price": 160,
+    "health": 33,
+    "energy": 75
+  },
+  "hazelnut": {
+    "name": "Hazelnut",
+    "url": "http://stardewvalleywiki.com/Hazelnut",
+    "img": "hazelnut.png",
+    "seasons": ["fall"],
+    "type": "forage",
+    "price": 90,
+    "health": 13,
+    "energy": 30,
+    "growth": {
+      "initial": 7,
+      "regrow": 0
+    }
+  },
+  "purplemushroom": {
+    "name": "Purple Mushroom",
+    "url": "http://stardewvalleywiki.com/Purple_Mushroom",
+    "img": "purplemushroom.png",
+    "seasons": ["spring", "summer", "fall", "winter"],
+    "type": "mushroom",
+    "price": 250,
+    "health": 56,
+    "energy": 125,
+    "favorite": ["magnus"]
+  },
+  "wildplum": {
+    "name": "Wild Plum",
+    "url": "http://stardewvalleywiki.com/Wild_Plum",
+    "img": "wildplum.png",
+    "seasons": ["fall"],
+    "type": "fruit",
+    "price": 80,
+    "health": 11,
+    "energy": 25,
+    "growth": {
+      "initial": 7,
+      "regrow": 0
+    }
+  },
+  "crocus": {
+    "name": "Crocus",
+    "url": "https://www.stardewvalleywiki.com/Crocus",
+    "img": "crocus.png",
+    "seasons": ["winter"],
+    "type": "flower",
+    "price": 60,
+    "health": 0,
+    "energy": 0,
+    "favorite": ["sandy"],
+    "growth": {
+      "initial": 9,
+      "regrow": 0
+    },
+    "specialProduce": {
+      "compactMill": {
+        "name": "Saffron",
+        "img": "cornucopia_saffron.png",
+        "price": 400,
+        "time": "10 hrs",
+        "health": 0,
+        "energy": 0,
+        "favorite": ["caroline", "gus"]
+      }
+    }
+  },
+  "crystalfruit": {
+    "name": "Crystal Fruit",
+    "url": "http://stardewvalleywiki.com/Crystal_Fruit",
+    "img": "crystalfruit.png",
+    "seasons": ["winter"],
+    "type": "fruit",
+    "price": 150,
+    "health": 28,
+    "energy": 63,
+    "growth": {
+      "initial": 7,
+      "regrow": 0
+    }
+  },
+  "snowyam": {
+    "name": "Snow Yam",
+    "url": "http://stardewvalleywiki.com/Snow_Yam",
+    "img": "snowyam.png",
+    "seasons": ["winter"],
+    "type": "vegetable",
+    "price": 100,
+    "health": 13,
+    "energy": 30,
+    "growth": {
+      "initial": 7,
+      "regrow": 0
+    }
+  },
+  "winterroot": {
+    "name": "Winter Root",
+    "url": "http://stardewvalleywiki.com/Winter_Root",
+    "img": "winterroot.png",
+    "seasons": ["winter"],
+    "type": "vegetable",
+    "price": 70,
+    "health": 11,
+    "energy": 25,
+    "growth": {
+      "initial": 7,
+      "regrow": 0
+    }
+  },
+  "cavecarrot": {
+    "name": "Cave Carrot",
+    "url": "http://stardewvalleywiki.com/Cave_Carrot",
+    "img": "cavecarrot.png",
+    "seasons": ["spring", "summer", "fall", "winter"],
+    "type": "vegetable",
+    "quality": false,
+    "price": 25,
+    "health": 13,
+    "energy": 30
+  },
+  "coconut": {
+    "name": "Coconut",
+    "url": "http://stardewvalleywiki.com/Coconut",
+    "img": "coconut.png",
+    "seasons": ["spring", "summer", "fall", "winter"],
+    "type": "fruit",
+    "price": 150,
+    "health": 28,
+    "energy": 63,
+    "favorite": ["haley", "linus"],
+    "specialProduce": {
+      "keg": {
+        "name": "Coconut Milk",
+        "img": "cornucopia_coconutmilk.png",
+        "price": 250,
+        "time": "38 hrs",
+        "health": 22,
+        "energy": 50,
+        "favorite": ["sandy"]
+      },
+      "butterChurn": {
+        "name": "Coconut Butter",
+        "img": "cornucopia_coconutbutter.png",
+        "price": 250,
+        "time": "3 hrs",
+        "health": 0,
+        "energy": 0
+      },
+      "oilMaker": {
+        "name": "Coconut Oil",
+        "img": "cornucopia_coconutoil.png",
+        "price": 200,
+        "time": "16 hrs",
+        "health": 5,
+        "energy": 13,
+        "favorite": ["haley"]
+      },
+      "vinegarKeg": {
+        "name": "Vinegar",
+        "img": "vinegar.png",
+        "price": 10,
+        "time": "2 days",
+        "health": 5,
+        "energy": 13
+      }
+    }
+  },
+  "ginger": {
+    "name": "Ginger",
+    "url": "http://stardewvalleywiki.com/Ginger",
+    "img": "ginger.png",
+    "seasons": ["spring", "summer", "fall", "winter"],
+    "type": "forage",
+    "price": 60,
+    "health": 11,
+    "energy": 25,
+    "growth": {
+      "initial": 8,
+      "regrow": 0
+    }
+  },
+  "magmacap": {
+    "name": "Magma Cap",
+    "url": "http://stardewvalleywiki.com/Magma_Cap",
+    "img": "magmacap.png",
+    "seasons": ["spring", "summer", "fall", "winter"],
+    "type": "mushroom",
+    "price": 400,
+    "health": 78,
+    "energy": 175
+  },
   "carrot": {
     "name": "Carrot",
     "url": "https://stardewvalleywiki.com/Carrot",
@@ -92,6 +460,14 @@
         "health": 11,
         "energy": 25,
         "favorite": ["evelyn", "apples"]
+      },
+      "vinegarKeg": {
+        "name": "Vinegar",
+        "img": "vinegar.png",
+        "price": 100,
+        "time": "6 hrs",
+        "health": 5,
+        "energy": 13
       }
     }
   },
@@ -863,7 +1239,7 @@
     }
   },
   "butternutsquash": {
-    "name": "Butternut Squash",
+    "name": "Butternut Squash (SVE)",
     "url": "https://stardew-valley-expanded.fandom.com/wiki/Butternut_Squash",
     "img": "sve_butternut.png",
     "seasons": ["summer"],
@@ -1105,6 +1481,388 @@
         "health": 0,
         "energy": 0,
         "favorite": ["jodi"]
+      }
+    }
+  },
+  "blackbeans": {
+    "name": "Black Beans",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Black_Beans",
+    "img": "cornucopia_blackbeans.png",
+    "seasons": ["fall"],
+    "type": "vegetable",
+    "price": 15,
+    "health": 0,
+    "energy": 0,
+    "growth": {
+      "initial": 10,
+      "regrow": 3
+    }
+  },
+  "blueagave": {
+    "name": "Blue Agave",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Blue_Agave",
+    "img": "cornucopia_blueagave.png",
+    "seasons": ["summer"],
+    "type": "vegetable",
+    "price": 400,
+    "health": 0,
+    "energy": 0,
+    "growth": {
+      "initial": 12,
+      "regrow": 0
+    }
+  },
+  "bluebonnet": {
+    "name": "Blue Bonnet",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Blue_Bonnet",
+    "img": "cornucopia_bluebonnet.png",
+    "seasons": ["spring"],
+    "type": "flower",
+    "price": 30,
+    "health": 0,
+    "energy": -50,
+    "growth": {
+      "initial": 7,
+      "regrow": 0
+    }
+  },
+  "bluemist": {
+    "name": "Blue Mist",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Blue_Mist",
+    "img": "cornucopia_bluemist.png",
+    "seasons": ["summer"],
+    "type": "flower",
+    "price": 30,
+    "health": 20,
+    "energy": 45,
+    "growth": {
+      "initial": 7,
+      "regrow": 0
+    }
+  },
+  "buckwheat": {
+    "name": "Buckwheat",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Buckwheat",
+    "img": "cornucopia_buckwheat.png",
+    "seasons": ["spring"],
+    "type": "vegetable",
+    "price": 25,
+    "health": 0,
+    "energy": 0,
+    "growth": {
+      "initial": 4,
+      "regrow": 0
+    },
+    "specialProduce": {
+      "keg": {
+        "name": "Porter",
+        "img": "cornucopia_porter.png",
+        "price": 250,
+        "time": "1-2 days",
+        "health": 22,
+        "energy": 50
+      },
+      "mill": {
+        "name": "Buckwheat Flour",
+        "img": "cornucopia_buckwheat_flour.png",
+        "price": 50,
+        "time": "1 day",
+        "health": 5,
+        "energy": 13
+      }
+    }
+  },
+  "buttercup": {
+    "name": "Buttercup",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Buttercup",
+    "img": "cornucopia_buttercup.png",
+    "seasons": ["summer"],
+    "type": "flower",
+    "price": 25,
+    "health": 0,
+    "energy": 50,
+    "growth": {
+      "initial": 6,
+      "regrow": 0
+    }
+  },
+  "cornucopia_butternutsquash": {
+    "name": "Butternut Squash (Cornucopia)",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Butternut_Squash",
+    "img": "cornucopia_butternutsquash.png",
+    "seasons": ["summer"],
+    "type": "vegetable",
+    "price": 200,
+    "health": 9,
+    "energy": 20,
+    "growth": {
+      "initial": 10,
+      "regrow": 5
+    }
+  }, 
+  "cabbage": {
+    "name": "Cabbage",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Cabbage",
+    "img": "cornucopia_cabbage.png",
+    "seasons": ["spring"],
+    "type": "vegetable",
+    "price": 130,
+    "health": 22,
+    "energy": 50,
+    "growth": {
+      "initial": 7,
+      "regrow": 0
+    }, 
+    "specialProduce": {
+      "keg": {
+        "name": "Sauerkraut",
+        "img": "cornucopia_sauerkraut.png",
+        "price": 340,
+        "time": "67 hrs",
+        "health": 0,
+        "energy": 0
+      }
+    }
+  },
+  "canarymelon": {
+    "name": "Canary Melon",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Canary_Melon",
+    "img": "cornucopia_canarymelon.png",
+    "seasons": ["spring"],
+    "type": "fruit",
+    "price": 225,
+    "health": 50,
+    "energy": 113,
+    "growth": {
+      "initial": 12,
+      "regrow": 5
+    }
+  },
+  "canolaflower": {
+    "name": "Canola Flower",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Canola_Flower",
+    "img": "cornucopia_canolaflower.png",
+    "seasons": ["spring", "summer"],
+    "type": "flower",
+    "price": 40,
+    "health": 20,
+    "energy": 45,
+    "growth": {
+      "initial": 7,
+      "regrow": 0
+    },
+    "specialProduce": {
+      "oilMaker": {
+        "name": "Oil",
+        "img": "oil.png",
+        "price": 100,
+        "time": "1 hr",
+        "health": 5,
+        "energy": 13
+      }
+    }
+  },
+  "cantaloupe": {
+    "name": "Cantaloupe",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Cantaloupe",
+    "img": "cornucopia_cantaloupe.png",
+    "seasons": ["spring"],
+    "type": "fruit",
+    "price": 180,
+    "health": 39,
+    "energy": 88,
+    "growth": {
+      "initial": 8,
+      "regrow": 0
+    }
+  },
+  "carnation": {
+    "name": "Carnation",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Carnation",
+    "img": "cornucopia_carnation.png",
+    "seasons": ["spring", "summer"],
+    "type": "flower",
+    "price": 80,
+    "health": 20,
+    "energy": 45,
+    "growth": {
+      "initial": 7,
+      "regrow": 0
+    }
+  },
+  "cassava": {
+    "name": "Cassava",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Cassava",
+    "img": "cornucopia_cassava.png",
+    "seasons": ["summer"],
+    "type": "vegetable",
+    "price": 80,
+    "health": 0,
+    "energy": -50,
+    "growth": {
+      "initial": 7,
+      "regrow": 0
+    },
+    "specialProduce": {
+      "extruder": {
+        "name": "Glass Noodles",
+        "img": "cornucopia_glassnoodles.png",
+        "price": 200,
+        "time": "8 hrs",
+        "health": 0,
+        "energy": 0
+      }
+    }
+  },
+  "catnip": {
+    "name": "Catnip",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Catnip",
+    "img": "cornucopia_catnip.png",
+    "seasons": ["spring"],
+    "type": "herb",
+    "price": 70,
+    "health": 9,
+    "energy": 20,
+    "growth": {
+      "initial": 7,
+      "regrow": 0
+    }
+  },
+  "celery": {
+    "name": "Celery",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Celery",
+    "img": "cornucopia_celery.png",
+    "seasons": ["fall"],
+    "type": "vegetable",
+    "price": 45,
+    "health": 9,
+    "energy": 20,
+    "growth": {
+      "initial": 4,
+      "regrow": 0
+    }
+  },
+  "chamomile": {
+    "name": "Chamomile",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Chamomile",
+    "img": "cornucopia_chamomile.png",
+    "seasons": ["spring"],
+    "type": "flower",
+    "price": 35,
+    "health": 20,
+    "energy": 45,
+    "growth": {
+      "initial": 5,
+      "regrow": 0
+    }
+  },
+  "chickpea": {
+    "name": "Chickpea",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Chickpea",
+    "img": "cornucopia_chickpea.png",
+    "seasons": ["summer"],
+    "type": "vegetable",
+    "price": 55,
+    "health": 0,
+    "energy": 0,
+    "growth": {
+      "initial": 10,
+      "regrow": 5
+    }
+  },
+  "chives": {
+    "name": "Chives",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Chives",
+    "img": "cornucopia_chives.png",
+    "seasons": ["spring"],
+    "type": "herb",
+    "price": 35,
+    "health": 9,
+    "energy": 20,
+    "growth": {
+      "initial": 5,
+      "regrow": 0
+    }
+  },
+  "chrysanthemum": {
+    "name": "Chrysanthemum",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Chrysanthemum",
+    "img": "cornucopia_chrysanthemum.png",
+    "seasons": ["fall"],
+    "type": "flower",
+    "price": 80,
+    "health": 20,
+    "energy": 45,
+    "growth": {
+      "initial": 9,
+      "regrow": 0
+    }
+  },
+  "cilantro": {
+    "name": "Cilantro",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Cilantro",
+    "img": "cornucopia_cilantro.png",
+    "seasons": ["fall"],
+    "type": "herb",
+    "price": 35,
+    "health": 9,
+    "energy": 20,
+    "growth": {
+      "initial": 5,
+      "regrow": 0
+    }
+  },
+  "clarysage": {
+    "name": "Clary Sage",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Clary_Sage",
+    "img": "cornucopia_clarysage.png",
+    "seasons": ["summer"],
+    "type": "flower",
+    "price": 30,
+    "health": 20,
+    "energy": 45,
+    "growth": {
+      "initial": 8,
+      "regrow": 0
+    }
+  },
+  "clematis": {
+    "name": "Clematis",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Clematis",
+    "img": "cornucopia_clematis.png",
+    "seasons": ["fall"],
+    "type": "flower",
+    "price": 110,
+    "health": 0,
+    "energy": -50,
+    "growth": {
+      "initial": 10,
+      "regrow": 3
+    }
+  },
+  "cottonboll": {
+    "name": "Cotton Boll",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Cotton_Boll",
+    "img": "cornucopia_cottonboll.png",
+    "seasons": ["summer", "fall"],
+    "type": "forage",
+    "price": 80,
+    "health": 0,
+    "energy": 0,
+    "growth": {
+      "initial": 8,
+      "regrow": 2
+    },
+    "specialProduce": {
+      "keg": false,
+      "loom": {
+        "name": "Cloth",
+        "img": "cloth.png",
+        "price": 156,
+        "time": "4 hrs",
+        "health": 0,
+        "energy": 0,
+        "favorite": ["emily"]
       }
     }
   }

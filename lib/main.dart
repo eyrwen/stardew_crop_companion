@@ -103,7 +103,7 @@ class CropPage extends StatelessWidget {
                 baseHealth: crop['health'],
                 hasQuality: crop['quality'] != false && crop['energy'] >= 0,
               ),
-              type == CropType.other || crop['energy'] < 0
+              type == CropType.other
                   ? SizedBox.shrink()
                   : CropProduceValues(
                       type: type,
