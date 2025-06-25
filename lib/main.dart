@@ -64,46 +64,76 @@ class MyHomePage extends HookWidget {
 
   @override
   Widget build(BuildContext context) {
-    final crops = useFuture<List<Crop>>(_loadCrops());
-    final allRecipes = useFuture<List<Recipe>>(_loadRecipes());
+    return DefaultTabController(
+      length: 2,
+      child: Scaffold(
+        bottomNavigationBar: TabBar(
+          tabs: [
+            Tab(text: 'Crops', icon: Image.asset('assets/img/farming.png')),
+            Tab(text: 'Fish', icon: Image.asset('assets/img/fishing.png')),
+          ],
+        ),
+        body: Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('assets/img/bg_day.png'),
+              fit: BoxFit.cover,
+            ),
+          ),
+          padding: const EdgeInsets.all(8.0),
+          child: TabBarView(
+            children: [
+              CropsTab(allCrops: _loadCrops(), allRecipes: _loadRecipes()),
+              FishTab(),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class CropsTab extends HookWidget {
+  final Future<List<Crop>> allCrops;
+  final Future<List<Recipe>> allRecipes;
+
+  const CropsTab({super.key, required this.allCrops, required this.allRecipes});
+
+  @override
+  Widget build(BuildContext context) {
+    final crops = useFuture<List<Crop>>(useMemoized(() => allCrops));
+    final recipes = useFuture<List<Recipe>>(useMemoized(() => allRecipes));
     final viewingCrop = useState<Crop?>(null);
 
     selectCrop(Crop crop) {
       crop.recipes =
-          allRecipes.data?.where((recipe) => recipe.requires(crop)).toList() ??
-          [];
+          recipes.data?.where((recipe) => recipe.requires(crop)).toList() ?? [];
       viewingCrop.value = crop;
     }
 
-    var content = useMemoized(() {
-      if (viewingCrop.value != null) {
-        return CropPage(
-          crop: viewingCrop.value!,
-          onBack: () => viewingCrop.value = null,
-        );
-      }
-      if (crops.hasError) {
-        return Text(crops.error?.toString() ?? 'Error loading crops');
-      } else if (allRecipes.hasError) {
-        return Text(allRecipes.error?.toString() ?? 'Error loading recipes');
-      } else if (!crops.hasData || !allRecipes.hasData) {
-        return CircularProgressIndicator();
-      } else {
-        return CropGrid(crops: crops.data!, onCropSelected: selectCrop);
-      }
-    }, [crops, allRecipes, viewingCrop]);
+    if (viewingCrop.value != null) {
+      return CropPage(
+        crop: viewingCrop.value!,
+        onBack: () => viewingCrop.value = null,
+      );
+    }
+    if (crops.hasError) {
+      return Text(crops.error?.toString() ?? 'Error loading crops');
+    } else if (recipes.hasError) {
+      return Text(recipes.error?.toString() ?? 'Error loading recipes');
+    } else if (!crops.hasData || !recipes.hasData) {
+      return LinearProgressIndicator();
+    } else {
+      return CropGrid(crops: crops.data!, onCropSelected: selectCrop);
+    }
+  }
+}
 
-    return Scaffold(
-      body: Container(
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('assets/img/bg_day.png'),
-            fit: BoxFit.cover,
-          ),
-        ),
-        padding: const EdgeInsets.all(8.0),
-        child: content,
-      ),
-    );
+class FishTab extends StatelessWidget {
+  const FishTab({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox.shrink();
   }
 }
