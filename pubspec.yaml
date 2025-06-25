@@ -38,6 +38,7 @@ dependencies:
   flutter_hooks: ^0.21.2
   flutter_launcher_icons: ^0.14.4
   url_launcher: ^6.3.1
+  collection: ^1.19.1
 
 dev_dependencies:
   flutter_test:
@@ -63,6 +64,7 @@ flutter:
     - assets/img/
     - assets/crops.json
     - assets/seasons.json
+    - assets/recipes.json
 
 flutter_launcher_icons:
   windows:

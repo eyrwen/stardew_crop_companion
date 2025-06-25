@@ -1,0 +1,93 @@
+{
+  "tomKhaSoup": {
+    "name": "Tom Kha Soup",
+    "img": "tom_kha_soup.png",
+    "type": "cooking",
+    "price": 250,
+    "health": 78,
+    "energy": 175,
+    "favorite": ["elliot", "penny"],
+    "ingredients": {
+      "coconut": 1,
+      "shrimp": 1,
+      "commonmushroom": 1
+    },
+    "buffs": {
+      "time": "7m",
+      "effects": [
+        { "type": "farming", "value": 2 },
+        { "type": "maxEnergy", "value": 30 }
+      ]
+    }
+  },
+  "tropicalCurry": {
+    "name": "Tropical Curry",
+    "img": "tropical_curry.png",
+    "type": "cooking",
+    "price": 500,
+    "health": 67,
+    "energy": 150,
+    "favorite": ["caroline", "gus"],
+    "ingredients": {
+      "coconut": 1,
+      "pineapple": 1,
+      "hotpepper": 1
+    },
+    "buffs": {
+      "time": "5m 1s",
+      "effects": [
+        { "type": "foraging", "value": 4 }
+      ] 
+    }
+  },
+  "mangoStickyRice": {
+    "name": "Mango Sticky Rice",
+    "img": "mango_sticky_rice.png",
+    "type": "cooking",
+    "price": 250,
+    "health": 50,
+    "energy": 113,
+    "favorite": ["sandy"],
+    "ingredients": {
+      "coconut": 1,
+      "mango": 1,
+      "rice": 1
+    },
+    "buffs": {
+      "time": "5m 1s",
+      "effects": [
+        { "type": "defense", "value": 3 }
+      ]
+    }
+  },
+  "warpTotemDesert": {
+    "name": "Warp Totem: Desert",
+    "img": "warp_totem_desert.png",
+    "type": "crafting",
+    "ingredients": {
+      "coconut": 1,
+      "hardwood": 2,
+      "iridiumore": 4
+    }
+  },
+  "desertObelisk": {
+    "name": "Desert Obelisk",
+    "img": "desert_obelisk.png",
+    "type": "building",
+    "ingredients": {
+      "gold": 1000000,
+      "iridiumbar": 20,
+      "coconut": 10,
+      "cactusfruit": 10
+    }
+  },
+  "vacationShirt": {
+    "name": "Vacation Shirt",
+    "img": "vacation_shirt.png",
+    "type": "clothing",
+    "ingredients": {
+      "coconut": 1,
+      "cloth": 1
+    }
+  }
+}
