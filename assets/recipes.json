@@ -15,8 +15,14 @@
     "buffs": {
       "time": "7m",
       "effects": [
-        { "type": "farming", "value": 2 },
-        { "type": "maxEnergy", "value": 30 }
+        {
+          "type": "farming",
+          "value": 2
+        },
+        {
+          "type": "maxEnergy",
+          "value": 30
+        }
       ]
     }
   },
@@ -36,8 +42,11 @@
     "buffs": {
       "time": "5m 1s",
       "effects": [
-        { "type": "foraging", "value": 4 }
-      ] 
+        {
+          "type": "foraging",
+          "value": 4
+        }
+      ]
     }
   },
   "mangoStickyRice": {
@@ -56,7 +65,10 @@
     "buffs": {
       "time": "5m 1s",
       "effects": [
-        { "type": "defense", "value": 3 }
+        {
+          "type": "defense",
+          "value": 3
+        }
       ]
     }
   },
@@ -88,6 +100,616 @@
     "ingredients": {
       "coconut": 1,
       "cloth": 1
+    }
+  },
+  "sashimi": {
+    "name": "Sashimi",
+    "img": "sashimi.png",
+    "type": "cooking",
+    "price": 75,
+    "health": 33,
+    "energy": 78,
+    "favorite": ["sebastian"],
+    "ingredients": {
+      ":any:": "fish"
+    }
+  },
+  "makiRoll": {
+    "name": "Maki Roll",
+    "img": "maki_roll.png",
+    "type": "cooking",
+    "price": 220,
+    "health": 45,
+    "energy": 100,
+    "ingredients": {
+      "rice": 1,
+      "seaweed": 1,
+      ":any:": "fish"
+    }
+  },
+  "sailorShirt": {
+    "name": "Sailor Shirt",
+    "img": "sailor_shirt.png",
+    "type": "clothing",
+    "ingredients": {
+      ":one_of:": [
+        "albacore",
+        "anchovy",
+        "bluediscus",
+        "eel",
+        "flounder",
+        "halibut",
+        "herring",
+        "lionfish",
+        "pufferfish",
+        "redmullet",
+        "redsnapper",
+        "sardine",
+        "squid",
+        "stingray",
+        "tilapia",
+        "tuna",
+        "lobster",
+        "clam"
+      ],
+      "cloth": 1
+    }
+  },
+  "dyeableSailorShirt": {
+    "name": "Dyeable Sailor Shirt",
+    "img": "sailor_shirt_dyeable.png",
+    "type": "clothing",
+    "ingredients": {
+      ":one_of:": [
+        "lobster",
+        "clam",
+        "cockle",
+        "crab",
+        "mussel",
+        "oyster",
+        "shrimp"
+      ],
+      "cloth": 1
+    }
+  },
+  "qualityFertilizer": {
+    "name": "Quality Fertilizer",
+    "img": "quality_fertilizer.png",
+    "type": "crafting",
+    "ingredients": {
+      "sap": 4,
+      "coconut": 1
+    }
+  },
+  "fishTaco": {
+    "name": "Fish Taco",
+    "img": "fish_taco.png",
+    "type": "cooking",
+    "price": 500,
+    "health": 74,
+    "energy": 165,
+    "favorite": ["caroline", "gus"],
+    "ingredients": {
+      "tuna": 1,
+      "tortilla": 1,
+      ":any:": "mayonnaise",
+      "redcabbage": 1
+    },
+    "buffs": {
+      "time": "7m",
+      "effects": [
+        {
+          "type": "fishing",
+          "value": 2
+        }
+      ]
+    }
+  },
+  "dishOTheSea": {
+    "name": "Dish O' The Sea",
+    "img": "dish_o_the_sea.png",
+    "type": "cooking",
+    "price": 220,
+    "health": 67,
+    "energy": 150,
+    "favorite": ["linus"],
+    "ingredients": {
+      "sardine": 2,
+      "hashbrowns": 1
+    },
+    "buffs": {
+      "time": "5m 35s",
+      "effects": [
+        {
+          "type": "fishing",
+          "value": 3
+        }
+      ]
+    }
+  },
+  "bakedfish": {
+    "name": "Baked Fish",
+    "img": "baked_fish.png",
+    "type": "cooking",
+    "price": 100,
+    "health": 33,
+    "energy": 75,
+    "ingredients": {
+      "sunfish": 1,
+      "bream": 1,
+      ":any:": "flour"
+    },
+    "buffs": {
+      "time": "5m 1s",
+      "effects": [
+        {
+          "type": "fishing",
+          "value": 2
+        }
+      ]
+    }
+  },
+  "fishShirt": {
+    "name": "Fish Shirt",
+    "img": "fish_shirt.png",
+    "type": "clothing",
+    "ingredients": {
+      ":one_of:": [
+        "bream",
+        "catfish",
+        "dorado",
+        "ghostfish",
+        "goby",
+        "rainbowtrout",
+        "sandfish",
+        "tigertrout",
+        "sunfish",
+        "tigertrout"
+      ],
+      "cloth": 1
+    }
+  },
+  "fishingVest": {
+    "name": "Fishing Vest",
+    "img": "fishing_vest.png",
+    "type": "clothing",
+    "ingredients": {
+      ":one_of:": [
+        "bullhead",
+        "carp",
+        "chub",
+        "largemouthbass",
+        "lingcod",
+        "midnightcarp",
+        "perch",
+        "pike",
+        "smallmouthbass",
+        "sturgeon",
+        "walleye",
+        "woodskip"
+      ],
+      "cloth": 1
+    }
+  },
+  "crispyBass": {
+    "name": "Crispy Bass",
+    "img": "crispy_bass.png",
+    "type": "cooking",
+    "price": 150,
+    "health": 40,
+    "energy": 90,
+    "favorite": ["jodi"],
+    "ingredients": {
+      "largemouthbass": 1,
+      ":any_each:": ["oil", "flour"]
+    },
+    "buffs": {
+      "time": "7m",
+      "effects": [{ "type": "magnetism", "value": 64 }]
+    }
+  },
+  "troutSoup": {
+    "name": "Trout Soup",
+    "img": "trout_soup.png",
+    "type": "cooking",
+    "price": 100,
+    "health": 45,
+    "energy": 100,
+    "ingredients": {
+      "rainbowtrout": 1,
+      "greenalgae": 1
+    },
+    "buffs": {
+      "time": "4m 39s",
+      "effects": [{ "type": "fishing", "value": 1 }]
+    }
+  },
+  "salmonDinner": {
+    "name": "Salmon Dinner",
+    "img": "salmon_dinner.png",
+    "type": "cooking",
+    "price": 300,
+    "health": 56,
+    "energy": 125,
+    "favorite": ["alex"],
+    "ingredients": {
+      "salmon": 1,
+      "amaranth": 1,
+      "kale": 1
+    },
+    "buffs": {
+      "time": "7m",
+      "effects": [
+        { "type": "fishing", "value": 2 },
+        { "type": "defense", "value": 2 }
+      ]
+    }
+  },
+  "fadedDenimShirt": {
+    "name": "Faded Denim Shirt",
+    "img": "faded_denim_shirt.png",
+    "type": "clothing",
+    "ingredients": {
+      "salmon": 1,
+      "cloth": 1
+    }
+  },
+  "carpSuprise": {
+    "name": "Carp Surprise",
+    "img": "carp_suprise.png",
+    "type": "cooking",
+    "price": 150,
+    "health": 40,
+    "energy": 90,
+    "ingredients": {
+      "carp": 4
+    }
+  },
+  "friedEel": {
+    "name": "Fried Eel",
+    "img": "fried_eel.png",
+    "type": "cooking",
+    "price": 120,
+    "health": 33,
+    "energy": 75,
+    "favorite": ["jodi"],
+    "ingredients": {
+      "eel": 1,
+      ":any:": "oil"
+    },
+    "buffs": {
+      "time": "7m",
+      "effects": [{ "type": "luck", "value": 1 }]
+    }
+  },
+  "spicyEel": {
+    "name": "Spicy Eel",
+    "img": "spicy_eel.png",
+    "type": "cooking",
+    "price": 175,
+    "health": 51,
+    "energy": 115,
+    "favorite": ["abigail"],
+    "ingredients": {
+      "eel": 1,
+      "hotpepper": 1
+    },
+    "buffs": {
+      "time": "7m",
+      "effects": [
+        { "type": "luck", "value": 1 },
+        { "type": "speed", "value": 1 }
+      ]
+    }
+  },
+  "blueButtonedVest": {
+    "name": "Blue Buttoned Vest",
+    "img": "blue_buttoned_vest.png",
+    "type": "clothing",
+    "ingredients": {
+      "octopus": 1,
+      "cloth": 1
+    }
+  },
+  "friedCalamari": {
+    "name": "Fried Calamari",
+    "img": "fried_calamari.png",
+    "type": "cooking",
+    "price": 150,
+    "health": 36,
+    "energy": 80,
+    "favorite": ["pierre"],
+    "ingredients": {
+      "squid": 1,
+      ":any_each:": ["oil", "flour"]
+    },
+    "buffs": {
+      "time": "7m",
+      "effects": [{ "type": "fishing", "value": 2 }]
+    }
+  },
+  "luckyLunch": {
+    "name": "Lucky Lunch",
+    "img": "lucky_lunch.png",
+    "type": "cooking",
+    "price": 250,
+    "health": 45,
+    "energy": 100,
+    "ingredients": {
+      "seacucumber": 1,
+      "tortilla": 1,
+      "bluejazz": 1
+    },
+    "buffs": {
+      "time": "11m 1s",
+      "effects": [{ "type": "luck", "value": 3 }]
+    }
+  },
+  "tubeTop": {
+    "name": "Tube Top",
+    "img": "tube_top.png",
+    "type": "clothing",
+    "ingredients": {
+      ":one_of:": ["seacucumber", "supercucumber"],
+      "cloth": 1
+    }
+  },
+  "fishingHat": {
+    "name": "Fishing Hat",
+    "img": "fishing_hat.png",
+    "type": "clothing",
+    "ingredients": {
+      ":one_of:": [
+        "stonefish",
+        "icepip",
+        "scorpioncarp",
+        "spookfish",
+        "midnightsquid",
+        "voidsalmon",
+        "slimejack"
+      ],
+      "cloth": 1
+    }
+  },
+  "logoCap": {
+    "name": "Logo Cap",
+    "img": "logo_cap.png",
+    "type": "clothing",
+    "ingredients": {
+      "lavaeel": 1,
+      "cloth": 1
+    }
+  },
+  "seafoamPudding": {
+    "name": "Seafoam Pudding",
+    "img": "seafoam_pudding.png",
+    "type": "cooking",
+    "price": 300,
+    "health": 78,
+    "energy": 175,
+    "ingredients": {
+      "flounder": 1,
+      "midnightcarp": 1,
+      "squidink": 1
+    },
+    "buffs": {
+      "time": "3m 30s",
+      "effects": [{ "type": "fishing", "value": 4 }]
+    }
+  },
+  "blobfishMask": {
+    "name": "Blobfish Mask",
+    "img": "blobfish_mask.png",
+    "type": "clothing",
+    "ingredients": {
+      "blobfish": 1,
+      "cloth": 1
+    }
+  },
+  "lobsterBisque": {
+    "name": "Lobster Bisque",
+    "img": "lobster_bisque.png",
+    "type": "cooking",
+    "price": 205,
+    "health": 101,
+    "energy": 225,
+    "ingredients": {
+      "lobster": 1,
+      ":any:": "milk"
+    },
+    "buffs": {
+      "time": "16m 47s",
+      "effects": [
+        { "type": "fishing", "value": 3 },
+        { "type": "maxEnergy", "value": 50 }
+      ]
+    }
+  },
+  "chowder": {
+    "name": "Chowder",
+    "img": "chowder.png",
+    "type": "cooking",
+    "price": 135,
+    "health": 101,
+    "energy": 225,
+    "ingredients": {
+      "clam": 1,
+      ":any:": "milk"
+    },
+    "buffs": {
+      "time": "16m 47s",
+      "effects": [{ "type": "fishing", "value": 1 }]
+    }
+  },
+  "waterObelisk": {
+    "name": "Water Obelisk",
+    "img": "water_obelisk.png",
+    "type": "building",
+    "ingredients": {
+      "gold": 500000,
+      "iridiumbar": 5,
+      "clam": 10,
+      "coral": 10
+    }
+  },
+  "fishStew": {
+    "name": "Fish Stew",
+    "img": "fish_stew.png",
+    "type": "cooking",
+    "price": 200,
+    "health": 67,
+    "energy": 150,
+    "ingredients": {
+      "crayfish": 1,
+      "mussel": 1,
+      "periwinkle": 1,
+      "tomato": 1
+    },
+    "buffs": {
+      "time": "16m 47s",
+      "effects": [{ "type": "fishing", "value": 3 }]
+    }
+  },
+  "raincoat": {
+    "name": "Raincoat",
+    "img": "raincoat.png",
+    "type": "clothing",
+    "ingredients": {
+      ":one_of:": ["crayfish", "periwinkle", "snail"],
+      "cloth": 1
+    }
+  },
+  "crabCakes": {
+    "name": "Crab Cakes",
+    "img": "crab_cakes.png",
+    "type": "cooking",
+    "price": 275,
+    "health": 101,
+    "energy": 225,
+    "favorite": ["elliot"],
+    "ingredients": {
+      "crab": 1,
+      ":any_each:": ["oil", "flour", "egg"]
+    },
+    "buffs": {
+      "time": "16m 47s",
+      "effects": [
+        { "type": "speed", "value": 1 },
+        { "type": "defense", "value": 1 }
+      ]
+    }
+  },
+  "shrimpCocktail": {
+    "name": "Shrimp Cocktail",
+    "img": "shrimp_cocktail.png",
+    "type": "cooking",
+    "price": 160,
+    "health": 101,
+    "energy": 225,
+    "ingredients": {
+      "shrimp": 1,
+      "tomato": 1,
+      "wildhorseradish": 1
+    },
+    "buffs": {
+      "time": "10m 2s",
+      "effects": [
+        { "type": "fishing", "value": 1 },
+        { "type": "luck", "value": 1 }
+      ]
+    }
+  },
+  "escargot": {
+    "name": "Escargot",
+    "img": "escargot.png",
+    "type": "cooking",
+    "price": 125,
+    "health": 101,
+    "energy": 225,
+    "favorite": ["gus"],
+    "ingredients": {
+      "snail": 1,
+      "garlic": 1
+    },
+    "buffs": {
+      "time": "16m 47s",
+      "effects": [{ "type": "fishing", "value": 2 }]
+    }
+  },
+  "strangeBun": {
+    "name": "Strange Bun",
+    "img": "strange_bun.png",
+    "type": "cooking",
+    "price": 225,
+    "health": 45,
+    "energy": 100,
+    "favorite": ["linus"],
+    "ingredients": {
+      ":any:": "flour",
+      "periwinkle": 1,
+      "voidmayonnaise": 1
+    }
+  },
+  "fishPond": {
+    "name": "Fish Pond",
+    "img": "fish_pond.png",
+    "type": "building",
+    "ingredients": {
+      "gold": 5000,
+      "stone": 200,
+      "seaweed": 5,
+      "greenalgae": 5
+    }
+  },
+  "kelpShirt": {
+    "name": "Kelp Shirt",
+    "img": "kelp_shirt.png",
+    "type": "clothing",
+    "ingredients": {
+      "seaweed": 1,
+      "cloth": 1
+    }
+  },
+  "algaeSoup": {
+    "name": "Algae Soup",
+    "img": "algae_soup.png",
+    "type": "cooking",
+    "price": 100,
+    "health": 33,
+    "energy": 75,
+    "ingredients": {
+      "greenalgae": 4
+    }
+  },
+  "collaredShirt": {
+    "name": "Collared Shirt",
+    "img": "collared_shirt.png",
+    "type": "clothing",
+    "ingredients": {
+      ":one_of:": ["greenalgae", "whitealgae"],
+      "cloth": 1
+    }
+  },
+  "paleBroth": {
+    "name": "Pale Broth",
+    "img": "palebroth.png",
+    "type": "cooking",
+    "price": 150,
+    "health": 56,
+    "energy": 125,
+    "ingredients": {
+      "whitealgae": 2
+    }
+  },
+  "fishSmoker": {
+    "name": "Fish Smoker",
+    "img": "fish_smoker.png",
+    "type": "crafting",
+    "ingredients": {
+      "hardwood": 10,
+      "seajelly": 1,
+      "riverjelly": 1,
+      "cavejelly": 1
     }
   }
 }

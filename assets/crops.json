@@ -1921,5 +1921,97 @@
         "favorite": ["emily"]
       }
     }
+  },
+  "seaweed": {
+    "name": "Seaweed",
+    "url": "https://stardewvalleywiki.com/Seaweed",
+    "img": "seaweed.png",
+    "type": "other",
+    "quality": false,
+    "price": 20,
+    "health": 5,
+    "energy": 13
+  },
+  "greenalgae": {
+    "name": "Green Algae",
+    "url": "https://stardewvalleywiki.com/Green_Algae",
+    "img": "greenalgae.png",
+    "type": "other",
+    "price": 15,
+    "health": 5,
+    "energy": 13,
+    "quality": false,
+    "specialProduce": {
+      "compactMill": {
+        "name": "Gelling Powder",
+        "img": "cornucopia_gellingpowder.png",
+        "price": 50,
+        "time": "4 hrs",
+        "health": 0,
+        "energy": 0
+      }
+    }
+  },
+  "whitealgae": {
+    "name": "White Algae",
+    "url": "https://stardewvalleywiki.com/White_Algae",
+    "img": "whitealgae.png",
+    "type": "other",
+    "price": 25,
+    "health": 9,
+    "energy": 20,
+    "quality": false,
+    "specialProduce": {
+      "compactMill": {
+        "name": "Gelling Powder",
+        "img": "cornucopia_gellingpowder.png",
+        "price": 50,
+        "time": "4 hrs",
+        "health": 0,
+        "energy": 0
+      }
+    }
+  },
+  "seajelly": {
+    "name": "Sea Jelly",
+    "url": "https://stardewvalleywiki.com/Sea_Jelly",
+    "img": "seajelly.png",
+    "type": "other",
+    "price": 200,
+    "health": 39,
+    "energy": 88,
+    "quality": false,
+    "buffs": {
+      "duration": "7m",
+      "types": [{ "type": "fishing", "value": 1 }]
+    }
+  },
+  "riverjelly": {
+    "name": "River Jelly",
+    "url": "https://stardewvalleywiki.com/River_Jelly",
+    "img": "riverjelly.png",
+    "type": "other",
+    "price": 125,
+    "health": 33,
+    "energy": 75,
+    "quality": false,
+    "buffs": {
+      "duration": "7m",
+      "types": [{ "type": "maxEnergy", "value": 30 }]
+    }
+  },
+  "cavejelly": {
+    "name": "Cave Jelly",
+    "url": "https://stardewvalleywiki.com/Cave_Jelly",
+    "img": "cavejelly.png",
+    "type": "other",
+    "price": 180,
+    "health": 33,
+    "energy": 75,
+    "quality": false,
+    "buffs": {
+      "duration": "7m",
+      "types": [{ "type": "luck", "value": 1 }]
+    }
   }
 }
