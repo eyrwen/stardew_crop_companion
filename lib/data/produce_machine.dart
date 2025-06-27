@@ -1,5 +1,5 @@
 import 'artisan_good_formulator.dart';
-import 'crop.dart';
+import 'interface.dart';
 
 enum ProduceMachine {
   jar("jar", "jar.png", [
@@ -35,6 +35,7 @@ enum ProduceMachine {
   waxBarrel("waxBarrel", "cornucopia_wax_barrel.png", [
     ProduceMachineOutput.candles(),
   ]),
+  smoker("smoker", "fish_smoker.png", [ProduceMachineOutput.smokedFish()]),
   mill("mill", "mill.png", []),
   cheesePress("cheesePress", "cheese_press.png", []),
   loom("loom", "loom.png", []),
@@ -45,8 +46,15 @@ enum ProduceMachine {
   final String img;
   final List<ProduceMachineOutput> outputs;
 
-  bool supports(CropType crop) {
-    return outputs.any((output) => output.from.contains(crop));
+  bool supports(ItemType type) {
+    return outputs.any((output) => output.from.contains(type));
+  }
+
+  static ProduceMachine from(String value) {
+    return ProduceMachine.values.firstWhere(
+      (e) => e.name == value,
+      orElse: () => throw ArgumentError('Unknown produce machine: $value'),
+    );
   }
 
   const ProduceMachine(this.name, this.img, this.outputs);
@@ -54,13 +62,13 @@ enum ProduceMachine {
 
 class ProduceMachineOutput {
   final String outputName;
-  final String outputImg;
+  final String? outputImg;
   final ArtisanGoodFormulator priceFormulator;
   final ArtisanGoodFormulator energyFormulator;
   final ArtisanGoodFormulator healthFormulator;
   final String time;
   final List<String> favorites;
-  final List<CropType> from;
+  final List<ItemType> from;
 
   const ProduceMachineOutput(
     this.outputName,
@@ -73,6 +81,18 @@ class ProduceMachineOutput {
     required this.from,
   });
 
+  ProduceMachineOutput.fromJson(Map<String, dynamic> json)
+    : outputName = json['name'],
+      outputImg = json['img'],
+      priceFormulator = PriceFormulator.exact(json['price'].toDouble()),
+      energyFormulator = EnergyFormulator.exact(json['energy'].toDouble()),
+      healthFormulator = HealthFormulator.exact(json['health'].toDouble()),
+      time = json['time'],
+      favorites = List<String>.from(json['favorites'] ?? []),
+      from = (json['from'] as List<dynamic>)
+          .map((e) => ItemType.from(e as String))
+          .toList();
+
   const ProduceMachineOutput.jelly()
     : this(
         "Jelly",
@@ -81,7 +101,7 @@ class ProduceMachineOutput {
         const EnergyFormulator(multiplier: 2.0, inedibleMultiplier: 0.5),
         const HealthFormulator(multiplier: 2.0, inedibleMultiplier: 0.225),
         "2-3 days",
-        from: const [CropType.fruit],
+        from: const [ItemType.fruit],
       );
 
   const ProduceMachineOutput.pickles()
@@ -93,7 +113,7 @@ class ProduceMachineOutput {
         const HealthFormulator(multiplier: 1.75, inedibleMultiplier: 0.28125),
         "2-3 days",
         favorites: const ["harvey"],
-        from: const [CropType.vegetable, CropType.forage],
+        from: const [ItemType.vegetable, ItemType.forage],
       );
 
   const ProduceMachineOutput.wine()
@@ -105,7 +125,7 @@ class ProduceMachineOutput {
         const HealthFormulator(multiplier: 1.75, inedibleMultiplier: 0.1125),
         "6.25 days",
         favorites: const ["olivia"],
-        from: const [CropType.fruit],
+        from: const [ItemType.fruit],
       );
 
   const ProduceMachineOutput.juice()
@@ -117,7 +137,7 @@ class ProduceMachineOutput {
         const HealthFormulator(multiplier: 2.0, inedibleMultiplier: 0.45),
         "4 days",
         favorites: const ["martin"],
-        from: const [CropType.vegetable, CropType.forage],
+        from: const [ItemType.vegetable, ItemType.forage],
       );
 
   const ProduceMachineOutput.driedFruit()
@@ -136,7 +156,7 @@ class ProduceMachineOutput {
           dividedBy: 5,
         ),
         "1 day",
-        from: const [CropType.fruit],
+        from: const [ItemType.fruit],
       );
 
   const ProduceMachineOutput.driedMushroom()
@@ -155,7 +175,7 @@ class ProduceMachineOutput {
           dividedBy: 5,
         ),
         "1 day",
-        from: const [CropType.mushroom],
+        from: const [ItemType.mushroom],
       );
 
   const ProduceMachineOutput.driedVegetable()
@@ -166,19 +186,19 @@ class ProduceMachineOutput {
         const EnergyFormulator.zero(),
         const HealthFormulator.zero(),
         "30 hrs",
-        from: const [CropType.vegetable],
+        from: const [ItemType.vegetable],
       );
 
-  const ProduceMachineOutput.driedFlower()
+  const ProduceMachineOutput.driedFlower([String? duration])
     : this(
         "Dried Flower",
         "cornucopia_dried_flower.png",
         const PriceFormulator(multiplier: 10, plus: 50, dividedBy: 5),
         const EnergyFormulator.zero(),
         const HealthFormulator.zero(),
-        "30 hrs",
+        duration ?? "30 hrs",
         favorites: const ["evelyn", "haley", "penny"],
-        from: const [CropType.flower],
+        from: const [ItemType.flower],
       );
 
   const ProduceMachineOutput.driedHerb()
@@ -190,7 +210,7 @@ class ProduceMachineOutput {
         const HealthFormulator.zero(),
         "30 hrs",
         favorites: const ["gus", "leah"],
-        from: const [CropType.herb],
+        from: const [ItemType.herb],
       );
 
   const ProduceMachineOutput.honey()
@@ -202,7 +222,7 @@ class ProduceMachineOutput {
         const HealthFormulator.zero(),
         "4 days",
         favorites: const ["scarlett"],
-        from: const [CropType.flower],
+        from: const [ItemType.flower],
       );
 
   const ProduceMachineOutput.essentialOil()
@@ -215,13 +235,13 @@ class ProduceMachineOutput {
         "40 hrs",
         favorites: const ["emily"],
         from: const [
-          CropType.flower,
-          CropType.forage,
-          CropType.fruit,
-          CropType.herb,
-          CropType.spice,
-          CropType.nut,
-          CropType.vegetable,
+          ItemType.flower,
+          ItemType.forage,
+          ItemType.fruit,
+          ItemType.herb,
+          ItemType.spice,
+          ItemType.nut,
+          ItemType.vegetable,
         ],
       );
 
@@ -235,12 +255,12 @@ class ProduceMachineOutput {
         "16 hrs",
         favorites: const ["evelyn"],
         from: const [
-          CropType.flower,
-          CropType.forage,
-          CropType.fruit,
-          CropType.herb,
-          CropType.nut,
-          CropType.spice,
+          ItemType.flower,
+          ItemType.forage,
+          ItemType.fruit,
+          ItemType.herb,
+          ItemType.nut,
+          ItemType.spice,
         ],
       );
 
@@ -253,6 +273,28 @@ class ProduceMachineOutput {
         const HealthFormulator.exact(17.0),
         "16 hrs",
         favorites: const ["jas", "marnie"],
-        from: const [CropType.fruit],
+        from: const [ItemType.fruit],
+      );
+
+  const ProduceMachineOutput.smokedFish()
+    : this(
+        "Smoked Fish",
+        "smoked_fish.png",
+        const PriceFormulator(multiplier: 2),
+        const EnergyFormulator(multiplier: 1.5, inedibleMultiplier: 0.3),
+        const HealthFormulator(multiplier: 1.5, inedibleMultiplier: 0.3),
+        "50 mins",
+        from: const [ItemType.fish, ItemType.crabpotcatch],
+      );
+
+  const ProduceMachineOutput.roe()
+    : this(
+        "Roe",
+        "roe.png",
+        const PriceFormulator(multiplier: 0.5, plus: 30),
+        const EnergyFormulator.exact(50.0),
+        const HealthFormulator.exact(22.0),
+        "?",
+        from: const [ItemType.fish, ItemType.crabpotcatch],
       );
 }

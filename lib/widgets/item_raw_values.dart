@@ -1,24 +1,24 @@
 import 'package:flutter/material.dart';
 
-import '../data/crop.dart';
+import '../data/interface.dart';
 import 'crop_value_column.dart';
 
-class CropRawValues extends StatelessWidget {
-  final Crop crop;
+class ItemRawValues extends StatelessWidget {
+  final Edible item;
 
-  const CropRawValues({super.key, required this.crop});
+  const ItemRawValues({super.key, required this.item});
 
-  get silverPrice => (crop.price * 1.25).floor();
-  get silverEnergy => (crop.energy * 1.4).floor();
-  get silverHealth => (crop.health * 1.4).round();
+  get silverPrice => (item.price * 1.25).floor();
+  get silverEnergy => (item.energy * 1.4).floor();
+  get silverHealth => (item.health * 1.4).round();
 
-  get goldPrice => (crop.price * 1.5).floor();
-  get goldEnergy => (crop.energy * 1.8).floor();
-  get goldHealth => (crop.health * 1.8).round();
+  get goldPrice => (item.price * 1.5).floor();
+  get goldEnergy => (item.energy * 1.8).floor();
+  get goldHealth => (item.health * 1.8).round();
 
-  get iridiumPrice => (crop.price * 2).floor();
-  get iridiumEnergy => (crop.energy * 2.6).floor();
-  get iridiumHealth => (crop.health * 2.6).round();
+  get iridiumPrice => (item.price * 2).floor();
+  get iridiumEnergy => (item.energy * 2.6).floor();
+  get iridiumHealth => (item.health * 2.6).round();
 
   @override
   Widget build(BuildContext context) {
@@ -29,11 +29,11 @@ class CropRawValues extends StatelessWidget {
           spacing: 48,
           children: [
             CropValueColumn(
-              price: crop.price,
-              energy: crop.energy,
-              health: crop.health,
+              price: item.price,
+              energy: item.energy,
+              health: item.health,
             ),
-            if (crop.hasQuality) ...[
+            if (item.hasQuality) ...[
               CropValueColumn.silver(
                 price: silverPrice,
                 energy: silverEnergy,

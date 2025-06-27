@@ -1,4 +1,4 @@
-import 'crop.dart';
+import 'interface.dart';
 
 enum RoundingBehavior { round, floor, ceil }
 
@@ -26,7 +26,7 @@ sealed class ArtisanGoodFormulator {
       dividedBy = 1.0,
       roundingBehavior = RoundingBehavior.floor;
 
-  int calculate(Crop crop) {
+  int calculate(Producable item) {
     throw UnimplementedError(
       'calculate method must be implemented in subclasses',
     );
@@ -54,8 +54,8 @@ class PriceFormulator extends ArtisanGoodFormulator {
   const PriceFormulator.exact(plus) : super.exact(plus);
 
   @override
-  int calculate(Crop crop) {
-    final basePrice = crop.price;
+  int calculate(Producable item) {
+    final basePrice = item.price;
     final price = ((basePrice * multiplier) + (plus ?? 0)) / (dividedBy ?? 1);
     return round(price);
   }
@@ -78,11 +78,11 @@ class EnergyFormulator extends ArtisanGoodFormulator {
       super.exact(plus);
 
   @override
-  int calculate(Crop crop) {
-    final baseEnergy = crop.energy;
-    final basePrice = crop.price;
+  int calculate(Producable item) {
+    final baseEnergy = item.energy;
+    final basePrice = item.price;
     final energy =
-        ((crop.isEdible
+        ((item.isEdible
                 ? (baseEnergy * multiplier)
                 : (basePrice * inedibleMultiplier)) +
             (plus ?? 0)) /
@@ -108,11 +108,11 @@ class HealthFormulator extends ArtisanGoodFormulator {
       super.exact(plus);
 
   @override
-  int calculate(Crop crop) {
-    final baseHealth = crop.health;
-    final basePrice = crop.price;
+  int calculate(Producable item) {
+    final baseHealth = item.health;
+    final basePrice = item.price;
     final health =
-        ((crop.isEdible
+        ((item.isEdible
                 ? (baseHealth * multiplier)
                 : (basePrice * inedibleMultiplier)) +
             (plus ?? 0)) /

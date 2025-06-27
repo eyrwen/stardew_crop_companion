@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
 
 import '../data/crop.dart';
-import 'crop_general_details.dart';
-import 'crop_produce_values.dart';
-import 'crop_raw_values.dart';
+import '../data/interface.dart';
+import '../data/recipe.dart';
+import 'item_general_details.dart';
+import 'item_produce_values.dart';
+import 'item_raw_values.dart';
 
 class CropPage extends StatelessWidget {
   final Crop crop;
+  final List<Recipe> recipes;
   final VoidCallback onBack;
 
-  const CropPage({super.key, required this.crop, required this.onBack});
+  const CropPage({super.key, required this.crop, required this.recipes, required this.onBack});
 
   @override
   Widget build(BuildContext context) {
@@ -20,15 +23,15 @@ class CropPage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           IconButton(icon: Icon(Icons.arrow_back), onPressed: () => onBack()),
-          CropGeneralDetails(crop: crop),
+          ItemGeneralDetails(item: crop, recipes: recipes),
           Column(
             spacing: 16.0,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              CropRawValues(crop: crop),
-              crop.type == CropType.other
+              ItemRawValues(item: crop),
+              crop.type == ItemType.other
                   ? SizedBox.shrink()
-                  : CropProduceValues(crop: crop),
+                  : ItemProduceValues(item: crop),
             ],
           ),
         ],

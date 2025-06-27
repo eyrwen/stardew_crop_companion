@@ -65,6 +65,7 @@ flutter:
     - assets/crops.json
     - assets/seasons.json
     - assets/recipes.json
+    - assets/fish.json
 
 flutter_launcher_icons:
   windows:

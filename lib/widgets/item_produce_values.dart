@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:collection/collection.dart';
 
-import '../data/crop.dart';
+import '../data/interface.dart';
 import 'crop_value_column.dart';
 import 'favorites.dart';
 import '../data/produce_machine.dart';
 
-class CropProduceValues extends StatelessWidget {
-  final Crop crop;
+class ItemProduceValues extends StatelessWidget {
+  final Producable item;
 
-  const CropProduceValues({super.key, required this.crop});
+  const ItemProduceValues({super.key, required this.item});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class CropProduceValues extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: crop.produceOutputs.entries
+          children: item.produceOutputs.entries
               .slices(6)
               .expand(
                 (slice) => [
@@ -27,10 +27,10 @@ class CropProduceValues extends StatelessWidget {
                     spacing: 32,
                     children: slice
                         .map(
-                          (entry) => CropProduceColumn(
+                          (entry) => ItemProduceColumn(
                             output: entry.value,
                             machine: entry.key,
-                            crop: crop,
+                            item: item,
                           ),
                         )
                         .toList(),
@@ -44,16 +44,16 @@ class CropProduceValues extends StatelessWidget {
   }
 }
 
-class CropProduceColumn extends StatelessWidget {
+class ItemProduceColumn extends StatelessWidget {
   final ProduceMachineOutput output;
   final ProduceMachine machine;
-  final Crop crop;
+  final Producable item;
 
-  const CropProduceColumn({
+  const ItemProduceColumn({
     super.key,
     required this.output,
     required this.machine,
-    required this.crop,
+    required this.item,
   });
 
   @override
@@ -90,9 +90,9 @@ class CropProduceColumn extends StatelessWidget {
           ],
         ),
         CropValueColumn(
-          price: output.priceFormulator.calculate(crop),
-          energy: output.energyFormulator.calculate(crop),
-          health: output.healthFormulator.calculate(crop),
+          price: output.priceFormulator.calculate(item),
+          energy: output.energyFormulator.calculate(item),
+          health: output.healthFormulator.calculate(item),
         ),
         output.favorites.isNotEmpty
             ? Favorites(favorites: output.favorites)

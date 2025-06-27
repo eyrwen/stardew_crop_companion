@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
-import '../data/crop.dart';
+import '../data/interface.dart';
 import '../data/recipe.dart';
 import 'favorites.dart';
 
-class CropGeneralDetails extends StatelessWidget {
-  final Crop crop;
+class ItemGeneralDetails extends StatelessWidget {
+  final Item item;
+  final List<Recipe> recipes;
 
-  const CropGeneralDetails({super.key, required this.crop});
+  const ItemGeneralDetails({super.key, required this.item, required this.recipes});
 
   @override
   Widget build(BuildContext context) {
@@ -22,22 +23,22 @@ class CropGeneralDetails extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Image.asset('assets/img/${crop.img}'),
+                Image.asset('assets/img/${item.img}'),
                 InkWell(
-                  onTap: () => launchUrlString(crop.url),
+                  onTap: () => launchUrlString(item.url),
                   child: Text(
-                    crop.name,
+                    item.name,
                     style: Theme.of(context).textTheme.headlineSmall,
                   ),
                 ),
-                crop.favorites.isNotEmpty
-                    ? Favorites(favorites: crop.favorites)
+                item.favorites.isNotEmpty
+                    ? Favorites(favorites: item.favorites)
                     : SizedBox.shrink(),
                 SizedBox(height: 8),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   spacing: 8.0,
-                  children: Recipe.sort(crop.recipes)
+                  children: Recipe.sort(recipes)
                       .map(
                         (recipe) => Row(
                           crossAxisAlignment: CrossAxisAlignment.start,

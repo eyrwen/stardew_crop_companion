@@ -4,9 +4,12 @@ import 'package:flutter/services.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 
 import 'data/crop.dart';
+import 'data/fish.dart';
 import 'data/recipe.dart';
 import 'widgets/crop_grid.dart';
 import 'widgets/crop_page.dart';
+import 'widgets/fish_grid.dart';
+import 'widgets/fish_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -35,22 +38,7 @@ class MyHomePage extends HookWidget {
       await rootBundle.loadString('assets/crops.json'),
     );
     return cropJson.entries
-        .map<Crop>(
-          (entry) => Crop(
-            key: entry.key,
-            name: entry.value['name'],
-            img: entry.value['img'],
-            type: CropType.from(entry.value['type']),
-            price: entry.value['price'],
-            energy: entry.value['energy'],
-            health: entry.value['health'],
-            url: entry.value['url'],
-            specialProduce: entry.value['specialProduce'],
-            hasQuality: entry.value['hasQuality'] ?? true,
-            favorites: entry.value['favorite']?.cast<String>() ?? [],
-          ),
-        )
-        .toList();
+      .map<Crop>((entry) => Crop.fromJson(entry.key, entry.value)).toList();
   }
 
   Future<List<Recipe>> _loadRecipes() async {
@@ -59,6 +47,15 @@ class MyHomePage extends HookWidget {
     );
     return recipeJson.entries
         .map<Recipe>((entry) => Recipe.fromJson(entry.value))
+        .toList();
+  }
+
+  Future<List<Fish>> _loadFish() async {
+    final fishJson = await json.decode(
+      await rootBundle.loadString('assets/fish.json'),
+    );
+    return fishJson.entries
+        .map<Fish>((entry) => Fish.fromJson(entry.key, entry.value))
         .toList();
   }
 
@@ -84,7 +81,7 @@ class MyHomePage extends HookWidget {
           child: TabBarView(
             children: [
               CropsTab(allCrops: _loadCrops(), allRecipes: _loadRecipes()),
-              FishTab(),
+              FishTab(allFish: _loadFish(), allRecipes: _loadRecipes()),
             ],
           ),
         ),
@@ -106,14 +103,13 @@ class CropsTab extends HookWidget {
     final viewingCrop = useState<Crop?>(null);
 
     selectCrop(Crop crop) {
-      crop.recipes =
-          recipes.data?.where((recipe) => recipe.requires(crop)).toList() ?? [];
       viewingCrop.value = crop;
     }
 
     if (viewingCrop.value != null) {
       return CropPage(
         crop: viewingCrop.value!,
+        recipes: recipes.data?.where((r) => r.ingredients.containsKey(viewingCrop.value!.key)).toList() ?? [],
         onBack: () => viewingCrop.value = null,
       );
     }
@@ -129,11 +125,38 @@ class CropsTab extends HookWidget {
   }
 }
 
-class FishTab extends StatelessWidget {
-  const FishTab({super.key});
+class FishTab extends HookWidget {
+  final Future<List<Fish>> allFish;
+  final Future<List<Recipe>> allRecipes;
+  
+  const FishTab({super.key, required this.allFish, required this.allRecipes});
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox.shrink();
+    final fish = useFuture<List<Fish>>(useMemoized(() => allFish));
+    final recipes = useFuture<List<Recipe>>(useMemoized(() => allRecipes));
+    final viewingFish = useState<Fish?>(null);
+
+    selectFish(Fish fish) {
+      viewingFish.value = fish;
+    }
+
+    if (viewingFish.value != null) {
+      return FishPage(
+        fish: viewingFish.value!,
+        recipes: recipes.data?.where((r) => r.ingredients.containsKey(viewingFish.value!.key)).toList() ?? [],
+        onBack: () => viewingFish.value = null,
+      );
+    }
+
+    if (fish.hasError) {
+      return Text(fish.error?.toString() ?? 'Error loading fish');
+    } else if (recipes.hasError) {
+      return Text(recipes.error?.toString() ?? 'Error loading recipes');
+    } else if (!fish.hasData || !recipes.hasData) {
+      return LinearProgressIndicator();
+    } else {
+      return FishGrid(fish: fish.data!, onFishSelected: selectFish);
+    }
   }
 }
