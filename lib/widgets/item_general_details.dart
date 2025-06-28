@@ -4,12 +4,17 @@ import 'package:url_launcher/url_launcher_string.dart';
 import '../data/interface.dart';
 import '../data/recipe.dart';
 import 'favorites.dart';
+import 'item_image.dart';
 
 class ItemGeneralDetails extends StatelessWidget {
   final Item item;
   final List<Recipe> recipes;
 
-  const ItemGeneralDetails({super.key, required this.item, required this.recipes});
+  const ItemGeneralDetails({
+    super.key,
+    required this.item,
+    required this.recipes,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +28,7 @@ class ItemGeneralDetails extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Image.asset('assets/img/${item.img}'),
+                ItemImage(item.img),
                 InkWell(
                   onTap: () => launchUrlString(item.url),
                   child: Text(
@@ -44,7 +49,7 @@ class ItemGeneralDetails extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           spacing: 8,
                           children: [
-                            Image.asset('assets/img/${recipe.img}', height: 32),
+                            ItemImage.large(recipe.img),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [

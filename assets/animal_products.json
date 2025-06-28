@@ -1,27 +1,4 @@
 {
-  "roe": {
-    "name": "Roe",
-    "img": "roe.png",
-    "priceFormulator": {
-      "multiplier": 0.5,
-      "scalar": 30
-    },
-    "energy": 50,
-    "health": 22,
-    "hasQuality": false,
-    "specialProduce": {
-      "jar": {
-        "name": "Aged Roe",
-        "img": "aged_roe.png",
-        "priceFormulator": {
-          "multiplier": 2.0
-        },
-        "time": "2-3 days",
-        "energy": 100,
-        "health": 45
-      }
-    }
-  },
   "sturgeonroe": {
     "name": "Sturgeon Roe",
     "img": "sturgeon_roe.png",
@@ -397,5 +374,65 @@
         "health": 0
       }
     }
+  },
+  "quailEgg": {
+    "name": "Quail Egg",
+    "img": "quail_egg.png",
+    "price": 40,
+    "energy": 25,
+    "health": 11,
+    "specialProduce": {
+      "mayonnaiseMachine": {
+        "name": "Quail Mayonnaise",
+        "img": "quail_mayonnaise.png",
+        "price": 250,
+        "time": "2 hrs",
+        "energy": 75,
+        "health": 33
+      }
+    }
+  },
+  "largeQuailEgg": {
+    "name": "Large Quail Egg",
+    "img": "large_quail_egg.png",
+    "price": 75,
+    "energy": 38,
+    "health": 17,
+    "specialProduce": {
+      "mayonnaiseMachine": {
+        "name": "Quail Mayonnaise",
+        "img": "quail_mayonnaise.png",
+        "price": 285,
+        "time": "2 hrs",
+        "energy": 90,
+        "health": 40,
+        "quality": "gold"
+      }
+    }
+  },
+  "turkeyEgg": {
+    "name": "Turkey Egg",
+    "img": "turkey_egg.png",
+    "price": 200,
+    "energy": 25,
+    "health": 11,
+    "specialProduce": {
+      "mayonnaiseMachine": {
+        "name": "Turkey Mayonnaise",
+        "img": "turkey_mayonnaise.png",
+        "price": 400,
+        "time": "3 hrs",
+        "energy": 75,
+        "health": 33
+      }
+    }
+  },
+  "turkeyFeather": {
+    "name": "Turkey Feather",
+    "img": "turkey_feather.png",
+    "price": 350,
+    "energy": 0,
+    "health": 0,
+    "cookable": false
   }
 }

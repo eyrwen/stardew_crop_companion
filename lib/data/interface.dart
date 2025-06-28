@@ -50,17 +50,18 @@ abstract class Item {
     this.hasQuality = true,
     this.favorites = const [],
     this.cookable = true,
-  }): url = url ?? 'https://stardewvalleywiki.com/${name.split(' ').join('_')}';  
+  }) : url =
+           url ?? 'https://stardewvalleywiki.com/${name.split(' ').join('_')}';
 
   Item.fromJson(this.key, Map<String, dynamic> json)
-      : type = ItemType.from(json['type']),
-        name = json['name'],
-        img = json['img'],
-        url = json['url'],
-        price = json['price'],
-        hasQuality = json['hasQuality'] ?? true,
-        favorites = List<String>.from(json['favorite'] ?? []),
-        cookable = json['cookable'] ?? true;
+    : type = ItemType.from(json['type']),
+      name = json['name'],
+      img = json['img'],
+      url = json['url'],
+      price = json['price'],
+      hasQuality = json['hasQuality'] ?? true,
+      favorites = List<String>.from(json['favorite'] ?? []),
+      cookable = json['cookable'] ?? true;
 }
 
 abstract class Edible extends Item {
@@ -75,6 +76,7 @@ abstract class Edible extends Item {
     required super.img,
     super.url,
     required super.price,
+    super.cookable = true,
     super.hasQuality = true,
     super.favorites = const [],
     this.energy = 0,

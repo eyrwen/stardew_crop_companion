@@ -36,8 +36,9 @@ enum ProduceMachine {
     ProduceMachineOutput.candles(),
   ]),
   smoker("smoker", "fish_smoker.png", [ProduceMachineOutput.smokedFish()]),
+  mayonnaiseMachine("mayonnaiseMachine", "mayonnaise_machine.png", []),
   mill("mill", "mill.png", []),
-  cheesePress("cheesePress", "cheese_press.png", []),
+  cheesePress("cheesePress", "cheesePress.png", []),
   loom("loom", "loom.png", []),
   compactMill("compactMill", "cornucopia_compact_mill.png", []),
   extruder("extruder", "cornucopia_extruder.png", []);
@@ -84,14 +85,16 @@ class ProduceMachineOutput {
   ProduceMachineOutput.fromJson(Map<String, dynamic> json)
     : outputName = json['name'],
       outputImg = json['img'],
-      priceFormulator = PriceFormulator.exact(json['price'].toDouble()),
+      priceFormulator = json['priceFormulator'] != null
+          ? PriceFormulator.fromJson(json['priceFormulator'])
+          : PriceFormulator.exact(json['price'].toDouble()),
       energyFormulator = EnergyFormulator.exact(json['energy'].toDouble()),
       healthFormulator = HealthFormulator.exact(json['health'].toDouble()),
       time = json['time'],
       favorites = List<String>.from(json['favorites'] ?? []),
-      from = List<String>.from(json['from'] ?? [])
-          .map((e) => ItemType.from(e))
-          .toList();
+      from = List<String>.from(
+        json['from'] ?? [],
+      ).map((e) => ItemType.from(e)).toList();
 
   const ProduceMachineOutput.jelly()
     : this(

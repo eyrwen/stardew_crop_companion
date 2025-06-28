@@ -5,6 +5,7 @@ import '../data/interface.dart';
 import 'crop_value_column.dart';
 import 'favorites.dart';
 import '../data/produce_machine.dart';
+import 'item_image.dart';
 
 class ItemProduceValues extends StatelessWidget {
   final Producable item;
@@ -64,16 +65,13 @@ class ItemProduceColumn extends StatelessWidget {
           alignment: Alignment.bottomLeft,
           clipBehavior: Clip.none,
           children: [
-            Image.asset('assets/img/${machine.img}', height: 96),
+            ItemImage.xlarge(machine.img),
             Positioned(
               left: -8,
               bottom: -4,
               child: Tooltip(
                 message: output.outputName,
-                child: Image.asset(
-                  'assets/img/${output.outputImg}',
-                  height: 24,
-                ),
+                child: ItemImage.medium(output.outputImg),
               ),
             ),
           ],
@@ -82,7 +80,7 @@ class ItemProduceColumn extends StatelessWidget {
         Row(
           spacing: 8.0,
           children: [
-            Image.asset('assets/img/time.png', height: 16),
+            ItemImage.small('time'),
             Text(
               output.time,
               style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),

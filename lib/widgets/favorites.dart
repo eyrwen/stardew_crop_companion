@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'capitalized_text.dart';
+import 'item_image.dart';
+
 class Favorites extends StatelessWidget {
   final List favorites;
 
@@ -12,12 +15,7 @@ class Favorites extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Column(
-          children: [
-            SizedBox(height: 3),
-            Image.asset('assets/img/heart.png', height: 16),
-          ],
-        ),
+        Column(children: [SizedBox(height: 3), ItemImage.small('heart')]),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: favorites
@@ -25,12 +23,9 @@ class Favorites extends StatelessWidget {
                 (fav) => Row(
                   spacing: 4,
                   children: [
-                    Image.asset(
-                      'assets/img/${fav.toString().toLowerCase()}.png',
-                      height: 16,
-                    ),
-                    Text(
-                      fav.replaceFirst(fav[0], fav[0].toUpperCase()),
+                    ItemImage.small(fav.toString().toLowerCase()),
+                    CapitalizedText(
+                      fav,
                       style: Theme.of(context).textTheme.bodyMedium,
                     ),
                   ],

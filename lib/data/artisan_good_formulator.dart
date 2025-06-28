@@ -15,6 +15,15 @@ sealed class ArtisanGoodFormulator {
     this.roundingBehavior = RoundingBehavior.round,
   });
 
+  ArtisanGoodFormulator.fromJson(Map<String, dynamic> json)
+    : multiplier = json['multiplier']?.toDouble() ?? 1.0,
+      plus = json['plus']?.toDouble() ?? 0.0,
+      dividedBy = json['dividedBy']?.toDouble() ?? 1.0,
+      roundingBehavior = RoundingBehavior.values.firstWhere(
+        (e) => e.name == json['roundingBehavior'],
+        orElse: () => RoundingBehavior.round,
+      );
+
   const ArtisanGoodFormulator.zero()
     : multiplier = 0.0,
       plus = 0.0,
@@ -50,6 +59,8 @@ class PriceFormulator extends ArtisanGoodFormulator {
     super.roundingBehavior = RoundingBehavior.floor,
   });
 
+  PriceFormulator.fromJson(super.json) : super.fromJson();
+
   const PriceFormulator.zero() : super.zero();
   const PriceFormulator.exact(double plus) : super.exact(plus);
 
@@ -71,6 +82,10 @@ class EnergyFormulator extends ArtisanGoodFormulator {
     super.dividedBy,
     super.roundingBehavior = RoundingBehavior.ceil,
   });
+
+  EnergyFormulator.fromJson(super.json)
+    : inedibleMultiplier = json['inedibleMultiplier']?.toDouble() ?? 0.0,
+      super.fromJson();
 
   const EnergyFormulator.zero() : inedibleMultiplier = 0.0, super.zero();
   const EnergyFormulator.exact(double plus)
@@ -101,6 +116,10 @@ class HealthFormulator extends ArtisanGoodFormulator {
     super.dividedBy,
     super.roundingBehavior = RoundingBehavior.floor,
   });
+
+  HealthFormulator.fromJson(super.json)
+    : inedibleMultiplier = json['inedibleMultiplier']?.toDouble() ?? 0.0,
+      super.fromJson();
 
   const HealthFormulator.zero() : inedibleMultiplier = 0.0, super.zero();
   const HealthFormulator.exact(double plus)

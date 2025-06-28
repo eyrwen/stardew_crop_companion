@@ -4,6 +4,7 @@ import 'package:collection/collection.dart';
 import '../data/fish.dart';
 import '../data/recipe.dart';
 import 'item_general_details.dart';
+import 'item_image.dart';
 import 'item_produce_values.dart';
 import 'item_raw_values.dart';
 
@@ -45,11 +46,7 @@ class FishPage extends StatelessWidget {
                             padding: const EdgeInsets.all(16.0),
                             child: Column(
                               children: [
-                                Image.asset(
-                                  'assets/img/fish_pond.png',
-                                  height: 96,
-                                  semanticLabel: 'Fish Pond',
-                                ),
+                                ItemImage.xlarge('fish_pond'),
                                 SizedBox(height: 8.0),
                                 Column(
                                   children: fish.pondOutputs!
@@ -58,10 +55,8 @@ class FishPage extends StatelessWidget {
                                         (pair) => Row(
                                           children: pair
                                               .map(
-                                                (output) => Image.asset(
-                                                  'assets/img/$output.png',
-                                                  height: 32,
-                                                ),
+                                                (output) =>
+                                                    ItemImage.large(output),
                                               )
                                               .toList(),
                                         ),

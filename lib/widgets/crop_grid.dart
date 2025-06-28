@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 
 import '../data/crop.dart';
+import '../data/interface.dart';
+import 'item_grid.dart';
+import 'search.dart';
 
 class CropGrid extends HookWidget {
   final List<Crop> crops;
@@ -19,48 +22,21 @@ class CropGrid extends HookWidget {
   @override
   Widget build(BuildContext context) {
     final search = useTextEditingController();
-    final filteredCrops = useState<List<Crop>>(_sortedCrops);
+    useListenable(search);
 
     return Column(
       children: [
-        Container(
-          decoration: BoxDecoration(
-            color: Color.fromRGBO(255, 255, 255, 0.5),
-            borderRadius: BorderRadius.circular(8.0),
-          ),
-          child: TextField(
-            controller: search,
-            decoration: InputDecoration(
-              border: OutlineInputBorder(),
-              prefixIcon: Icon(Icons.search),
-            ),
-            onChanged: (value) {
-              final query = value.toLowerCase();
-              filteredCrops.value = _sortedCrops
-                  .where((crop) => crop.name.toLowerCase().contains(query))
-                  .toList();
-            },
-          ),
-        ),
+        Search(controller: search),
         Expanded(
-          child: GridView.extent(
-            maxCrossAxisExtent: 200,
-            children: filteredCrops.value.map<Widget>((crop) {
-              return Card(
-                child: InkWell(
-                  onTap: () => onCropSelected(crop),
-                  child: Center(
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Image.asset('assets/img/${crop.img}'),
-                        Text(crop.name, overflow: TextOverflow.clip),
-                      ],
-                    ),
-                  ),
-                ),
-              );
-            }).toList(),
+          child: ItemGrid(
+            items: _sortedCrops
+                .where(
+                  (c) =>
+                      search.text.isEmpty ||
+                      c.name.toLowerCase().contains(search.text.toLowerCase()),
+                )
+                .toList(),
+            onItemSelected: (Item item) => onCropSelected(item as Crop),
           ),
         ),
       ],

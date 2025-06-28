@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:stardew_crop_companion/widgets/item_image.dart';
 
 class CropValueColumn extends StatelessWidget {
   final int price;
@@ -35,17 +36,6 @@ class CropValueColumn extends StatelessWidget {
     required this.health,
   }) : quality = 'iridium';
 
-  _overlayedImage(String img) {
-    return Stack(
-      alignment: Alignment.centerLeft,
-      children: [
-        Image.asset('assets/img/$img'),
-        if (quality != null)
-          Image.asset('assets/img/${quality}_quality_overlay.png', scale: 1.25),
-      ],
-    );
-  }
-
   get inedible => energy == 0 && health == 0;
 
   @override
@@ -57,20 +47,35 @@ class CropValueColumn extends StatelessWidget {
         if (energy != 0)
           Row(
             children: [
-              _overlayedImage(energy < 0 ? 'poison.png' : 'energy.png'),
+              ItemImage(
+                energy < 0 ? 'poison.png' : 'energy.png',
+                overlay: quality != null
+                    ? '${quality}_quality_overlay.png'
+                    : null,
+              ),
               Text('$energy', style: TextStyle(fontWeight: FontWeight.bold)),
             ],
           ),
         if (health != 0)
           Row(
             children: [
-              _overlayedImage('health.png'),
+              ItemImage(
+                'health.png',
+                overlay: quality != null
+                    ? '${quality}_quality_overlay.png'
+                    : null,
+              ),
               Text('$health', style: TextStyle(fontWeight: FontWeight.bold)),
             ],
           ),
         Row(
           children: [
-            _overlayedImage('gold.png'),
+            ItemImage(
+              'gold.png',
+              overlay: quality != null
+                  ? '${quality}_quality_overlay.png'
+                  : null,
+            ),
             Text('${price}G', style: TextStyle(fontWeight: FontWeight.bold)),
           ],
         ),

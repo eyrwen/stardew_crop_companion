@@ -3,13 +3,17 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 
+import 'data/animal_product.dart';
 import 'data/crop.dart';
 import 'data/fish.dart';
 import 'data/recipe.dart';
+import 'widgets/animal_product_grid.dart';
+import 'widgets/animal_product_page.dart';
 import 'widgets/crop_grid.dart';
 import 'widgets/crop_page.dart';
 import 'widgets/fish_grid.dart';
 import 'widgets/fish_page.dart';
+import 'widgets/item_image.dart';
 
 void main() {
   runApp(const MyApp());
@@ -38,7 +42,8 @@ class MyHomePage extends HookWidget {
       await rootBundle.loadString('assets/crops.json'),
     );
     return cropJson.entries
-      .map<Crop>((entry) => Crop.fromJson(entry.key, entry.value)).toList();
+        .map<Crop>((entry) => Crop.fromJson(entry.key, entry.value))
+        .toList();
   }
 
   Future<List<Recipe>> _loadRecipes() async {
@@ -59,6 +64,17 @@ class MyHomePage extends HookWidget {
         .toList();
   }
 
+  Future<List<AnimalProduct>> _loadAnimalProducts() async {
+    final animalProductJson = await json.decode(
+      await rootBundle.loadString('assets/animal_products.json'),
+    );
+    return animalProductJson.entries
+        .map<AnimalProduct>(
+          (entry) => AnimalProduct.fromJson(entry.key, entry.value),
+        )
+        .toList();
+  }
+
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -66,9 +82,9 @@ class MyHomePage extends HookWidget {
       child: Scaffold(
         bottomNavigationBar: TabBar(
           tabs: [
-            Tab(text: 'Crops', icon: Image.asset('assets/img/farming.png', semanticLabel: 'Crops')),
-            Tab(text: 'Fish', icon: Image.asset('assets/img/fishing.png', semanticLabel: 'Fish')),
-            Tab(text: 'Animal Products', icon: Image.asset('assets/img/large_egg.png', semanticLabel: 'Animal Products')),
+            Tab(text: 'Crops', icon: ItemImage('farming')),
+            Tab(text: 'Fish', icon: ItemImage('fishing')),
+            Tab(text: 'Animal Products', icon: ItemImage('large_egg')),
           ],
         ),
         body: Container(
@@ -83,7 +99,10 @@ class MyHomePage extends HookWidget {
             children: [
               CropsTab(allCrops: _loadCrops(), allRecipes: _loadRecipes()),
               FishTab(allFish: _loadFish(), allRecipes: _loadRecipes()),
-              AnimalProductsTab(),
+              AnimalProductsTab(
+                allAnimalProducts: _loadAnimalProducts(),
+                allRecipes: _loadRecipes(),
+              ),
             ],
           ),
         ),
@@ -111,7 +130,11 @@ class CropsTab extends HookWidget {
     if (viewingCrop.value != null) {
       return CropPage(
         crop: viewingCrop.value!,
-        recipes: recipes.data?.where((r) => r.requires(viewingCrop.value!)).toList() ?? [],
+        recipes:
+            recipes.data
+                ?.where((r) => r.requires(viewingCrop.value!))
+                .toList() ??
+            [],
         onBack: () => viewingCrop.value = null,
       );
     }
@@ -130,7 +153,7 @@ class CropsTab extends HookWidget {
 class FishTab extends HookWidget {
   final Future<List<Fish>> allFish;
   final Future<List<Recipe>> allRecipes;
-  
+
   const FishTab({super.key, required this.allFish, required this.allRecipes});
 
   @override
@@ -146,7 +169,11 @@ class FishTab extends HookWidget {
     if (viewingFish.value != null) {
       return FishPage(
         fish: viewingFish.value!,
-        recipes: recipes.data?.where((r) => r.requires(viewingFish.value!)).toList() ?? [],
+        recipes:
+            recipes.data
+                ?.where((r) => r.requires(viewingFish.value!))
+                .toList() ??
+            [],
         onBack: () => viewingFish.value = null,
       );
     }
@@ -163,13 +190,51 @@ class FishTab extends HookWidget {
   }
 }
 
-class AnimalProductsTab extends StatelessWidget {
-  const AnimalProductsTab({super.key});
+class AnimalProductsTab extends HookWidget {
+  final Future<List<AnimalProduct>> allAnimalProducts;
+  final Future<List<Recipe>> allRecipes;
+
+  const AnimalProductsTab({
+    super.key,
+    required this.allAnimalProducts,
+    required this.allRecipes,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text('Animal Products tab is under construction!'),
+    final animalProducts = useFuture<List<AnimalProduct>>(
+      useMemoized(() => allAnimalProducts),
     );
+    final recipes = useFuture<List<Recipe>>(useMemoized(() => allRecipes));
+    final viewingAnimalProduct = useState<AnimalProduct?>(null);
+
+    selectAnimalProduct(AnimalProduct animalProduct) {
+      viewingAnimalProduct.value = animalProduct;
+    }
+
+    if (viewingAnimalProduct.value != null) {
+      return AnimalProductPage(
+        animalProduct: viewingAnimalProduct.value!,
+        recipes:
+            recipes.data
+                ?.where((r) => r.requires(viewingAnimalProduct.value!))
+                .toList() ??
+            [],
+        onBack: () => viewingAnimalProduct.value = null,
+      );
+    }
+
+    if (animalProducts.hasError) {
+      return Text(animalProducts.error?.toString() ?? 'Error loading products');
+    } else if (recipes.hasError) {
+      return Text(recipes.error?.toString() ?? 'Error loading recipes');
+    } else if (!animalProducts.hasData || !recipes.hasData) {
+      return LinearProgressIndicator();
+    } else {
+      return AnimalProductGrid(
+        animalProducts: animalProducts.data!,
+        onAnimalProductSelected: selectAnimalProduct,
+      );
+    }
   }
 }
