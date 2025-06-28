@@ -21,7 +21,7 @@ sealed class ArtisanGoodFormulator {
       dividedBy = 1.0,
       roundingBehavior = RoundingBehavior.floor;
 
-  const ArtisanGoodFormulator.exact(this.plus)
+  const ArtisanGoodFormulator.exact(double this.plus)
     : multiplier = 0.0,
       dividedBy = 1.0,
       roundingBehavior = RoundingBehavior.floor;
@@ -51,7 +51,7 @@ class PriceFormulator extends ArtisanGoodFormulator {
   });
 
   const PriceFormulator.zero() : super.zero();
-  const PriceFormulator.exact(plus) : super.exact(plus);
+  const PriceFormulator.exact(double plus) : super.exact(plus);
 
   @override
   int calculate(Producable item) {
@@ -73,7 +73,7 @@ class EnergyFormulator extends ArtisanGoodFormulator {
   });
 
   const EnergyFormulator.zero() : inedibleMultiplier = 0.0, super.zero();
-  const EnergyFormulator.exact(plus)
+  const EnergyFormulator.exact(double plus)
     : inedibleMultiplier = 0.0,
       super.exact(plus);
 
@@ -103,7 +103,7 @@ class HealthFormulator extends ArtisanGoodFormulator {
   });
 
   const HealthFormulator.zero() : inedibleMultiplier = 0.0, super.zero();
-  const HealthFormulator.exact(plus)
+  const HealthFormulator.exact(double plus)
     : inedibleMultiplier = 0.0,
       super.exact(plus);
 

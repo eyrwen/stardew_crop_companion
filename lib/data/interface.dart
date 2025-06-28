@@ -39,16 +39,16 @@ abstract class Item {
   final bool hasQuality;
   final List<String> favorites;
 
-  const Item({
+  Item({
     required this.key,
     required this.type,
     required this.name,
     required this.img,
-    required this.url,
+    url,
     required this.price,
     this.hasQuality = true,
     this.favorites = const [],
-  });
+  }): url = url ?? 'https://stardewvalleywiki.com/${name.split(' ').join('_')}';  
 
   Item.fromJson(this.key, Map<String, dynamic> json)
       : type = ItemType.from(json['type']),
@@ -65,12 +65,12 @@ abstract class Edible extends Item {
   final int health;
   final Map<ProduceMachine, ProduceMachineOutput>? specialProduce;
 
-  const Edible({
+  Edible({
     required super.key,
     required super.type,
     required super.name,
     required super.img,
-    required super.url,
+    super.url,
     required super.price,
     super.hasQuality = true,
     super.favorites = const [],

@@ -6,7 +6,7 @@ class Crop extends Edible with Producable {
     required super.type,
     required super.name,
     required super.img,
-    required super.url,
+    super.url,
     required super.price,
     super.hasQuality = true,
     super.favorites = const [],

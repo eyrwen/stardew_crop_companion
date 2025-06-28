@@ -685,7 +685,7 @@
       "ocean": ["spring", "summer", "winter"]
     },
     "startTimes": [600, 1100],
-    "endTime": [1900, 2600],
+    "endTimes": [1900, 2600],
     "weather": ["sunny", "rainy", "windy"],
     "price": 80,
     "health": 11,

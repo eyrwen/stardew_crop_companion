@@ -89,8 +89,8 @@ class ProduceMachineOutput {
       healthFormulator = HealthFormulator.exact(json['health'].toDouble()),
       time = json['time'],
       favorites = List<String>.from(json['favorites'] ?? []),
-      from = (json['from'] as List<dynamic>)
-          .map((e) => ItemType.from(e as String))
+      from = List<String>.from(json['from'] ?? [])
+          .map((e) => ItemType.from(e))
           .toList();
 
   const ProduceMachineOutput.jelly()

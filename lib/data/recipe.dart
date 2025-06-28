@@ -1,104 +1,182 @@
-import 'package:stardew_crop_companion/data/crop.dart';
+import 'interface.dart';
 
-enum RecipeType { crafting, building, cooking, clothing }
+enum RecipeType { 
+  crafting('crafting'), building('building'), cooking('cooking'), clothing('clothing');
 
-sealed class Recipe {
+  final String name;
+  const RecipeType(this.name);
+  
+  static RecipeType from(String type) {
+    return RecipeType.values.firstWhere(
+      (e) => e.name == type,
+      orElse: () => throw ArgumentError('Unknown recipe type: $type'),
+    );
+  }
+}
+
+sealed class Recipe extends Item {
   static List<Recipe> sort(List<Recipe> recipes) {
     return recipes..sort((a, b) => a.type.index.compareTo(b.type.index));
   }
 
-  final String name;
-  final String img;
-  final RecipeType type;
-  final Map<String, int> ingredients;
+  final IngredientList ingredients;
+  final RecipeType recipeType;
 
-  const Recipe({
-    required this.name,
-    required this.img,
-    required this.type,
+  Recipe({
+    required super.key,
+    required super.name,
+    super.url,
+    required super.price,
+    required super.img,
+    required super.favorites,
     required this.ingredients,
-  });
+    required this.recipeType,
+  }) : super(type: ItemType.recipe, hasQuality: false);
 
-  factory Recipe.fromJson(Map<String, dynamic> json) {
-    final type = RecipeType.values.firstWhere(
-      (e) => e.name == json['type'],
-      orElse: () => throw ArgumentError('Unknown recipe type: ${json['type']}'),
-    );
+  factory Recipe.fromJson(String key, Map<String, dynamic> json) {
+    final type = RecipeType.from(json['type'] as String);
 
     switch (type) {
       case RecipeType.cooking:
         return CookingRecipe(
+          key: key,
+          url: json['url'],
           name: json['name'],
           img: json['img'],
-          ingredients: Map<String, int>.from(json['ingredients']),
-          price: json['price'],
+          ingredients: IngredientList.fromJson(json['ingredients']),
+          price: json['price'] ?? 0,
           energy: json['energy'],
           health: json['health'],
           favorites: List<String>.from(json['favorite'] ?? []),
         );
       case RecipeType.crafting:
         return CraftingRecipe(
+          key: key,
+          url: json['url'],
           name: json['name'],
           img: json['img'],
-          ingredients: Map<String, int>.from(json['ingredients']),
+          ingredients: IngredientList.fromJson(json['ingredients']),
+          price: json['price'] ?? 0,
+          favorites: List<String>.from(json['favorite'] ?? []),
         );
       case RecipeType.building:
         return BuildingRecipe(
+          key: key,
+          url: json['url'],
           name: json['name'],
           img: json['img'],
-          ingredients: Map<String, int>.from(json['ingredients']),
+          ingredients: IngredientList.fromJson(json['ingredients']),
+          price: json['price'] ?? 0,
+          favorites: List<String>.from(json['favorite'] ?? []),
         );
       case RecipeType.clothing:
         return ClothingRecipe(
+          key: key,
+          url: json['url'],
           name: json['name'],
           img: json['img'],
-          ingredients: Map<String, int>.from(json['ingredients']),
+          ingredients: IngredientList.fromJson(json['ingredients']),
+          price: json['price'] ?? 0,
+          favorites: List<String>.from(json['favorite'] ?? []),
         );
     }
   }
 
-  bool requires(Crop crop) {
-    return ingredients.containsKey(crop.key);
+  bool requires(Item item) {
+    return ingredients.requires(item);
   }
 }
 
 class CookingRecipe extends Recipe {
-  final int price;
   final int energy;
   final int health;
-  final List<String> favorites;
 
-  const CookingRecipe({
+  CookingRecipe({
+    required super.key,
+    required super.url,
     required super.name,
     required super.img,
+    required super.price,
     required super.ingredients,
-    required this.price,
     required this.energy,
     required this.health,
-    this.favorites = const [],
-  }) : super(type: RecipeType.cooking);
+    super.favorites = const [],
+  }) : super(recipeType: RecipeType.cooking);
 }
 
 class CraftingRecipe extends Recipe {
-  const CraftingRecipe({
+  CraftingRecipe({
+    required super.key,
+    required super.url,
     required super.name,
     required super.img,
+    required super.price,
     required super.ingredients,
-  }) : super(type: RecipeType.crafting);
+    super.favorites = const [],
+  }) : super(recipeType: RecipeType.crafting);
 }
 
 class BuildingRecipe extends Recipe {
-  const BuildingRecipe({
+  BuildingRecipe({
+    required super.key,
+    required super.url,
     required super.name,
     required super.img,
+    required super.price,
+    super.favorites = const [],
     required super.ingredients,
-  }) : super(type: RecipeType.building);
+  }) : super(recipeType: RecipeType.building);
 }
 
 class ClothingRecipe extends Recipe {
-  const ClothingRecipe({
+  ClothingRecipe({
+    required super.key,
+    required super.url,
     required super.name,
     required super.img,
+    required super.price,
+    super.favorites = const [],
     required super.ingredients,
-  }) : super(type: RecipeType.clothing);
+  }) : super(recipeType: RecipeType.clothing);
+}
+
+class IngredientList {
+  final Map<String, int> strictIngredients;
+  final List<String> strictTypeIngredients;
+  final List<String> flexibleIngredient;
+
+  IngredientList(this.strictIngredients, this.strictTypeIngredients, this.flexibleIngredient);
+
+  factory IngredientList.fromJson(Map<String, dynamic> json) {
+    var strictIngredients = <String, int>{};
+    var strictTypeIngredients = <String>[];
+    var flexibleIngredient = <String>[];
+
+    for (var entry in json.entries) {
+      switch(entry.key) {
+        case ':any:':
+          strictTypeIngredients.add(entry.value as String);
+          break;
+        case ':any_each:':
+          strictTypeIngredients.addAll(List<String>.from(entry.value as List));
+          break;
+        case ':one_of:':
+          flexibleIngredient.addAll(List<String>.from(entry.value as List));
+          break;
+        default:
+          strictIngredients[entry.key] = entry.value as int;
+          break;
+      }
+    }
+
+    return IngredientList(
+      strictIngredients,
+      strictTypeIngredients,
+      flexibleIngredient,
+    );
+  }
+
+  bool requires(Item item) {
+    return strictIngredients.containsKey(item.key) || strictTypeIngredients.any((type) => item.type.name.contains(type) || item.key.toLowerCase().contains(type)) || flexibleIngredient.contains(item.key);
+  }
 }

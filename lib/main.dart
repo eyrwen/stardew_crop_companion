@@ -46,7 +46,7 @@ class MyHomePage extends HookWidget {
       await rootBundle.loadString('assets/recipes.json'),
     );
     return recipeJson.entries
-        .map<Recipe>((entry) => Recipe.fromJson(entry.value))
+        .map<Recipe>((entry) => Recipe.fromJson(entry.key, entry.value))
         .toList();
   }
 
@@ -62,12 +62,13 @@ class MyHomePage extends HookWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 2,
+      length: 3,
       child: Scaffold(
         bottomNavigationBar: TabBar(
           tabs: [
-            Tab(text: 'Crops', icon: Image.asset('assets/img/farming.png')),
-            Tab(text: 'Fish', icon: Image.asset('assets/img/fishing.png')),
+            Tab(text: 'Crops', icon: Image.asset('assets/img/farming.png', semanticLabel: 'Crops')),
+            Tab(text: 'Fish', icon: Image.asset('assets/img/fishing.png', semanticLabel: 'Fish')),
+            Tab(text: 'Animal Products', icon: Image.asset('assets/img/egg.png', semanticLabel: 'Animal Products')),
           ],
         ),
         body: Container(
@@ -82,6 +83,7 @@ class MyHomePage extends HookWidget {
             children: [
               CropsTab(allCrops: _loadCrops(), allRecipes: _loadRecipes()),
               FishTab(allFish: _loadFish(), allRecipes: _loadRecipes()),
+              AnimalProductsTab(),
             ],
           ),
         ),
@@ -109,7 +111,7 @@ class CropsTab extends HookWidget {
     if (viewingCrop.value != null) {
       return CropPage(
         crop: viewingCrop.value!,
-        recipes: recipes.data?.where((r) => r.ingredients.containsKey(viewingCrop.value!.key)).toList() ?? [],
+        recipes: recipes.data?.where((r) => r.requires(viewingCrop.value!)).toList() ?? [],
         onBack: () => viewingCrop.value = null,
       );
     }
@@ -144,7 +146,7 @@ class FishTab extends HookWidget {
     if (viewingFish.value != null) {
       return FishPage(
         fish: viewingFish.value!,
-        recipes: recipes.data?.where((r) => r.ingredients.containsKey(viewingFish.value!.key)).toList() ?? [],
+        recipes: recipes.data?.where((r) => r.requires(viewingFish.value!)).toList() ?? [],
         onBack: () => viewingFish.value = null,
       );
     }
@@ -158,5 +160,16 @@ class FishTab extends HookWidget {
     } else {
       return FishGrid(fish: fish.data!, onFishSelected: selectFish);
     }
+  }
+}
+
+class AnimalProductsTab extends StatelessWidget {
+  const AnimalProductsTab({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Text('Animal Products tab is under construction!'),
+    );
   }
 }
