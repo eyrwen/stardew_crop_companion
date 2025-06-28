@@ -63,9 +63,9 @@ flutter:
   assets:
     - assets/img/
     - assets/crops.json
-    - assets/seasons.json
     - assets/recipes.json
     - assets/fish.json
+    - assets/animal_products.json
 
 flutter_launcher_icons:
   windows:

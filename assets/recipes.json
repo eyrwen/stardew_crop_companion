@@ -331,7 +331,7 @@
     "price": 300,
     "health": 56,
     "energy": 125,
-    "favorite": ["alex"],
+    "favorite": ["alex", "gunther"],
     "ingredients": {
       "salmon": 1,
       "amaranth": 1,
@@ -532,6 +532,7 @@
     "price": 135,
     "health": 101,
     "energy": 225,
+    "favorite": ["morris"],
     "ingredients": {
       "clam": 1,
       ":any:": "milk"
@@ -710,6 +711,384 @@
       "seajelly": 1,
       "riverjelly": 1,
       "cavejelly": 1
+    }
+  },
+  "polkadotShirt": {
+    "name": "Polkadot Shirt",
+    "img": "polkadot_shirt.png",
+    "type": "clothing",
+    "ingredients": {
+      ":one_of:": ["voidmayonnaise", "roe"],
+      "cloth": 1
+    }
+  },
+  "friedEgg": {
+    "name": "Fried Egg",
+    "img": "fried_egg.png",
+    "type": "cooking",
+    "price": 35,
+    "health": 22,
+    "energy": 50,
+    "ingredients": {
+      ":any:": "egg"
+    }
+  },
+  "omelet": {
+    "name": "Omelet",
+    "img": "omelet.png",
+    "type": "cooking",
+    "price": 125,
+    "health": 45,
+    "energy": 100,
+    "ingredients": {
+      ":any_each:": ["egg", "milk"]
+    }
+  },
+  "pancakes": {
+    "name": "Pancakes",
+    "img": "pancakes.png",
+    "type": "cooking",
+    "price": 80,
+    "health": 40,
+    "energy": 90,
+    "favorite": ["jodi"],
+    "ingredients": {
+      ":any_each:": ["egg", "flour"]
+    },
+    "buffs": {
+      "time": "11m 11s",
+      "effects": [{ "type": "foraging", "value": 2 }]
+    }
+  },
+  "chocolateCake": {
+    "name": "Chocolate Cake",
+    "img": "chocolate_cake.png",
+    "type": "cooking",
+    "price": 200,
+    "health": 67,
+    "energy": 150,
+    "favorite": ["abigail", "evelyn", "jodi", "scarlett", "olivia"],
+    "ingredients": {
+      ":any_each:": ["egg", "flour"],
+      "sugar": 1
+    }
+  },
+  "pinkCake": {
+    "name": "Pink Cake",
+    "img": "pink_cake.png",
+    "type": "cooking",
+    "price": 480,
+    "health": 112,
+    "energy": 250,
+    "favorite": ["haley", "jas", "marnie", "vincent", "scarlett", "olivia"],
+    "ingredients": {
+      ":any_each:": ["egg", "flour"],
+      "melon": 1,
+      "sugar": 1
+    }
+  },
+  "cookie": {
+    "name": "Cookie",
+    "img": "cookie.png",
+    "type": "cooking",
+    "price": 140,
+    "health": 40,
+    "energy": 90,
+    "favorite": ["jodi"],
+    "ingredients": {
+      ":any_each:": ["flour", "egg"],
+      "sugar": 1
+    }
+  },
+  "blueberryTart": {
+    "name": "Blueberry Tart",
+    "img": "blueberry_tart.png",
+    "type": "cooking",
+    "price": 150,
+    "health": 56,
+    "energy": 125,
+    "favorite": ["linus"],
+    "ingredients": {
+      ":any_each:": ["flour", "egg"],
+      "blueberry": 1,
+      "sugar": 1
+    }
+  },
+  "plainOveralls": {
+    "name": "Plain Overalls",
+    "img": "plain_overalls.png",
+    "type": "clothing",
+    "ingredients": {
+      ":one_of:": ["egg", "brownEgg"],
+      "cloth": 1
+    }
+  },
+  "cardigan": {
+    "name": "Cardigan",
+    "img": "cardigan.png",
+    "type": "clothing",
+    "ingredients": {
+      ":one_of:": ["largeEgg", "largeBrownEgg"],
+      "cloth": 1
+    }
+  },
+  "artichokeDip": {
+    "name": "Artichoke Dip",
+    "img": "artichoke_dip.png",
+    "type": "cooking",
+    "price": 210,
+    "health": 45,
+    "energy": 100,
+    "favorite": ["clint"],
+    "ingredients": {
+      "artichoke": 1,
+      ":any_each:": ["milk"]
+    }
+  },
+  "completeBreakfast": {
+    "name": "Complete Breakfast",
+    "img": "complete_breakfast.png",
+    "type": "cooking",
+    "price": 350,
+    "health": 90,
+    "energy": 200,
+    "favorite": ["alex"],
+    "ingredients": {
+      ":any:": "milk",
+      "friedEgg": 1,
+      "hashbrowns": 1,
+      "pancakes": 1
+    },
+    "buffs": {
+      "time": "7m",
+      "effects": [
+        { "type": "farming", "value": 2 },
+        { "type": "maxEnergy", "value": 50 }
+      ]
+    }
+  },
+  "iceCream": {
+    "name": "Ice Cream",
+    "img": "ice_cream.png",
+    "type": "cooking",
+    "price": 120,
+    "health": 45,
+    "energy": 100,
+    "favorite": ["demetrius", "martin", "susan"],
+    "ingredients": {
+      ":any:": "milk",
+      "sugar": 1
+    }
+  },
+  "minersTreat": {
+    "name": "Miner's Treat",
+    "img": "miners_treat.png",
+    "type": "cooking",
+    "price": 100,
+    "health": 50,
+    "energy": 100,
+    "favorite": ["maru"],
+    "ingredients": {
+      ":any:": "milk",
+      "sugar": 1,
+      "caveCarrot": 1
+    },
+    "buffs": {
+      "time": "7m",
+      "effects": [
+        { "type": "mining", "value": 3 },
+        { "type": "magnetism", "value": 32 }
+      ]
+    }
+  },
+  "parsnipSoup": {
+    "name": "Parsnip Soup",
+    "img": "parsnip_soup.png",
+    "type": "cooking",
+    "price": 120,
+    "health": 38,
+    "energy": 45,
+    "favorite": ["pam"],
+    "ingredients": {
+      "parsnip": 1,
+      ":any:": "milk",
+      "vinegar": 1
+    }
+  },
+  "pumpkinPie": {
+    "name": "Pumpkin Pie",
+    "img": "pumpkin_pie.png",
+    "type": "cooking",
+    "price": 385,
+    "health": 101,
+    "energy": 225,
+    "favorite": ["marnie"],
+    "ingredients": {
+      ":any_each:": ["milk", "flour"],
+      "pumpkin": 1,
+      "sugar": 1
+    }
+  },
+  "pumpkinSoup": {
+    "name": "Pumpkin Soup",
+    "img": "pumpkin_soup.png",
+    "type": "cooking",
+    "price": 300,
+    "health": 90,
+    "energy": 200,
+    "favorite": ["sebastian"],
+    "ingredients": {
+      "pumpkin": 1,
+      ":any:": "milk"
+    },
+    "buffs": {
+      "time": "7m",
+      "effects": [
+        { "type": "defense", "value": 2 },
+        { "type": "luck", "value": 2 }
+      ]
+    }
+  },
+  "ricePudding": {
+    "name": "Rice Pudding",
+    "img": "rice_pudding.png",
+    "type": "cooking",
+    "price": 260,
+    "health": 51,
+    "energy": 115,
+    "favorite": ["demetrius"],
+    "ingredients": {
+      "rice": 1,
+      ":any:": "milk",
+      "sugar": 1
+    },
+    "buffs": {
+      "time": "7m",
+      "effects": [
+        { "type": "farming", "value": 2 },
+        { "type": "maxEnergy", "value": 30 }
+      ]
+    }
+  },
+  "bananaPudding": {
+    "name": "Banana Pudding",
+    "img": "banana_pudding.png",
+    "type": "cooking",
+    "price": 300,
+    "health": 78,
+    "energy": 175,
+    "favorite": ["abigail"],
+    "ingredients": {
+      "banana": 1,
+      ":any:": "milk",
+      "sugar": 1
+    },
+    "buffs": {
+      "time": "7m",
+      "effects": [
+        { "type": "mining", "value": 1 },
+        { "type": "luck", "value": 1 },
+        { "type": "defense", "value": 1 }
+      ]
+    }
+  },
+  "sleevelessOveralls": {
+    "name": "Sleeveless Overalls",
+    "img": "sleeveless_overalls.png",
+    "type": "clothing",
+    "ingredients": {
+      "largeMilk": 1,
+      "cloth": 1
+    }
+  },
+  "lightBlueShirt": {
+    "name": "Light Blue Shirt",
+    "img": "light_blue_shirt.png",
+    "type": "clothing",
+    "ingredients": {
+      "goatMilk": 1,
+      "cloth": 1
+    }
+  },
+  "darkBlueShirt": {
+    "name": "Dark Blue Shirt",
+    "img": "dark_blue_shirt.png",
+    "type": "clothing",
+    "ingredients": {
+      "largeGoatMilk": 1,
+      "cloth": 1
+    }
+  },
+  "whiteOveralls": {
+    "name": "White Overalls",
+    "img": "white_overalls.png",
+    "type": "clothing",
+    "ingredients": {
+      "milk": 1,
+      "cloth": 1
+    }
+  },
+  "dinosaurHat": {
+    "name": "Dinosaur Hat",
+    "img": "dinosaur_hat.png",
+    "type": "clothing",
+    "ingredients": {
+      "dinosaurEgg": 1,
+      "cloth": 1
+    }
+  },
+  "greenJacketShirt": {
+    "name": "Green Jacket Shirt",
+    "img": "green_jacket_shirt.png",
+    "type": "clothing",
+    "ingredients": {
+      "duckEgg": 1,
+      "cloth": 1
+    }
+  },
+  "limeGreenSripedShirt": {
+    "name": "Lime Green Striped Shirt",
+    "img": "lime_green_striped_shirt.png",
+    "type": "clothing",
+    "ingredients": {
+      "duckFeather": 1,
+      "cloth": 1
+    }
+  },
+  "warriorHelmet": {
+    "name": "Warrior Helmet",
+    "img": "warrior_helmet.png",
+    "type": "clothing",
+    "ingredients": {
+      "ostrichEgg": 1,
+      "cloth": 1
+    }
+  },
+  "rabbitShirt": {
+    "name": "Rabbit Shirt",
+    "img": "rabbit_shirt.png",
+    "type": "clothing",
+    "ingredients": {
+      "rabbitsFoot": 1,
+      "cloth": 1
+    }
+  },
+  "darkBandanaShirt": {
+    "name": "Dark Bandana Shirt",
+    "img": "dark_bandana_shirt.png",
+    "type": "clothing",
+    "ingredients": {
+      ":one_of:": ["truffle", "truffleOil"],
+      "cloth": 1
+    }
+  },
+  "plainShirt": {
+    "name": "Plain Shirt",
+    "img": "plain_shirt.png",
+    "type": "clothing",
+    "ingredients": {
+      "wool": 1,
+      "cloth": 1
     }
   }
 }

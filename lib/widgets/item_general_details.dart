@@ -52,10 +52,7 @@ class ItemGeneralDetails extends StatelessWidget {
                                   recipe.name,
                                   style: Theme.of(context).textTheme.bodyMedium,
                                 ),
-                                (recipe.type == RecipeType.cooking &&
-                                        (recipe as CookingRecipe)
-                                            .favorites
-                                            .isNotEmpty
+                                (recipe.favorites.isNotEmpty
                                     ? Favorites(favorites: recipe.favorites)
                                     : SizedBox.shrink()),
                               ],

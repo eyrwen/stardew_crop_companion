@@ -1,1 +1,401 @@
-{}
+{
+  "roe": {
+    "name": "Roe",
+    "img": "roe.png",
+    "priceFormulator": {
+      "multiplier": 0.5,
+      "scalar": 30
+    },
+    "energy": 50,
+    "health": 22,
+    "hasQuality": false,
+    "specialProduce": {
+      "jar": {
+        "name": "Aged Roe",
+        "img": "aged_roe.png",
+        "priceFormulator": {
+          "multiplier": 2.0
+        },
+        "time": "2-3 days",
+        "energy": 100,
+        "health": 45
+      }
+    }
+  },
+  "sturgeonroe": {
+    "name": "Sturgeon Roe",
+    "img": "sturgeon_roe.png",
+    "price": 130,
+    "energy": 50,
+    "health": 22,
+    "hasQuality": false,
+    "specialProduce": {
+      "jar": {
+        "name": "Caviar",
+        "img": "caviar.png",
+        "price": 500,
+        "time": "4 days",
+        "energy": 175,
+        "health": 78
+      }
+    }
+  },
+  "egg": {
+    "name": "Egg",
+    "img": "egg.png",
+    "price": 50,
+    "energy": 25,
+    "health": 11,
+    "specialProduce": {
+      "mayonnaiseMachine": {
+        "name": "Mayonnaise",
+        "img": "mayonnaise.png",
+        "price": 190,
+        "time": "3 hrs",
+        "energy": 50,
+        "health": 22
+      }
+    }
+  },
+  "largeEgg": {
+    "name": "Large Egg",
+    "img": "large_egg.png",
+    "price": 95,
+    "energy": 38,
+    "health": 17,
+    "specialProduce": {
+      "mayonnaiseMachine": {
+        "name": "Mayonnaise",
+        "img": "mayonnaise.png",
+        "price": 285,
+        "time": "3 hrs",
+        "energy": 90,
+        "health": 40,
+        "quality": "gold"
+      }
+    }
+  },
+  "brownEgg": {
+    "name": "Brown Egg",
+    "img": "brown_egg.png",
+    "price": 50,
+    "energy": 25,
+    "health": 11,
+    "specialProduce": {
+      "mayonnaiseMachine": {
+        "name": "Mayonnaise",
+        "img": "mayonnaise.png",
+        "price": 190,
+        "time": "3 hrs",
+        "energy": 50,
+        "health": 22
+      }
+    }
+  },
+  "largeBrownEgg": {
+    "name": "Large Brown Egg",
+    "img": "large_brown_egg.png",
+    "price": 95,
+    "energy": 38,
+    "health": 17,
+    "specialProduce": {
+      "mayonnaiseMachine": {
+        "name": "Mayonnaise",
+        "price": 285,
+        "time": "3 hrs",
+        "energy": 90,
+        "health": 40,
+        "quality": "gold"
+      }
+    }
+  },
+  "milk": {
+    "name": "Milk",
+    "img": "milk.png",
+    "price": 125,
+    "energy": 17,
+    "health": 38,
+    "specialProduce": {
+      "cheesePress": {
+        "name": "Cheese",
+        "img": "cheese.png",
+        "price": 230,
+        "time": "3 hrs",
+        "energy": 125,
+        "health": 56
+      },
+      "butterChurn": {
+        "name": "Butter",
+        "img": "butter.png",
+        "price": 200,
+        "time": "2 hrs",
+        "energy": 0,
+        "health": 0
+      }
+    }
+  },
+  "largeMilk": {
+    "name": "Large Milk",
+    "img": "large_milk.png",
+    "price": 190,
+    "energy": 50,
+    "health": 22,
+    "specialProduce": {
+      "cheesePress": {
+        "name": "Cheese",
+        "img": "cheese.png",
+        "price": 345,
+        "time": "3 hrs",
+        "energy": 225,
+        "health": 101,
+        "quality": "gold"
+      },
+      "butterChurn": {
+        "name": "Butter",
+        "img": "butter.png",
+        "price": 200,
+        "time": "2 hrs",
+        "energy": 0,
+        "health": 0
+      }
+    }
+  },
+  "goatMilk": {
+    "name": "Goat Milk",
+    "img": "goat_milk.png",
+    "price": 225,
+    "energy": 63,
+    "health": 28,
+    "specialProduce": {
+      "cheesePress": {
+        "name": "Goat Cheese",
+        "img": "goat_cheese.png",
+        "price": 400,
+        "time": "3 hrs",
+        "energy": 200,
+        "health": 90,
+        "favorite": ["scarlett"]
+      },
+      "butterChurn": {
+        "name": "Butter",
+        "img": "butter.png",
+        "price": 200,
+        "time": "2 hrs",
+        "energy": 0,
+        "health": 0
+      }
+    }
+  },
+  "largeGoatMilk": {
+    "name": "Large Goat Milk",
+    "img": "large_goat_milk.png",
+    "price": 345,
+    "energy": 88,
+    "health": 39,
+    "favorite": ["scarlett"],
+    "specialProduce": {
+      "cheesePress": {
+        "name": "Goat Cheese",
+        "img": "goat_cheese.png",
+        "price": 600,
+        "time": "3 hrs",
+        "energy": 225,
+        "health": 56,
+        "quality": "gold",
+        "favorite": ["scarlett"]
+      },
+      "butterChurn": {
+        "name": "Butter",
+        "img": "butter.png",
+        "price": 200,
+        "time": "2 hrs",
+        "energy": 0,
+        "health": 0
+      }
+    }
+  },
+  "dinosaurEgg": {
+    "name": "Dinosaur Egg",
+    "img": "dinosaur_egg.png",
+    "price": 350,
+    "energy": 0,
+    "health": 0,
+    "hasQuality": false,
+    "cookable": false,
+    "favorite": ["gunther"],
+    "specialProduce": {
+      "mayonnaiseMachine": {
+        "name": "Dinosaur Mayonnaise",
+        "img": "dinosaur_mayonnaise.png",
+        "price": 800,
+        "time": "3 hrs",
+        "energy": 125,
+        "health": 56
+      }
+    }
+  },
+  "duckEgg": {
+    "name": "Duck Egg",
+    "img": "duck_egg.png",
+    "price": 95,
+    "energy": 38,
+    "health": 17,
+    "specialProduce": {
+      "mayonnaiseMachine": {
+        "name": "Duck Mayonnaise",
+        "img": "duck_mayonnaise.png",
+        "price": 375,
+        "time": "3 hrs",
+        "energy": 75,
+        "health": 33
+      }
+    }
+  },
+  "duckFeather": {
+    "name": "Duck Feather",
+    "img": "duck_feather.png",
+    "price": 100,
+    "energy": 0,
+    "health": 0,
+    "cookable": false,
+    "favorite": ["elliot", "leo", "victor", "scarlett"]
+  },
+  "goldenEgg": {
+    "name": "Golden Egg",
+    "img": "golden_egg.png",
+    "price": 500,
+    "energy": 25,
+    "health": 11,
+    "specialProduce": {
+      "mayonnaiseMachine": {
+        "name": "Mayonnaise",
+        "img": "mayonnaise.png",
+        "price": 855,
+        "time": "3 hrs",
+        "energy": 90,
+        "health": 40,
+        "quality": "gold"
+      }
+    }
+  },
+  "ostrichEgg": {
+    "name": "Ostrich Egg",
+    "img": "ostrich_egg.png",
+    "price": 600,
+    "energy": 38,
+    "health": 17,
+    "favorite": ["leo"],
+    "specialProduce": {
+      "mayonnaiseMachine": {
+        "name": "Mayonnaise",
+        "img": "mayonnaise.png",
+        "price": 1900,
+        "time": "3 hrs",
+        "energy": 200,
+        "health": 90
+      }
+    }
+  },
+  "rabbitsFoot": {
+    "name": "Rabbit's Foot",
+    "img": "rabbits_foot.png",
+    "price": 565,
+    "energy": 0,
+    "health": 0,
+    "cookable": false,
+    "favorite": [
+      "abigail",
+      "alex",
+      "caroline",
+      "clint",
+      "demetrius",
+      "dwarf",
+      "elliot",
+      "emily",
+      "evelyn",
+      "george",
+      "gus",
+      "haley",
+      "harvey",
+      "jas",
+      "jodi",
+      "kent",
+      "krobus",
+      "leah",
+      "leo",
+      "lewis",
+      "linus",
+      "marnie",
+      "maru",
+      "pam",
+      "pierre",
+      "robin",
+      "sam",
+      "sandy",
+      "sebastian",
+      "shane",
+      "vincent",
+      "willy",
+      "magnus",
+      "morris",
+      "scarlett"
+    ]
+  },
+  "truffle": {
+    "name": "Truffle",
+    "img": "truffle.png",
+    "price": 625,
+    "energy": 13,
+    "health": 5,
+    "cookable": false,
+    "favorite": ["leah"],
+    "specialProduce": {
+      "oilMaker": {
+        "name": "Truffle Oil",
+        "img": "truffle_oil.png",
+        "price": 1065,
+        "time": "6 hrs",
+        "energy": 38,
+        "health": 17,
+        "favorite": ["harvey"]
+      }
+    }
+  },
+  "voidEgg": {
+    "name": "Void Egg",
+    "img": "void_egg.png",
+    "price": 65,
+    "energy": -92,
+    "health": 0,
+    "specialProduce": {
+      "mayonnaiseMachine": {
+        "name": "VoidMayonnaise",
+        "img": "void_mayonnaise.png",
+        "price": 855,
+        "time": "3 hrs",
+        "energy": -75,
+        "health": 0,
+        "favorite": ["krobus", "sebastian", "morgan"]
+      }
+    }
+  },
+  "wool": {
+    "name": "Wool",
+    "img": "wool.png",
+    "price": 340,
+    "energy": 0,
+    "health": 0,
+    "cookable": false,
+    "favorite": ["emily"],
+    "specialProduce": {
+      "loom": {
+        "name": "Cloth",
+        "img": "cloth.png",
+        "price": 470,
+        "time": "4 hrs",
+        "energy": 0,
+        "health": 0
+      }
+    }
+  }
+}

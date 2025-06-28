@@ -38,6 +38,7 @@ abstract class Item {
   final int price;
   final bool hasQuality;
   final List<String> favorites;
+  final bool cookable;
 
   Item({
     required this.key,
@@ -48,6 +49,7 @@ abstract class Item {
     required this.price,
     this.hasQuality = true,
     this.favorites = const [],
+    this.cookable = true,
   }): url = url ?? 'https://stardewvalleywiki.com/${name.split(' ').join('_')}';  
 
   Item.fromJson(this.key, Map<String, dynamic> json)
@@ -57,7 +59,8 @@ abstract class Item {
         url = json['url'],
         price = json['price'],
         hasQuality = json['hasQuality'] ?? true,
-        favorites = List<String>.from(json['favorite'] ?? []);
+        favorites = List<String>.from(json['favorite'] ?? []),
+        cookable = json['cookable'] ?? true;
 }
 
 abstract class Edible extends Item {

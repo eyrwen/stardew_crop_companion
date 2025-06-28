@@ -68,7 +68,7 @@ class MyHomePage extends HookWidget {
           tabs: [
             Tab(text: 'Crops', icon: Image.asset('assets/img/farming.png', semanticLabel: 'Crops')),
             Tab(text: 'Fish', icon: Image.asset('assets/img/fishing.png', semanticLabel: 'Fish')),
-            Tab(text: 'Animal Products', icon: Image.asset('assets/img/egg.png', semanticLabel: 'Animal Products')),
+            Tab(text: 'Animal Products', icon: Image.asset('assets/img/large_egg.png', semanticLabel: 'Animal Products')),
           ],
         ),
         body: Container(

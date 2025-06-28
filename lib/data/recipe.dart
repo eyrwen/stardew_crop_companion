@@ -102,6 +102,11 @@ class CookingRecipe extends Recipe {
     required this.health,
     super.favorites = const [],
   }) : super(recipeType: RecipeType.cooking);
+
+  @override
+  bool requires(Item item) {
+    return item.cookable && super.requires(item);
+  }
 }
 
 class CraftingRecipe extends Recipe {
