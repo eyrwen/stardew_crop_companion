@@ -1,4 +1,3 @@
-import 'package:stardew_crop_companion/data/artisan_good_formulator.dart';
 import 'package:stardew_crop_companion/data/produce_machine.dart';
 
 import 'interface.dart';

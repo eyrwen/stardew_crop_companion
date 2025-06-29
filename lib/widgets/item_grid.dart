@@ -6,11 +6,13 @@ import 'item_image.dart';
 class ItemGrid extends StatelessWidget {
   final List<Item> items;
   final Function(Item) onItemSelected;
+  final Widget? Function(Item)? getItemDecoration;
 
   const ItemGrid({
     super.key,
     required this.items,
     required this.onItemSelected,
+    this.getItemDecoration,
   });
 
   @override
@@ -27,6 +29,10 @@ class ItemGrid extends StatelessWidget {
                 children: [
                   ItemImage(item.img),
                   Text(item.name, overflow: TextOverflow.clip),
+                  if (getItemDecoration != null) ...[
+                    SizedBox(height: 8.0),
+                    getItemDecoration!(item) ?? SizedBox.shrink(),
+                  ],
                 ],
               ),
             ),

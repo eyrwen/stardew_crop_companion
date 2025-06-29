@@ -43,9 +43,9 @@ class FishGrid extends HookWidget {
                     },
                   ),
                   value: rainFilter.value,
-                  onChanged: (value) {
-                    rainFilter.value = value;
-                  },
+                  onChanged: legendaryFilter.value == true
+                      ? null
+                      : (value) => rainFilter.value = value,
                 ),
                 Switch(
                   thumbIcon: WidgetStateProperty.fromMap(
@@ -89,12 +89,14 @@ class FishGrid extends HookWidget {
               final matchesSearch =
                   search.text.isEmpty ||
                   fish.name.toLowerCase().contains(search.text.toLowerCase());
-              final matchesWeather = rainFilter.value
-                  ? fish.exclusiveToRain
-                  : !fish.exclusiveToRain;
+              final matchesWeather =
+                  (!rainFilter.value || fish.exclusiveToRain) || fish.legendary;
               final matchesSeason =
                   seasonFilter.value == null ||
-                  fish.exclusiveToSeason(seasonFilter.value!);
+                  fish.locations.any(
+                    (location) =>
+                        location.seasons.contains(seasonFilter.value!),
+                  );
               final matchesLegendary = legendaryFilter.value
                   ? fish.legendary
                   : !fish.legendary;
@@ -104,6 +106,61 @@ class FishGrid extends HookWidget {
                   matchesSeason &&
                   matchesLegendary;
             }).toList(),
+            getItemDecoration: (item) {
+              final fish = item as Fish;
+              final decorations = <Widget>[];
+
+              if (fish.exclusiveToRain) {
+                decorations.add(
+                  Row(
+                    spacing: 8.0,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      ItemImage.small(Weather.rainy.img),
+                      CapitalizedText(
+                        Weather.rainy.name,
+                        style: Theme.of(context).textTheme.bodySmall,
+                      ),
+                    ],
+                  ),
+                );
+              }
+              if (fish.exclusiveToWeather(Weather.sunny)) {
+                decorations.add(
+                  Row(
+                    spacing: 8.0,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      ItemImage.small(Weather.sunny.img),
+                      CapitalizedText(
+                        Weather.sunny.name,
+                        style: Theme.of(context).textTheme.bodySmall,
+                      ),
+                    ],
+                  ),
+                );
+              }
+              for (var season in Season.values) {
+                if (fish.exclusiveToSeason(season)) {
+                  decorations.add(
+                    Row(
+                      spacing: 8.0,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        ItemImage.small(season.img),
+                        CapitalizedText(
+                          season.name,
+                          style: Theme.of(context).textTheme.bodySmall,
+                        ),
+                      ],
+                    ),
+                  );
+                }
+              }
+              return decorations.isEmpty
+                  ? null
+                  : Column(spacing: 8.0, children: decorations);
+            },
             onItemSelected: (Item item) => onFishSelected(item as Fish),
           ),
         ),

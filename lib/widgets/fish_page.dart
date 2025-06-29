@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:collection/collection.dart';
+import 'package:stardew_crop_companion/data/interface.dart';
 
 import '../data/fish.dart';
 import '../data/recipe.dart';
@@ -35,104 +36,120 @@ class FishPage extends StatelessWidget {
             recipes: recipes,
             seasons: Column(
               spacing: 8.0,
-              children: FishingLocation.sort(fish.locations)
-                  .map(
-                    (location) => Column(
-                      children: Season.isAll(location.seasons)
-                          ? [
-                              location.places.first == FishableLocation.crabpot
-                                  ? Row(
-                                      spacing: 8.0,
-                                      children: [
-                                        ItemImage.small('crabpot'),
-                                        Text('Crab Pot'),
-                                      ],
-                                    )
-                                  : Row(
+              children: [
+                if (fish.exclusiveToRain)
+                  Row(
+                    spacing: 8.0,
+                    children: [
+                      ItemImage.small(Weather.rainy.img),
+                      CapitalizedText(Weather.rainy.name),
+                    ],
+                  ),
+                if (fish.exclusiveToWeather(Weather.sunny))
+                  Row(
+                    spacing: 8.0,
+                    children: [
+                      ItemImage.small(Weather.sunny.img),
+                      CapitalizedText(Weather.sunny.name),
+                    ],
+                  ),
+                ...FishingLocation.sort(fish.locations).map(
+                  (location) => Column(
+                    children: Season.isAll(location.seasons)
+                        ? [
+                            location.places.first == FishableLocation.crabpot
+                                ? Row(
+                                    spacing: 8.0,
+                                    children: [
+                                      ItemImage.small('crabpot'),
+                                      Text('Crab Pot'),
+                                    ],
+                                  )
+                                : Row(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    spacing: 8.0,
+                                    children: [
+                                      ItemImage.small('all_seasons'),
+                                      Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.start,
+                                        children:
+                                            FishableLocation.sort(
+                                                  location.places,
+                                                )
+                                                .map(
+                                                  (loc) => Row(
+                                                    spacing: 8.0,
+                                                    children: [
+                                                      Text(
+                                                        loc.name,
+                                                        style: Theme.of(
+                                                          context,
+                                                        ).textTheme.bodySmall,
+                                                      ),
+                                                    ],
+                                                  ),
+                                                )
+                                                .toList(),
+                                      ),
+                                    ],
+                                  ),
+                          ]
+                        : ([
+                            Row(
+                              spacing: 8.0,
+                              children: location.seasons
+                                  .map(
+                                    (season) => Row(
                                       crossAxisAlignment:
-                                          CrossAxisAlignment.start,
+                                          CrossAxisAlignment.center,
                                       spacing: 8.0,
                                       children: [
-                                        ItemImage.small('all_seasons'),
-                                        Column(
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.start,
-                                          children:
-                                              FishableLocation.sort(
-                                                    location.places,
-                                                  )
-                                                  .map(
-                                                    (loc) => Row(
-                                                      spacing: 8.0,
-                                                      children: [
-                                                        Text(
-                                                          loc.name,
-                                                          style: Theme.of(
-                                                            context,
-                                                          ).textTheme.bodySmall,
-                                                        ),
-                                                      ],
-                                                    ),
-                                                  )
-                                                  .toList(),
-                                        ),
+                                        ItemImage.small(season.img),
+                                        CapitalizedText(season.name),
                                       ],
                                     ),
-                            ]
-                          : ([
-                              Row(
-                                spacing: 8.0,
-                                children: location.seasons
-                                    .map(
-                                      (season) => Row(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.center,
-                                        spacing: 8.0,
-                                        children: [
-                                          ItemImage.small(season.img),
-                                          CapitalizedText(season.name),
-                                        ],
-                                      ),
-                                    )
-                                    .toList(),
-                              ),
-                              Column(
-                                children: FishableLocation.sort(location.places)
-                                    .slices(2)
-                                    .map(
-                                      (pair) => Row(
-                                        spacing: 8.0,
-                                        children: [
+                                  )
+                                  .toList(),
+                            ),
+                            Column(
+                              children: FishableLocation.sort(location.places)
+                                  .slices(2)
+                                  .map(
+                                    (pair) => Row(
+                                      spacing: 8.0,
+                                      children: [
+                                        Text(
+                                          pair[0].name,
+                                          style: Theme.of(
+                                            context,
+                                          ).textTheme.bodySmall,
+                                        ),
+                                        if (pair.length > 1) ...[
+                                          Icon(
+                                            Icons.circle,
+                                            size: 4.0,
+                                            color: Colors.grey,
+                                          ),
                                           Text(
-                                            pair[0].name,
+                                            pair[1].name,
                                             style: Theme.of(
                                               context,
                                             ).textTheme.bodySmall,
                                           ),
-                                          if (pair.length > 1) ...[
-                                            Icon(
-                                              Icons.circle,
-                                              size: 4.0,
-                                              color: Colors.grey,
-                                            ),
-                                            Text(
-                                              pair[1].name,
-                                              style: Theme.of(
-                                                context,
-                                              ).textTheme.bodySmall,
-                                            ),
-                                          ],
                                         ],
-                                      ),
-                                    )
-                                    .toList(),
-                              ),
-                            ]),
-                    ),
-                  )
-                  .toList(),
+                                      ],
+                                    ),
+                                  )
+                                  .toList(),
+                            ),
+                          ]),
+                  ),
+                ),
+              ],
             ),
           ),
           Column(

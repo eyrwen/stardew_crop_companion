@@ -100,6 +100,10 @@ class Fish extends Edible with Producable {
     return weather.length == 1 && weather.contains(Weather.rainy);
   }
 
+  bool exclusiveToWeather(Weather weather) {
+    return this.weather.length == 1 && this.weather.first == weather;
+  }
+
   bool exclusiveToSeason(Season season) {
     return locations.length == 1 &&
         locations.first.seasons.length == 1 &&
@@ -138,13 +142,14 @@ enum Season {
 }
 
 enum Weather {
-  sunny('sunny'),
-  rainy('rainy'),
-  windy('windy');
+  sunny('sunny', 'weather_sunny.png'),
+  rainy('rainy', 'weather_rainy.png'),
+  windy('windy', 'weather_windy.png');
 
   final String name;
+  final String img;
 
-  const Weather(this.name);
+  const Weather(this.name, this.img);
 
   static Weather from(String value) {
     return Weather.values.firstWhere(
