@@ -5,7 +5,8 @@
     "img": "pufferfish.png",
     "locations": {
       "ocean": ["summer"],
-      "gingerisland": ["spring", "summer", "fall", "winter"]
+      "gingerisland": ["spring", "summer", "fall", "winter"],
+      "bluemoonvineyardbeach": ["summer"]
     },
     "startTime": 1200,
     "endTime": 1600,
@@ -21,7 +22,8 @@
     "url": "https://stardewvalleywiki.com/Anchovy",
     "img": "anchovy.png",
     "locations": {
-      "ocean": ["spring", "fall"]
+      "ocean": ["spring", "fall"],
+      "bluemoonvineyardbeach": ["spring", "fall"]
     },
     "startTime": 600,
     "endTime": 2600,
@@ -37,7 +39,8 @@
     "img": "tuna.png",
     "locations": {
       "ocean": ["summer", "winter"],
-      "gingerisland": ["spring", "summer", "fall", "winter"]
+      "gingerisland": ["spring", "summer", "fall", "winter"],
+      "bluemoonvineyardbeach": ["summer", "winter"]
     },
     "startTime": 600,
     "endTime": 1900,
@@ -52,7 +55,8 @@
     "url": "https://stardewvalleywiki.com/Sardine",
     "img": "sardine.png",
     "locations": {
-      "ocean": ["spring", "fall", "winter"]
+      "ocean": ["spring", "fall", "winter"],
+      "bluemoonvineyardbeach": ["spring", "fall", "winter"]
     },
     "startTime": 600,
     "endTime": 1900,
@@ -68,7 +72,9 @@
     "img": "bream.png",
     "locations": {
       "townriver": ["spring", "summer", "fall", "winter"],
-      "forestriver": ["spring", "summer", "fall", "winter"]
+      "forestriver": ["spring", "summer", "fall", "winter"],
+      "forestwestriver": ["spring", "summer", "fall", "winter"],
+      "bluemoonvineyardriver": ["spring", "summer", "fall", "winter"]
     },
     "startTime": 1800,
     "endTime": 2600,
@@ -83,7 +89,11 @@
     "url": "https://stardewvalleywiki.com/Largemouth_Bass",
     "img": "largemouth_bass.png",
     "locations": {
-      "mountainlake": ["spring", "summer", "fall", "winter"]
+      "mountainlake": ["spring", "summer", "fall", "winter"],
+      "highlandsruinspond": ["spring", "summer", "fall", "winter"],
+      "forestwestriver": ["spring", "summer", "fall", "winter"],
+      "adventurersummit": ["spring", "summer", "fall", "winter"],
+      "junimowoods": ["spring", "summer", "fall", "winter"]
     },
     "startTime": 600,
     "endTime": 1900,
@@ -99,7 +109,8 @@
     "img": "smallmouth_bass.png",
     "locations": {
       "townriver": ["spring", "fall"],
-      "forestpond": ["spring", "fall"]
+      "forestpond": ["spring", "fall"],
+      "bluemoonvineyardriver": ["spring", "fall"]
     },
     "startTime": 600,
     "endTime": 2600,
@@ -115,8 +126,13 @@
     "img": "rainbow_trout.png",
     "locations": {
       "mountainlake": ["summer"],
+      "highlandsruinspond": ["summer"],
       "townriver": ["summer"],
-      "forestriver": ["summer"]
+      "forestriver": ["summer"],
+      "forestwestriver": ["summer"],
+      "adventurersummit": ["summer"],
+      "shearwaterbridge": ["summer"],
+      "bluemoonvineyardriver": ["summer"]
     },
     "startTime": 600,
     "endTime": 1900,
@@ -133,7 +149,10 @@
     "locations": {
       "townriver": ["fall"],
       "forestriver": ["fall"],
-      "forestwaterfalls": ["fall"]
+      "forestwaterfalls": ["fall"],
+      "forestwestriver": ["fall"],
+      "shearwaterbridge": ["fall"],
+      "bluemoonvineyardriver": ["fall"]
     },
     "startTime": 600,
     "endTime": 1900,
@@ -151,7 +170,11 @@
       "townriver": ["fall", "winter"],
       "forestriver": ["fall", "winter"],
       "mountainlake": ["fall", "winter"],
-      "forestpond": ["fall", "winter"]
+      "highlandsruinspond": ["fall", "winter"],
+      "forestpond": ["fall", "winter"],
+      "adventurersummit": ["fall", "winter"],
+      "shearwaterbridge": ["fall"],
+      "bluemoonvineyardriver": ["fall"]
     },
     "startTime": 1200,
     "endTime": 2600,
@@ -167,9 +190,13 @@
     "img": "perch.png",
     "locations": {
       "mountainlake": ["winter"],
+      "highlandsruinspond": ["winter"],
       "forestpond": ["winter"],
       "townriver": ["winter"],
-      "forestriver": ["winter"]
+      "forestriver": ["winter"],
+      "adventurersummit": ["winter"],
+      "shearwaterbridge": ["winter"],
+      "bluemoonvineyardriver": ["winter"]
     },
     "startTime": 600,
     "endTime": 2600,
@@ -185,9 +212,11 @@
     "img": "carp.png",
     "locations": {
       "mountainlake": ["fall"],
+      "highlandsruinspond": ["fall"],
       "secretwoods": ["spring", "summer", "fall", "winter"],
       "sewers": ["spring", "summer", "fall", "winter"],
-      "buglair": ["spring", "summer", "fall", "winter"]
+      "buglair": ["spring", "summer", "fall", "winter"],
+      "adventurersummit": ["spring", "summer", "fall"]
     },
     "startTime": 600,
     "endTime": 2600,
@@ -205,7 +234,11 @@
       "townriver": ["spring", "fall"],
       "forestriver": ["spring", "fall"],
       "secretwoods": ["spring", "summer", "fall", "winter"],
-      "swamp": ["spring", "summer", "fall", "winter"]
+      "swamp": ["spring", "summer", "fall", "winter"],
+      "forestwestriver": ["spring", "summer", "fall"],
+      "shearwaterbridge": ["spring", "fall"],
+      "bluemoonvineyardriver": ["spring", "fall"],
+      "junimowoods": ["spring", "summer", "fall", "winter"]
     },
     "startTime": 600,
     "endTime": 2400,
@@ -223,7 +256,10 @@
     "locations": {
       "forestriver": ["summer", "winter"],
       "townriver": ["summer", "winter"],
-      "forestpond": ["summer", "winter"]
+      "forestpond": ["summer", "winter"],
+      "forestwestriver": ["spring", "winter"],
+      "shearwaterbridge": ["summer", "winter"],
+      "bluemoonvineyardriver": ["summer", "winter"]
     },
     "startTime": 600,
     "endTime": 2600,
@@ -239,7 +275,9 @@
     "img": "sunfish.png",
     "locations": {
       "townriver": ["spring", "summer"],
-      "forestriver": ["spring", "summer"]
+      "forestriver": ["spring", "summer"],
+      "forestwestriver": ["spring"],
+      "bluemoonvineyardriver": ["spring", "summer"]
     },
     "startTime": 600,
     "endTime": 1900,
@@ -254,7 +292,8 @@
     "url": "https://stardewvalleywiki.com/Red_Mullet",
     "img": "red_mullet.png",
     "locations": {
-      "ocean": ["summer", "winter"]
+      "ocean": ["summer", "winter"],
+      "bluemoonvineyardbeach": ["summer", "winter"]
     },
     "startTime": 600,
     "endTime": 1900,
@@ -269,7 +308,8 @@
     "url": "https://stardewvalleywiki.com/Herring",
     "img": "herring.png",
     "locations": {
-      "ocean": ["spring", "winter"]
+      "ocean": ["spring", "winter"],
+      "bluemoonvineyardbeach": ["spring", "winter"]
     },
     "startTime": 600,
     "endTime": 2600,
@@ -284,7 +324,8 @@
     "url": "https://stardewvalleywiki.com/Eel",
     "img": "eel.png",
     "locations": {
-      "ocean": ["spring", "summer", "fall"]
+      "ocean": ["spring", "summer", "fall"],
+      "bluemoonvineyardbeach": ["spring", "fall"]
     },
     "startTime": 1600,
     "endTime": 2600,
@@ -301,7 +342,8 @@
     "locations": {
       "ocean": ["summer"],
       "submarine": ["winter"],
-      "gingerisland": ["spring", "summer", "fall", "winter"]
+      "gingerisland": ["spring", "summer", "fall", "winter"],
+      "bluemoonvineyardbeach": ["summer"]
     },
     "startTime": 600,
     "endTime": 1300,
@@ -318,7 +360,8 @@
     "img": "red_snapper.png",
     "locations": {
       "ocean": ["summer", "fall", "winter"],
-      "gingerisland": ["spring", "summer", "fall", "winter"]
+      "gingerisland": ["spring", "summer", "fall", "winter"],
+      "bluemoonvineyardbeach": ["summer", "fall", "winter"]
     },
     "startTime": 600,
     "endTime": 2600,
@@ -333,7 +376,8 @@
     "url": "https://stardewvalleywiki.com/Squid",
     "img": "squid.png",
     "locations": {
-      "ocean": ["winter"]
+      "ocean": ["winter"],
+      "bluemoonvineyardbeach": ["winter"]
     },
     "startTime": 1800,
     "endTime": 2600,
@@ -349,7 +393,8 @@
     "img": "sea_cucumber.png",
     "locations": {
       "ocean": ["fall", "winter"],
-      "submarine": ["winter"]
+      "submarine": ["winter"],
+      "bluemoonvineyardbeach": ["fall", "winter"]
     },
     "startTime": 600,
     "endTime": 1900,
@@ -366,7 +411,8 @@
     "img": "super_cucumber.png",
     "locations": {
       "ocean": ["summer", "fall"],
-      "submarine": ["winter"]
+      "submarine": ["winter"],
+      "bluemoonvineyardbeach": ["summer", "fall"]
     },
     "startTime": 1800,
     "endTime": 2600,
@@ -382,7 +428,8 @@
     "url": "https://stardewvalleywiki.com/Ghostfish",
     "img": "ghostfish.png",
     "locations": {
-      "mines": ["spring", "summer", "fall", "winter"]
+      "mines": ["spring", "summer", "fall", "winter"],
+      "highlandscavern": ["spring", "summer", "fall", "winter"]
     },
     "startTime": 600,
     "endTime": 2600,
@@ -460,7 +507,7 @@
       "roe": "1-3",
       "goldore": 5,
       "cavejelly": "1-3",
-      "spicyEel": 5,
+      "spicy_eel": 5,
       "magmageode": "5-10"
     }
   },
@@ -501,7 +548,8 @@
     "img": "flounder.png",
     "locations": {
       "ocean": ["spring", "summer"],
-      "gingerisland": ["spring", "summer", "fall", "winter"]
+      "gingerisland": ["spring", "summer", "fall", "winter"],
+      "bluemoonvineyardbeach": ["spring", "summer"]
     },
     "startTime": 600,
     "endTime": 2600,
@@ -517,7 +565,10 @@
     "img": "midnight_carp.png",
     "locations": {
       "mountainlake": ["fall", "winter"],
-      "forestpond": ["fall", "winter"]
+      "highlandsruinspond": ["fall", "winter"],
+      "forestpond": ["fall", "winter"],
+      "adventurersummit": ["fall", "winter"],
+      "shearwaterbridge": ["fall", "winter"]
     },
     "startTime": 2200,
     "endTime": 2600,
@@ -532,7 +583,9 @@
     "url": "https://stardewvalleywiki.com/Sturgeon",
     "img": "sturgeon.png",
     "locations": {
-      "mountainlake": ["summer", "winter"]
+      "mountainlake": ["summer", "winter"],
+      "highlandsruinspond": ["summer", "winter"],
+      "adventurersummit": ["summer", "winter"]
     },
     "startTime": 600,
     "endTime": 2600,
@@ -541,15 +594,7 @@
     "health": 11,
     "energy": 25,
     "favorite": ["willy"],
-    "pond": { "roe": "1-2" },
-    "agedRoe": {
-      "name": "Caviar",
-      "img": "caviar.png",
-      "time": "4 days",
-      "price": 500,
-      "health": 78,
-      "energy": 175
-    }
+    "pond": { "roe": "1-2" }
   },
   "tigertrout": {
     "name": "Tiger Trout",
@@ -557,7 +602,10 @@
     "img": "tiger_trout.png",
     "locations": {
       "townriver": ["fall", "winter"],
-      "forestriver": ["fall", "winter"]
+      "forestriver": ["fall", "winter"],
+      "forestwestriver": ["fall"],
+      "shearwaterbridge": ["fall", "winter"],
+      "bluemoonvineyardriver": ["fall", "winter"]
     },
     "startTime": 600,
     "endTime": 1900,
@@ -572,7 +620,9 @@
     "url": "https://stardewvalleywiki.com/Bullhead",
     "img": "bullhead.png",
     "locations": {
-      "mountainlake": ["spring", "summer", "fall", "winter"]
+      "mountainlake": ["spring", "summer", "fall", "winter"],
+      "highlandsruinspond": ["spring", "summer", "fall", "winter"],
+      "adventurersummit": ["spring", "summer", "fall", "winter"]
     },
     "startTime": 600,
     "endTime": 2600,
@@ -588,7 +638,8 @@
     "img": "tilapia.png",
     "locations": {
       "ocean": ["summer", "fall"],
-      "gingerisland": ["spring", "summer", "fall", "winter"]
+      "gingerisland": ["spring", "summer", "fall", "winter"],
+      "bluemoonvineyardbeach": ["summer", "fall"]
     },
     "startTime": 600,
     "endTime": 2600,
@@ -604,7 +655,9 @@
     "img": "chub.png",
     "locations": {
       "forestriver": ["spring", "summer", "fall", "winter"],
-      "mountainlake": ["spring", "summer", "fall", "winter"]
+      "mountainlake": ["spring", "summer", "fall", "winter"],
+      "highlandsruinspond": ["spring", "summer", "fall", "winter"],
+      "adventurersummit": ["spring", "summer", "fall", "winter"]
     },
     "startTime": 600,
     "endTime": 2600,
@@ -619,7 +672,8 @@
     "url": "https://stardewvalleywiki.com/Dorado",
     "img": "dorado.png",
     "locations": {
-      "forestriver": ["summer"]
+      "forestriver": ["summer"],
+      "forestwestriver": ["spring", "summer", "fall"]
     },
     "startTime": 600,
     "endTime": 1900,
@@ -634,7 +688,8 @@
     "url": "https://stardewvalleywiki.com/Albacore",
     "img": "albacore.png",
     "locations": {
-      "ocean": ["fall", "winter"]
+      "ocean": ["fall", "winter"],
+      "bluemoonvineyardbeach": ["fall", "winter"]
     },
     "startTimes": [600, 1800],
     "endTimes": [1100, 2600],
@@ -650,7 +705,9 @@
     "img": "shad.png",
     "locations": {
       "townriver": ["spring", "summer", "fall"],
-      "forestriver": ["spring", "summer", "fall"]
+      "forestriver": ["spring", "summer", "fall"],
+      "shearwaterbridge": ["spring", "summer", "fall"],
+      "bluemoonvineyardriver": ["spring", "summer", "fall"]
     },
     "startTime": 900,
     "endTime": 2600,
@@ -666,8 +723,13 @@
     "img": "lingcod.png",
     "locations": {
       "mountainlake": ["winter"],
+      "highlandsruinspond": ["winter"],
       "forestriver": ["winter"],
-      "townriver": ["winter"]
+      "townriver": ["winter"],
+      "forestwestriver": ["winter"],
+      "adventurersummit": ["winter"],
+      "bluemoonvineyardriver": ["winter"],
+      "shearwaterbridge": ["winter"]
     },
     "startTime": 600,
     "endTime": 2600,
@@ -682,7 +744,8 @@
     "url": "https://stardewvalleywiki.com/Halibut",
     "img": "halibut.png",
     "locations": {
-      "ocean": ["spring", "summer", "winter"]
+      "ocean": ["spring", "summer", "winter"],
+      "bluemoonvineyardbeach": ["spring", "summer", "winter"]
     },
     "startTimes": [600, 1100],
     "endTimes": [1900, 2600],
@@ -697,7 +760,8 @@
     "url": "https://stardewvalleywiki.com/Woodskip",
     "img": "woodskip.png",
     "locations": {
-      "secretwoods": ["spring", "summer", "fall", "winter"]
+      "secretwoods": ["spring", "summer", "fall", "winter"],
+      "junimowoods": ["spring", "summer", "fall", "winter"]
     },
     "startTime": 600,
     "endTime": 2600,
@@ -859,6 +923,7 @@
     "name": "Crimsonfish",
     "url": "https://stardewvalleywiki.com/Crimsonfish",
     "img": "crimsonfish.png",
+    "legendary": true,
     "locations": {
       "ocean": ["summer"]
     },
@@ -879,6 +944,7 @@
     "name": "Angler",
     "url": "https://stardewvalleywiki.com/Angler",
     "img": "angler.png",
+    "legendary": true,
     "locations": {
       "townriver": ["fall"]
     },
@@ -898,6 +964,7 @@
     "name": "Legend",
     "url": "https://stardewvalleywiki.com/Legend",
     "img": "legend.png",
+    "legendary": true,
     "locations": {
       "mountainlake": ["spring"]
     },
@@ -917,6 +984,7 @@
     "name": "Glacierfish",
     "url": "https://stardewvalleywiki.com/Glacierfish",
     "img": "glacierfish.png",
+    "legendary": true,
     "locations": {
       "forestriver": ["winter"]
     },
@@ -937,6 +1005,7 @@
     "name": "Mutant Carp",
     "url": "https://stardewvalleywiki.com/Mutant_Carp",
     "img": "mutant_carp.png",
+    "legendary": true,
     "locations": {
       "sewers": ["spring", "summer", "fall", "winter"]
     },
@@ -952,6 +1021,7 @@
     "name": "Son of Crimsonfish",
     "url": "https://stardewvalleywiki.com/Son_of_Crimsonfish",
     "img": "son_of_crimsonfish.png",
+    "legendary": true,
     "locations": {
       "ocean": ["spring", "summer", "fall", "winter"]
     },
@@ -972,6 +1042,7 @@
     "name": "Ms. Angler",
     "url": "https://stardewvalleywiki.com/Ms._Angler",
     "img": "msangler.png",
+    "legendary": true,
     "locations": {
       "townriver": ["spring", "summer", "fall", "winter"]
     },
@@ -991,6 +1062,7 @@
     "name": "Legend II",
     "url": "https://stardewvalleywiki.com/Legend_II",
     "img": "legend_ii.png",
+    "legendary": true,
     "locations": {
       "mountainlake": ["spring", "summer", "fall", "winter"]
     },
@@ -1010,6 +1082,7 @@
     "name": "Glacierfish Jr.",
     "url": "https://stardewvalleywiki.com/Glacierfish_Jr.",
     "img": "glacierfish_jr.png",
+    "legendary": true,
     "locations": {
       "forestriver": ["spring", "summer", "fall", "winter"]
     },
@@ -1030,6 +1103,7 @@
     "name": "Radioactive Carp",
     "url": "https://stardewvalleywiki.com/Radioactive_Carp",
     "img": "radioactive_carp.png",
+    "legendary": true,
     "locations": {
       "sewers": ["spring", "summer", "fall", "winter"]
     },
@@ -1290,5 +1364,752 @@
       "warpTotemBeach": 1,
       "nautilusshell": 1
     }
+  },
+  "alligator": {
+    "name": "Alligator",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Alligator",
+    "img": "sve_alligator.png",
+    "locations": {
+      "forbiddenmaze": ["spring", "summer", "fall", "winter"]
+    },
+    "price": 400,
+    "health": 63,
+    "energy": 28,
+    "startTime": 600,
+    "endTime": 2600,
+    "pond": {
+      "roe": 1,
+      "mudstone": "7-124",
+      "jade": "1-2",
+      "dinosaur_egg": 1,
+      "earthcrystal": "12-20"
+    }
+  },
+  "arrowheadshark": {
+    "name": "Arrowhead Shark",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Arrowhead_Shark",
+    "img": "sve_arrowhead_shark.png",
+    "locations": {
+      "fablereef": ["spring", "summer", "fall", "winter"]
+    },
+    "startTime": 600,
+    "endTime": 2600,
+    "weather": ["sunny", "rainy", "windy"],
+    "price": 200,
+    "health": 31,
+    "energy": 70,
+    "pond": { "roe": 1, "arrowhead": "7-20", "blueGrassStarter": "1-4" }
+  },
+  "babylunaloo": {
+    "name": "Baby Lunalaoo",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Baby_Lunalaoo",
+    "img": "sve_baby_lunalaoo.png",
+    "locations": {
+      "gingerisland": ["spring", "summer", "fall", "winter"]
+    },
+    "startTime": 1700,
+    "endTime": 2600,
+    "weather": ["sunny", "rainy", "windy"],
+    "price": 35,
+    "health": 0,
+    "energy": -25,
+    "pond": { "roe": 1, "slime": "1-2", "jelly": "1-2" }
+  },
+  "barredknifejaw": {
+    "name": "Barred Knifejaw",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Barred_Knifejaw",
+    "img": "sve_barred_knifejaw.png",
+    "locations": {
+      "fablereef": ["spring", "summer", "fall", "winter"],
+      "gingerisland": ["spring", "summer", "fall", "winter"]
+    },
+    "startTime": 600,
+    "endTime": 2000,
+    "weather": ["sunny", "rainy", "windy"],
+    "price": 250,
+    "health": 14,
+    "energy": 33,
+    "pond": {
+      "roe": 1,
+      "mango": "1-2",
+      "mangoSapling": 1,
+      "goldCarrotSeed": "1-2"
+    }
+  },
+  "bluetang": {
+    "name": "Blue Tang",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Blue_Tang",
+    "img": "sve_blue_tang.png",
+    "locations": {
+      "fablereef": ["spring", "summer", "fall", "winter"],
+      "gingerisland": ["spring", "summer", "fall", "winter"]
+    },
+    "startTime": 600,
+    "endTime": 2000,
+    "weather": ["sunny", "rainy", "windy"],
+    "price": 130,
+    "health": 11,
+    "energy": 25,
+    "pond": { "roe": 1, "calcite": 1, "kyanite": 1, "bananaSapling": 1 }
+  },
+  "bonefish": {
+    "name": "Bonefish",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Bonefish",
+    "img": "sve_bonefish.png",
+    "locations": {
+      "crimsonbadlands": ["spring", "summer", "fall", "winter"]
+    },
+    "startTime": 600,
+    "endTime": 2600,
+    "weather": ["sunny", "rainy", "windy"],
+    "price": 200,
+    "health": 0,
+    "energy": -75,
+    "pond": { "prehistorictibia": "1-6", "solaressence": "8-22" }
+  },
+  "bulltrout": {
+    "name": "Bull Trout",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Bull_Trout",
+    "img": "sve_bull_trout.png",
+    "locations": {
+      "forestriver": ["fall", "winter"],
+      "mountainlake": ["fall", "winter"],
+      "highlandsruinspond": ["fall", "winter"],
+      "adventurersummit": ["fall", "winter"],
+      "highlandsriver": ["fall", "winter"],
+      "forestwestriver": ["summer", "winter"]
+    },
+    "startTime": 600,
+    "endTime": 2600,
+    "weather": ["sunny", "rainy", "windy"],
+    "price": 185,
+    "health": 11,
+    "energy": 25,
+    "pond": { "roe": "1-4" }
+  },
+  "butterfish": {
+    "name": "Butterfish",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Butterfish",
+    "img": "sve_butterfish.png",
+    "favorite": ["andy", "gus", "victor", "willy"],
+    "locations": {
+      "forestwestriver": ["summer"],
+      "shearwaterbridge": ["spring", "summer", "fall"]
+    },
+    "startTime": 600,
+    "endTime": 2600,
+    "weather": ["sunny"],
+    "price": 200,
+    "health": 22,
+    "energy": 50,
+    "pond": { "roe": 1, "butter": "1-6", "sve_glazed_butterfish": "1-2" }
+  },
+  "clownfish": {
+    "name": "Clownfish",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Clownfish",
+    "img": "sve_clownfish.png",
+    "locations": {
+      "gingerisland": ["spring", "summer", "fall", "winter"]
+    },
+    "startTime": 1000,
+    "endTime": 1700,
+    "weather": ["sunny", "rainy", "windy"],
+    "price": 70,
+    "health": 22,
+    "energy": 50,
+    "pond": {
+      "roe": 1,
+      "coral": "2-5",
+      "seaurchin": "1-5",
+      "rainbowshell": "1-3"
+    }
+  },
+  "daggerfish": {
+    "name": "Daggerfish",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Daggerfish",
+    "img": "sve_daggerfish.png",
+    "favorite": ["lance", "marlon"],
+    "locations": {
+      "fablereef": ["spring", "summer", "fall", "winter"]
+    },
+    "startTime": 600,
+    "endTime": 2600,
+    "weather": ["sunny", "rainy", "windy"],
+    "price": 200,
+    "health": 0,
+    "energy": -150,
+    "pond": { "roe": "1-2", "ancientsword": "1-6" }
+  },
+  "diamondcarp": {
+    "name": "Diamond Carp",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Diamond_Carp",
+    "img": "sve_diamond_carp.png",
+    "locations": {
+      "diamondcavern": ["spring", "summer", "fall", "winter"]
+    },
+    "startTime": 600,
+    "endTime": 2600,
+    "weather": ["sunny", "rainy", "windy"],
+    "price": 575,
+    "health": 0,
+    "energy": -25,
+    "pond": { "roe": 1, "diamond": "1-3", "ornateTreasureChest": 1 }
+  },
+  "fibergoby": {
+    "name": "Fiber Goby",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Fiber_Goby",
+    "img": "sve_fiber_goby.png",
+    "locations": {
+      "highlandsruinspond": ["spring", "summer", "fall", "winter"]
+    },
+    "startTime": 600,
+    "endTime": 2600,
+    "weather": ["sunny", "rainy", "windy"],
+    "price": 250,
+    "health": 24,
+    "energy": 55,
+    "pond": { "roe": 1, "fircone": "2-5", "birchseed": "2-5", "fiber": "3-32" }
+  },
+  "frog": {
+    "name": "Frog",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Frog",
+    "img": "sve_frog.png",
+    "favorite": ["abigail", "morgan", "sebastian", "vincent"],
+    "locations": {
+      "mountainlake": ["spring", "summer"],
+      "highlandsruinspond": ["spring", "summer"]
+    },
+    "startTime": 600,
+    "endTime": 2600,
+    "weather": ["rainy"],
+    "price": 100,
+    "health": 0,
+    "energy": -75,
+    "pond": { "roe": 1, "slime": "10-20", "greenslimeegg": 1 }
+  },
+  "gar": {
+    "name": "Gar",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Gar",
+    "img": "sve_gar.png",
+    "locations": {
+      "forestpond": ["summer", "fall"]
+    },
+    "startTime": 600,
+    "endTime": 2000,
+    "weather": ["rainy"],
+    "price": 175,
+    "health": 50,
+    "energy": 22,
+    "pond": {
+      "roe": 1,
+      "pinetar": "1-3",
+      "birchwater": "1-3",
+      "oakresin": "1-2",
+      "firwax": "1-2"
+    }
+  },
+  "gemfish": {
+    "name": "Gemfish",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Gemfish",
+    "img": "sve_gemfish.png",
+    "favorite": ["dwarf", "lance"],
+    "locations": {
+      "highlandscavern": ["spring", "summer", "fall", "winter"]
+    },
+    "startTime": 600,
+    "endTime": 2600,
+    "weather": ["sunny", "rainy", "windy"],
+    "price": 800,
+    "health": 0,
+    "energy": -30,
+    "pond": {
+      "roe": "1-2",
+      "topaz": "1-2",
+      "amethyst": "1-2",
+      "jade": "1-2",
+      "aquamarine": "1-2",
+      "emerald": "1-6",
+      "ruby": "1-6",
+      "diamond": "1-3",
+      "prismaticshard": "1-2"
+    }
+  },
+  "glowfish": {
+    "name": "Glowfish",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Glowfish",
+    "img": "sve_glowfish.png",
+    "favorite": ["marlon"],
+    "locations": {
+      "spritespring": ["spring", "summer", "fall", "winter"],
+      "junimowoods": ["spring", "summer", "fall", "winter"]
+    },
+    "startTime": 600,
+    "endTime": 2600,
+    "weather": ["sunny", "rainy", "windy"],
+    "price": 150,
+    "health": 5,
+    "energy": 13,
+    "pond": {
+      "roe": 1,
+      "goldore": "1-3",
+      "goldbar": "1-2",
+      "goldenrelic": "1-5",
+      "goldenpumpkin": 1
+    }
+  },
+  "goldfish": {
+    "name": "Goldfish",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Goldfish",
+    "img": "sve_goldfish.png",
+    "locations": {
+      "forestriver": ["spring"],
+      "townriver": ["spring"]
+    },
+    "startTime": 1000,
+    "endTime": 1700,
+    "weather": ["sunny"],
+    "price": 80,
+    "health": 10,
+    "energy": 23,
+    "pond": { "roe": 1 }
+  },
+  "grasscarp": {
+    "name": "Grass Carp",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Grass_Carp",
+    "img": "sve_grass_carp.png",
+    "locations": {
+      "secretwoods": ["spring", "summer"]
+    },
+    "startTime": 600,
+    "endTime": 2600,
+    "weather": ["sunny", "rainy", "windy"],
+    "price": 150,
+    "health": 17,
+    "energy": 37,
+    "pond": { "roe": 1, "grassStarter": "1-10" }
+  },
+  "highlandsBass": {
+    "name": "Highlands Bass",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Highlands_Bass",
+    "img": "sve_highlands_bass.png",
+    "locations": {
+      "highlandsriver": ["spring", "summer", "fall", "winter"]
+    },
+    "startTime": 600,
+    "endTime": 2600,
+    "weather": ["sunny", "rainy", "windy"],
+    "price": 200,
+    "health": 17,
+    "energy": 38,
+    "pond": { "roe": 1, "grassStarter": "1-12", "greenslimeegg": "1-2" }
+  },
+  "kingsalmon": {
+    "name": "King Salmon",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/King_Salmon",
+    "img": "sve_king_salmon.png",
+    "locations": {
+      "forestwestriver": ["spring", "summer"]
+    },
+    "startTime": 600,
+    "endTime": 2000,
+    "weather": ["sunny", "rainy", "windy"],
+    "price": 320,
+    "health": 234,
+    "energy": 105,
+    "pond": { "roe": 1, "omnigeode": 6 }
+  },
+  "kittyfish": {
+    "name": "Kittyfish",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Kittyfish",
+    "img": "sve_kittyfish.png",
+    "favorite": ["morgan"],
+    "locations": {
+      "shearwaterbridge": ["fall", "winter"]
+    },
+    "startTime": 600,
+    "endTime": 2600,
+    "weather": ["sunny", "rainy", "windy"],
+    "price": 250,
+    "health": 45,
+    "energy": 100,
+    "pond": { "roe": 1, "wool": "1-3", "cloth": "1-3" }
+  },
+  "lunaloo": {
+    "name": "Lunalaoo",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Lunalaoo",
+    "img": "sve_lunalaoo.png",
+    "locations": {
+      "gingerisland": ["spring", "summer", "fall", "winter"]
+    },
+    "startTime": 1700,
+    "endTime": 2600,
+    "weather": ["sunny", "rainy", "windy"],
+    "price": 100,
+    "health": 0,
+    "energy": -25,
+    "pond": { "roe": 1, "slime": "1-5", "jelly": "1-4", "greenslimeegg": 1 }
+  },
+  "meteorcarp": {
+    "name": "Meteor Carp",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Meteor_Carp",
+    "img": "sve_meteor_carp.png",
+    "favorite": ["krobus"],
+    "locations": {
+      "spritespring": ["spring", "summer", "fall", "winter"],
+      "junimowoods": ["spring", "summer", "fall", "winter"]
+    },
+    "startTime": 600,
+    "endTime": 2600,
+    "weather": ["sunny", "rainy", "windy"],
+    "price": 175,
+    "health": 0,
+    "energy": -50,
+    "pond": { "roe": "1-2", "iridiumore": "1-4", "iridiumsprinkler": 1 }
+  },
+  "minnow": {
+    "name": "Minnow",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Minnow",
+    "img": "sve_minnow.png",
+    "locations": {
+      "farm": ["spring", "summer", "fall"],
+      "adventurersummit": ["spring", "summer", "fall"],
+      "townriver": ["spring", "summer", "fall", "winter"],
+      "forestriver": ["spring", "summer", "fall", "winter"],
+      "forestpond": ["spring", "summer", "fall", "winter"],
+      "mountainlake": ["spring", "summer", "fall", "winter"],
+      "highlandsruinspond": ["spring", "summer", "fall", "winter"],
+      "shearwaterbridge": ["spring", "summer", "fall", "winter"],
+      "bluemoonvineyardriver": ["spring", "summer", "fall", "winter"]
+    },
+    "startTime": 600,
+    "endTime": 1800,
+    "weather": ["sunny", "rainy", "windy"],
+    "price": 20,
+    "health": 1,
+    "energy": 3,
+    "pond": { "roe": 1, "wildbait": "1-6" }
+  },
+  "oceansunfish": {
+    "name": "Ocean Sunfish",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Ocean_Sunfish",
+    "img": "sve_ocean_sunfish.png",
+    "locations": {
+      "fablereef": ["spring", "summer", "fall", "winter"],
+      "gingerisland": ["spring", "summer", "fall", "winter"]
+    },
+    "startTime": 600,
+    "endTime": 2600,
+    "weather": ["sunny"],
+    "price": 650,
+    "health": 22,
+    "energy": 50,
+    "pond": { "roe": 1, "oceanstone": 1, "solaressence": "12-20", "pearl": 1 }
+  },
+  "puppyfish": {
+    "name": "Puppyfish",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Puppyfish",
+    "img": "sve_puppyfish.png",
+    "locations": {
+      "forestwestriver": ["summer"],
+      "shearwaterbridge": ["spring", "summer", "fall"]
+    },
+    "startTime": 600,
+    "endTime": 2600,
+    "weather": ["sunny", "rainy", "windy"],
+    "price": 250,
+    "health": 45,
+    "energy": 100,
+    "pond": { "roe": 1, "hardwood": "5-10", "prehistorictibia": "1-6" }
+  },
+  "radioactivebass": {
+    "name": "Radioactive Bass",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Radioactive_Bass",
+    "img": "sve_radioactive_bass.png",
+    "locations": {
+      "sewers": ["spring", "summer", "fall", "winter"]
+    },
+    "startTime": 600,
+    "endTime": 2600,
+    "weather": ["sunny", "rainy", "windy"],
+    "price": 500,
+    "health": 0,
+    "energy": -125,
+    "pond": { "roe": 1, "radioactiveore": "1-4", "radioactivebar": "1-2" }
+  },
+  "razortrout": {
+    "name": "Razor Trout",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Razor_Trout",
+    "img": "sve_razor_trout.png",
+    "locations": {
+      "townriver": ["spring", "summer", "fall", "winter"],
+      "bluemoonvineyardriver": ["spring", "summer", "fall", "winter"]
+    },
+    "requirements": {
+      "maxFriendship": "morris",
+      "communityCenter": "joja"
+    },
+    "startTime": 600,
+    "endTime": 2600,
+    "weather": ["sunny", "rainy", "windy"],
+    "price": 400,
+    "health": 0,
+    "energy": -87,
+    "pond": { "roe": "1-2", "bomb": "1-5", "megabomb": "1-5" }
+  },
+  "seahorse": {
+    "name": "Seahorse",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Seahorse",
+    "img": "sve_seahorse.png",
+    "locations": {
+      "gingerisland": ["spring", "summer", "fall", "winter"]
+    },
+    "startTime": 800,
+    "endTime": 1700,
+    "weather": ["sunny", "rainy", "windy"],
+    "price": 60,
+    "health": 5,
+    "energy": 13,
+    "pond": { "roe": "1-2", "wildhorseradish": "2-6" }
+  },
+  "seasponge": {
+    "name": "Sea Sponge",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Sea_Sponge",
+    "img": "sve_sea_sponge.png",
+    "locations": {
+      "gingerisland": ["spring", "summer", "fall", "winter"]
+    },
+    "startTime": 600,
+    "endTime": 2600,
+    "weather": ["sunny", "rainy", "windy"],
+    "price": 75,
+    "health": 0,
+    "energy": -62,
+    "pond": { "roe": 1, "nautilusshell": "1-3", "seaurchin": "1-4" }
+  },
+  "shark": {
+    "name": "Shark",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Shark",
+    "img": "sve_shark.png",
+    "locations": {
+      "fablereef": ["spring", "summer", "fall", "winter"],
+      "gingerisland": ["spring", "summer", "fall", "winter"]
+    },
+    "startTime": 600,
+    "endTime": 2600,
+    "weather": ["sunny", "rainy", "windy"],
+    "price": 800,
+    "health": 39,
+    "energy": 88,
+    "pond": {
+      "roe": 1,
+      "sharktooth": "3-8",
+      "artifacttrove": 1,
+      "treasurechest": 1,
+      "seafoam_pudding": 1
+    }
+  },
+  "shinylunaloo": {
+    "name": "Shiny Lunalaoo",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Shiny_Lunalaoo",
+    "img": "sve_shiny_lunalaoo.png",
+    "favorite": ["magnus"],
+    "locations": {
+      "gingerisland": ["spring", "summer", "fall", "winter"],
+      "fablereef": ["spring", "summer", "fall", "winter"]
+    },
+    "startTime": 1700,
+    "endTime": 2600,
+    "weather": ["sunny", "rainy", "windy"],
+    "price": 400,
+    "health": 0,
+    "energy": -125,
+    "pond": {
+      "roe": "1-2",
+      "jelly": "1-5",
+      "greenslimeegg": 1,
+      "blueslimeegg": 1,
+      "redslimeegg": 1,
+      "purpleslimeegg": 1
+    }
+  },
+  "snatcherworm": {
+    "name": "Snatcher Worm",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Snatcher_Worm",
+    "img": "sve_snatcher_worm.png",
+    "locations": {
+      "buglair": ["spring", "summer", "fall", "winter"]
+    },
+    "startTime": 600,
+    "endTime": 2600,
+    "weather": ["sunny", "rainy", "windy"],
+    "price": 280,
+    "health": 14,
+    "energy": 33,
+    "pond": {
+      "roe": 1,
+      "bugmeat": "1-5",
+      "bugsteak": "1-10",
+      "wildbait": "4-10",
+      "diamond": "2-5"
+    }
+  },
+  "starfish": {
+    "name": "Starfish",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Starfish",
+    "img": "sve_starfish.png",
+    "locations": {
+      "ocean": ["spring", "summer", "winter"],
+      "gingerisland": ["spring", "summer", "fall", "winter"],
+      "bluemoonvineyardbeach": ["spring", "summer", "winter"]
+    },
+    "price": 150,
+    "health": 0,
+    "energy": -90,
+    "pond": {
+      "driedstarfish": "1-10"
+    }
+  },
+  "swampcrab": {
+    "name": "Swamp Crab",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Swamp_Crab",
+    "img": "sve_swamp_crab.png",
+    "locations": {
+      "forbiddenmaze": ["spring", "summer", "fall", "winter"]
+    },
+    "price": 150,
+    "health": 22,
+    "energy": 50,
+    "pond": { "roe": 1 }
+  },
+  "tadpole": {
+    "name": "Tadpole",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Tadpole",
+    "img": "sve_tadpole.png",
+    "locations": {
+      "mountainlake": ["spring", "summer"],
+      "highlandsruinspond": ["spring", "summer"]
+    },
+    "price": 15,
+    "health": 2,
+    "energy": 5,
+    "pond": { "roe": 1 }
+  },
+  "torpedotrout": {
+    "name": "Torpedo Trout",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Torpedo_Trout",
+    "img": "sve_torpedo_trout.png",
+    "favorite": ["lance"],
+    "locations": {
+      "fablereef": ["spring", "summer", "fall", "winter"]
+    },
+    "startTime": 600,
+    "endTime": 2600,
+    "weather": ["sunny", "rainy", "windy"],
+    "price": 300,
+    "health": 0,
+    "energy": -25,
+    "pond": {
+      "roe": "1-2",
+      "cherrybomb": "1-5",
+      "bomb": "1-5",
+      "megabomb": "1-50"
+    }
+  },
+  "turretfish": {
+    "name": "Turretfish",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Turretfish",
+    "img": "sve_turretfish.png",
+    "legendary": true,
+    "locations": {
+      "fablereef": ["spring", "summer", "fall", "winter"]
+    },
+    "startTime": 600,
+    "endTime": 2600,
+    "weather": ["sunny", "rainy", "windy"],
+    "price": 10000,
+    "health": 0,
+    "energy": 0,
+    "pond": { "roe": 1 }
+  },
+  "undeadfish": {
+    "name": "Undead Fish",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Undead_Fish",
+    "img": "sve_undead_fish.png",
+    "locations": {
+      "crimsonbadlands": ["spring", "summer", "fall", "winter"]
+    },
+    "startTime": 600,
+    "endTime": 2600,
+    "weather": ["sunny", "rainy", "windy"],
+    "price": 600,
+    "health": 0,
+    "energy": -150,
+    "pond": { "skeletaltail": "1-6", "voidessence": "8-22" }
+  },
+  "vipereel": {
+    "name": "Viper Eel",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Viper_Eel",
+    "img": "sve_viper_eel.png",
+    "locations": {
+      "fablereef": ["spring", "summer", "fall", "winter"]
+    },
+    "startTime": 600,
+    "endTime": 2600,
+    "weather": ["sunny", "rainy", "windy"],
+    "price": 600,
+    "health": 0,
+    "energy": -325,
+    "pond": { "roe": 1 }
+  },
+  "voideel": {
+    "name": "Void Eel",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Void_Eel",
+    "img": "sve_void_eel.png",
+    "locations": {
+      "swamp": ["spring", "summer", "fall", "winter"]
+    },
+    "startTime": 600,
+    "endTime": 2600,
+    "weather": ["sunny", "rainy", "windy"],
+    "price": 450,
+    "health": 0,
+    "energy": -500,
+    "pond": {
+      "roe": 1,
+      "voidessence": "10-30",
+      "voidpebble": 1,
+      "swirlstone": 1
+    }
+  },
+  "watergrub": {
+    "name": "Water Grub",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Water_Grub",
+    "img": "sve_water_grub.png",
+    "locations": {
+      "buglair": ["spring", "summer", "fall", "winter"]
+    },
+    "startTime": 600,
+    "endTime": 2600,
+    "weather": ["sunny", "rainy", "windy"],
+    "price": 170,
+    "health": 45,
+    "energy": 100,
+    "pond": { "roe": 1, "bugmeat": "1-10", "bugsteak": "1-6" }
+  },
+  "wolfsnapper": {
+    "name": "Wolf Snapper",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Wolf_Snapper",
+    "img": "sve_wolf_snapper.png",
+    "legendary": true,
+    "locations": {
+      "shearwaterbridge": ["spring", "summer", "fall"]
+    },
+    "startTime": 600,
+    "endTime": 2600,
+    "weather": ["sunny", "rainy", "windy"],
+    "price": 4000,
+    "health": 56,
+    "energy": 125,
+    "pond": { "roe": 1 }
   }
 }

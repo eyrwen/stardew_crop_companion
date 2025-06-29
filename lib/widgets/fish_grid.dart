@@ -24,7 +24,7 @@ class FishGrid extends HookWidget {
     useListenable(search);
     final rainFilter = useState<bool>(false);
     final seasonFilter = useState<Season?>(null);
-    final locationFilter = useState<FishableLocation?>(null);
+    final legendaryFilter = useState<bool>(false);
 
     return Column(
       children: [
@@ -45,6 +45,18 @@ class FishGrid extends HookWidget {
                   value: rainFilter.value,
                   onChanged: (value) {
                     rainFilter.value = value;
+                  },
+                ),
+                Switch(
+                  thumbIcon: WidgetStateProperty.fromMap(
+                    <WidgetStatesConstraint, Icon>{
+                      WidgetState.selected: Icon(Icons.star),
+                      WidgetState.any: Icon(Icons.star_border),
+                    },
+                  ),
+                  value: legendaryFilter.value,
+                  onChanged: (value) {
+                    legendaryFilter.value = value;
                   },
                 ),
                 SearchFilter(
@@ -69,20 +81,6 @@ class FishGrid extends HookWidget {
                 ),
               ],
             ),
-            SearchFilter<FishableLocation>(
-              children: FishableLocation.onlySpecial
-                  .map(
-                    (location) => ButtonSegment(
-                      value: location,
-                      label: Text(location.name),
-                    ),
-                  )
-                  .toList(),
-              selected: locationFilter.value,
-              onSelected: (location) {
-                locationFilter.value = location;
-              },
-            ),
           ],
         ),
         Expanded(
@@ -97,16 +95,14 @@ class FishGrid extends HookWidget {
               final matchesSeason =
                   seasonFilter.value == null ||
                   fish.exclusiveToSeason(seasonFilter.value!);
-              final matchesLocation =
-                  locationFilter.value == null ||
-                  fish.locations.any(
-                    (location) => location.place == locationFilter.value!,
-                  );
+              final matchesLegendary = legendaryFilter.value
+                  ? fish.legendary
+                  : !fish.legendary;
 
               return matchesSearch &&
                   matchesWeather &&
                   matchesSeason &&
-                  matchesLocation;
+                  matchesLegendary;
             }).toList(),
             onItemSelected: (Item item) => onFishSelected(item as Fish),
           ),

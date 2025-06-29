@@ -5,15 +5,22 @@ import '../data/interface.dart';
 import '../data/recipe.dart';
 import 'favorites.dart';
 import 'item_image.dart';
+import 'recipes_column.dart';
 
 class ItemGeneralDetails extends StatelessWidget {
   final Item item;
   final List<Recipe> recipes;
+  final Widget? seasons;
+  final bool includeRecipeFavorites;
+  final bool favoritesSplit;
 
   const ItemGeneralDetails({
     super.key,
     required this.item,
     required this.recipes,
+    this.seasons,
+    this.includeRecipeFavorites = true,
+    this.favoritesSplit = false,
   });
 
   @override
@@ -36,36 +43,15 @@ class ItemGeneralDetails extends StatelessWidget {
                     style: Theme.of(context).textTheme.headlineSmall,
                   ),
                 ),
-                item.favorites.isNotEmpty
-                    ? Favorites(favorites: item.favorites)
-                    : SizedBox.shrink(),
-                SizedBox(height: 8),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  spacing: 8.0,
-                  children: Recipe.sort(recipes)
-                      .map(
-                        (recipe) => Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          spacing: 8,
-                          children: [
-                            ItemImage.large(recipe.img),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  recipe.name,
-                                  style: Theme.of(context).textTheme.bodyMedium,
-                                ),
-                                (recipe.favorites.isNotEmpty
-                                    ? Favorites(favorites: recipe.favorites)
-                                    : SizedBox.shrink()),
-                              ],
-                            ),
-                          ],
-                        ),
-                      )
-                      .toList(),
+                if (item.favorites.isNotEmpty)
+                  Favorites(
+                    favorites: item.favorites,
+                    splitLayout: favoritesSplit,
+                  ),
+                seasons ?? SizedBox.shrink(),
+                RecipesColumn(
+                  recipes: recipes,
+                  includeFavorites: includeRecipeFavorites,
                 ),
               ],
             ),

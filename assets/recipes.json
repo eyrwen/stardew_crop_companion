@@ -751,7 +751,7 @@
     "price": 80,
     "health": 40,
     "energy": 90,
-    "favorite": ["jodi"],
+    "favorite": ["jodi", "susan"],
     "ingredients": {
       ":any_each:": ["egg", "flour"]
     },
@@ -767,7 +767,7 @@
     "price": 200,
     "health": 67,
     "energy": 150,
-    "favorite": ["abigail", "evelyn", "jodi", "scarlett", "olivia"],
+    "favorite": ["abigail", "evelyn", "jodi", "scarlett", "olivia", "susan"],
     "ingredients": {
       ":any_each:": ["egg", "flour"],
       "sugar": 1
@@ -780,21 +780,29 @@
     "price": 480,
     "health": 112,
     "energy": 250,
-    "favorite": ["haley", "jas", "marnie", "vincent", "scarlett", "olivia"],
+    "favorite": [
+      "haley",
+      "jas",
+      "marnie",
+      "vincent",
+      "scarlett",
+      "olivia",
+      "susan"
+    ],
     "ingredients": {
       ":any_each:": ["egg", "flour"],
       "melon": 1,
       "sugar": 1
     }
   },
-  "cookie": {
-    "name": "Cookie",
+  "cookies": {
+    "name": "Cookies",
     "img": "cookie.png",
     "type": "cooking",
     "price": 140,
     "health": 40,
     "energy": 90,
-    "favorite": ["jodi"],
+    "favorite": ["jodi", "susan"],
     "ingredients": {
       ":any_each:": ["flour", "egg"],
       "sugar": 1
@@ -807,7 +815,7 @@
     "price": 150,
     "health": 56,
     "energy": 125,
-    "favorite": ["linus"],
+    "favorite": ["linus", "susan"],
     "ingredients": {
       ":any_each:": ["flour", "egg"],
       "blueberry": 1,
@@ -922,7 +930,7 @@
     "price": 385,
     "health": 101,
     "energy": 225,
-    "favorite": ["marnie"],
+    "favorite": ["marnie", "susan"],
     "ingredients": {
       ":any_each:": ["milk", "flour"],
       "pumpkin": 1,
@@ -1089,6 +1097,1400 @@
     "ingredients": {
       "wool": 1,
       "cloth": 1
+    }
+  },
+  "friedMushroom": {
+    "name": "Fried Mushroom",
+    "img": "fried_mushroom.png",
+    "type": "cooking",
+    "price": 200,
+    "health": 60,
+    "energy": 135,
+    "favorite": ["george"],
+    "ingredients": {
+      "commonmushroom": 1,
+      "morel": 1,
+      ":any:": "oil"
+    },
+    "buffs": {
+      "time": "7m",
+      "effects": [{ "type": "attack", "value": 2 }]
+    }
+  },
+  "stirFry": {
+    "name": "Stir Fry",
+    "img": "stir_fry.png",
+    "type": "cooking",
+    "price": 335,
+    "health": 90,
+    "energy": 200,
+    "favorite": ["leah"],
+    "ingredients": {
+      "cavecarrot": 1,
+      "commonmushroom": 1,
+      "kale": 1,
+      ":any:": "oil"
+    }
+  },
+  "wildSeedsFall": {
+    "name": "Wild Seeds (Fall)",
+    "img": "wild_seeds_fall.png",
+    "type": "crafting",
+    "ingredients": {
+      "blackberry": 1,
+      "hazelnut": 1,
+      "commonmushroom": 1,
+      "wildplum": 1
+    }
+  },
+  "wildSeedsSpring": {
+    "name": "Wild Seeds (Spring)",
+    "img": "wild_seeds_spring.png",
+    "type": "crafting",
+    "ingredients": {
+      "dandelion": 1,
+      "leek": 1,
+      "daffodil": 1,
+      "wildhorseradish": 1
+    }
+  },
+  "salad": {
+    "name": "Salad",
+    "img": "salad.png",
+    "type": "cooking",
+    "price": 110,
+    "health": 50,
+    "energy": 113,
+    "favorite": ["leah"],
+    "ingredients": {
+      "leek": 1,
+      "dandelion": 1,
+      "vinegar": 1
+    }
+  },
+  "mintBlouse": {
+    "name": "Mint Blouse",
+    "img": "mint_blouse.png",
+    "type": "clothing",
+    "ingredients": {
+      "dandelion": 1,
+      "cloth": 1
+    }
+  },
+  "redOveralls": {
+    "name": "Red Overalls",
+    "img": "red_overalls.png",
+    "type": "clothing",
+    "ingredients": {
+      "commonmushroom": 1,
+      "cloth": 1
+    }
+  },
+  "yellowShirtOveralls": {
+    "name": "Yellow Shirt Overalls",
+    "img": "yellow_shirt_overalls.png",
+    "type": "clothing",
+    "ingredients": {
+      "daffodil": 1,
+      "cloth": 1
+    }
+  },
+  "goodGriefShirt": {
+    "name": "Good Grief Shirt",
+    "img": "good_grief_shirt.png",
+    "type": "clothing",
+    "ingredients": {
+      "wildhorseradish": 1,
+      "cloth": 1
+    }
+  },
+  "limeGreenTunic": {
+    "name": "Lime Green Tunic",
+    "img": "lime_green_tunic.png",
+    "type": "clothing",
+    "ingredients": {
+      "leek": 1,
+      "cloth": 1
+    }
+  },
+  "lifeElixir": {
+    "name": "Life Elixir",
+    "img": "life_elixir.png",
+    "type": "crafting",
+    "price": 250,
+    "health": "100%",
+    "energy": 0,
+    "favorite": ["marlon"],
+    "ingredients": {
+      "morel": 1,
+      "chanterelle": 1,
+      "redmushroom": 1,
+      "purplemushroom": 1
+    }
+  },
+  "morelShirt": {
+    "name": "Morel Shirt",
+    "img": "morel_shirt.png",
+    "type": "clothing",
+    "ingredients": {
+      "morel": 1,
+      "cloth": 1
+    }
+  },
+  "redBeltShirt": {
+    "name": "Red Belt Shirt",
+    "img": "red_belt_shirt.png",
+    "type": "clothing",
+    "ingredients": {
+      "salmonberry": 1,
+      "cloth": 1
+    }
+  },
+  "springShirt": {
+    "name": "Spring Shirt",
+    "img": "spring_shirt.png",
+    "type": "clothing",
+    "ingredients": {
+      ":one_of:": ["springOnion", "springSeeds"],
+      "cloth": 1
+    }
+  },
+  "fiddleheadRisotto": {
+    "name": "Fiddlehead Risotto",
+    "img": "fiddlehead_risotto.png",
+    "type": "cooking",
+    "price": 350,
+    "health": 101,
+    "energy": 225,
+    "favorite": ["clint", "kent"],
+    "ingredients": {
+      "fiddleheadfern": 1,
+      "garlic": 1,
+      ":any:": "oil"
+    }
+  },
+  "greenShirtOveralls": {
+    "name": "Green Shirt Overalls",
+    "img": "green_shirt_overalls.png",
+    "type": "clothing",
+    "ingredients": {
+      "fiddleheadfern": 1,
+      "cloth": 1
+    }
+  },
+  "spottedHeadscarf": {
+    "name": "Spotted Headscarf",
+    "img": "spotted_headscarf.png",
+    "type": "clothing",
+    "ingredients": {
+      "redmushroom": 1,
+      "cloth": 1
+    }
+  },
+  "orangeShirt": {
+    "name": "Orange Shirt",
+    "img": "orange_shirt.png",
+    "type": "clothing",
+    "ingredients": {
+      "chanterelle": 1,
+      "cloth": 1
+    }
+  },
+  "magentaShirt": {
+    "name": "Magenta Shirt",
+    "img": "magenta_shirt.png",
+    "type": "clothing",
+    "ingredients": {
+      "magmacap": 1,
+      "cloth": 1
+    }
+  },
+  "purpleShirtOveralls": {
+    "name": "Purple Shirt Overalls",
+    "img": "purple_shirt_overalls.png",
+    "type": "clothing",
+    "ingredients": {
+      "purplemushroom": 1,
+      "cloth": 1
+    }
+  },
+  "wild_seeds_summer": {
+    "name": "Wild Seeds (Summer)",
+    "img": "wild_seeds_summer.png",
+    "type": "crafting",
+    "ingredients": {
+      "spiceberry": 1,
+      "grape": 1,
+      "sweetpea": 1
+    }
+  },
+  "greenButtonedVest": {
+    "name": "Green Buttoned Vest",
+    "img": "green_buttoned_vest.png",
+    "type": "clothing",
+    "ingredients": {
+      ":one_of:": ["spiceberry", "rhubarb"],
+      "cloth": 1
+    }
+  },
+  "pinkOveralls": {
+    "name": "Pink Overalls",
+    "img": "pink_overalls.png",
+    "type": "clothing",
+    "ingredients": {
+      "sweetpea": 1,
+      "cloth": 1
+    }
+  },
+  "blackberryCobbler": {
+    "name": "Blackberry Cobbler",
+    "img": "blackberry_cobbler.png",
+    "type": "cooking",
+    "price": 200,
+    "health": 56,
+    "energy": 125,
+    "favorite": ["abigail", "susan"],
+    "ingredients": {
+      ":any:": "flour",
+      "blackberry": 2,
+      "sugar": 1
+    },
+    "buffs": {
+      "time": "7m",
+      "effects": [{ "type": "farming", "value": 2 }]
+    }
+  },
+  "blueShirtOveralls": {
+    "name": "Blue Shirt Overalls",
+    "img": "blue_shirt_overalls.png",
+    "type": "clothing",
+    "ingredients": {
+      "blackberry": 1,
+      "cloth": 1
+    }
+  },
+  "roastedHazelnuts": {
+    "name": "Roasted Hazelnuts",
+    "img": "roasted_hazelnuts.png",
+    "type": "cooking",
+    "price": 270,
+    "health": 78,
+    "energy": 175,
+    "favorite": ["kent"],
+    "ingredients": {
+      "hazelnut": 3
+    }
+  },
+  "stuffing": {
+    "name": "Stuffing",
+    "img": "stuffing.png",
+    "type": "cooking",
+    "price": 165,
+    "health": 76,
+    "energy": 170,
+    "favorite": ["evelyn"],
+    "ingredients": {
+      "cranberries": 1,
+      "hazelnut": 1,
+      "bread": 1
+    },
+    "buffs": {
+      "time": "5m 35s",
+      "effects": [{ "type": "defense", "value": 2 }]
+    }
+  },
+  "brownOveralls": {
+    "name": "Brown Overalls",
+    "img": "brown_overalls.png",
+    "type": "clothing",
+    "ingredients": {
+      "hazelnut": 1,
+      "cloth": 1
+    }
+  },
+  "plumPudding": {
+    "name": "Plum Pudding",
+    "img": "plum_pudding.png",
+    "type": "cooking",
+    "price": 260,
+    "health": 78,
+    "energy": 175,
+    "favorite": ["jas"],
+    "ingredients": {
+      "wildplum": 2,
+      ":any:": "flour",
+      "sugar": 1
+    }
+  },
+  "farmerPants": {
+    "name": "Farmer Pants",
+    "img": "farmer_pants.png",
+    "type": "clothing",
+    "ingredients": {
+      ":one_of:": [
+        "wildplum",
+        "cranberries",
+        "pineapple",
+        "powdermelon",
+        "strawberry"
+      ],
+      "cloth": 1
+    }
+  },
+  "wildSeedsWinter": {
+    "name": "Wild Seeds (Winter)",
+    "img": "wild_seeds_winter.png",
+    "type": "crafting",
+    "ingredients": {
+      "winterroot": 1,
+      "snowyam": 1,
+      "crocus": 1,
+      "crystalfruit": 1
+    }
+  },
+  "purpleCollaredShirt": {
+    "name": "Purple Collared Shirt",
+    "img": "purple_collared_shirt.png",
+    "type": "clothing",
+    "ingredients": {
+      "crocus": 1,
+      "cloth": 1
+    }
+  },
+  "blueBandanaShirt": {
+    "name": "Blue Bandana Shirt",
+    "img": "blue_bandana_shirt.png",
+    "type": "clothing",
+    "ingredients": {
+      "crystalfruit": 1,
+      "cloth": 1
+    }
+  },
+  "lightBlueBlouse": {
+    "name": "Light Blue Blouse",
+    "img": "light_blue_blouse.png",
+    "type": "clothing",
+    "ingredients": {
+      "snowyam": 1,
+      "cloth": 1
+    }
+  },
+  "rootsPlatter": {
+    "name": "Roots Platter",
+    "img": "roots_platter.png",
+    "type": "cooking",
+    "price": 100,
+    "health": 56,
+    "energy": 125,
+    "favorite": ["penny", "marlon"],
+    "ingredients": {
+      "winterroot": 1,
+      "cavecarrot": 1
+    },
+    "buffs": {
+      "time": "5m 35s",
+      "effects": [{ "type": "attack", "value": 3 }]
+    }
+  },
+  "orangeBowShirt": {
+    "name": "Orange Bow Shirt",
+    "img": "orange_bow_shirt.png",
+    "type": "clothing",
+    "ingredients": {
+      ":one_of:": ["winterroot", "snowyam"],
+      "cloth": 1
+    }
+  },
+  "survivalBurger": {
+    "name": "Survival Burger",
+    "img": "survival_burger.png",
+    "type": "cooking",
+    "price": 180,
+    "health": 56,
+    "energy": 125,
+    "favorite": ["emily"],
+    "ingredients": {
+      "bread": 1,
+      "eggplant": 1,
+      "cavecarrot": 1
+    },
+    "buffs": {
+      "time": "5m 35s",
+      "effects": [{ "type": "foraging", "value": 3 }]
+    }
+  },
+  "greenBeltedShirt": {
+    "name": "Green Belted Shirt",
+    "img": "green_belted_shirt.png",
+    "type": "clothing",
+    "ingredients": {
+      "cavecarrot": 1,
+      "cloth": 1
+    }
+  },
+  "warpTotemIsland": {
+    "name": "Warp Totem: Island",
+    "img": "warp_totem_island.png",
+    "type": "crafting",
+    "price": 20,
+    "ingredients": {
+      "hardwood": 5,
+      "ginger": 1,
+      "dragontooth": 1
+    }
+  },
+  "gingerAle": {
+    "name": "Ginger Ale",
+    "img": "ginger_ale.png",
+    "type": "cooking",
+    "price": 200,
+    "health": 28,
+    "energy": 63,
+    "favorite": ["vincent"],
+    "ingredients": {
+      "ginger": 3,
+      "sugar": 1
+    },
+    "buffs": {
+      "time": "5m",
+      "effects": [{ "type": "luck", "value": 1 }]
+    }
+  },
+  "foragersHat": {
+    "name": "Forager's Hat",
+    "img": "foragers_hat.png",
+    "type": "clothing",
+    "ingredients": {
+      "ginger": 1,
+      "cloth": 1
+    }
+  },
+  "shirtAndBelt": {
+    "name": "Shirt and Belt",
+    "img": "shirt_and_belt.png",
+    "type": "clothing",
+    "ingredients": {
+      ":one_of:": [
+        "carrot",
+        "cauliflower",
+        "garlic",
+        "greenbean",
+        "hops",
+        "kale",
+        "parsnip",
+        "potato",
+        "taroroot",
+        "tealeaves",
+        "unmilledrice"
+      ],
+      "cloth": 1
+    }
+  },
+  "tankTop": {
+    "name": "Tank Top",
+    "img": "tank_top.png",
+    "type": "clothing",
+    "ingredients": {
+      ":one_of:": ["radish", "redcabbage", "summersquash"],
+      "cloth": 1
+    }
+  },
+  "buttonDownShirt": {
+    "name": "Button Down Shirt",
+    "img": "button_down_shirt.png",
+    "type": "clothing",
+    "ingredients": {
+      ":one_of:": [
+        "beet",
+        "eggplant",
+        "artichoke",
+        "yam",
+        "pumpkin",
+        "bokchoy",
+        "broccoli"
+      ],
+      "cloth": 1
+    }
+  },
+  "cropTopShirt": {
+    "name": "Crop Top Shirt",
+    "img": "crop_top_shirt.png",
+    "type": "clothing",
+    "ingredients": {
+      "amaranth": 1,
+      "cloth": 1
+    }
+  },
+  "whiteTurban": {
+    "name": "White Turban",
+    "img": "white_turban.png",
+    "type": "clothing",
+    "ingredients": {
+      "sweetgemberry": 1,
+      "cloth": 1
+    }
+  },
+  "fairyDust": {
+    "name": "Fairy Dust",
+    "img": "fairy_dust.png",
+    "type": "crafting",
+    "price": 300,
+    "ingredients": {
+      "fairyRose": 1,
+      "diamond": 1
+    }
+  },
+  "longDress": {
+    "name": "Long Dress",
+    "img": "long_dress.png",
+    "type": "clothing",
+    "ingredients": {
+      ":one_of:": ["fairyRose", "sunflower"],
+      "cloth": 1
+    }
+  },
+  "skirt": {
+    "name": "Skirt",
+    "img": "skirt.png",
+    "type": "clothing",
+    "ingredients": {
+      ":one_of:": ["bluejazz", "tulip"],
+      "cloth": 1
+    }
+  },
+  "flannelShirt": {
+    "name": "Flannel Shirt",
+    "img": "flannel_shirt.png",
+    "type": "clothing",
+    "ingredients": {
+      "coffeebean": 1,
+      "cloth": 1
+    }
+  },
+  "poppyseedMuffin": {
+    "name": "Poppyseed Muffin",
+    "img": "poppyseed_muffin.png",
+    "type": "cooking",
+    "price": 250,
+    "health": 67,
+    "energy": 150,
+    "favorite": ["penny", "leah", "susan"],
+    "ingredients": {
+      ":any:": "flour",
+      "poppy": 1,
+      "sugar": 1
+    }
+  },
+  "pleatedSkirt": {
+    "name": "Pleated Skirt",
+    "img": "pleated_skirt.png",
+    "type": "clothing",
+    "ingredients": {
+      ":one_of:": ["poppy", "summerspangle"],
+      "cloth": 1
+    }
+  },
+  "farmersLunch": {
+    "name": "Farmer's Lunch",
+    "img": "farmers_lunch.png",
+    "type": "cooking",
+    "price": 150,
+    "health": 90,
+    "energy": 200,
+    "favorite": ["marnie"],
+    "ingredients": {
+      "parsnip": 1,
+      "omelet": 1
+    },
+    "buffs": {
+      "time": "5m 35s",
+      "effects": [{ "type": "farming", "value": 3 }]
+    }
+  },
+  "beanHotpot": {
+    "name": "Bean Hotpot",
+    "img": "bean_hotpot.png",
+    "type": "cooking",
+    "price": 100,
+    "health": 56,
+    "energy": 125,
+    "favorite": ["demetrius", "gunther"],
+    "ingredients": {
+      "greenbean": 2
+    },
+    "buffs": {
+      "time": "5m 35s",
+      "effects": [
+        { "type": "maxEnergy", "value": 30 },
+        { "type": "magnetism", "value": 32 }
+      ]
+    }
+  },
+  "cheeseCauliflower": {
+    "name": "Cheese Cauliflower",
+    "img": "cheese_cauliflower.png",
+    "type": "cooking",
+    "price": 300,
+    "health": 62,
+    "energy": 138,
+    "favorite": ["maru"],
+    "ingredients": {
+      "cauliflower": 1,
+      ":any:": "cheese"
+    }
+  },
+  "hashbrowns": {
+    "name": "Hashbrowns",
+    "img": "hashbrowns.png",
+    "type": "cooking",
+    "price": 120,
+    "health": 40,
+    "energy": 90,
+    "ingredients": {
+      "potato": 1,
+      ":any:": "oil"
+    },
+    "buffs": {
+      "time": "5m 35s",
+      "effects": [{ "type": "farming", "value": 1 }]
+    }
+  },
+  "oilOfGarlic": {
+    "name": "Oil of Garlic",
+    "img": "oil_of_garlic.png",
+    "type": "crafting",
+    "price": 1000,
+    "health": 89,
+    "energy": 200,
+    "ingredients": {
+      "garlic": 1,
+      ":any:": "oil"
+    },
+    "buffs": {
+      "time": "10m",
+      "effects": [{ "type": "oilOfGarlic" }]
+    }
+  },
+  "poi": {
+    "name": "Poi",
+    "img": "poi.png",
+    "type": "cooking",
+    "price": 400,
+    "health": 33,
+    "energy": 75,
+    "favorite": ["leo"],
+    "ingredients": {
+      "taroRoot": 4
+    }
+  },
+  "rhubarbPie": {
+    "name": "Rhubarb Pie",
+    "img": "rhubarb_pie.png",
+    "type": "cooking",
+    "price": 400,
+    "health": 96,
+    "energy": 215,
+    "favorite": ["jodi", "maru", "susan"],
+    "ingredients": {
+      ":any:": "flour",
+      "rhubarb": 1,
+      "sugar": 1
+    }
+  },
+  "fruitSalad": {
+    "name": "Fruit Salad",
+    "img": "fruit_salad.png",
+    "type": "cooking",
+    "price": 450,
+    "health": 118,
+    "energy": 263,
+    "favorite": ["haley"],
+    "ingredients": {
+      "blueberry": 1,
+      "melon": 1,
+      "apricot": 1
+    }
+  },
+  "bruschetta": {
+    "name": "Bruschetta",
+    "img": "bruschetta.png",
+    "type": "cooking",
+    "price": 210,
+    "health": 50,
+    "energy": 113,
+    "favorite": ["claire"],
+    "ingredients": {
+      "bread": 1,
+      "tomato": 1,
+      ":any:": "oil"
+    }
+  },
+  "eggplantParmesan": {
+    "name": "Eggplant Parmesan",
+    "img": "eggplant_parmesan.png",
+    "type": "cooking",
+    "price": 200,
+    "health": 78,
+    "energy": 175,
+    "favorite": ["jodi"],
+    "ingredients": {
+      "eggplant": 1,
+      "tomato": 1
+    },
+    "buffs": {
+      "time": "4m 39s",
+      "effects": [
+        { "type": "mining", "value": 1 },
+        { "type": "defense", "value": 3 }
+      ]
+    }
+  },
+  "pizza": {
+    "name": "Pizza",
+    "img": "pizza.png",
+    "type": "cooking",
+    "price": 300,
+    "health": 67,
+    "energy": 150,
+    "favorite": ["sam", "shane"],
+    "ingredients": {
+      ":any_each:": ["cheese", "flour"],
+      "tomato": 1
+    }
+  },
+  "spaghetti": {
+    "name": "Spaghetti",
+    "img": "spaghetti.png",
+    "type": "cooking",
+    "price": 120,
+    "health": 33,
+    "energy": 75,
+    "favorite": ["robin", "victor"],
+    "ingredients": {
+      ":any:": "flour",
+      "tomato": 1
+    }
+  },
+  "squidInkRavioli": {
+    "name": "Squid Ink Ravioli",
+    "img": "squid_ink_ravioli.png",
+    "type": "cooking",
+    "price": 150,
+    "health": 56,
+    "energy": 125,
+    "ingredients": {
+      ":any:": "flour",
+      "squidink": 1,
+      "tomato": 1
+    },
+    "buffs": {
+      "effects": [
+        { "type": "mining", "value": 1, "time": "4m 39s" },
+        { "type": "squidInkRavioli", "time": "2m 59s" }
+      ]
+    }
+  },
+  "vegetableMedley": {
+    "name": "Vegetable Medley",
+    "img": "vegetable_medley.png",
+    "type": "cooking",
+    "price": 120,
+    "health": 74,
+    "energy": 165,
+    "favorite": ["jodi", "leah", "lewis"],
+    "ingredients": {
+      "tomato": 1,
+      "beet": 1
+    }
+  },
+  "tomatoShirt": {
+    "name": "Tomato Shirt",
+    "img": "tomato_shirt.png",
+    "type": "clothing",
+    "ingredients": {
+      "tomato": 1,
+      "cloth": 1
+    }
+  },
+  "pepperPoppers": {
+    "name": "Pepper Poppers",
+    "img": "pepper_poppers.png",
+    "type": "cooking",
+    "price": 200,
+    "health": 58,
+    "energy": 130,
+    "favorite": ["maru", "shane"],
+    "ingredients": {
+      "hotpepper": 1,
+      ":any:": "cheese"
+    },
+    "buffs": {
+      "time": "7m",
+      "effects": [
+        { "type": "farming", "value": 2 },
+        { "type": "speed", "value": 1 }
+      ]
+    }
+  },
+  "shorts": {
+    "name": "Shorts",
+    "img": "shorts.png",
+    "type": "clothing",
+    "ingredients": {
+      ":one_of:": ["hotpepper", "blueberry", "grape", "melon"],
+      "cloth": 1
+    }
+  },
+  "cropTankTop": {
+    "name": "Crop Tank Top",
+    "img": "crop_tank_top.png",
+    "type": "clothing",
+    "ingredients": {
+      "wheat": 1,
+      "cloth": 1
+    }
+  },
+  "radishSalad": {
+    "name": "Radish Salad",
+    "img": "radish_salad.png",
+    "type": "cooking",
+    "price": 300,
+    "health": 90,
+    "energy": 200,
+    "ingredients": {
+      "radish": 1,
+      ":any:": "oil",
+      "vinegar": 1
+    }
+  },
+  "redPlate": {
+    "name": "Red Plate",
+    "img": "red_plate.png",
+    "type": "cooking",
+    "price": 400,
+    "health": 108,
+    "energy": 240,
+    "favorite": ["penny"],
+    "ingredients": {
+      "redcabbage": 1,
+      "radish": 1
+    },
+    "buffs": {
+      "time": "3m 30s",
+      "effects": [{ "type": "maxEnergy", "value": 50 }]
+    }
+  },
+  "coleslaw": {
+    "name": "Coleslaw",
+    "img": "coleslaw.png",
+    "type": "cooking",
+    "price": 345,
+    "health": 95,
+    "energy": 213,
+    "ingredients": {
+      "redcabbage": 1,
+      "vinegar": 1,
+      ":any:": "mayonnaise"
+    }
+  },
+  "junimoHut": {
+    "name": "Junimo Hut",
+    "img": "junimo_hut.png",
+    "type": "building",
+    "price": 20000,
+    "ingredients": {
+      "fiber": 100,
+      "stone": 200,
+      "starfruit": 9
+    }
+  },
+  "geniePants": {
+    "name": "Genie Pants",
+    "img": "genie_pants.png",
+    "type": "clothing",
+    "ingredients": {
+      ":one_of:": ["starfruit", "ancientfruit"],
+      "cloth": 1
+    }
+  },
+  "tortilla": {
+    "name": "Tortilla",
+    "img": "tortilla.png",
+    "type": "cooking",
+    "price": 50,
+    "health": 22,
+    "energy": 50,
+    "ingredients": {
+      "cornflour": 1
+    }
+  },
+  "stripedShirt": {
+    "name": "Striped Shirt",
+    "img": "striped_shirt.png",
+    "type": "clothing",
+    "ingredients": {
+      "corn": 1,
+      "cloth": 1
+    }
+  },
+  "superMeal": {
+    "name": "Super Meal",
+    "img": "super_meal.png",
+    "type": "cooking",
+    "price": 220,
+    "health": 72,
+    "energy": 160,
+    "favorite": ["harvey"],
+    "ingredients": {
+      "bokchoy": 1,
+      "cranberries": 1,
+      "artichoke": 1
+    },
+    "buffs": {
+      "time": "7m",
+      "effects": [
+        { "type": "speed", "value": 1 },
+        { "type": "maxEnergy", "value": 40 }
+      ]
+    }
+  },
+  "autumnsBounty": {
+    "name": "Autumn's Bounty",
+    "img": "autumns_bounty.png",
+    "type": "cooking",
+    "price": 350,
+    "health": 99,
+    "energy": 220,
+    "favorite": ["lewis"],
+    "ingredients": {
+      "pumpkin": 1,
+      "yam": 1
+    },
+    "buffs": {
+      "time": "7m 41s",
+      "effects": [
+        { "type": "foraging", "value": 2 },
+        { "type": "defense", "value": 2 }
+      ]
+    }
+  },
+  "jackOLantern": {
+    "name": "Jack-O-Lantern",
+    "img": "jack_o_lantern.png",
+    "type": "crafting",
+    "price": 100,
+    "ingredients": {
+      "pumpkin": 1,
+      "torch": 1
+    }
+  },
+  "glazedYams": {
+    "name": "Glazed Yams",
+    "img": "glazed_yams.png",
+    "type": "cooking",
+    "price": 200,
+    "health": 90,
+    "energy": 200,
+    "favorite": ["lewis", "pam", "scarlett"],
+    "ingredients": {
+      "yam": 1,
+      "sugar": 1
+    }
+  },
+  "cranberryCandy": {
+    "name": "Cranberry Candy",
+    "img": "cranberry_candy.png",
+    "type": "cooking",
+    "price": 200,
+    "health": 56,
+    "energy": 125,
+    "favorite": ["vincent", "susan"],
+    "ingredients": {
+      "cranberries": 1,
+      "sugar": 1,
+      "apple": 1
+    }
+  },
+  "cranberrySauce": {
+    "name": "Cranberry Sauce",
+    "img": "cranberry_sauce.png",
+    "type": "cooking",
+    "price": 120,
+    "health": 56,
+    "energy": 125,
+    "ingredients": {
+      "cranberries": 1,
+      "sugar": 1
+    },
+    "buff": {
+      "time": "3m 30s",
+      "effects": [{ "type": "mining", "value": 2 }]
+    }
+  },
+  "eightiesShirt": {
+    "name": "Eighties Shirt",
+    "img": "eighties_shirt.png",
+    "type": "clothing",
+    "ingredients": {
+      "cactusfruit": 1,
+      "cloth": 1
+    }
+  },
+  "bakedBerryOatmeal": {
+    "name": "Baked Berry Oatmeal",
+    "img": "sve_baked_berry_oatmeal.png",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Baked_Berry_Oatmeal",
+    "type": "cooking",
+    "price": 400,
+    "health": 90,
+    "energy": 200,
+    "favorite": ["andy", "demetrius", "linus", "robin", "scarlett"],
+    "ingredients": {
+      ":any:": "flour",
+      "blackberry": 15,
+      "salmonberry": 15,
+      "sugar": 1
+    },
+    "buffs": {
+      "time": "18m 40s",
+      "effects": [
+        { "type": "farming", "value": 4 },
+        { "type": "foraging", "value": 2 },
+        { "type": "speed", "value": 2 }
+      ]
+    }
+  },
+  "bakedPotato": {
+    "name": "Baked Potato",
+    "img": "sve_baked_potato.png",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Baked_Potato",
+    "type": "cooking",
+    "price": 225,
+    "health": 78,
+    "energy": 175,
+    "favorite": ["gunther"],
+    "ingredients": {
+      "potato": 1,
+      "butter": 1
+    }
+  },
+  "bigBarkBurger": {
+    "name": "Big Bark Burger",
+    "img": "sve_big_bark_burger.png",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Big_Bark_Burger",
+    "type": "cooking",
+    "price": 400,
+    "health": 96,
+    "energy": 213,
+    "favorite": ["gus", "martin"],
+    "ingredients": {
+      "bread": 1,
+      "puppyfish": 1,
+      ":any:": "oil"
+    },
+    "buffs": {
+      "time": "5m 35s",
+      "effects": [
+        { "type": "attack", "value": 3 },
+        { "type": "speed", "value": 1 }
+      ]
+    }
+  },
+  "birchSyrup": {
+    "name": "Birch Syrup",
+    "img": "sve_birch_syrup.png",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Birch_Syrup",
+    "type": "crafting",
+    "price": 500,
+    "health": 39,
+    "energy": 88,
+    "favorite": ["pam"],
+    "ingredients": {
+      "birchwater": 3,
+      "sap": 25
+    }
+  },
+  "flowerCookie": {
+    "name": "Flower Cookie",
+    "img": "sve_flower_cookie.png",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Flower_Cookie",
+    "type": "cooking",
+    "price": 185,
+    "health": 84,
+    "energy": 188,
+    "favorite": ["sophia", "willy"],
+    "ingredients": {
+      ":any_each:": ["flour", "egg"],
+      "sugar": 1,
+      "ferngillprimrose": 1,
+      "goldenrod": 1,
+      "winterstarrose": 1
+    },
+    "buffs": {
+      "time": "9m 20s",
+      "effects": [
+        { "type": "foraging", "value": 2 },
+        { "type": "luck", "value": 2 },
+        { "type": "speed", "value": 2 }
+      ]
+    }
+  },
+  "frogLegs": {
+    "name": "Frog Legs",
+    "img": "sve_frog_legs.png",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Frog_Legs",
+    "type": "cooking",
+    "price": 400,
+    "health": 34,
+    "energy": 75,
+    "favorite": ["linus", "magnus", "pierre"],
+    "ingredients": {
+      "frog": 1,
+      ":any_each:": ["flour", "oil"]
+    },
+    "buffs": {
+      "time": "5m 35s",
+      "effects": [
+        { "type": "speed", "value": 2 },
+        { "type": "defense", "value": 2 }
+      ]
+    }
+  },
+  "glazedButterfish": {
+    "name": "Glazed Butterfish",
+    "img": "sve_glazed_butterfish.png",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Glazed_Butterfish",
+    "type": "cooking",
+    "price": 800,
+    "health": 90,
+    "energy": 200,
+    "favorite": ["andy", "claire"],
+    "ingredients": {
+      "butterfish": 1,
+      "sugar": 1,
+      ":any_each:": ["oil", "flour"]
+    },
+    "buffs": {
+      "time": "5m 35s",
+      "effects": [
+        { "type": "fishing", "value": 2 },
+        { "type": "luck", "value": 2 }
+      ]
+    }
+  },
+  "mixedBerryPie": {
+    "name": "Mixed Berry Pie",
+    "img": "sve_mixed_berry_pie.png",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Mixed_Berry_Pie",
+    "type": "cooking",
+    "price": 250,
+    "health": 84,
+    "energy": 188,
+    "favorite": [
+      "andy",
+      "claire",
+      "evelyn",
+      "jas",
+      "leah",
+      "leo",
+      "martin",
+      "sandy",
+      "sophia",
+      "susan",
+      "vincent"
+    ],
+    "ingredients": {
+      ":any:": "flour",
+      "blackberry": 6,
+      "bearberry": 6,
+      "salalberry": 6,
+      "strawberry": 6,
+      "sugar": 1
+    },
+    "buffs": {
+      "time": "18m 40s",
+      "effects": [
+        { "type": "farming", "value": 3 },
+        { "type": "maxEnergy", "value": 50 }
+      ]
+    }
+  },
+  "mushroomBerryRice": {
+    "name": "Mushroom Berry Rice",
+    "img": "sve_mushroom_berry_rice.png",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Mushroom_Berry_Rice",
+    "type": "cooking",
+    "price": 115,
+    "health": 1,
+    "energy": 3,
+    "favorite": ["lance", "marlon"],
+    "ingredients": {
+      "rice": 1,
+      "poisonmushroom": 3,
+      "redbaneberry": 10,
+      "sugar": 2
+    },
+    "buffs": {
+      "time": "9m 20s",
+      "effects": [
+        { "type": "mining", "value": 3 },
+        { "type": "maxEnergy", "value": -50 },
+        { "type": "magnetism", "value": 32 },
+        { "type": "attack", "value": 3 },
+        { "type": "defense", "value": 3 }
+      ]
+    }
+  },
+  "seaweedSalad": {
+    "name": "Seaweed Salad",
+    "img": "sve_seaweed_salad.png",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Seaweed_Salad",
+    "type": "cooking",
+    "price": 200,
+    "health": 79,
+    "energy": 175,
+    "favorite": ["willy"],
+    "ingredients": {
+      "seaweed": 2,
+      "dulseseaweed": 2,
+      ":any:": "oil"
+    },
+    "buffs": {
+      "time": "10m 30s",
+      "effects": [
+        { "type": "fishing", "value": 1 },
+        { "type": "maxEnergy", "value": 30 }
+      ]
+    }
+  },
+  "voidDelight": {
+    "name": "Void Delight",
+    "img": "sve_void_delight.png",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Void_Delight",
+    "type": "cooking",
+    "price": 800,
+    "health": 1,
+    "energy": 3,
+    "favorite": ["krobus", "magnus", "marlon"],
+    "ingredients": {
+      "voideel": 1,
+      "voidessence": 50,
+      "solaressence": 20
+    },
+    "buffs": {
+      "time": "7m",
+      "effects": [
+        { "type": "mining", "value": 2 },
+        { "type": "luck", "value": 2 },
+        { "type": "maxEnergy", "value": 20 },
+        { "type": "speed", "value": 2 },
+        { "type": "magnetism", "value": 32 },
+        { "type": "attack", "value": 3 }
+      ]
+    }
+  },
+  "voidSalmonSushi": {
+    "name": "Void Salmon Sushi",
+    "img": "sve_void_salmon_sushi.png",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Void_Salmon_Sushi",
+    "type": "cooking",
+    "price": 800,
+    "health": 1,
+    "energy": 3,
+    "favorite": ["krobus", "magnus"],
+    "ingredients": {
+      "voidsalmon": 1,
+      "voidmayonnaise": 1,
+      "seaweed": 3
+    },
+    "buffs": {
+      "time": "14m",
+      "effects": [
+        { "type": "fishing", "value": 3 },
+        { "type": "maxEnergy", "value": 80 },
+        { "type": "luck", "value": 3 },
+        { "type": "defense", "value": 5 }
+      ]
+    }
+  },
+  "hasteElixir": {
+    "name": "Haste Elixir",
+    "img": "sve_haste_elixir.png",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Haste_Elixir",
+    "type": "crafting",
+    "price": 2000,
+    "health": 2,
+    "energy": 5,
+    "favorite": ["abigail", "magnus", "marlon"],
+    "ingredients": {
+      "voidessence": 35,
+      "voidsoul": 5,
+      "sugar": 1,
+      "spicyEel": 1
+    },
+    "buffs": {
+      "time": "5m",
+      "effects": [{ "type": "speed", "value": 3 }]
+    }
+  },
+  "armorElixir": {
+    "name": "Armor Elixir",
+    "img": "sve_armor_elixir.png",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Armor_Elixir",
+    "type": "crafting",
+    "price": 2000,
+    "health": 2,
+    "energy": 5,
+    "favorite": ["abigail", "marlon", "magnus"],
+    "ingredients": {
+      "solaressence": 30,
+      "voidsoul": 5,
+      "vinegar": 5,
+      "bonefragment": 5
+    },
+    "buffs": {
+      "time": "4m",
+      "effects": [{ "type": "defense", "value": 10 }]
+    }
+  },
+  "heroElixir": {
+    "name": "Hero Elixir",
+    "img": "sve_hero_elixir.png",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Hero_Elixir",
+    "type": "crafting",
+    "price": 2650,
+    "health": 2,
+    "energy": 5,
+    "favorite": ["abigail", "marlon", "magnus"],
+    "ingredients": {
+      "voidpebble": 3,
+      "voidsoul": 5,
+      ":any:": "oil",
+      "slime": 10
+    },
+    "buffs": {
+      "time": "4m 40s",
+      "effects": [{ "type": "attack", "value": 20 }]
+    }
+  },
+  "fishDumpling": {
+    "name": "Fish Dumpling",
+    "img": "sve_fish_dumpling.png",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Fish_Dumpling",
+    "type": "cooking",
+    "price": 100,
+    "health": 50,
+    "energy": 113,
+    "favorite": ["olivia"],
+    "ingredients": {
+      ":any_each:": ["flour", "oil", "fish"]
+    },
+    "buffs": {
+      "time": "5m 35s",
+      "effects": [
+        { "type": "fishing", "value": 2 },
+        { "type": "maxEnergy", "value": 50 }
+      ]
     }
   }
 }

@@ -9,6 +9,7 @@ enum ProduceMachine {
   keg("keg", "keg.png", [
     ProduceMachineOutput.wine(),
     ProduceMachineOutput.juice(),
+    ProduceMachineOutput.nutMilk(),
   ]),
   vinegarKeg("vinegarKeg", "cornucopia_vinegar_keg.png", []),
   dehydrator("dehydrator", "dehydrator.png", [
@@ -22,8 +23,9 @@ enum ProduceMachine {
     ProduceMachineOutput.flavoredYogurt(),
   ]),
   oilMaker("oilMaker", "oil_maker.png", []),
-  butterChurn("butterChurn", "cornucopia_butter_churn.png", []),
-
+  butterChurn("butterChurn", "cornucopia_butter_churn.png", [
+    ProduceMachineOutput.nutButter(),
+  ]),
   dryingRack("dryingRack", "cornucopia_drying_rack.png", [
     ProduceMachineOutput.driedFlower(),
     ProduceMachineOutput.driedHerb(),
@@ -290,14 +292,25 @@ class ProduceMachineOutput {
         from: const [ItemType.fish, ItemType.crabpotcatch],
       );
 
-  const ProduceMachineOutput.roe()
+  const ProduceMachineOutput.nutMilk()
     : this(
-        "Roe",
-        "roe.png",
-        const PriceFormulator(multiplier: 0.5, plus: 30),
+        "Nut Milk",
+        "nut_milk.png",
+        const PriceFormulator(multiplier: 2.25),
         const EnergyFormulator.exact(50.0),
         const HealthFormulator.exact(22.0),
-        "?",
-        from: const [ItemType.fish, ItemType.crabpotcatch],
+        "38 hrs",
+        from: const [ItemType.nut],
+      );
+
+  const ProduceMachineOutput.nutButter()
+    : this(
+        "Nut Butter",
+        "nut_butter.png",
+        const PriceFormulator(multiplier: 1.5),
+        const EnergyFormulator.zero(),
+        const HealthFormulator.zero(),
+        "3 hrs",
+        from: const [ItemType.nut],
       );
 }

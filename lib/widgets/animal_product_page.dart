@@ -27,13 +27,23 @@ class AnimalProductPage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           IconButton(icon: Icon(Icons.arrow_back), onPressed: () => onBack()),
-          ItemGeneralDetails(item: animalProduct, recipes: recipes),
-          Column(
-            spacing: 16.0,
-            crossAxisAlignment: CrossAxisAlignment.start,
+          ItemGeneralDetails(
+            item: animalProduct,
+            recipes: recipes,
+            includeRecipeFavorites: false,
+            favoritesSplit: true,
+          ),
+          Row(
             children: [
-              ItemRawValues(item: animalProduct),
-              ItemProduceValues(item: animalProduct),
+              Column(
+                spacing: 16.0,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  ItemRawValues(item: animalProduct),
+                  if (animalProduct.specialProduce != null)
+                    ItemProduceValues(item: animalProduct),
+                ],
+              ),
             ],
           ),
         ],

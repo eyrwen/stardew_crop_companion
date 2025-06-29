@@ -169,7 +169,6 @@
     "name": "Chanterelle",
     "url": "http://stardewvalleywiki.com/Chanterelle",
     "img": "chanterelle.png",
-
     "type": "mushroom",
     "price": 160,
     "health": 33,
@@ -179,7 +178,6 @@
     "name": "Hazelnut",
     "url": "http://stardewvalleywiki.com/Hazelnut",
     "img": "hazelnut.png",
-
     "type": "nut",
     "price": 90,
     "health": 13,
@@ -193,7 +191,6 @@
     "name": "Purple Mushroom",
     "url": "http://stardewvalleywiki.com/Purple_Mushroom",
     "img": "purplemushroom.png",
-
     "type": "mushroom",
     "price": 250,
     "health": 56,
@@ -204,7 +201,6 @@
     "name": "Wild Plum",
     "url": "http://stardewvalleywiki.com/Wild_Plum",
     "img": "wildplum.png",
-
     "type": "fruit",
     "price": 80,
     "health": 11,
@@ -337,64 +333,6 @@
         "time": "6 hrs",
         "health": 5,
         "energy": 13
-      }
-    },
-    "recipes": {
-      "tomKhaSoup": {
-        "name": "Tom Kha Soup",
-        "img": "tom_kha_soup.png",
-        "price": 250,
-        "health": 78,
-        "energy": 175,
-        "favorite": ["elliot", "penny"],
-        "ingredients": {
-          "coconut": 1,
-          "shrimp": 1,
-          "commonmushroom": 1
-        }
-      },
-      "tropicalCurry": {
-        "name": "Tropical Curry",
-        "img": "tropical_curry.png",
-        "price": 500,
-        "health": 67,
-        "energy": 150,
-        "favorite": ["caroline", "gus"],
-        "ingredients": {
-          "coconut": 1,
-          "pineapple": 1,
-          "mango": 1,
-          "taroRoot": 1
-        }
-      },
-      "mangoStickyRice": {
-        "name": "Mango Sticky Rice",
-        "img": "mango_sticky_rice.png",
-        "price": 250,
-        "health": 50,
-        "energy": 113,
-        "favorite": ["sandy"]
-      }
-    },
-    "crafting": {
-      "warpTotemDesert": {
-        "name": "Warp Totem: Desert",
-        "img": "warp_totem_desert.png",
-        "materials": {
-          "coconut": 1,
-          "hardwood": 2,
-          "iridiumOre": 1
-        }
-      },
-      "desertObelisk": {
-        "name": "Desert Obelisk",
-        "img": "desert_obelisk.png",
-        "materials": {
-          "coconut": 10,
-          "gold": 1000000,
-          "iridiumBar": 20,
-          "cactusFruit": 10
-        }
       }
     }
   },
@@ -671,6 +609,14 @@
         "time": "1 hr",
         "health": 5,
         "energy": 13
+      },
+      "butterChurn": {
+        "name": "Nut Butter",
+        "img": "nut_butter.png",
+        "price": 120,
+        "time": "3 hrs",
+        "health": 0,
+        "energy": 0
       }
     }
   },
@@ -1034,6 +980,14 @@
         "time": "1 hr",
         "health": 5,
         "energy": 13
+      },
+      "mill": {
+        "name": "Corn Flour",
+        "img": "cornflour.png",
+        "price": 100,
+        "time": "1 day",
+        "health": 10,
+        "energy": 26
       }
     }
   },
@@ -1206,6 +1160,17 @@
     "growth": {
       "initial": 12,
       "regrow": 2
+    },
+    "specialProduce": {
+      "jar": {
+        "name": "Pickle Spears",
+        "img": "cornucopia_picklespears.png",
+        "price": 260,
+        "time": "67 hrs",
+        "health": 0,
+        "energy": 0,
+        "favorite": ["harvey"]
+      }
     }
   },
   "goldcarrot": {
@@ -1357,22 +1322,85 @@
     "name": "Void Root",
     "url": "https://stardew-valley-expanded.fandom.com/wiki/Void_Root",
     "img": "sve_voidroot.png",
-
     "type": "vegetable",
     "price": 235,
     "health": 0,
     "energy": -88,
-    "favorite": ["krobus", "magnus"],
-    "growth": {
-      "initial": 8,
-      "regrow": 0
-    },
-    "produce": {
-      "extra": 0,
-      "extraPerc": 0,
-      "price": 235,
-      "jarType": "Pickles",
-      "kegType": "Juice"
+    "favorite": ["krobus", "magnus"]
+  },
+  "bearberry": {
+    "name": "Bearberry",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Bearberry",
+    "img": "sve_bearberry.png",
+    "type": "fruit",
+    "price": 60,
+    "health": 17,
+    "energy": 38,
+    "favorite": ["harvey"]
+  },
+  "poisonmushroom": {
+    "name": "Poison Mushroom",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Poison_Mushroom",
+    "img": "sve_poisonmushroom.png",
+    "type": "mushroom",
+    "price": 60,
+    "health": 0,
+    "energy": -350,
+    "favorite": ["krobus"]
+  },
+  "redbaneberry": {
+    "name": "Red Baneberry",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Red_Baneberry",
+    "img": "sve_redbaneberry.png",
+    "type": "fruit",
+    "price": 20,
+    "health": 0,
+    "energy": -125
+  },
+  "dulseseaweed": {
+    "name": "Dulse Seaweed",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Dulse_Seaweed",
+    "img": "dulse_seaweed.png",
+    "type": "other",
+    "price": 35,
+    "health": 17,
+    "energy": 38
+  },
+  "dewdropberry": {
+    "name": "Dewdrop Berry",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Dewdrop_Berry",
+    "img": "sve_dewdropberry.png",
+    "type": "fruit",
+    "price": 45,
+    "health": 90,
+    "energy": 225,
+    "buffs": {
+      "time": "90m",
+      "effects": [
+        { "type": "speed", "value": 2 },
+        { "type": "luck", "value": 2 },
+        { "type": "maxEnergy", "value": 50 },
+        { "type": "magnetism", "value": 32 }
+      ]
+    }
+  },
+  "greenmushroom": {
+    "name": "Green Mushroom",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Green_Mushroom",
+    "img": "sve_greenmushroom.png",
+
+    "type": "mushroom",
+    "price": 1250,
+    "health": 625,
+    "energy": 1250,
+    "favorite": ["lance"],
+    "buffs": {
+      "time": "26m",
+      "effects": [
+        { "type": "luck", "value": 1 },
+        { "type": "maxEnergy", "value": 200 },
+        { "type": "magnetism", "value": 32 }
+      ]
     }
   },
   "adzukibean": {

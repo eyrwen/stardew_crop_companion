@@ -1,11 +1,14 @@
 import 'interface.dart';
 
-enum RecipeType { 
-  crafting('crafting'), building('building'), cooking('cooking'), clothing('clothing');
+enum RecipeType {
+  crafting('crafting'),
+  building('building'),
+  cooking('cooking'),
+  clothing('clothing');
 
   final String name;
   const RecipeType(this.name);
-  
+
   static RecipeType from(String type) {
     return RecipeType.values.firstWhere(
       (e) => e.name == type,
@@ -150,7 +153,11 @@ class IngredientList {
   final List<String> strictTypeIngredients;
   final List<String> flexibleIngredient;
 
-  IngredientList(this.strictIngredients, this.strictTypeIngredients, this.flexibleIngredient);
+  IngredientList(
+    this.strictIngredients,
+    this.strictTypeIngredients,
+    this.flexibleIngredient,
+  );
 
   factory IngredientList.fromJson(Map<String, dynamic> json) {
     var strictIngredients = <String, int>{};
@@ -158,7 +165,7 @@ class IngredientList {
     var flexibleIngredient = <String>[];
 
     for (var entry in json.entries) {
-      switch(entry.key) {
+      switch (entry.key) {
         case ':any:':
           strictTypeIngredients.add(entry.value as String);
           break;
@@ -182,6 +189,17 @@ class IngredientList {
   }
 
   bool requires(Item item) {
-    return strictIngredients.containsKey(item.key) || strictTypeIngredients.any((type) => item.type.name.contains(type) || item.key.toLowerCase().contains(type)) || flexibleIngredient.contains(item.key);
+    return strictIngredients.containsKey(item.key) ||
+        strictTypeIngredients.any((type) {
+          if (type == 'egg') {
+            // HACK: to avoid returning true for eggplant here
+            return item.type == ItemType.animalproduct &&
+                item.key.toLowerCase().contains(type);
+          }
+
+          return (item.type.name.contains(type)) ||
+              item.key.toLowerCase().contains(type);
+        }) ||
+        flexibleIngredient.contains(item.key);
   }
 }

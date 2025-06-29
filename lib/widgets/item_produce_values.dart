@@ -20,7 +20,7 @@ class ItemProduceValues extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: item.produceOutputs.entries
-              .slices(6)
+              .slices(7)
               .expand(
                 (slice) => [
                   Row(

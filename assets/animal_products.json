@@ -344,6 +344,7 @@
     "price": 65,
     "energy": -92,
     "health": 0,
+    "favorite": ["morgan", "sebastian"],
     "specialProduce": {
       "mayonnaiseMachine": {
         "name": "VoidMayonnaise",
@@ -352,7 +353,7 @@
         "time": "3 hrs",
         "energy": -75,
         "health": 0,
-        "favorite": ["krobus", "sebastian", "morgan"]
+        "favorite": ["krobus", "morgan"]
       }
     }
   },

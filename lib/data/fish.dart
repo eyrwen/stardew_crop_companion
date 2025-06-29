@@ -9,6 +9,7 @@ class Fish extends Edible with Producable {
   final List<int> endTimes;
   final List<String>? pondOutputs;
   final List<FishingLocation> locations;
+  final bool legendary;
 
   Fish({
     required super.key,
@@ -27,6 +28,7 @@ class Fish extends Edible with Producable {
     this.startTimes = const [600], // 6:00 AM
     this.endTimes = const [2600], // 2:00 AM (next day)
     type,
+    this.legendary = false,
   }) : super(type: type ?? ItemType.fish);
 
   factory Fish.fromJson(key, json) {
@@ -44,6 +46,7 @@ class Fish extends Edible with Producable {
         favorites: List<String>.from(json['favorite'] ?? []),
         energy: json['energy'] ?? 0,
         health: json['health'] ?? 0,
+        legendary: json['legendary'] ?? false,
         pondOutputs: json['pond'] != null
             ? (json['pond'] as Map<String, dynamic>).keys.toList()
             : [],
@@ -66,18 +69,31 @@ class Fish extends Edible with Producable {
         endTimes: json['endTimes'] != null
             ? List<int>.from(json['endTimes'])
             : [json['endTime'] ?? 2600], // Default to 2:00 AM (next day)
-        locations: locations.entries
-            .map(
-              (location) => FishingLocation(
-                place: FishableLocation.from(location.key),
-                seasons: (location.value as List)
-                    .map((s) => Season.from(s))
-                    .toList(),
-              ),
-            )
-            .toList(),
+        locations: _buildLocations(json['locations'] as Map<String, dynamic>),
       );
     }
+  }
+
+  static List<FishingLocation> _buildLocations(
+    Map<String, dynamic> locationsJson,
+  ) {
+    final locations = <FishingLocation>[];
+
+    for (var entry in locationsJson.entries) {
+      final place = FishableLocation.from(entry.key);
+      final seasons = (entry.value as List<dynamic>)
+          .map((season) => Season.from(season as String))
+          .toList();
+
+      final matching = locations.firstWhereOrNull(
+        (loc) => ListEquality().equals(loc.seasons, seasons),
+      );
+
+      matching != null
+          ? matching.places.add(place)
+          : locations.add(FishingLocation(places: [place], seasons: seasons));
+    }
+    return locations;
   }
 
   bool get exclusiveToRain {
@@ -85,20 +101,15 @@ class Fish extends Edible with Producable {
   }
 
   bool exclusiveToSeason(Season season) {
-    final locationsInSeason = locations
-        .where((location) => location.seasons.contains(season))
-        .whereNot((location) => FishableLocation.onlySpecial.contains(location.place))
-        .toList();
-    final seasons = locationsInSeason
-        .expand((location) => location.seasons)
-        .toSet();
-
-    return seasons.length == 1 && seasons.contains(season);
+    return locations.length == 1 &&
+        locations.first.seasons.length == 1 &&
+        locations.first.seasons.contains(season);
   }
 
   bool exclusiveToLocation(FishableLocation location) {
-    final locationsOnly = locations.map((location) => location.place);
-    return locationsOnly.length == 1 && locationsOnly.first == location;
+    return locations.length == 1 &&
+        locations.first.places.length == 1 &&
+        locations.first.places.contains(location);
   }
 }
 
@@ -118,6 +129,11 @@ enum Season {
       (e) => e.name == value.toLowerCase(),
       orElse: () => throw ArgumentError('Unknown season: $value'),
     );
+  }
+
+  static bool isAll(List<Season> seasons) {
+    return seasons.length == Season.values.length &&
+        seasons.every((s) => Season.values.contains(s));
   }
 }
 
@@ -155,7 +171,26 @@ enum FishableLocation {
   volcano('volcano', "Volcano", special: true),
   mines('mines', "Mines", special: true),
   submarine('submarine', "Submarine", special: true),
-  crabpot('crabpot', "Crab Pot", special: true);
+  crabpot('crabpot', "Crab Pot", special: true),
+  forbiddenmaze('forbiddenmaze', "Forbidden Maze", special: true),
+  fablereef('fablereef', "Fable Reef", special: true),
+  crimsonbadlands('crimsonbadlands', "Crimson Badlands", special: true),
+  forestwestriver('forestwestriver', "Western Forest River"),
+  adventurersummit('adventurersummit', "Adventurer's Summit"),
+  highlandsriver('highlandsriver', "Highlands River", special: true),
+  highlandsruinspond(
+    'highlandsruinspond',
+    "Highlands Ruins Pond",
+    special: true,
+  ),
+  highlandscavern('highlandscavern', "Highlands Cavern", special: true),
+  shearwaterbridge('shearwaterbridge', "Shearwater Bridge"),
+  diamondcavern('diamondcavern', "Diamond Cavern", special: true),
+  spritespring('spritespring', "Sprite Spring", special: true),
+  junimowoods('junimowoods', "Junimo Woods", special: true),
+  bluemoonvineyardriver('bluemoonvineyardriver', "Blue Moon Vineyard River"),
+  bluemoonvineyardbeach('bluemoonvineyardbeach', "Blue Moon Vineyard Beach"),
+  farm("farm", "Farm");
 
   final String key;
   final String name;
@@ -174,14 +209,31 @@ enum FishableLocation {
         .toList();
   }
 
+  static List<FishableLocation> sort(List<FishableLocation> locations) {
+    return locations.sorted((a, b) {
+      if (a.special && !b.special) return 1;
+      if (!a.special && b.special) return -1;
+      return a.index.compareTo(b.index);
+    });
+  }
+
   const FishableLocation(this.key, this.name, {this.special = false});
 }
 
 class FishingLocation {
-  final FishableLocation place;
+  final List<FishableLocation> places;
   final List<Season> seasons;
 
-  FishingLocation({required this.place, this.seasons = Season.values});
+  FishingLocation({required this.places, this.seasons = Season.values});
+
+  static List<FishingLocation> sort(List<FishingLocation> locations) {
+    return locations.sorted((a, b) {
+      if (a.seasons.length != b.seasons.length) {
+        return a.seasons.length.compareTo(b.seasons.length);
+      }
+      return a.seasons.first.index.compareTo(b.seasons.first.index);
+    });
+  }
 }
 
 enum WaterType {
@@ -220,7 +272,7 @@ class CrabPotCatch extends Fish {
          type: ItemType.crabpotcatch,
          locations: [
            FishingLocation(
-             place: FishableLocation.crabpot,
+             places: [FishableLocation.crabpot],
              seasons: Season.values,
            ),
          ],
