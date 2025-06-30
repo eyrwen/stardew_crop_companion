@@ -91,15 +91,20 @@
     "name": "Wild Horseradish",
     "url": "http://stardewvalleywiki.com/Wild_Horseradish",
     "img": "wildhorseradish.png",
-
     "type": "vegetable",
     "price": 50,
     "health": 5,
     "energy": 13,
     "favorite": ["krobus"],
-    "growth": {
-      "initial": 7,
-      "regrow": 0
+    "specialProduce": {
+      "mayonnaiseMachine":{
+        "name": "Wasabi Mayonnaise",
+        "img": "wasabimayonnaise.png",
+        "price": 173,
+        "time": "3 hrs",
+        "health": 22,
+        "energy": 50
+      }
     }
   },
   "fiddleheadfern": {
@@ -181,11 +186,7 @@
     "type": "nut",
     "price": 90,
     "health": 13,
-    "energy": 30,
-    "growth": {
-      "initial": 7,
-      "regrow": 0
-    }
+    "energy": 30
   },
   "purplemushroom": {
     "name": "Purple Mushroom",
@@ -340,7 +341,6 @@
     "name": "Ginger",
     "url": "http://stardewvalleywiki.com/Ginger",
     "img": "ginger.png",
-
     "type": "spice",
     "price": 60,
     "health": 11,
@@ -871,6 +871,15 @@
       "regrow": 3
     },
     "specialProduce": {
+      "mayonnaiseMachine": {
+        "name": "Spicy Mayonnaise",
+        "img": "spicymayonnaise.png",
+        "price": 150,
+        "time": "3 hrs",
+        "health": 22,
+        "energy": 50,
+        "favorite": ["shane"]
+      },
       "compactMill": {
         "name": "Chili Powder",
         "img": "cornucopia_chilipowder.png",
@@ -879,6 +888,15 @@
         "health": 0,
         "energy": 0,
         "favorite": ["jodi"]
+      },
+      "oilMaker": {
+        "name": "Chili Oil",
+        "img": "chilioil.png",
+        "price": 200,
+        "time": "16 hrs",
+        "health": 5,
+        "energy": 13,
+        "favorite": ["shane"]
       }
     }
   },
@@ -1388,7 +1406,6 @@
     "name": "Green Mushroom",
     "url": "https://stardew-valley-expanded.fandom.com/wiki/Green_Mushroom",
     "img": "sve_greenmushroom.png",
-
     "type": "mushroom",
     "price": 1250,
     "health": 625,
@@ -1402,6 +1419,140 @@
         { "type": "magnetism", "value": 32 }
       ]
     }
+  },
+  "diamondFlower": {
+    "name": "Diamond Flower",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Diamond_Flower",
+    "img": "sve_diamond_flower.png",
+    "type": "flower",
+    "price": 850,
+    "health": 0,
+    "energy": 0,
+    "hasQuality": false
+  },
+  "ferngillPrimrose": {
+    "name": "Ferngill Primrose",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Ferngill_Primrose",
+    "img": "sve_ferngill_primrose.png",
+    "type": "flower",
+    "price": 120,
+    "health": 20,
+    "energy": 45,
+    "favorite": ["sandy"]
+  },
+  "fourLeafClover": {
+    "name": "Four Leaf Clover",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Four_Leaf_Clover",
+    "img": "sve_four_leaf_clover.png",
+    "type": "forage",
+    "price": 400,
+    "health": 0,
+    "energy": 0
+  },
+  "goldenOceanFlower": {
+    "name": "Golden Ocean Flower",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Golden_Ocean_Flower",
+    "img": "sve_golden_ocean_flower.png",
+    "type": "flower",
+    "price": 1000,
+    "health": 0,
+    "energy": 0,
+    "hasQuality": false,
+    "favorite": [
+      "abigail",
+      "alex",
+      "caroline",
+      "claire",
+      "clint",
+      "demetrius",
+      "dwarf",
+      "elliott",
+      "emily",
+      "evelyn",
+      "george",
+      "gunther",
+      "gus",
+      "haley",
+      "harvey",
+      "jas",
+      "jodi",
+      "kent",
+      "krobus",
+      "leah",
+      "leo",
+      "lewis",
+      "linus",
+      "marnie",
+      "martin",
+      "maru",
+      "morris",
+      "olivia",
+      "pam",
+      "penny",
+      "pierre",
+      "robin",
+      "sam",
+      "sandy",
+      "sebastian",
+      "shane",
+      "vincent",
+      "sophia",
+      "susan",
+      "victor",
+      "vicent",
+      "willy"
+    ]
+  },
+  "goldenrod": {
+    "name": "Goldenrod",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Goldenrod",
+    "img": "sve_goldenrod.png",
+    "type": "forage",
+    "price": 160,
+    "health": 26,
+    "energy": 58,
+    "favorite": ["olivia"]
+  },
+  "mushroomColony": {
+    "name": "Mushroom Colony",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Mushroom_Colony",
+    "img": "sve_mushroom_colony.png",
+    "type": "forage",
+    "price": 125,
+    "health": 20,
+    "energy": 45,
+    "favorite": ["linus"]
+  },
+  "rafflesiaSve": {
+    "name": "Rafflesia (SVE)",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Rafflesia",
+    "img": "sve_rafflesia.png",
+    "type": "forage",
+    "price": 375,
+    "health": 0,
+    "energy": 0,
+    "favorite": ["demetrius"]
+  },
+  "thistle": {
+    "name": "Thistle",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Thistle",
+    "img": "sve_thistle.png",
+    "type": "forage",
+    "price": 120,
+    "health": 11,
+    "energy": 25,
+    "favorite": ["evelyn"]
+  },
+  "winterStarRose": {
+    "name": "Winter Star Rose",
+    "url": "https://stardew-valley-expanded.fandom.com/wiki/Winter_Star_Rose",
+    "img": "sve_winter_star_rose.png",
+    "type": "flower",
+    "price": 200,
+    "health": 0,
+    "energy": 0,
+    "hasQuality": false,
+    "favorite": ["emily"]
   },
   "adzukibean": {
     "name": "Adzuki Bean",
@@ -2040,6 +2191,1232 @@
     "buffs": {
       "duration": "7m",
       "types": [{ "type": "luck", "value": 1 }]
+    }
+  },
+  "cuminseeds": {
+    "name": "Cumin Seeds",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Cumin_Seeds",
+    "img": "cornucopia_cuminseeds.png",
+    "type": "spice",
+    "price": 40,
+    "health": 0,
+    "energy": 0
+  },
+  "dahlia": {
+    "name": "Dahlia",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Dahlia",
+    "img": "cornucopia_dahlia.png",
+    "type": "flower",
+    "price": 50,
+    "health": 0,
+    "energy": 0
+  },
+  "daikon": {
+    "name": "Daikon",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Daikon",
+    "img": "cornucopia_daikon.png",
+    "type": "vegetable",
+    "price": 195,
+    "health": 45,
+    "energy": 20,
+    "specialProduce": {
+      "jar": {
+        "name": "Kimchi",
+        "img": "cornucopia_kimchi.png",
+        "price": 440,
+        "time": "67 hrs",
+        "health": 0,
+        "energy": 0
+      }
+    }
+  },
+  "daisy": {
+    "name": "Daisy",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Daisy",
+    "img": "cornucopia_daisy.png",
+    "type": "flower",
+    "price": 15,
+    "health": 20,
+    "energy": 45,
+    "favorite": ["penny"]
+  },
+  "durum": {
+    "name": "Durum Wheat",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Durum_Wheat",
+    "img": "cornucopia_durum.png",
+    "type": "vegetable",
+    "price": 25,
+    "health": 0,
+    "energy": 0,
+    "specialProduce": {
+      "keg": {
+        "name": "Dark Ale",
+        "img": "cornucopia_darkale.png",
+        "price": 300,
+        "time": "38 hrs",
+        "health": 22,
+        "energy": 50
+      },
+      "mill": {
+        "name": "Durum Flour",
+        "img": "cornucopia_durum_flour.png",
+        "price": 50,
+        "time": "1 day",
+        "health": 5,
+        "energy": 13
+      }
+    }
+  },
+  "dill": {
+    "name": "Dill",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Dill",
+    "img": "cornucopia_dill.png",
+    "type": "herb",
+    "price": 65,
+    "health": 9,
+    "energy": 20,
+    "specialProduce": {
+      "mayonnaiseMachine": {
+        "name": "Dill Mayonnaise",
+        "img": "cornucopia_dillmayonnaise.png",
+        "price": 320,
+        "time": "3 hrs",
+        "health": 22,
+        "energy": 50,
+        "favorite": ["gus"]
+      }
+    }
+  },
+  "fairyDuster": {
+    "name": "Fairy Duster",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Fairy_Duster",
+    "img": "cornucopia_fairyduster.png",
+    "type": "flower",
+    "price": 40,
+    "health": 0,
+    "energy": 0
+  },
+  "fallRose": {
+    "name": "Fall Rose",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Fall_Rose",
+    "img": "cornucopia_fallrose.png",
+    "type": "flower",
+    "price": 290,
+    "health": 20,
+    "energy": 45
+  },
+  "fennel": {
+    "name": "Fennel",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Fennel",
+    "img": "cornucopia_fennel.png",
+    "type": "herb",
+    "price": 35,
+    "health": 9,
+    "energy": 20
+  },
+  "fenugreek": {
+    "name": "Fenugreek",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Fenugreek",
+    "img": "cornucopia_fenugreek.png",
+    "type": "herb",
+    "price": 65,
+    "health": 9,
+    "energy": 20
+  },
+  "freesia": {
+    "name": "Freesia",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Freesia",
+    "img": "cornucopia_freesia.png",
+    "type": "flower",
+    "price": 80,
+    "health": 20,
+    "energy": 45
+  },
+  "geranium": {
+    "name": "Geranium",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Geranium",
+    "img": "cornucopia_geranium.png",
+    "type": "flower",
+    "price": 80,
+    "health": 20,
+    "energy": 45
+  },
+  "ginseng": {
+    "name": "Ginseng",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Ginseng",
+    "img": "cornucopia_ginseng.png",
+    "type": "spice",
+    "price": 2600,
+    "health": 11,
+    "energy": 25
+  },
+  "greenpeas": {
+    "name": "Green Peas",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Green_Peas",
+    "img": "cornucopia_greenpeas.png",
+    "type": "vegetable",
+    "price": 35,
+    "health": 11,
+    "energy": 25
+  },
+  "groundcherries": {
+    "name": "Ground Cherries",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Ground_Cherries",
+    "img": "cornucopia_groundcherries.png",
+    "type": "fruit",
+    "price": 60,
+    "health": 11,
+    "energy": 22
+  },
+  "habenero": {
+    "name": "Habenero",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Habenero",
+    "img": "cornucopia_habenero.png",
+    "type": "fruit",
+    "price": 120,
+    "health": 5,
+    "energy": 13,
+    "favorite": ["maru", "shane"],
+    "specialProduce": {
+      "mayonnaiseMachine": {
+        "name": "Spicy Mayonnaise",
+        "img": "cornucopia_spicymayonnaise.png",
+        "price": 270,
+        "health": 22,
+        "energy": 50,
+        "time": "3 hrs",
+        "favorite": ["shane"]
+      },
+      "compactMill": {
+        "name": "Chili Powder",
+        "img": "cornucopia_chilipowder.png",
+        "price": 200,
+        "health": 10,
+        "energy": 25,
+        "time": "3 hrs",
+        "favorite": ["jodi"]
+      },
+      "oilMaker": {
+        "name": "Chili Oil",
+        "img": "cornucopia_chilioil.png",
+        "price": 120,
+        "health": 5,
+        "energy": 13,
+        "time": "16 hrs",
+        "favorite": ["shane"]
+      }
+    }
+  },
+  "honeydew": {
+    "name": "Honeydew",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Honeydew",
+    "img": "cornucopia_honeydew.png",
+    "type": "fruit",
+    "price": 180,
+    "health": 39,
+    "energy": 88
+  },
+  "honeysuckle": {
+    "name": "Honeysuckle",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Honeysuckle",
+    "img": "cornucopia_honeysuckle.png",
+    "type": "flower",
+    "price": 110,
+    "health": 0,
+    "energy": 0
+  },
+  "hyacinth": {
+    "name": "Hyacinth",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Hyacinth",
+    "img": "cornucopia_hyacinth.png",
+    "type": "flower",
+    "price": 80,
+    "health": 0,
+    "energy": 0
+  },
+  "hydrangea": {
+    "name": "Hydrangea",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Hydrangea",
+    "img": "cornucopia_hydrangea.png",
+    "type": "flower",
+    "price": 80,
+    "health": 0,
+    "energy": -50
+  },
+  "iris": {
+    "name": "Iris",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Iris",
+    "img": "cornucopia_iris.png",
+    "type": "flower",
+    "price": 90,
+    "health": 0,
+    "energy": -50
+  },
+  "jalapeno": {
+    "name": "Jalapeño",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Jalapeño",
+    "img": "cornucopia_jalapeno.png",
+    "type": "fruit",
+    "price": 40,
+    "health": 5,
+    "energy": 13,
+    "favorite": ["maru", "shane"],
+    "specialProduce": {
+      "mayonnaiseMachine": {
+        "name": "Spicy Mayonnaise",
+        "img": "cornucopia_spicymayonnaise.png",
+        "price": 270,
+        "health": 22,
+        "energy": 50,
+        "time": "3 hrs",
+        "favorite": ["shane"]
+      },
+      "compactMill": {
+        "name": "Chili Powder",
+        "img": "cornucopia_chilipowder.png",
+        "price": 200,
+        "health": 10,
+        "energy": 25,
+        "time": "3 hrs",
+        "favorite": ["jodi"]
+      },
+      "oilMaker": {
+        "name": "Chili Oil",
+        "img": "cornucopia_chilioil.png",
+        "price": 120,
+        "health": 5,
+        "energy": 13,
+        "time": "16 hrs",
+        "favorite": ["shane"]
+      }
+    }
+  },
+  "kidneybeans": {
+    "name": "Kidney Beans",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Kidney_Beans",
+    "img": "cornucopia_kidneybeans.png",
+    "type": "vegetable",
+    "price": 35,
+    "health": 0,
+    "energy": 0
+  },
+  "kiwifruit": {
+    "name": "Kiwifruit",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Kiwifruit",
+    "img": "cornucopia_kiwifruit.png",
+    "type": "fruit",
+    "price": 85,
+    "health": 22,
+    "energy": 50
+  },
+  "larkspur": {
+    "name": "Larkspur",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Larkspur",
+    "img": "cornucopia_larkspur.png",
+    "type": "flower",
+    "price": 90,
+    "health": 0,
+    "energy": -50
+  },
+  "lavender": {
+    "name": "Lavender",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Lavender",
+    "img": "cornucopia_lavender.png",
+    "type": "flower",
+    "price": 30,
+    "health": 0,
+    "energy": 0
+  },
+  "lemongrass": {
+    "name": "Lemongrass",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Lemongrass",
+    "img": "cornucopia_lemongrass.png",
+    "type": "herb",
+    "price": 50,
+    "health": 9,
+    "energy": 20
+  },
+  "lettuce": {
+    "name": "Lettuce",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Lettuce",
+    "img": "cornucopia_lettuce.png",
+    "type": "vegetable",
+    "price": 65,
+    "health": 22,
+    "energy": 50,
+    "specialProduce": {
+      "jar": {
+        "name": "Kimchi",
+        "img": "cornucopia_kimchi.png",
+        "price": 180,
+        "time": "67 hrs",
+        "health": 0,
+        "energy": 0
+      }
+    }
+  },
+  "licoriceRoot": {
+    "name": "Licorice Root",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Licorice_Root",
+    "img": "cornucopia_licoriceroot.png",
+    "type": "spice",
+    "price": 135,
+    "health": 5,
+    "energy": 13
+  },
+  "lily": {
+    "name": "Lily",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Lily",
+    "img": "cornucopia_lily.png",
+    "type": "flower",
+    "price": 90,
+    "health": 20,
+    "energy": 45,
+    "favorite": ["penny"]
+  },
+  "lotus": {
+    "name": "Lotus",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Lotus",
+    "img": "cornucopia_lotus.png",
+    "type": "flower",
+    "price": 150,
+    "health": 20,
+    "energy": 45,
+    "favorite": ["sandy"]
+  },
+  "lupine": {
+    "name": "Lupine",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Lupine",
+    "img": "cornucopia_lupine.png",
+    "type": "flower",
+    "price": 50,
+    "health": 0,
+    "energy": -50
+  },
+  "marjoram": {
+    "name": "Marjoram",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Marjoram",
+    "img": "cornucopia_marjoram.png",
+    "type": "herb",
+    "price": 50,
+    "health": 9,
+    "energy": 20
+  },
+  "mint": {
+    "name": "Mint",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Mint",
+    "img": "cornucopia_mint.png",
+    "type": "herb",
+    "price": 50,
+    "health": 9,
+    "energy": 20
+  },
+  "morningGlory": {
+    "name": "Morning Glory",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Morning_Glory",
+    "img": "cornucopia_morningglory.png",
+    "type": "flower",
+    "price": 110,
+    "health": 0,
+    "energy": 0
+  },
+  "navybeans": {
+    "name": "Navy Beans",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Navy_Beans",
+    "img": "cornucopia_navybeans.png",
+    "type": "vegetable",
+    "price": 15,
+    "health": 0,
+    "energy": 0
+  },
+  "oats": {
+    "name": "Oats",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Oats",
+    "img": "cornucopia_oats.png",
+    "type": "vegetable",
+    "price": 25,
+    "health": 1,
+    "energy": 3,
+    "specialProduce": {
+      "keg": {
+        "name": "Nut Milk",
+        "img": "nut_milk.png",
+        "price": 28,
+        "time": "38 hrs",
+        "health": 22,
+        "energy": 50
+      },
+      "butterChurn": {
+        "name": "Nut Butter",
+        "img": "nut_butter.png",
+        "price": 18,
+        "time": "3 hrs",
+        "health": 0,
+        "energy": 0
+      }
+    }
+  },
+  "okra": {
+    "name": "Okra",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Okra",
+    "img": "cornucopia_okra.png",
+    "type": "vegetable",
+    "price": 60,
+    "health": 9,
+    "energy": 20
+  },
+  "onion": {
+    "name": "Onion",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Onion",
+    "img": "cornucopia_onion.png",
+    "type": "vegetable",
+    "price": 115,
+    "health": 9,
+    "energy": 20
+  },
+  "orchid": {
+    "name": "Orchid",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Orchid",
+    "img": "cornucopia_orchid.png",
+    "type": "flower",
+    "price": 300,
+    "health": 20,
+    "energy": 45
+  },
+  "oregano": {
+    "name": "Oregano",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Oregano",
+    "img": "cornucopia_oregano.png",
+    "type": "herb",
+    "price": 50,
+    "health": 9,
+    "energy": 20
+  },
+  "pansy": {
+    "name": "Pansy",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Pansy",
+    "img": "cornucopia_pansy.png",
+    "type": "flower",
+    "price": 50,
+    "health": 20,
+    "energy": 45
+  },
+  "parsley": {
+    "name": "Parsley",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Parsley",
+    "img": "cornucopia_parsley.png",
+    "type": "herb",
+    "price": 45,
+    "health": 9,
+    "energy": 20
+  },
+  "passionFruit": {
+    "name": "Passion Fruit",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Passion_Fruit",
+    "img": "cornucopia_passionfruit.png",
+    "type": "fruit",
+    "price": 220,
+    "health": 22,
+    "energy": 50,
+    "love": ["haley"]
+  },
+  "peanut": {
+    "name": "Peanut",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Peanut",
+    "img": "cornucopia_peanut.png",
+    "type": "nut",
+    "price": 85,
+    "health": 20,
+    "energy": 45,
+    "specialProduce": {
+      "butterChurn": {
+        "name": "Peanut Butter",
+        "img": "cornucopia_peanutbutter.png",
+        "price": 200,
+        "time": "3 hrs",
+        "health": 0,
+        "energy": 0,
+        "favorite": ["sam"]
+      },
+      "oilMaker": {
+        "name": "Oil",
+        "img": "oil.png",
+        "price": 100,
+        "time": "16 hrs",
+        "health": 5,
+        "energy": 13
+      }
+    }
+  },
+  "peony": {
+    "name": "Peony",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Peony",
+    "img": "cornucopia_peony.png",
+    "type": "flower",
+    "price": 110,
+    "health": 20,
+    "energy": 45
+  },
+  "perillaLeaves": {
+    "name": "Perilla Leaves",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Perilla_Leaves",
+    "img": "cornucopia_perillaleaves.png",
+    "type": "herb",
+    "price": 50,
+    "health": 9,
+    "energy": 20
+  },
+  "petunia": {
+    "name": "Petunia",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Petunia",
+    "img": "cornucopia_petunia.png",
+    "type": "flower",
+    "price": 50,
+    "health": 0,
+    "energy": -50
+  },
+  "pinkCat": {
+    "name": "Pink Cat",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Pink_Cat",
+    "img": "cornucopia_pinkcat.png",
+    "type": "flower",
+    "price": 30,
+    "health": 20,
+    "energy": 45,
+    "favorite": ["jas"]
+  },
+  "pintoBeans": {
+    "name": "Pinto Beans",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Pinto_Beans",
+    "img": "cornucopia_pintobeans.png",
+    "type": "vegetable",
+    "price": 15,
+    "health": 0,
+    "energy": 0
+  },
+  "pitcherPlant": {
+    "name": "Pitcher Plant",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Pitcher_Plant",
+    "img": "cornucopia_pitcherplant.png",
+    "type": "flower",
+    "price": 150,
+    "health": 0,
+    "energy": 0
+  },
+  "prismaticRose": {
+    "name": "Prismatic Rose",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Prismatic_Rose",
+    "img": "cornucopia_prismaticrose.png",
+    "type": "flower",
+    "price": 1500,
+    "health": 20,
+    "energy": 45,
+    "favorite": [
+      "abigail",
+      "alex",
+      "caroline",
+      "clint",
+      "demetrius",
+      "dwarf",
+      "elliott",
+      "emily",
+      "evelyn",
+      "george",
+      "gus",
+      "haley",
+      "harvey",
+      "jas",
+      "jodi",
+      "kent",
+      "krobus",
+      "lean",
+      "leo",
+      "lewis",
+      "linus",
+      "marnie",
+      "maru",
+      "pam",
+      "penny",
+      "pierre",
+      "robin",
+      "sam",
+      "sandy",
+      "sebastian",
+      "shane",
+      "vincent",
+      "willy",
+      "magnus"
+    ]
+  },
+  "purpleConeflower": {
+    "name": "Purple Coneflower",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Purple_Coneflower",
+    "img": "cornucopia_purpleconeflower.png",
+    "type": "flower",
+    "price": 60,
+    "health": 20,
+    "energy": 45
+  },
+  "quinoa": {
+    "name": "Quinoa",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Quinoa",
+    "img": "cornucopia_quinoa.png",
+    "type": "vegetable",
+    "price": 30,
+    "health": 0,
+    "energy": 0
+  },
+  "rafflesiaCornucopia": {
+    "name": "Rafflesia (Cornucopia)",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Rafflesia",
+    "img": "cornucopia_rafflesia.png",
+    "type": "forage",
+    "price": 2400,
+    "health": 0,
+    "energy": 0
+  },
+  "redOnion": {
+    "name": "Red Onion",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Red_Onion",
+    "img": "cornucopia_redonion.png",
+    "type": "vegetable",
+    "price": 115,
+    "health": 9,
+    "energy": 20
+  },
+  "rose": {
+    "name": "Rose",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Rose",
+    "img": "cornucopia_rose.png",
+    "type": "flower",
+    "price": 290,
+    "health": 20,
+    "energy": 45,
+    "favorite": ["evelyn"]
+  },
+  "rosemary": {
+    "name": "Rosemary",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Rosemary",
+    "img": "cornucopia_rosemary.png",
+    "type": "herb",
+    "price": 75,
+    "health": 9,
+    "energy": 20
+  },
+  "sage": {
+    "name": "Sage",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Sage",
+    "img": "cornucopia_sage.png",
+    "type": "herb",
+    "price": 70,
+    "health": 9,
+    "energy": 20
+  },
+  "shallot": {
+    "name": "Shallot",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Shallot",
+    "img": "cornucopia_shallot.png",
+    "type": "vegetable",
+    "price": 115,
+    "health": 9,
+    "energy": 20
+  },
+  "soybeans": {
+    "name": "Soybeans",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Soybeans",
+    "img": "cornucopia_soybeans.png",
+    "type": "seed",
+    "price": 65,
+    "health": 0,
+    "energy": -50,
+    "specialProduce": {
+      "extruder": {
+        "name": "Beeswax",
+        "img": "cornucopia_beeswax.png",
+        "price": 100,
+        "time": "14 hrs",
+        "health": 0,
+        "energy": 0,
+        "favorite": ["demetrius"]
+      },
+      "compactMill": {
+        "name": "Miso Paste",
+        "img": "cornucopia_misopaste.png",
+        "price": 48,
+        "time": "6 hrs",
+        "health": 0,
+        "energy": 0
+      },
+      "butterChurn": {
+        "name": "Nut Butter",
+        "img": "nut_butter.png",
+        "price": 100,
+        "time": "3 hrs",
+        "health": 0,
+        "energy": 0
+      },
+      "keg": {
+        "name": "Nut Milk",
+        "img": "nut_milk.png",
+        "price": 73,
+        "time": "38 hrs",
+        "health": 22,
+        "energy": 50
+      },
+      "jar": {
+        "name": "Soy Sauce",
+        "img": "cornucopia_soysauce.png",
+        "price": 150,
+        "time": "67 hrs",
+        "health": 0,
+        "energy": 0
+      },
+      "cheesePress": {
+        "name": "Tofu",
+        "img": "cornucopia_tofu.png",
+        "price": 140,
+        "time": "21 hrs",
+        "health": 5,
+        "energy": 13,
+        "favorite": ["emily", "leah"]
+      }
+    }
+  },
+  "spinach": {
+    "name": "Spinach",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Spinach",
+    "img": "cornucopia_spinach.png",
+    "type": "vegetable",
+    "price": 35,
+    "health": 22,
+    "energy": 50
+  },
+  "springRose": {
+    "name": "Spring Rose",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Spring_Rose",
+    "img": "cornucopia_springrose.png",
+    "type": "flower",
+    "price": 290,
+    "health": 20,
+    "energy": 45
+  },
+  "sugarBeet": {
+    "name": "Sugar Beet",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Sugar_Beet",
+    "img": "cornucopia_sugarbeet.png",
+    "type": "vegetable",
+    "price": 180,
+    "health": 13,
+    "energy": 30,
+    "specialProduce": {
+      "mill": {
+        "name": "Sugar",
+        "img": "sugar.png",
+        "price": 200,
+        "time": "1 day",
+        "health": 11,
+        "energy": 25
+      },
+      "vinegarKeg": {
+        "name": "Vinegar",
+        "img": "vinegar.png",
+        "price": 100,
+        "time": "6 hrs",
+        "health": 5,
+        "energy": 13
+      }
+    }
+  },
+  "sugarcane": {
+    "name": "Sugarcane",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Sugarcane",
+    "img": "cornucopia_sugarcane.png",
+    "type": "vegetable",
+    "price": 30,
+    "health": 0,
+    "energy": 0,
+    "specialProduce": {
+      "mill": {
+        "name": "Sugar",
+        "img": "sugar.png",
+        "price": 100,
+        "time": "1 day",
+        "health": 11,
+        "energy": 25
+      },
+      "vinegarKeg": {
+        "name": "Vinegar",
+        "img": "vinegar.png",
+        "price": 100,
+        "time": "6 hrs",
+        "health": 5,
+        "energy": 13
+      }
+    }
+  },
+  "summerRose": {
+    "name": "Summer Rose",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Summer_Rose",
+    "img": "cornucopia_summerrose.png",
+    "type": "flower",
+    "price": 290,
+    "health": 20,
+    "energy": 45
+  },
+  "sweetPotato": {
+    "name": "Sweet Potato",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Sweet_Potato",
+    "img": "cornucopia_sweetpotato.png",
+    "type": "vegetable",
+    "price": 180,
+    "health": 11,
+    "energy": 25,
+    "specialProduce": {
+      "extruder": {
+       "name": "Glass Noodles",
+        "img": "cornucopia_glassnoodles.png",
+        "price": 200,
+        "time": "14 hrs",
+        "health": 0,
+        "energy": 0
+      }
+    }
+  },
+  "tarragon": {
+    "name": "Tarragon",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Tarragon",
+    "img": "cornucopia_tarragon.png",
+    "type": "herb",
+    "price": 60,
+    "health": 9,
+    "energy": 20
+  },
+  "thyme": {
+    "name": "Thyme",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Thyme",
+    "img": "cornucopia_thyme.png",
+    "type": "herb",
+    "price": 50,
+    "health": 9,
+    "energy": 20
+  },
+  "turmeric": {
+    "name": "Turmeric",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Turmeric",
+    "img": "cornucopia_turmeric.png",
+    "type": "spice",
+    "price": 100,
+    "health": 11,
+    "energy": 25
+  },
+  "turnip": {
+    "name": "Turnip",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Turnip",
+    "img": "cornucopia_turnip.png",
+    "type": "vegetable",
+    "price": 75,
+    "health": 11,
+    "energy": 25
+  },
+  "violet": {
+    "name": "Violet",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Violet",
+    "img": "cornucopia_violet.png",
+    "type": "flower",
+    "price": 30,
+    "health": 20,
+    "energy": 45
+  },
+  "wasabiRoot": {
+    "name": "Wasabi Root",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Wasabi_Root",
+    "img": "cornucopia_wasabiroot.png",
+    "type": "vegetable",
+    "price": 165,
+    "health": 5,
+    "energy": 13,
+    "specialProduce": {
+      "mayonnaiseMachine": {
+        "name": "Wasabi Mayonnaise",
+        "img": "cornucopia_wasabimayonnaise.png",
+        "price": 520,
+        "time": "3 hrs",
+        "health": 22,
+        "energy": 50,
+        "favorite": ["shane"]
+      }
+    }
+  },
+  "watermelon": {
+    "name": "Watermelon",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Watermelon",
+    "img": "cornucopia_watermelon.png",
+    "type": "fruit",
+    "price": 640,
+    "health": 56,
+    "energy": 125
+  },
+  "whiteGrape": {
+    "name": "White Grape",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/White_Grape",
+    "img": "cornucopia_whitegrape.png",
+    "type": "fruit",
+    "price": 80,
+    "health": 17,
+    "energy": 38,
+    "specialProduce": {
+      "keg": {
+        "name": "Sparkling Wine",
+        "img": "cornucopia_sparklingwine.png",
+        "price": 780,
+        "time": "100 hrs",
+        "health": 22,
+        "energy": 50,
+        "favorite": ["elliott"]
+      }
+    }
+  },
+  "winterRose": {
+    "name": "Winter Rose",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Winter_Rose",
+    "img": "cornucopia_winterrose.png",
+    "type": "flower",
+    "price": 290,
+    "health": 20,
+    "energy": 45
+  },
+  "wolfsbane": {
+    "name": "Wolfsbane",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Wolfsbane",
+    "img": "cornucopia_wolfsbane.png",
+    "type": "flower",
+    "price": 140,
+    "health": 0,
+    "energy": -50
+  },
+  "wormwood": {
+    "name": "Wormwood",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Wormwood",
+    "img": "cornucopia_wormwood.png",
+    "type": "herb",
+    "price": 150,
+    "health": 0,
+    "energy": -50
+  },
+  "zucchini": {
+    "name": "Zucchini",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Zucchini",
+    "img": "cornucopia_zucchini.png",
+    "type": "vegetable",
+    "price": 60,
+    "health": 20,
+    "energy": 45,
+    "specialProduce": {
+      "extruder": {
+        "name": "Zoodles",
+        "img": "cornucopia_zoodles.png",
+        "price": 100,
+        "time": "4 hrs",
+        "health": 0,
+        "energy": 0,
+        "favorite": ["harvey"]
+      }
+    }
+  },
+  "bayLeaves": {
+    "name": "Bay Leaves",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Bay_Leaves",
+    "img": "cornucopia_bayleaves.png",
+    "type": "herb",
+    "price": 30,
+    "health": 5,
+    "energy": 13
+  },
+  "blackCurrants": {
+    "name": "Black Currants",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Black_Currants",
+    "img": "cornucopia_blackcurrants.png",
+    "type": "berry",
+    "price": 70,
+    "health": 11,
+    "energy": 25,
+    "favorite": ["sebastian"]
+  },
+  "camellia": {
+    "name": "Camellia",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Camellia",
+    "img": "cornucopia_camellia.png",
+    "type": "flower",
+    "price": 90,
+    "health": 20,
+    "energy": 45
+  },
+  "calicoRose": {
+    "name": "Calico Rose",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Calico_Rose",
+    "img": "cornucopia_calico_rose.png",
+    "type": "flower",
+    "price": 400,
+    "health": 20,
+    "energy": 45,
+    "favorite": ["haley"]
+  },
+  "chickenOfTheWoods": {
+    "name": "Chicken of the Woods",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Chicken_of_the_Woods",
+    "img": "cornucopia_chickenofthewoods.png",
+    "type": "mushroom",
+    "price": 200,
+    "health": 17,
+    "energy": 38
+  },
+  "elderberries": {
+    "name": "Elderberries",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Elderberries",
+    "img": "cornucopia_elderberries.png",
+    "type": "fruit",
+    "price": 60,
+    "health": 0,
+    "energy": -50
+  },
+  "gooseberry": {
+    "name": "Gooseberry",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Gooseberry",
+    "img": "cornucopia_gooseberry.png",
+    "type": "fruit",
+    "price": 40,
+    "health": 11,
+    "energy": 25
+  },
+  "holly": {
+    "name": "Holly",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Holly",
+    "img": "cornucopia_holly.png",
+    "type": "forage",
+    "price": 80,
+    "health": 0,
+    "energy": -37
+  },
+  "juniperBerries": {
+    "name": "Juniper Berries",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Juniper_Berries",
+    "img": "cornucopia_juniperberries.png",
+    "type": "fruit",
+    "price": 25,
+    "health": 11,
+    "energy": 25
+  },
+  "lilac": {
+    "name": "Lilac",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Lilac",
+    "img": "cornucopia_lilac.png",
+    "type": "flower",
+    "price": 80,
+    "health": 20,
+    "energy": 45
+  },
+  "olive": {
+    "name": "Olive",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Olive",
+    "img": "cornucopia_olive.png",
+    "type": "vegetable",
+    "price": 35,
+    "health": 9,
+    "energy": 20,
+    "specialProduce": {
+      "jar": {
+        "name": "Brined Olives",
+        "img": "cornucopia_brinedolives.png",
+        "price": 106,
+        "time": "67 hrs",
+        "health": 0,
+        "energy": 0,
+        "favorite": ["lewis"]
+      },
+      "oilMaker": {
+        "name": "Olive Oil",
+        "img": "cornucopia_oliveoil.png",
+        "price": 112,
+        "time": "16 hrs",
+        "health": 5,
+        "energy": 13,
+        "favorite": ["harvey"]
+      }
+    }
+  },
+  "peppercorn": {
+    "name": "Peppercorn",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Peppercorn",
+    "img": "cornucopia_peppercorn.png",
+    "type": "spice",
+    "price": 40,
+    "health": 0,
+    "energy": 0,
+    "specialProduce": {
+      "compactMill": {
+        "name": "Pepper",
+        "img": "cornucopia_pepper.png",
+        "price": 140,
+        "time": "3 hrs",
+        "health": 0,
+        "energy": 0,
+        "favorite": ["jodi"]
+      },
+      "mayonnaiseMachine": {
+        "name": "Black Pepper Mayonnaise",
+        "img": "cornucopia_blackpeppermayo.png",
+        "price": 270,
+        "time": "3 hrs",
+        "health": 22,
+        "energy": 50
+      }
+    }
+  },
+  "raspberry": {
+    "name": "Raspberry",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Raspberry",
+    "img": "cornucopia_raspberry.png",
+    "type": "fruit",
+    "price": 60,
+    "health": 11,
+    "energy": 25,
+    "favorite": ["maru"]
+  },
+  "shiitake": {
+    "name": "Shiitake",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Shiitake",
+    "img": "cornucopia_shiitake.png",
+    "type": "mushroom",
+    "price": 220,
+    "health": 17,
+    "energy": 38
+  },
+  "vanilla": {
+    "name": "Vanilla",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Vanilla",
+    "img": "cornucopia_vanilla.png",
+    "type": "spice",
+    "price": 60,
+    "health": 0,
+    "energy": 0,
+    "specialProduce": {
+      "compactMill": {
+        "name": "Vanilla Extract",
+        "img": "cornucopia_vanillaextract.png",
+        "price": 140,
+        "time": "3 hrs",
+        "health": 0,
+        "energy": 0,
+        "favorite": ["jodi"]
+      },
+      "mayonnaiseMachine": {
+        "name": "Vanilla Mayonnaise",
+        "img": "cornucopia_vanillamayo.png",
+        "price": 270,
+        "time": "3 hrs",
+        "health": 22,
+        "energy": 50
+      }
     }
   }
 }

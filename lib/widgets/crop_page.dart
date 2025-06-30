@@ -23,7 +23,7 @@ class CropPage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           IconButton(icon: Icon(Icons.arrow_back), onPressed: () => onBack()),
-          ItemGeneralDetails(item: crop, recipes: recipes),
+          ItemGeneralDetails(item: crop, recipes: recipes, favoritesSplit: crop.favorites.length > 20),
           Column(
             spacing: 16.0,
             crossAxisAlignment: CrossAxisAlignment.start,

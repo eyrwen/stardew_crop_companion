@@ -11,6 +11,9 @@ enum ProduceMachine {
     ProduceMachineOutput.juice(),
     ProduceMachineOutput.nutMilk(),
   ]),
+  juicer('juicer', 'cornucopia_juicer.png', [
+    ProduceMachineOutput.juice(from: [ItemType.fruit, ItemType.vegetable, ItemType.forage]),
+  ]),
   vinegarKeg("vinegarKeg", "cornucopia_vinegar_keg.png", []),
   dehydrator("dehydrator", "dehydrator.png", [
     ProduceMachineOutput.driedFruit(),
@@ -133,7 +136,7 @@ class ProduceMachineOutput {
         from: const [ItemType.fruit],
       );
 
-  const ProduceMachineOutput.juice()
+  const ProduceMachineOutput.juice({from = const [ItemType.vegetable, ItemType.forage]})
     : this(
         "Juice",
         "juice.png",
@@ -142,7 +145,7 @@ class ProduceMachineOutput {
         const HealthFormulator(multiplier: 2.0, inedibleMultiplier: 0.45),
         "4 days",
         favorites: const ["martin"],
-        from: const [ItemType.vegetable, ItemType.forage],
+        from: from,
       );
 
   const ProduceMachineOutput.driedFruit()
