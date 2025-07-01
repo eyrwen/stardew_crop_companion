@@ -13,7 +13,8 @@ enum ItemType {
   fiber('fiber'),
   fish('fish'),
   crabpotcatch('crabpotcatch'),
-  animalproduct('animalproduct'),
+  egg('egg'),
+  milk('milk'),
   recipe('recipe'),
   other('other');
 

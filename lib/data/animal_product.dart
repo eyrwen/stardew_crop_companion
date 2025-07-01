@@ -5,6 +5,7 @@ import 'interface.dart';
 class AnimalProduct extends Edible with Producable {
   AnimalProduct({
     required super.key,
+    required super.type,
     required super.name,
     required super.img,
     required super.price,
@@ -15,11 +16,12 @@ class AnimalProduct extends Edible with Producable {
     super.hasQuality = true,
     super.favorites = const [],
     super.cookable = true,
-  }) : super(type: ItemType.animalproduct);
+  });
 
   factory AnimalProduct.fromJson(String key, Map<String, dynamic> json) {
     return AnimalProduct(
       key: key,
+      type: ItemType.from(json['type']),
       name: json['name'],
       img: json['img'],
       price: json['price'],

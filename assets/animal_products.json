@@ -1,42 +1,16 @@
 {
-  "sturgeonroe": {
-    "name": "Sturgeon Roe",
-    "img": "sturgeon_roe.png",
-    "price": 130,
-    "energy": 50,
-    "health": 22,
-    "hasQuality": false,
-    "specialProduce": {
-      "jar": {
-        "name": "Caviar",
-        "img": "caviar.png",
-        "price": 500,
-        "time": "4 days",
-        "energy": 175,
-        "health": 78
-      }
-    }
-  },
   "egg": {
     "name": "Egg",
     "img": "egg.png",
+    "type": "egg",
     "price": 50,
     "energy": 25,
-    "health": 11,
-    "specialProduce": {
-      "mayonnaiseMachine": {
-        "name": "Mayonnaise",
-        "img": "mayonnaise.png",
-        "price": 190,
-        "time": "3 hrs",
-        "energy": 50,
-        "health": 22
-      }
-    }
+    "health": 11
   },
   "largeEgg": {
     "name": "Large Egg",
     "img": "large_egg.png",
+    "type": "egg",
     "price": 95,
     "energy": 38,
     "health": 17,
@@ -48,6 +22,15 @@
         "time": "3 hrs",
         "energy": 90,
         "health": 40,
+        "quality": "gold"
+      },
+      "deluxeSmoker": {
+        "name": "Smoked Egg",
+        "img": "smoked_egg.png",
+        "price": 190,
+        "time": "12 hrs",
+        "energy": 20,
+        "health": 45,
         "quality": "gold"
       }
     }
@@ -55,23 +38,15 @@
   "brownEgg": {
     "name": "Brown Egg",
     "img": "brown_egg.png",
+    "type": "egg",
     "price": 50,
     "energy": 25,
-    "health": 11,
-    "specialProduce": {
-      "mayonnaiseMachine": {
-        "name": "Mayonnaise",
-        "img": "mayonnaise.png",
-        "price": 190,
-        "time": "3 hrs",
-        "energy": 50,
-        "health": 22
-      }
-    }
+    "health": 11
   },
   "largeBrownEgg": {
     "name": "Large Brown Egg",
     "img": "large_brown_egg.png",
+    "type": "egg",
     "price": 95,
     "energy": 38,
     "health": 17,
@@ -83,33 +58,25 @@
         "energy": 90,
         "health": 40,
         "quality": "gold"
+      },
+      "deluxeSmoker": {
+        "name": "Smoked Egg",
+        "img": "smoked_egg.png",
+        "price": 190,
+        "time": "12 hrs",
+        "energy": 20,
+        "health": 45,
+        "quality": "gold"
       }
     }
   },
   "milk": {
     "name": "Milk",
     "img": "milk.png",
+    "type": "milk",
     "price": 125,
     "energy": 17,
-    "health": 38,
-    "specialProduce": {
-      "cheesePress": {
-        "name": "Cheese",
-        "img": "cheese.png",
-        "price": 230,
-        "time": "3 hrs",
-        "energy": 125,
-        "health": 56
-      },
-      "butterChurn": {
-        "name": "Butter",
-        "img": "butter.png",
-        "price": 200,
-        "time": "2 hrs",
-        "energy": 0,
-        "health": 0
-      }
-    }
+    "health": 38
   },
   "largeMilk": {
     "name": "Large Milk",
@@ -117,6 +84,7 @@
     "price": 190,
     "energy": 50,
     "health": 22,
+    "type": "milk",
     "specialProduce": {
       "cheesePress": {
         "name": "Cheese",
@@ -140,6 +108,7 @@
   "goatMilk": {
     "name": "Goat Milk",
     "img": "goat_milk.png",
+    "type": "milk",
     "price": 225,
     "energy": 63,
     "health": 28,
@@ -166,6 +135,7 @@
   "largeGoatMilk": {
     "name": "Large Goat Milk",
     "img": "large_goat_milk.png",
+    "type": "milk",
     "price": 345,
     "energy": 88,
     "health": 39,
@@ -194,6 +164,7 @@
   "dinosaurEgg": {
     "name": "Dinosaur Egg",
     "img": "dinosaur_egg.png",
+    "type": "egg",
     "price": 350,
     "energy": 0,
     "health": 0,
@@ -208,6 +179,14 @@
         "time": "3 hrs",
         "energy": 125,
         "health": 56
+      },
+      "deluxeSmoker": {
+        "name": "Smoked Egg",
+        "img": "smoked_egg.png",
+        "price": 700,
+        "time": "12 hrs",
+        "energy": 20,
+        "health": 45
       }
     }
   },
@@ -217,6 +196,7 @@
     "price": 95,
     "energy": 38,
     "health": 17,
+    "type": "egg",
     "specialProduce": {
       "mayonnaiseMachine": {
         "name": "Duck Mayonnaise",
@@ -225,12 +205,21 @@
         "time": "3 hrs",
         "energy": 75,
         "health": 33
+      },
+      "deluxeSmoker": {
+        "name": "Smoked Egg",
+        "img": "smoked_egg.png",
+        "price": 190,
+        "time": "12 hrs",
+        "energy": 20,
+        "health": 45
       }
     }
   },
   "duckFeather": {
     "name": "Duck Feather",
     "img": "duck_feather.png",
+    "type": "other",
     "price": 100,
     "energy": 0,
     "health": 0,
@@ -240,6 +229,7 @@
   "goldenEgg": {
     "name": "Golden Egg",
     "img": "golden_egg.png",
+    "type": "egg",
     "price": 500,
     "energy": 25,
     "health": 11,
@@ -252,12 +242,22 @@
         "energy": 90,
         "health": 40,
         "quality": "gold"
+      },
+      "deluxeSmoker": {
+        "name": "Smoked Egg",
+        "img": "smoked_egg.png",
+        "price": 1000,
+        "time": "12 hrs",
+        "energy": 20,
+        "health": 45,
+        "quality": "gold"
       }
     }
   },
   "ostrichEgg": {
     "name": "Ostrich Egg",
     "img": "ostrich_egg.png",
+    "type": "egg",
     "price": 600,
     "energy": 38,
     "health": 17,
@@ -270,12 +270,21 @@
         "time": "3 hrs",
         "energy": 200,
         "health": 90
+      },
+      "deluxeSmoker": {
+        "name": "Smoked Egg",
+        "img": "smoked_egg.png",
+        "price": 1200,
+        "time": "12 hrs",
+        "energy": 20,
+        "health": 45
       }
     }
   },
   "rabbitsFoot": {
     "name": "Rabbit's Foot",
     "img": "rabbits_foot.png",
+    "type": "other",
     "price": 565,
     "energy": 0,
     "health": 0,
@@ -321,6 +330,7 @@
   "truffle": {
     "name": "Truffle",
     "img": "truffle.png",
+    "type": "forage",
     "price": 625,
     "energy": 13,
     "health": 5,
@@ -335,31 +345,51 @@
         "energy": 38,
         "health": 17,
         "favorite": ["harvey"]
+      },
+      "mayonnaiseMachine": {
+        "name": "Truffle Mayonnaise",
+        "img": "truffle_mayonnaise.png",
+        "price": 1200,
+        "time": "3 hrs",
+        "energy": 50,
+        "health": 22,
+        "favorite": ["harvey"]
       }
     }
   },
   "voidEgg": {
     "name": "Void Egg",
     "img": "void_egg.png",
+    "type": "egg",
     "price": 65,
     "energy": -92,
     "health": 0,
     "favorite": ["morgan", "sebastian"],
     "specialProduce": {
       "mayonnaiseMachine": {
-        "name": "VoidMayonnaise",
+        "name": "Void Mayonnaise",
         "img": "void_mayonnaise.png",
         "price": 855,
         "time": "3 hrs",
         "energy": -75,
         "health": 0,
         "favorite": ["krobus", "morgan"]
-      }
+      },
+      "jar": {
+        "name": "Century Egg",
+        "img": "century_egg.png",
+        "price": 400,
+        "time": "67 hrs",
+        "energy": 13,
+        "health": 5,
+        "favorite": ["krobus", "magnus"]
+      } 
     }
   },
   "wool": {
     "name": "Wool",
     "img": "wool.png",
+    "type": "other",
     "price": 340,
     "energy": 0,
     "health": 0,
@@ -379,6 +409,7 @@
   "quailEgg": {
     "name": "Quail Egg",
     "img": "quail_egg.png",
+    "type": "egg",
     "price": 40,
     "energy": 25,
     "health": 11,
@@ -396,6 +427,7 @@
   "largeQuailEgg": {
     "name": "Large Quail Egg",
     "img": "large_quail_egg.png",
+    "type": "egg",
     "price": 75,
     "energy": 38,
     "health": 17,
@@ -414,6 +446,7 @@
   "turkeyEgg": {
     "name": "Turkey Egg",
     "img": "turkey_egg.png",
+    "type": "egg",
     "price": 200,
     "energy": 25,
     "health": 11,
@@ -431,6 +464,7 @@
   "turkeyFeather": {
     "name": "Turkey Feather",
     "img": "turkey_feather.png",
+    "type": "other",
     "price": 350,
     "energy": 0,
     "health": 0,

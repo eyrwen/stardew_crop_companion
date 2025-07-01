@@ -12,7 +12,9 @@ enum ProduceMachine {
     ProduceMachineOutput.nutMilk(),
   ]),
   juicer('juicer', 'cornucopia_juicer.png', [
-    ProduceMachineOutput.juice(from: [ItemType.fruit, ItemType.vegetable, ItemType.forage]),
+    ProduceMachineOutput.juice(
+      from: [ItemType.fruit, ItemType.vegetable, ItemType.forage],
+    ),
   ]),
   vinegarKeg("vinegarKeg", "cornucopia_vinegar_keg.png", []),
   dehydrator("dehydrator", "dehydrator.png", [
@@ -28,6 +30,7 @@ enum ProduceMachine {
   oilMaker("oilMaker", "oil_maker.png", []),
   butterChurn("butterChurn", "cornucopia_butter_churn.png", [
     ProduceMachineOutput.nutButter(),
+    ProduceMachineOutput.butter(),
   ]),
   dryingRack("dryingRack", "cornucopia_drying_rack.png", [
     ProduceMachineOutput.driedFlower(),
@@ -41,9 +44,14 @@ enum ProduceMachine {
     ProduceMachineOutput.candles(),
   ]),
   smoker("smoker", "fish_smoker.png", [ProduceMachineOutput.smokedFish()]),
+  deluxeSmoker("deluxeSmoker", "cornucopia_deluxe_smoker.png", [
+    ProduceMachineOutput.smokedEgg(),
+  ]),
   mayonnaiseMachine("mayonnaiseMachine", "mayonnaise_machine.png", []),
   mill("mill", "mill.png", []),
-  cheesePress("cheesePress", "cheesePress.png", []),
+  cheesePress("cheesePress", "cheesePress.png", [
+    ProduceMachineOutput.cheese(),
+  ]),
   loom("loom", "loom.png", []),
   compactMill("compactMill", "cornucopia_compact_mill.png", []),
   extruder("extruder", "cornucopia_extruder.png", []);
@@ -136,17 +144,18 @@ class ProduceMachineOutput {
         from: const [ItemType.fruit],
       );
 
-  const ProduceMachineOutput.juice({from = const [ItemType.vegetable, ItemType.forage]})
-    : this(
-        "Juice",
-        "juice.png",
-        const PriceFormulator(multiplier: 2.25),
-        const EnergyFormulator(multiplier: 2.0, inedibleMultiplier: 1.0),
-        const HealthFormulator(multiplier: 2.0, inedibleMultiplier: 0.45),
-        "4 days",
-        favorites: const ["martin"],
-        from: from,
-      );
+  const ProduceMachineOutput.juice({
+    from = const [ItemType.vegetable, ItemType.forage],
+  }) : this(
+         "Juice",
+         "juice.png",
+         const PriceFormulator(multiplier: 2.25),
+         const EnergyFormulator(multiplier: 2.0, inedibleMultiplier: 1.0),
+         const HealthFormulator(multiplier: 2.0, inedibleMultiplier: 0.45),
+         "4 days",
+         favorites: const ["martin"],
+         from: from,
+       );
 
   const ProduceMachineOutput.driedFruit()
     : this(
@@ -315,5 +324,95 @@ class ProduceMachineOutput {
         const HealthFormulator.zero(),
         "3 hrs",
         from: const [ItemType.nut],
+      );
+
+  const ProduceMachineOutput.fishOil()
+    : this(
+        "Fish Oil",
+        "fish_oil.png",
+        const PriceFormulator.exact(140.0),
+        const EnergyFormulator.exact(5.0),
+        const HealthFormulator.exact(13.0),
+        "16 hrs",
+        from: const [ItemType.fish],
+      );
+
+  const ProduceMachineOutput.smokedEgg()
+    : this(
+        "Smoked Egg",
+        "smoked_egg.png",
+        const PriceFormulator(multiplier: 2),
+        const EnergyFormulator.exact(45.0),
+        const HealthFormulator.exact(20.0),
+        "12 hrs",
+        from: const [ItemType.egg],
+      );
+
+  const ProduceMachineOutput.mayonnaise()
+    : this(
+        "Mayonnaise",
+        "mayonnaise.png",
+        const PriceFormulator.exact(190.0),
+        const EnergyFormulator.exact(50.0),
+        const HealthFormulator.exact(22.5),
+        "3 hrs",
+        from: const [ItemType.egg],
+      );
+
+  const ProduceMachineOutput.pickledEggs()
+    : this(
+        "Pickled Eggs",
+        "pickled_eggs.png",
+        const PriceFormulator(multiplier: 3.0, plus: 50.0),
+        const EnergyFormulator.exact(40.0),
+        const HealthFormulator.exact(18.0),
+        "67 hrs",
+        from: const [ItemType.egg],
+      );
+
+  const ProduceMachineOutput.pickledFish()
+    : this(
+        "Pickled Fish",
+        "pickled_fish.png",
+        const PriceFormulator(multiplier: 3.0, plus: 50),
+        const EnergyFormulator.zero(),
+        const HealthFormulator.zero(),
+        "67 hrs",
+        from: const [ItemType.fish],
+        favorites: const ["willy"],
+      );
+
+  const ProduceMachineOutput.cheese()
+    : this(
+        "Cheese",
+        "cheese.png",
+        const PriceFormulator.exact(230.0),
+        const EnergyFormulator.exact(125.0),
+        const HealthFormulator.exact(56.0),
+        "3 hrs",
+        from: const [ItemType.milk],
+      );
+
+  const ProduceMachineOutput.butter()
+    : this(
+        "Butter",
+        "butter.png",
+        const PriceFormulator.exact(200.0),
+        const EnergyFormulator.zero(),
+        const HealthFormulator.zero(),
+        "2 hrs",
+        from: const [ItemType.milk],
+      );
+
+  const ProduceMachineOutput.plainYogurt()
+    : this(
+        "Plain Yogurt",
+        "plain_yogurt.png",
+        const PriceFormulator.exact(200.0),
+        const EnergyFormulator.exact(38.0),
+        const HealthFormulator.exact(17.0),
+        "7 hrs",
+        from: const [ItemType.milk],
+        favorites: const ["marnie"],
       );
 }

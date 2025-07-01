@@ -806,6 +806,16 @@
     "ingredients": {
       ":any_each:": ["flour", "egg"],
       "sugar": 1
+    },
+    "specialProduce": {
+      "butterChurn": {
+        "name": "Cookie Butter",
+        "img": "cookie_butter.png",
+        "time": "3 hrs",
+        "energy": 0,
+        "health": 0,
+        "price": 250
+      }
     }
   },
   "blueberryTart": {

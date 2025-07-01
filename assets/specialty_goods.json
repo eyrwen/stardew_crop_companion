@@ -1,0 +1,228 @@
+{
+  "honeyButter": {
+    "name": "Honey Butter",
+    "img": "honey_butter.png",
+    "machine": "butterChurn",
+    "price": 250,
+    "time": "2 hrs",
+    "energy": 0,
+    "health": 0,
+    "ingredients": {
+      ":any:": "honey"
+    }
+  },
+  "margarine": {
+    "name": "Margarine",
+    "img": "margarine.png",
+    "machine": "butterChurn",
+    "price": 150,
+    "time": "2 hrs",
+    "energy": 0,
+    "health": 0,
+    "ingredients": {
+      ":any:": "oil"
+    }
+  },
+  "nutCheese": {
+    "name": "Nut Cheese",
+    "img": "nut_cheese.png",
+    "machine": "cheesePress",
+    "priceFormulator": {
+      "multiplier": 1.25
+    },
+    "time": "4 hrs",
+    "energy": 125,
+    "health": 56,
+    "ingredients": {
+      ":any:": "Nut Milk"
+    }
+  },
+  "smokedCheese": {
+    "name": "Smoked Cheese",
+    "img": "smoked_cheese.png",
+    "machine": "smoker",
+    "priceFormulator": {
+      "multiplier": 2.0
+    },
+    "time": "12 hrs",
+    "energy": 90,
+    "health": 40,
+    "ingredients": {
+      ":any:": "cheese"
+    }
+  },
+  "smokedMeat": {
+    "name": "Smoked Meat",
+    "img": "smoked_meat.png",
+    "machine": "smoker",
+    "priceFormulator": {
+      "multiplier": 2.0
+    },
+    "time": "12 hrs",
+    "energy": 90,
+    "health": 40,
+    "ingredients": {
+      "tofu": 1
+    }
+  },
+  "driedSquid": {
+    "name": "Dried Squid",
+    "img": "dried_squid.png",
+    "machine": "dehydrator",
+    "price": 200,
+    "time": "50 min",
+    "energy": 38,
+    "health": 17,
+    "ingredients": {
+      ":any:": "squid"
+    }
+  },
+  "beeswax": {
+    "name": "Beeswax",
+    "img": "beeswax.png",
+    "machine": "beeswaxPress",
+    "price": 200,
+    "time": "14 hrs",
+    "energy": 0,
+    "health": 0,
+    "ingredients": {
+      ":any:": "honey"
+    }
+  },
+  "buckwheatNoodles": {
+    "name": "Buckwheat Noodles",
+    "img": "buckwheat_noodles.png",
+    "machine": "extruder",
+    "price": 200,
+    "time": "8 hrs",
+    "energy": 0,
+    "health": 0,
+    "ingredients": {
+      "Buckwheat Flour": 1
+    }
+  },
+  "riceNoodles": {
+    "name": "Rice Noodles",
+    "img": "rice_noodles.png",
+    "machine": "extruder",
+    "price": 250,
+    "time": "8 hrs",
+    "energy": 0,
+    "health": 0,
+    "ingredients": {
+      "Rice": 1
+    }
+  },
+  "semolinaNoodles": {
+    "name": "Semolina Noodles",
+    "img": "semolina_noodles.png",
+    "machine": "extruder",
+    "price": 250,
+    "time": "8 hrs",
+    "energy": 0,
+    "health": 0,
+    "ingredients": {
+      "Semolina Flour": 1
+    }
+  },
+  "wheatNoodles": {
+    "name": "Wheat Noodles",
+    "img": "wheat_noodles.png",
+    "machine": "extruder",
+    "price": 250,
+    "time": "8 hrs",
+    "energy": 0,
+    "health": 0,
+    "ingredients": {
+      "Wheat Flour": 1
+    }
+  },
+  "wholeGrainNoodles": {
+    "name": "Whole Grain Noodles",
+    "img": "whole_grain_noodles.png",
+    "machine": "extruder",
+    "price": 250,
+    "time": "8 hrs",
+    "energy": 0,
+    "health": 0,
+    "ingredients": {
+      "Whole-Grain Flour": 1
+    }
+  },
+  "starmite": {
+    "name": "Starmite",
+    "img": "starmite.png",
+    "machine": "byproduct",
+    "price": 500,
+    "time": "1 hr",
+    "energy": 0,
+    "health": 0,
+    "ingredients": {
+      ":one_of:": ["beer", "Pale Ale", "Stout", "Wine", "Porter", "Dark Ale"]
+    }
+  },
+  "oliveOilMayonnaise": {
+    "name": "Olive Oil Mayonnaise",
+    "img": "olive_oil_mayonnaise.png",
+    "machine": "mayonnaiseMachine",
+    "price": 200,
+    "time": "2 hrs",
+    "energy": 0,
+    "health": 0,
+    "ingredients": {
+      "Olive Oil": 1
+    }
+  },
+  "stinkyTofu": {
+    "name": "Stinky Tofu",
+    "img": "stinky_tofu.png",
+    "machine": "jar",
+    "price": 400,
+    "time": "2 days",
+    "energy": 13,
+    "health": 5,
+    "ingredients": {
+      ":any:": "tofu"
+    },
+    "favorite": ["krobus"]
+  },
+  "snackCheese": {
+    "name": "Snack Cheese",
+    "img": "snack_cheese.png",
+    "machine": "waxBarrel",
+    "price": 240,
+    "time": "50 hrs",
+    "energy": 90,
+    "health": 40,
+    "ingredients": {
+      ":any:": "cheese",
+      "beeswax": 1
+    }
+  },
+  "waxMelts": {
+    "name": "Wax Melts",
+    "img": "wax_melts.png",
+    "machine": "waxBarrel",
+    "priceFormulator": {
+      "multiplier": 2.5,
+      "plus": 250
+    },
+    "time": "50 hrs",
+    "energy": 0,
+    "health": 0,
+    "ingredients": {
+      ":any_each:": ["beeswax", "essential oil"]
+    }
+  },
+  "molasses": {
+    "name": "Molasses",
+    "img": "molasses.png",
+    "machine": "byproduct",
+    "price": 300,
+    "energy": 38,
+    "health": 17,
+    "ingredients": {
+      ":any:": "sugar"
+    }
+  }
+}

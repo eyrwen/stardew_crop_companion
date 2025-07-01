@@ -97,7 +97,7 @@
     "energy": 13,
     "favorite": ["krobus"],
     "specialProduce": {
-      "mayonnaiseMachine":{
+      "mayonnaiseMachine": {
         "name": "Wasabi Mayonnaise",
         "img": "wasabimayonnaise.png",
         "price": 173,
@@ -737,14 +737,29 @@
     "name": "Garlic",
     "url": "http://stardewvalleywiki.com/Garlic",
     "img": "garlic.png",
-
     "type": "vegetable",
     "price": 60,
     "health": 9,
     "energy": 20,
-    "growth": {
-      "initial": 4,
-      "regrow": 0
+    "specialProduce": {
+      "deluxeSmoker": {
+        "name": "Roasted Garlic",
+        "img": "cornucopia_roastedgarlic.png",
+        "price": 444,
+        "time": "3 hrs",
+        "health": 17,
+        "energy": 38,
+        "favorite": ["george"]
+      },
+      "mayonnaiseMachine": {
+        "name": "Garlic Mayonnaise",
+        "img": "cornucopia_garlicmayonnaise.png",
+        "price": 310,
+        "time": "3 hrs",
+        "health": 22,
+        "energy": 50,
+        "favorite": ["gus"]
+      }
     }
   },
   "taroroot": {
@@ -952,14 +967,20 @@
     "name": "Red Cabbage",
     "url": "http://stardewvalleywiki.com/Red_Cabbage",
     "img": "redcabbage.png",
-
     "type": "vegetable",
     "price": 260,
     "health": 33,
     "energy": 75,
-    "growth": {
-      "initial": 9,
-      "regrow": 0
+    "specialProduce": {
+      "jar": {
+        "name": "Sauerkraut",
+        "img": "sauerkraut.png",
+        "price": 340,
+        "time": "67 hrs",
+        "health": 0,
+        "energy": 0,
+        "favorite": ["clint"]
+      }
     }
   },
   "starfruit": {
@@ -986,10 +1007,6 @@
     "price": 50,
     "health": 11,
     "energy": 25,
-    "growth": {
-      "initial": 14,
-      "regrow": 4
-    },
     "specialProduce": {
       "oilMaker": {
         "name": "Oil",
@@ -1840,7 +1857,6 @@
     "name": "Cabbage",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Cabbage",
     "img": "cornucopia_cabbage.png",
-
     "type": "vegetable",
     "price": 130,
     "health": 22,
@@ -1856,7 +1872,8 @@
         "price": 340,
         "time": "67 hrs",
         "health": 0,
-        "energy": 0
+        "energy": 0,
+        "favorite": ["clint"]
       }
     }
   },
@@ -2258,7 +2275,7 @@
         "energy": 50
       },
       "mill": {
-        "name": "Durum Flour",
+        "name": "Semolina Flour",
         "img": "cornucopia_durum_flour.png",
         "price": 50,
         "time": "1 day",
@@ -3073,7 +3090,7 @@
     "energy": 25,
     "specialProduce": {
       "extruder": {
-       "name": "Glass Noodles",
+        "name": "Glass Noodles",
         "img": "cornucopia_glassnoodles.png",
         "price": 200,
         "time": "14 hrs",
@@ -3396,27 +3413,512 @@
     "url": "https://stardewcornucopia.wiki.gg/wiki/Vanilla",
     "img": "cornucopia_vanilla.png",
     "type": "spice",
-    "price": 60,
+    "price": 150,
     "health": 0,
     "energy": 0,
     "specialProduce": {
-      "compactMill": {
-        "name": "Vanilla Extract",
-        "img": "cornucopia_vanillaextract.png",
-        "price": 140,
-        "time": "3 hrs",
-        "health": 0,
-        "energy": 0,
-        "favorite": ["jodi"]
+      "yogurtJar": {
+        "name": "Flavored Yogurt",
+        "img": "cornucopia_flavored_yogurt.png",
+        "price": 550,
+        "time": "16 hrs",
+        "health": 17,
+        "energy": 38,
+        "favorite": ["jas", "marnie"]
+      }
+    }
+  },
+  "almond": {
+    "name": "Almond",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Almond",
+    "img": "cornucopia_almond.png",
+    "type": "nut",
+    "price": 90,
+    "health": 13,
+    "energy": 30
+  },
+  "avocado": {
+    "name": "Avocado",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Avocado",
+    "img": "cornucopia_avocado.png",
+    "type": "fruit",
+    "price": 200,
+    "health": 22,
+    "energy": 50,
+    "favorite": ["sam"],
+    "specialProduce": {
+      "keg": {
+        "name": "Avocado Oil",
+        "img": "cornucopia_avocadooil.png",
+        "price": 400,
+        "time": "16 hrs",
+        "health": 5,
+        "energy": 13
       },
       "mayonnaiseMachine": {
-        "name": "Vanilla Mayonnaise",
-        "img": "cornucopia_vanillamayo.png",
-        "price": 270,
+        "name": "Avocado Mayonnaise",
+        "img": "cornucopia_avocadomayo.png",
+        "price": 590,
         "time": "3 hrs",
         "health": 22,
         "energy": 50
       }
     }
+  },
+  "breadfruit": {
+    "name": "Breadfruit",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Breadfruit",
+    "img": "cornucopia_breadfruit.png",
+    "type": "fruit",
+    "price": 240,
+    "health": 67,
+    "energy": 150
+  },
+  "camphorLeaves": {
+    "name": "Camphor Leaves",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Camphor_Leaves",
+    "img": "cornucopia_camphor_leaves.png",
+    "type": "herb",
+    "price": 100,
+    "health": 0,
+    "energy": 0
+  },
+  "cashew": {
+    "name": "Cashew",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Cashew",
+    "img": "cornucopia_cashew.png",
+    "type": "nut",
+    "price": 100,
+    "health": 13,
+    "energy": 30
+  },
+  "cinnamonSticks": {
+    "name": "Cinnamon Sticks",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Cinnamon_Sticks",
+    "img": "cornucopia_cinnamon_sticks.png",
+    "type": "spice",
+    "price": 140,
+    "health": 0,
+    "energy": 0
+  },
+  "cocoaPod": {
+    "name": "Cocoa Pod",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Cocoa_Pod",
+    "img": "cornucopia_cocoa_pod.png",
+    "type": "forage",
+    "price": 125,
+    "health": 0,
+    "energy": 0,
+    "specialProduce": {
+      "butterChurn": {
+        "name": "Cocoa Butter",
+        "img": "cornucopia_cocoa_butter.png",
+        "price": 250,
+        "time": "6 hrs",
+        "health": 0,
+        "energy": 0
+      },
+      "yogurtJar": {
+        "name": "Flavored Yogurt",
+        "img": "cornucopia_flavored_yogurt.png",
+        "price": 850,
+        "time": "16 hrs",
+        "health": 17,
+        "energy": 38,
+        "favorite": ["jas", "marnie"]
+      }
+    }
+  },
+  "corpseFlowerPetal": {
+    "name": "Corpse Flower Petal",
+    "img": "cornucopia_corpse_flower_petal.png",
+    "type": "flower",
+    "price": 240,
+    "health": 0,
+    "energy": -50
+  },
+  "dragonfruit": {
+    "name": "Dragonfruit",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Dragonfruit",
+    "img": "cornucopia_dragonfruit.png",
+    "type": "fruit",
+    "price": 125,
+    "health": 45,
+    "energy": 100,
+    "favorite": ["abigail"]
+  },
+  "durian": {
+    "name": "Durian",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Durian",
+    "img": "cornucopia_durian.png",
+    "type": "fruit",
+    "price": 350,
+    "health": 90,
+    "energy": 200,
+    "favorite": ["leo"]
+  },
+  "eucalyptusLeaves": {
+    "name": "Eucalyptus Leaves",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Eucalyptus_Leaves",
+    "img": "cornucopia_eucalyptus_leaves.png",
+    "type": "herb",
+    "price": 135,
+    "health": 0,
+    "energy": 0
+  },
+  "fig": {
+    "name": "Fig",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Fig",
+    "img": "cornucopia_fig.png",
+    "type": "fruit",
+    "price": 100,
+    "health": 17,
+    "energy": 38
+  },
+  "grapfruit": {
+    "name": "Grapefruit",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Grapefruit",
+    "img": "cornucopia_grapefruit.png",
+    "type": "fruit",
+    "price": 80,
+    "health": 17,
+    "energy": 38
+  },
+  "hibiscus": {
+    "name": "Hibiscus",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Hibiscus",
+    "img": "cornucopia_hibiscus.png",
+    "type": "flower",
+    "price": 120,
+    "health": 0,
+    "energy": 0
+  },
+  "jasmine": {
+    "name": "Jasmine",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Jasmine",
+    "img": "cornucopia_jasmine.png",
+    "type": "flower",
+    "price": 40,
+    "health": 0,
+    "energy": 0
+  },
+  "lemon": {
+    "name": "Lemon",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Lemon",
+    "img": "cornucopia_lemon.png",
+    "type": "fruit",
+    "price": 50,
+    "health": 17,
+    "energy": 38,
+    "specialProduce": {
+      "compactMill": {
+        "name": "Lemon Zest",
+        "img": "cornucopia_lemonzest.png",
+        "price": 100,
+        "time": "1 hr",
+        "health": 0,
+        "energy": 0
+      }
+    }
+  },
+  "lime": {
+    "name": "Lime",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Lime",
+    "img": "cornucopia_lime.png",
+    "type": "fruit",
+    "price": 50,
+    "health": 17,
+    "energy": 38,
+    "specialProduce": {
+      "compactMill": {
+        "name": "Lime Zest",
+        "img": "cornucopia_limezest.png",
+        "price": 100,
+        "time": "1 hr",
+        "health": 0,
+        "energy": 0
+      }
+    }
+  },
+  "lychee": {
+    "name": "Lychee",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Lychee",
+    "img": "cornucopia_lychee.png",
+    "type": "fruit",
+    "price": 110,
+    "health": 17,
+    "energy": 38,
+    "favorite": ["linus"]
+  },
+  "magnolia": {
+    "name": "Magnolia",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Magnolia",
+    "img": "cornucopia_magnolia.png",
+    "type": "flower",
+    "price": 60,
+    "health": 20,
+    "energy": 45
+  },
+  "melaleucaLeaves": {
+    "name": "Melaleuca Leaves",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Melaleuca_Leaves",
+    "img": "cornucopia_melaleuca_leaves.png",
+    "type": "herb",
+    "price": 100,
+    "health": 0,
+    "energy": 0
+  },
+  "nectarine": {
+    "name": "Nectarine",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Nectarine",
+    "img": "cornucopia_nectarine.png",
+    "type": "fruit",
+    "price": 140,
+    "health": 17,
+    "energy": 38
+  },
+  "nutmeg": {
+    "name": "Nutmeg",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Nutmeg",
+    "img": "cornucopia_nutmeg.png",
+    "type": "herb",
+    "price": 90,
+    "health": 0,
+    "energy": 0
+  },
+  "papaya": {
+    "name": "Papaya",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Papaya",
+    "img": "cornucopia_papaya.png",
+    "type": "fruit",
+    "price": 150,
+    "health": 17,
+    "energy": 38
+  },
+  "pear": {
+    "name": "Pear",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Pear",
+    "img": "cornucopia_pear.png",
+    "type": "fruit",
+    "price": 135,
+    "health": 17,
+    "energy": 38,
+    "favorite": ["abigail"]
+  },
+  "pecan": {
+    "name": "Pecan",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Pecan",
+    "img": "cornucopia_pecan.png",
+    "type": "nut",
+    "price": 125,
+    "health": 13,
+    "energy": 30
+  },
+  "persimmon": {
+    "name": "Persimmon",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Persimmon",
+    "img": "cornucopia_persimmon.png",
+    "type": "fruit",
+    "price": 155,
+    "health": 17,
+    "energy": 38
+  },
+  "pistachio": {
+    "name": "Pistachio",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Pistachio",
+    "img": "cornucopia_pistachio.png",
+    "type": "nut",
+    "price": 90,
+    "health": 13,
+    "energy": 30
+  },
+  "plantain": {
+    "name": "Plantain",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Plantain",
+    "img": "cornucopia_plantain.png",
+    "type": "fruit",
+    "price": 175,
+    "health": 33,
+    "energy": 75
+  },
+  "pomelo": {
+    "name": "Pomelo",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Pomelo",
+    "img": "cornucopia_pomelo.png",
+    "type": "fruit",
+    "price": 80,
+    "health": 45,
+    "energy": 100,
+    "favorite": ["leo"]
+  },
+  "sapodilla": {
+    "name": "Sapodilla",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Sapodilla",
+    "img": "cornucopia_sapodilla.png",
+    "type": "fruit",
+    "price": 40,
+    "health": 20,
+    "energy": 45
+  },
+  "ume": {
+    "name": "Ume",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Ume",
+    "img": "cornucopia_ume.png",
+    "type": "fruit",
+    "price": 50,
+    "health": 17,
+    "energy": 38,
+    "specialProduce": {
+      "jar": {
+        "name": "Umeboshi",
+        "img": "cornucopia_umeboshi.png",
+        "price": 150,
+        "time": "67 hrs",
+        "health": 0,
+        "energy": 0
+      }
+    }
+  },
+  "walnut": {
+    "name": "Walnut",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Walnut",
+    "img": "cornucopia_walnut.png",
+    "type": "nut",
+    "price": 90,
+    "health": 13,
+    "energy": 30,
+    "favorite": ["linus"]
+  },
+  "wisteria": {
+    "name": "Wisteria",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Wisteria",
+    "img": "cornucopia_wisteria.png",
+    "type": "flower",
+    "price": 60,
+    "health": 0,
+    "energy": -50
+  },
+  "ylangylang": {
+    "name": "Ylang Ylang",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Ylang_Ylang",
+    "img": "cornucopia_ylang_ylang.png",
+    "type": "flower",
+    "price": 75,
+    "health": 0,
+    "energy": 0
+  },
+  "yuzu": {
+    "name": "Yuzu",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Yuzu",
+    "img": "cornucopia_yuzu.png",
+    "type": "fruit",
+    "price": 40,
+    "health": 17,
+    "energy": 38
+  },
+  "apple": {
+    "name": "Apple",
+    "url": "https://www.stardewvalleywiki.com/Apple",
+    "img": "cornucopia_apple.png",
+    "type": "fruit",
+    "price": 100,
+    "health": 17,
+    "energy": 38,
+    "specialProduce": {
+      "compactMill": {
+        "name": "Applesauce",
+        "img": "cornucopia_applesauce.png",
+        "price": 250,
+        "time": "6 hrs",
+        "health": 0,
+        "energy": 0,
+        "favorite": ["jas", "penny"]
+      }
+    }
+  },
+  "apricot": {
+    "name": "Apricot",
+    "url": "https://www.stardewvalleywiki.com/Apricot",
+    "img": "cornucopia_apricot.png",
+    "type": "fruit",
+    "price": 50,
+    "health": 17,
+    "energy": 38
+  },
+  "banana": {
+    "name": "Banana",
+    "url": "https://www.stardewvalleywiki.com/Banana",
+    "img": "cornucopia_banana.png",
+    "type": "fruit",
+    "price": 150,
+    "health": 33,
+    "energy": 75
+  },
+  "cherry": {
+    "name": "Cherry",
+    "url": "https://www.stardewvalleywiki.com/Cherry",
+    "img": "cherry.png",
+    "type": "fruit",
+    "price": 80,
+    "health": 17,
+    "energy": 38
+  },
+  "mango": {
+    "name": "Mango",
+    "url": "https://www.stardewvalleywiki.com/Mango",
+    "img": "mango.png",
+    "type": "fruit",
+    "price": 130,
+    "health": 45,
+    "energy": 100,
+    "favorite": ["leo"]
+  },
+  "orange": {
+    "name": "Orange",
+    "url": "https://www.stardewvalleywiki.com/Orange",
+    "img": "orange.png",
+    "type": "fruit",
+    "price": 100,
+    "health": 17,
+    "energy": 38,
+    "specialProduce": {
+      "compactMill": {
+        "name": "Orange Zest",
+        "img": "orange_zest.png",
+        "price": 100,
+        "time": "1 hr",
+        "health": 0,
+        "energy": 0
+      }
+    }
+  },
+  "peach": {
+    "name": "Peach",
+    "url": "https://www.stardewvalleywiki.com/Peach",
+    "img": "peach.png",
+    "type": "fruit",
+    "price": 140,
+    "health": 17,
+    "energy": 38,
+    "favorite": ["robin"]
+  },
+  "pomegranate": {
+    "name": "Pomegranate",
+    "url": "https://www.stardewvalleywiki.com/Pomegranate",
+    "img": "pomegranate.png",
+    "type": "fruit",
+    "price": 140,
+    "health": 17,
+    "energy": 38,
+    "favorite": ["elliott"]
+  },
+  "qiFruit": {
+    "name": "Qi Fruit",
+    "url": "https://www.stardewvalleywiki.com/Qi_Fruit",
+    "img": "qi_fruit.png",
+    "type": "fruit",
+    "price": 1,
+    "health": 1,
+    "energy": 3
   }
 }
