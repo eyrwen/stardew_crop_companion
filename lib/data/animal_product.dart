@@ -2,7 +2,7 @@ import 'package:stardew_crop_companion/data/produce_machine.dart';
 
 import 'interface.dart';
 
-class AnimalProduct extends Edible with Producable {
+class AnimalProduct extends Item{
   AnimalProduct({
     required super.key,
     required super.type,

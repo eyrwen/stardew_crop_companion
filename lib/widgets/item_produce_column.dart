@@ -1,54 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:collection/collection.dart';
-
-import '../data/interface.dart';
-import 'crop_value_column.dart';
-import 'favorites.dart';
-import '../data/produce_machine.dart';
-import 'item_image.dart';
-
-class ItemProduceValues extends StatelessWidget {
-  final Producable item;
-
-  const ItemProduceValues({super.key, required this.item});
-
-  @override
-  Widget build(BuildContext context) {
-    return Card(
-      child: Container(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: item.produceOutputs.entries
-              .slices(7)
-              .expand(
-                (slice) => [
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    spacing: 32,
-                    children: slice
-                        .map(
-                          (entry) => ItemProduceColumn(
-                            output: entry.value,
-                            machine: entry.key,
-                            item: item,
-                          ),
-                        )
-                        .toList(),
-                  ),
-                ],
-              )
-              .toList(),
-        ),
-      ),
-    );
-  }
-}
+import 'package:stardew_crop_companion/data/interface.dart';
+import 'package:stardew_crop_companion/data/produce_machine.dart';
+import 'package:stardew_crop_companion/widgets/favorites.dart';
+import 'package:stardew_crop_companion/widgets/item_image.dart';
+import 'package:stardew_crop_companion/widgets/item_value_column.dart';
 
 class ItemProduceColumn extends StatelessWidget {
   final ProduceMachineOutput output;
   final ProduceMachine machine;
-  final Producable item;
+  final Item item;
 
   const ItemProduceColumn({
     super.key,
@@ -87,7 +47,7 @@ class ItemProduceColumn extends StatelessWidget {
             ),
           ],
         ),
-        CropValueColumn(
+        ItemValueColumn(
           price: output.priceFormulator.calculate(item),
           energy: output.energyFormulator.calculate(item),
           health: output.healthFormulator.calculate(item),

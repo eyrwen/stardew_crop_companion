@@ -8,12 +8,12 @@ import 'data/crop.dart';
 import 'data/fish.dart';
 import 'data/recipe.dart';
 import 'widgets/animal_product_grid.dart';
-import 'widgets/animal_product_page.dart';
 import 'widgets/crop_grid.dart';
-import 'widgets/crop_page.dart';
 import 'widgets/fish_grid.dart';
-import 'widgets/fish_page.dart';
+import 'widgets/fishing_locations.dart';
 import 'widgets/item_image.dart';
+import 'widgets/item_page_layout.dart';
+import 'widgets/pond_outputs.dart';
 
 void main() {
   runApp(const MyApp());
@@ -128,8 +128,8 @@ class CropsTab extends HookWidget {
     }
 
     if (viewingCrop.value != null) {
-      return CropPage(
-        crop: viewingCrop.value!,
+      return ItemPageLayout(
+        item: viewingCrop.value!,
         recipes:
             recipes.data
                 ?.where((r) => r.requires(viewingCrop.value!))
@@ -167,13 +167,17 @@ class FishTab extends HookWidget {
     }
 
     if (viewingFish.value != null) {
-      return FishPage(
-        fish: viewingFish.value!,
+      return ItemPageLayout(
+        item: viewingFish.value!,
+        seasons: FishingLocations(fish: viewingFish.value!),
         recipes:
             recipes.data
                 ?.where((r) => r.requires(viewingFish.value!))
                 .toList() ??
             [],
+        additionalDetails: viewingFish.value!.pondOutputs.isNotEmpty
+            ? PondOutputs(pondOutputs: viewingFish.value!.pondOutputs)
+            : null,
         onBack: () => viewingFish.value = null,
       );
     }
@@ -213,8 +217,8 @@ class AnimalProductsTab extends HookWidget {
     }
 
     if (viewingAnimalProduct.value != null) {
-      return AnimalProductPage(
-        animalProduct: viewingAnimalProduct.value!,
+      return ItemPageLayout(
+        item: viewingAnimalProduct.value!,
         recipes:
             recipes.data
                 ?.where((r) => r.requires(viewingAnimalProduct.value!))

@@ -190,16 +190,11 @@ class IngredientList {
 
   bool requires(Item item) {
     return strictIngredients.containsKey(item.key) ||
-        strictTypeIngredients.any((type) {
-          if (type == 'egg') {
-            // HACK: to avoid returning true for eggplant here
-            return item.type == ItemType.animalproduct &&
-                item.key.toLowerCase().contains(type);
-          }
-
-          return (item.type.name.contains(type)) ||
-              item.key.toLowerCase().contains(type);
-        }) ||
+        strictTypeIngredients.any(
+          (type) =>
+              (item.type.name.contains(type)) ||
+              item.key.toLowerCase().contains(type),
+        ) ||
         flexibleIngredient.contains(item.key);
   }
 }

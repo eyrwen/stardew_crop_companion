@@ -41,6 +41,10 @@ abstract class Item {
   final List<String> favorites;
   final bool cookable;
 
+  final int energy;
+  final int health;
+  final Map<ProduceMachine, ProduceMachineOutput>? specialProduce;
+
   Item({
     required this.key,
     required this.type,
@@ -51,6 +55,9 @@ abstract class Item {
     this.hasQuality = true,
     this.favorites = const [],
     this.cookable = true,
+    this.energy = 0,
+    this.health = 0,
+    this.specialProduce = const {},
   }) : url =
            url ?? 'https://stardewvalleywiki.com/${name.split(' ').join('_')}';
 
@@ -58,38 +65,14 @@ abstract class Item {
     : type = ItemType.from(json['type']),
       name = json['name'],
       img = json['img'],
-      url = json['url'],
+      url =
+          json['url'] ??
+          'https://stardewvalleywiki.com/${json['name'].split(' ').join('_')}',
       price = json['price'],
       hasQuality = json['hasQuality'] ?? true,
       favorites = List<String>.from(json['favorite'] ?? []),
-      cookable = json['cookable'] ?? true;
-}
-
-abstract class Edible extends Item {
-  final int energy;
-  final int health;
-  final Map<ProduceMachine, ProduceMachineOutput>? specialProduce;
-
-  Edible({
-    required super.key,
-    required super.type,
-    required super.name,
-    required super.img,
-    super.url,
-    required super.price,
-    super.cookable = true,
-    super.hasQuality = true,
-    super.favorites = const [],
-    this.energy = 0,
-    this.health = 0,
-    this.specialProduce,
-  });
-
-  bool get isEdible => energy != 0 || health != 0;
-  bool get isPoison => energy < 0 || health < 0;
-
-  Edible.fromJson(super.key, super.json)
-    : energy = json['energy'] ?? 0,
+      cookable = json['cookable'] ?? true,
+      energy = json['energy'] ?? 0,
       health = json['health'] ?? 0,
       specialProduce = json['specialProduce'] != null
           ? (json['specialProduce'] as Map<String, dynamic>).map(
@@ -98,11 +81,10 @@ abstract class Edible extends Item {
                 ProduceMachineOutput.fromJson(value as Map<String, dynamic>),
               ),
             )
-          : null,
-      super.fromJson();
-}
+          : null;
 
-mixin Producable on Edible {
+  get producable => type != ItemType.other && produceOutputs.isNotEmpty;
+
   Map<ProduceMachine, ProduceMachineOutput> get produceOutputs {
     return ProduceMachine.values.fold(
       <ProduceMachine, ProduceMachineOutput>{},

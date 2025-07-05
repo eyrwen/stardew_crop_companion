@@ -2,6 +2,7 @@ import 'artisan_good_formulator.dart';
 import 'interface.dart';
 
 enum ProduceMachine {
+  mayonnaiseMachine("mayonnaiseMachine", "mayonnaise_machine.png", []),
   jar("jar", "jar.png", [
     ProduceMachineOutput.jelly(),
     ProduceMachineOutput.pickles(),
@@ -24,37 +25,37 @@ enum ProduceMachine {
     ProduceMachineOutput.driedFlower(),
     ProduceMachineOutput.driedHerb(),
   ]),
-  yogurtMaker("yogurtJar", "cornucopia_yogurt_jar.png", [
-    ProduceMachineOutput.flavoredYogurt(),
+  dryingRack("dryingRack", "cornucopia_drying_rack.png", [
+    ProduceMachineOutput.driedFlower(),
+    ProduceMachineOutput.driedHerb(),
   ]),
   oilMaker("oilMaker", "oil_maker.png", []),
   butterChurn("butterChurn", "cornucopia_butter_churn.png", [
     ProduceMachineOutput.nutButter(),
     ProduceMachineOutput.butter(),
   ]),
-  dryingRack("dryingRack", "cornucopia_drying_rack.png", [
-    ProduceMachineOutput.driedFlower(),
-    ProduceMachineOutput.driedHerb(),
-  ]),
   beehive("beehive", "beehive.png", [ProduceMachineOutput.honey()]),
-  alembic("alembic", "cornucopia_alembic.png", [
-    ProduceMachineOutput.essentialOil(),
-  ]),
-  waxBarrel("waxBarrel", "cornucopia_wax_barrel.png", [
-    ProduceMachineOutput.candles(),
-  ]),
   smoker("smoker", "fish_smoker.png", [ProduceMachineOutput.smokedFish()]),
   deluxeSmoker("deluxeSmoker", "cornucopia_deluxe_smoker.png", [
     ProduceMachineOutput.smokedEgg(),
   ]),
-  mayonnaiseMachine("mayonnaiseMachine", "mayonnaise_machine.png", []),
   mill("mill", "mill.png", []),
   cheesePress("cheesePress", "cheesePress.png", [
     ProduceMachineOutput.cheese(),
   ]),
   loom("loom", "loom.png", []),
   compactMill("compactMill", "cornucopia_compact_mill.png", []),
-  extruder("extruder", "cornucopia_extruder.png", []);
+  extruder("extruder", "cornucopia_extruder.png", []),
+  yogurtMaker("yogurtJar", "cornucopia_yogurt_jar.png", [
+    ProduceMachineOutput.flavoredYogurt(),
+    ProduceMachineOutput.plainYogurt(),
+  ]),
+  alembic("alembic", "cornucopia_alembic.png", [
+    ProduceMachineOutput.essentialOil(),
+  ]),
+  waxBarrel("waxBarrel", "cornucopia_wax_barrel.png", [
+    ProduceMachineOutput.candles(),
+  ]);
 
   final String name;
   final String img;
@@ -104,7 +105,7 @@ class ProduceMachineOutput {
       energyFormulator = EnergyFormulator.exact(json['energy'].toDouble()),
       healthFormulator = HealthFormulator.exact(json['health'].toDouble()),
       time = json['time'],
-      favorites = List<String>.from(json['favorites'] ?? []),
+      favorites = List<String>.from(json['favorite'] ?? []),
       from = List<String>.from(
         json['from'] ?? [],
       ).map((e) => ItemType.from(e)).toList();

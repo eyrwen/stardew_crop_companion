@@ -1693,10 +1693,7 @@
     "price": 30,
     "health": 9,
     "energy": 20,
-    "growth": {
-      "initial": 3,
-      "regrow": 0
-    }
+    "favorite": ["gus"]
   },
   "beebalm": {
     "name": "Bee Balm",
@@ -3253,7 +3250,7 @@
     "name": "Black Currants",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Black_Currants",
     "img": "cornucopia_blackcurrants.png",
-    "type": "berry",
+    "type": "fruit",
     "price": 70,
     "health": 11,
     "energy": 25,
@@ -3819,7 +3816,7 @@
   "apple": {
     "name": "Apple",
     "url": "https://www.stardewvalleywiki.com/Apple",
-    "img": "cornucopia_apple.png",
+    "img": "apple.png",
     "type": "fruit",
     "price": 100,
     "health": 17,
@@ -3839,7 +3836,7 @@
   "apricot": {
     "name": "Apricot",
     "url": "https://www.stardewvalleywiki.com/Apricot",
-    "img": "cornucopia_apricot.png",
+    "img": "apricot.png",
     "type": "fruit",
     "price": 50,
     "health": 17,
@@ -3848,7 +3845,7 @@
   "banana": {
     "name": "Banana",
     "url": "https://www.stardewvalleywiki.com/Banana",
-    "img": "cornucopia_banana.png",
+    "img": "banana.png",
     "type": "fruit",
     "price": 150,
     "health": 33,

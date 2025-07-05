@@ -3,11 +3,11 @@ import 'package:collection/collection.dart';
 import 'interface.dart';
 import 'produce_machine.dart';
 
-class Fish extends Edible with Producable {
+class Fish extends Item {
   final List<Weather> weather;
   final List<int> startTimes;
   final List<int> endTimes;
-  final List<String>? pondOutputs;
+  final List<String> pondOutputs;
   final List<FishingLocation> locations;
   final bool legendary;
 
@@ -272,7 +272,7 @@ class CrabPotCatch extends Fish {
     super.energy = 0,
     super.health = 0,
     super.specialProduce,
-    super.pondOutputs,
+    super.pondOutputs = const [],
   }) : super(
          type: ItemType.crabpotcatch,
          locations: [

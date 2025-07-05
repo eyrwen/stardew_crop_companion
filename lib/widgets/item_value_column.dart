@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:stardew_crop_companion/widgets/item_image.dart';
 
-class CropValueColumn extends StatelessWidget {
+import 'item_image.dart';
+
+class ItemValueColumn extends StatelessWidget {
   final int price;
   final int energy;
   final int health;
   final String? quality;
 
-  const CropValueColumn({
+  const ItemValueColumn({
     super.key,
     required this.price,
     required this.energy,
@@ -15,21 +16,21 @@ class CropValueColumn extends StatelessWidget {
     this.quality,
   });
 
-  const CropValueColumn.gold({
+  const ItemValueColumn.gold({
     super.key,
     required this.price,
     required this.energy,
     required this.health,
   }) : quality = 'gold';
 
-  const CropValueColumn.silver({
+  const ItemValueColumn.silver({
     super.key,
     required this.price,
     required this.energy,
     required this.health,
   }) : quality = 'silver';
 
-  const CropValueColumn.iridium({
+  const ItemValueColumn.iridium({
     super.key,
     required this.price,
     required this.energy,

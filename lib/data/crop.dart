@@ -1,6 +1,6 @@
 import 'interface.dart';
 
-class Crop extends Edible with Producable {
+class Crop extends Item {
   Crop({
     required super.key,
     required super.type,
