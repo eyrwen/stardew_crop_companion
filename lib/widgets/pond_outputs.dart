@@ -1,7 +1,9 @@
 import 'package:collection/collection.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' hide Tooltip;
+import 'package:stardew_crop_companion/widgets/capitalized_text.dart';
 
 import 'item_image.dart';
+import 'tooltip.dart';
 
 class PondOutputs extends StatelessWidget {
   final List<String> pondOutputs;
@@ -11,6 +13,7 @@ class PondOutputs extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisSize: MainAxisSize.min,
       children: [
         ItemImage.xlarge('fish_pond'),
         SizedBox(height: 8.0),
@@ -23,7 +26,8 @@ class PondOutputs extends StatelessWidget {
                   children: pair
                       .map(
                         (output) => Tooltip(
-                          message: output,
+                          position: ElTooltipPosition.rightCenter,
+                          content: CapitalizedText(output.split('_').join(' ')),
                           child: ItemImage.large(output),
                         ),
                       )

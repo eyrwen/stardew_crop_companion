@@ -11,7 +11,11 @@ class ItemLink extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () => launchUrlString(item.url),
-      child: Text(item.name, style: Theme.of(context).textTheme.headlineSmall),
+      child: Text(
+        item.name,
+        style: Theme.of(context).textTheme.headlineSmall,
+        textAlign: TextAlign.center,
+      ),
     );
   }
 }

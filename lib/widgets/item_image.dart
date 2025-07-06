@@ -4,20 +4,43 @@ class ItemImage extends StatelessWidget {
   final String? imageName;
   final double? height;
   final String? overlay;
+  final double? overlayScale;
 
-  const ItemImage(this.imageName, {super.key, this.height, this.overlay});
+  const ItemImage(
+    this.imageName, {
+    super.key,
+    this.height,
+    this.overlay,
+    this.overlayScale = 1.25,
+  });
 
-  const ItemImage.small(this.imageName, {super.key, this.overlay})
-    : height = 16;
+  const ItemImage.small(
+    this.imageName, {
+    super.key,
+    this.overlay,
+    this.overlayScale,
+  }) : height = 16;
 
-  const ItemImage.medium(this.imageName, {super.key, this.overlay})
-    : height = 24;
+  const ItemImage.medium(
+    this.imageName, {
+    super.key,
+    this.overlay,
+    this.overlayScale,
+  }) : height = 24;
 
-  const ItemImage.large(this.imageName, {super.key, this.overlay})
-    : height = 32;
+  const ItemImage.large(
+    this.imageName, {
+    super.key,
+    this.overlay,
+    this.overlayScale,
+  }) : height = 32;
 
-  const ItemImage.xlarge(this.imageName, {super.key, this.overlay})
-    : height = 96;
+  const ItemImage.xlarge(
+    this.imageName, {
+    super.key,
+    this.overlay,
+    this.overlayScale,
+  }) : height = 96;
 
   get fullImageName =>
       imageName!.contains('.png') ? imageName! : '$imageName.png';
@@ -42,7 +65,7 @@ class ItemImage extends StatelessWidget {
             height: height,
             semanticLabel: semanticLabel,
           ),
-          Image.asset('assets/img/${overlay!}', scale: 1.25),
+          Image.asset('assets/img/${overlay!}', scale: overlayScale),
         ],
       );
     }

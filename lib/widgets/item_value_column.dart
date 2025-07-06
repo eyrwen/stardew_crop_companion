@@ -16,26 +16,23 @@ class ItemValueColumn extends StatelessWidget {
     this.quality,
   });
 
-  const ItemValueColumn.gold({
-    super.key,
-    required this.price,
-    required this.energy,
-    required this.health,
-  }) : quality = 'gold';
+  ItemValueColumn.silver({super.key, price, energy, health})
+    : quality = 'silver',
+      price = (price * 1.25).floor(),
+      energy = (energy * 1.4).floor(),
+      health = (health * 1.4).round();
 
-  const ItemValueColumn.silver({
-    super.key,
-    required this.price,
-    required this.energy,
-    required this.health,
-  }) : quality = 'silver';
+  ItemValueColumn.gold({super.key, price, energy, health})
+    : quality = 'gold',
+      price = (price * 1.5).floor(),
+      energy = (energy * 1.8).floor(),
+      health = (health * 1.8).round();
 
-  const ItemValueColumn.iridium({
-    super.key,
-    required this.price,
-    required this.energy,
-    required this.health,
-  }) : quality = 'iridium';
+  ItemValueColumn.iridium({super.key, price, energy, health})
+    : quality = 'iridium',
+      price = (price * 2).floor(),
+      energy = (energy * 2.6).floor(),
+      health = (health * 2.6).round();
 
   get inedible => energy == 0 && health == 0;
 

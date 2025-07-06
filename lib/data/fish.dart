@@ -193,8 +193,8 @@ enum FishableLocation {
   diamondcavern('diamondcavern', "Diamond Cavern", special: true),
   spritespring('spritespring', "Sprite Spring", special: true),
   junimowoods('junimowoods', "Junimo Woods", special: true),
-  bluemoonvineyardriver('bluemoonvineyardriver', "Blue Moon Vineyard River"),
-  bluemoonvineyardbeach('bluemoonvineyardbeach', "Blue Moon Vineyard Beach"),
+  bluemoonvineyardriver('bluemoonvineyardriver', "Vineyard River"),
+  bluemoonvineyardbeach('bluemoonvineyardbeach', "Vineyard Beach"),
   farm("farm", "Farm");
 
   final String key;
@@ -233,6 +233,13 @@ class FishingLocation {
 
   static List<FishingLocation> sort(List<FishingLocation> locations) {
     return locations.sorted((a, b) {
+      if (Season.isAll(a.seasons) && !Season.isAll(b.seasons)) {
+        return -1;
+      }
+      if (!Season.isAll(a.seasons) && Season.isAll(b.seasons)) {
+        return 1;
+      }
+
       if (a.seasons.length != b.seasons.length) {
         return a.seasons.length.compareTo(b.seasons.length);
       }

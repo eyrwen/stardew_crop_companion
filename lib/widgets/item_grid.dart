@@ -28,7 +28,11 @@ class ItemGrid extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   ItemImage(item.img),
-                  Text(item.name, overflow: TextOverflow.clip),
+                  Text(
+                    item.name,
+                    overflow: TextOverflow.clip,
+                    textAlign: TextAlign.center,
+                  ),
                   if (getItemDecoration != null) ...[
                     SizedBox(height: 8.0),
                     getItemDecoration!(item) ?? SizedBox.shrink(),

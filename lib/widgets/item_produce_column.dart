@@ -1,9 +1,13 @@
-import 'package:flutter/material.dart';
-import 'package:stardew_crop_companion/data/interface.dart';
-import 'package:stardew_crop_companion/data/produce_machine.dart';
-import 'package:stardew_crop_companion/widgets/favorites.dart';
-import 'package:stardew_crop_companion/widgets/item_image.dart';
-import 'package:stardew_crop_companion/widgets/item_value_column.dart';
+import 'package:flutter/material.dart' hide Tooltip;
+import 'package:stardew_crop_companion/widgets/arrow_right.dart';
+
+import 'capitalized_text.dart';
+import 'tooltip.dart';
+import '../data/interface.dart';
+import '../data/produce_machine.dart';
+import 'favorites.dart';
+import 'item_image.dart';
+import 'item_value_column.dart';
 
 class ItemProduceColumn extends StatelessWidget {
   final ProduceMachineOutput output;
@@ -25,18 +29,67 @@ class ItemProduceColumn extends StatelessWidget {
           alignment: Alignment.bottomLeft,
           clipBehavior: Clip.none,
           children: [
-            ItemImage.xlarge(machine.img),
-            Positioned(
-              left: -8,
-              bottom: -4,
-              child: Tooltip(
-                message: output.outputName,
-                child: ItemImage.medium(output.outputImg),
-              ),
+            Stack(
+              alignment: Alignment.bottomLeft,
+              clipBehavior: Clip.none,
+              children: [
+                Tooltip(
+                  content: CapitalizedText(machine.name),
+                  child: ItemImage.xlarge(machine.img),
+                ),
+                if (!output.multiInput && !output.multiOutput)
+                  Positioned(
+                    bottom: 0,
+                    left: -8,
+                    child: Tooltip(
+                      content: CapitalizedText(output.outputName),
+                      child: ItemImage.medium(
+                        output.outputImg,
+                        overlay: output.outputQuality != null
+                            ? "${output.outputQuality!}_quality_overlay.png"
+                            : null,
+                        overlayScale: 2.0,
+                      ),
+                    ),
+                  ),
+              ],
             ),
           ],
         ),
-        SizedBox(height: 8),
+        if (output.multiInput || output.multiOutput)
+          Row(
+            spacing: 4.0,
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: [
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                  ItemImage.medium(item.img),
+                  if (output.multiInput)
+                    Text(
+                      'x${output.inputCount}',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                ],
+              ),
+              ArrowRight(),
+              Tooltip(
+                position: ElTooltipPosition.rightCenter,
+                content: Text(output.outputName),
+                child: Row(
+                  children: [
+                    ItemImage.medium(output.outputImg),
+                    if (output.multiOutput)
+                      Text(
+                        'x${output.outputCount}',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        SizedBox(height: 8.0),
         Row(
           spacing: 8.0,
           children: [

@@ -87,23 +87,25 @@ class MyHomePage extends HookWidget {
             Tab(text: 'Animal Products', icon: ItemImage('large_egg')),
           ],
         ),
-        body: Container(
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage('assets/img/bg_day.png'),
-              fit: BoxFit.cover,
-            ),
-          ),
-          padding: const EdgeInsets.all(8.0),
-          child: TabBarView(
-            children: [
-              CropsTab(allCrops: _loadCrops(), allRecipes: _loadRecipes()),
-              FishTab(allFish: _loadFish(), allRecipes: _loadRecipes()),
-              AnimalProductsTab(
-                allAnimalProducts: _loadAnimalProducts(),
-                allRecipes: _loadRecipes(),
+        body: SafeArea(
+          child: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('assets/img/bg_day.png'),
+                fit: BoxFit.cover,
               ),
-            ],
+            ),
+            padding: const EdgeInsets.all(8.0),
+            child: TabBarView(
+              children: [
+                CropsTab(allCrops: _loadCrops(), allRecipes: _loadRecipes()),
+                FishTab(allFish: _loadFish(), allRecipes: _loadRecipes()),
+                AnimalProductsTab(
+                  allAnimalProducts: _loadAnimalProducts(),
+                  allRecipes: _loadRecipes(),
+                ),
+              ],
+            ),
           ),
         ),
       ),

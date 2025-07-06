@@ -13,10 +13,12 @@ class FishingLocations extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
       spacing: 8.0,
       children: [
         if (fish.exclusiveToRain)
           Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             spacing: 8.0,
             children: [
               ItemImage.small(Weather.rainy.img),
@@ -25,6 +27,7 @@ class FishingLocations extends StatelessWidget {
           ),
         if (fish.exclusiveToWeather(Weather.sunny))
           Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             spacing: 8.0,
             children: [
               ItemImage.small(Weather.sunny.img),
@@ -33,6 +36,7 @@ class FishingLocations extends StatelessWidget {
           ),
         ...FishingLocation.sort(fish.locations).map(
           (location) => Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: Season.isAll(location.seasons)
                 ? [AllSeasonsLocation(places: location.places)]
                 : [
@@ -42,7 +46,8 @@ class FishingLocations extends StatelessWidget {
                           .slices(2)
                           .map(
                             (pair) => Row(
-                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
                               spacing: 8.0,
                               children: [
                                 PlaceName(place: pair.first),
@@ -76,6 +81,7 @@ class AllSeasonsLocation extends StatelessWidget {
   Widget build(BuildContext context) {
     if (places.first == FishableLocation.crabpot) {
       return Row(
+        mainAxisAlignment: MainAxisAlignment.center,
         spacing: 8.0,
         children: [
           ItemImage.small('crabpot'),
@@ -85,6 +91,7 @@ class AllSeasonsLocation extends StatelessWidget {
     }
 
     return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.start,
       spacing: 8.0,
       children: [
@@ -109,6 +116,7 @@ class PlaceName extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
       spacing: 8.0,
       children: [
         Text(place.name, style: Theme.of(context).textTheme.bodySmall),
@@ -125,10 +133,12 @@ class SeasonsList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
       spacing: 8.0,
       children: seasons
           .map(
             (season) => Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               spacing: 8.0,
               children: [

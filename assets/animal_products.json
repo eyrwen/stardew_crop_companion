@@ -53,6 +53,7 @@
     "specialProduce": {
       "mayonnaiseMachine": {
         "name": "Mayonnaise",
+        "img": "mayonnaise.png",
         "price": 285,
         "time": "3 hrs",
         "energy": 90,
@@ -101,7 +102,8 @@
         "price": 200,
         "time": "2 hrs",
         "energy": 0,
-        "health": 0
+        "health": 0,
+        "quality": "gold"
       }
     }
   },
@@ -157,7 +159,8 @@
         "price": 200,
         "time": "2 hrs",
         "energy": 0,
-        "health": 0
+        "health": 0,
+        "quality": "gold"
       }
     }
   },
@@ -237,11 +240,12 @@
       "mayonnaiseMachine": {
         "name": "Mayonnaise",
         "img": "mayonnaise.png",
-        "price": 855,
+        "price": 190,
         "time": "3 hrs",
-        "energy": 90,
-        "health": 40,
-        "quality": "gold"
+        "energy": 50,
+        "health": 22,
+        "quality": "gold",
+        "outputCount": 3
       },
       "deluxeSmoker": {
         "name": "Smoked Egg",
@@ -266,10 +270,11 @@
       "mayonnaiseMachine": {
         "name": "Mayonnaise",
         "img": "mayonnaise.png",
-        "price": 1900,
+        "price": 190,
         "time": "3 hrs",
-        "energy": 200,
-        "health": 90
+        "energy": 50,
+        "health": 22,
+        "outputCount": 10
       },
       "deluxeSmoker": {
         "name": "Smoked Egg",
@@ -383,7 +388,7 @@
         "energy": 13,
         "health": 5,
         "favorite": ["krobus", "magnus"]
-      } 
+      }
     }
   },
   "wool": {

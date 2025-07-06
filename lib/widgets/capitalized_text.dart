@@ -9,7 +9,10 @@ class CapitalizedText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      text.replaceFirst(text[0], text[0].toUpperCase()),
+      text
+          .split(" ")
+          .map((word) => word.replaceFirst(word[0], word[0].toUpperCase()))
+          .join(" "),
       style: style,
     );
   }

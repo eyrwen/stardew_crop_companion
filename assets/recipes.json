@@ -2268,7 +2268,7 @@
   },
   "glazedButterfish": {
     "name": "Glazed Butterfish",
-    "img": "sve_glazed_butterfish.png",
+    "img": "glazed_butterfish.png",
     "url": "https://stardew-valley-expanded.fandom.com/wiki/Glazed_Butterfish",
     "type": "cooking",
     "price": 800,
@@ -2501,6 +2501,31 @@
         { "type": "fishing", "value": 2 },
         { "type": "maxEnergy", "value": 50 }
       ]
+    }
+  },
+  "relaxedFitPants": {
+    "name": "Relaxed Fit Pants",
+    "img": "relaxed_fit_pants.png",
+    "type": "clothing",
+    "ingredients": {
+      ":one_of:": [
+        "apple",
+        "apricot",
+        "banana",
+        "cherry",
+        "mango",
+        "pomegranate"
+      ],
+      "cloth": 1
+    }
+  },
+  "relaxedFitShorts": {
+    "name": "Relaxed Fit Shorts",
+    "img": "relaxed_fit_shorts.png",
+    "type": "clothing",
+    "ingredients": {
+      ":one_of:": ["orange", "peach"],
+      "cloth": 1
     }
   }
 }

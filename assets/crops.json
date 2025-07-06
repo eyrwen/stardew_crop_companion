@@ -90,7 +90,7 @@
   "wildhorseradish": {
     "name": "Wild Horseradish",
     "url": "http://stardewvalleywiki.com/Wild_Horseradish",
-    "img": "wildhorseradish.png",
+    "img": "wild_horseradish.png",
     "type": "vegetable",
     "price": 50,
     "health": 5,
@@ -103,7 +103,8 @@
         "price": 173,
         "time": "3 hrs",
         "health": 22,
-        "energy": 50
+        "energy": 50,
+        "inputCount": 3
       }
     }
   },
@@ -353,7 +354,7 @@
   "magmacap": {
     "name": "Magma Cap",
     "url": "http://stardewvalleywiki.com/Magma_Cap",
-    "img": "magmacap.png",
+    "img": "magma_cap.png",
 
     "type": "mushroom",
     "price": 400,
@@ -448,11 +449,12 @@
       "dehydrator": {
         "name": "Raisins",
         "img": "raisins.png",
-        "price": 120,
+        "price": 600,
         "time": "1 day",
-        "health": 11,
-        "energy": 25,
-        "favorite": ["evelyn", "apples"]
+        "health": 56,
+        "energy": 125,
+        "favorite": ["evelyn", "apples"],
+        "inputCount": 5
       },
       "vinegarKeg": {
         "name": "Vinegar",
@@ -641,7 +643,9 @@
         "time": "2 hrs",
         "health": 1,
         "energy": 3,
-        "favorite": ["harvey"]
+        "favorite": ["harvey"],
+        "inputCount": 5,
+        "buffs": [{ "type": "speed", "value": 1, "duration": "1m 23s" }]
       }
     }
   },
@@ -888,7 +892,7 @@
     "specialProduce": {
       "mayonnaiseMachine": {
         "name": "Spicy Mayonnaise",
-        "img": "spicymayonnaise.png",
+        "img": "cornucopia_spicymayonnaise.png",
         "price": 150,
         "time": "3 hrs",
         "health": 22,
@@ -906,7 +910,7 @@
       },
       "oilMaker": {
         "name": "Chili Oil",
-        "img": "chilioil.png",
+        "img": "cornucopia_chilioil.png",
         "price": 200,
         "time": "16 hrs",
         "health": 5,
@@ -1022,7 +1026,8 @@
         "price": 100,
         "time": "1 day",
         "health": 10,
-        "energy": 26
+        "energy": 26,
+        "outputCount": 2
       }
     }
   },
@@ -1130,10 +1135,11 @@
       "mill": {
         "name": "Sugar",
         "img": "sugar.png",
-        "price": 150,
+        "price": 50,
         "time": "1 day",
         "health": 0,
-        "energy": 0
+        "energy": 0,
+        "outputCount": 3
       }
     }
   },
@@ -1339,8 +1345,8 @@
       "regrow": 0
     }
   },
-  "sweetpotato": {
-    "name": "Sweet Potato",
+  "sweetpotatoSve": {
+    "name": "Sweet Potato (SVE)",
     "url": "https://stardew-valley-expanded.fandom.com/wiki/Sweet_Potato",
     "img": "sve_sweetpotato.png",
 
@@ -1516,7 +1522,7 @@
       "sophia",
       "susan",
       "victor",
-      "vicent",
+      "vincent",
       "willy"
     ]
   },
@@ -2128,7 +2134,7 @@
   "greenalgae": {
     "name": "Green Algae",
     "url": "https://stardewvalleywiki.com/Green_Algae",
-    "img": "greenalgae.png",
+    "img": "green_algae.png",
     "type": "other",
     "price": 15,
     "health": 5,
@@ -2138,17 +2144,18 @@
       "compactMill": {
         "name": "Gelling Powder",
         "img": "cornucopia_gellingpowder.png",
-        "price": 50,
+        "price": 150,
         "time": "4 hrs",
         "health": 0,
-        "energy": 0
+        "energy": 0,
+        "inputCount": 3
       }
     }
   },
   "whitealgae": {
     "name": "White Algae",
     "url": "https://stardewvalleywiki.com/White_Algae",
-    "img": "whitealgae.png",
+    "img": "white_algae.png",
     "type": "other",
     "price": 25,
     "health": 9,
@@ -2158,17 +2165,18 @@
       "compactMill": {
         "name": "Gelling Powder",
         "img": "cornucopia_gellingpowder.png",
-        "price": 50,
+        "price": 150,
         "time": "4 hrs",
         "health": 0,
-        "energy": 0
+        "energy": 0,
+        "inputCount": 3
       }
     }
   },
   "seajelly": {
     "name": "Sea Jelly",
     "url": "https://stardewvalleywiki.com/Sea_Jelly",
-    "img": "seajelly.png",
+    "img": "sea_jelly.png",
     "type": "other",
     "price": 200,
     "health": 39,
@@ -2182,7 +2190,7 @@
   "riverjelly": {
     "name": "River Jelly",
     "url": "https://stardewvalleywiki.com/River_Jelly",
-    "img": "riverjelly.png",
+    "img": "river_jelly.png",
     "type": "other",
     "price": 125,
     "health": 33,
@@ -2196,7 +2204,7 @@
   "cavejelly": {
     "name": "Cave Jelly",
     "url": "https://stardewvalleywiki.com/Cave_Jelly",
-    "img": "cavejelly.png",
+    "img": "cave_jelly.png",
     "type": "other",
     "price": 180,
     "health": 33,
@@ -2658,7 +2666,8 @@
         "price": 28,
         "time": "38 hrs",
         "health": 22,
-        "energy": 50
+        "energy": 50,
+        "inputCount": 2
       },
       "butterChurn": {
         "name": "Nut Butter",
@@ -2666,7 +2675,8 @@
         "price": 18,
         "time": "3 hrs",
         "health": 0,
-        "energy": 0
+        "energy": 0,
+        "inputCount": 2
       }
     }
   },
@@ -2947,35 +2957,39 @@
       "extruder": {
         "name": "Beeswax",
         "img": "cornucopia_beeswax.png",
-        "price": 100,
+        "price": 200,
         "time": "14 hrs",
         "health": 0,
         "energy": 0,
-        "favorite": ["demetrius"]
+        "favorite": ["demetrius"],
+        "inputCount": 2
       },
       "compactMill": {
         "name": "Miso Paste",
         "img": "cornucopia_misopaste.png",
-        "price": 48,
+        "price": 300,
         "time": "6 hrs",
         "health": 0,
-        "energy": 0
+        "energy": 0,
+        "inputCount": 4
       },
       "butterChurn": {
         "name": "Nut Butter",
         "img": "nut_butter.png",
-        "price": 100,
+        "price": 97,
         "time": "3 hrs",
         "health": 0,
-        "energy": 0
+        "energy": 0,
+        "inputCount": 2
       },
       "keg": {
         "name": "Nut Milk",
         "img": "nut_milk.png",
-        "price": 73,
+        "price": 146,
         "time": "38 hrs",
         "health": 22,
-        "energy": 50
+        "energy": 50,
+        "inputCount": 2
       },
       "jar": {
         "name": "Soy Sauce",
@@ -2983,7 +2997,8 @@
         "price": 150,
         "time": "67 hrs",
         "health": 0,
-        "energy": 0
+        "energy": 0,
+        "inputCount": 2
       },
       "cheesePress": {
         "name": "Tofu",
@@ -2992,7 +3007,8 @@
         "time": "21 hrs",
         "health": 5,
         "energy": 13,
-        "favorite": ["emily", "leah"]
+        "favorite": ["emily", "leah"],
+        "inputCount": 2
       }
     }
   },
@@ -3026,10 +3042,11 @@
       "mill": {
         "name": "Sugar",
         "img": "sugar.png",
-        "price": 200,
+        "price": 50,
         "time": "1 day",
         "health": 11,
-        "energy": 25
+        "energy": 25,
+        "outputCount": 4
       },
       "vinegarKeg": {
         "name": "Vinegar",
@@ -3053,10 +3070,11 @@
       "mill": {
         "name": "Sugar",
         "img": "sugar.png",
-        "price": 100,
+        "price": 50,
         "time": "1 day",
         "health": 11,
-        "energy": 25
+        "energy": 25,
+        "outputCount": 2
       },
       "vinegarKeg": {
         "name": "Vinegar",
@@ -3077,8 +3095,8 @@
     "health": 20,
     "energy": 45
   },
-  "sweetPotato": {
-    "name": "Sweet Potato",
+  "sweetPotatoCornucopia": {
+    "name": "Sweet Potato (Cornucopia)",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Sweet_Potato",
     "img": "cornucopia_sweetpotato.png",
     "type": "vegetable",

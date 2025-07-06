@@ -19,7 +19,8 @@ enum RecipeType {
 
 sealed class Recipe extends Item {
   static List<Recipe> sort(List<Recipe> recipes) {
-    return recipes..sort((a, b) => a.type.index.compareTo(b.type.index));
+    return recipes
+      ..sort((a, b) => a.recipeType.index.compareTo(b.recipeType.index));
   }
 
   final IngredientList ingredients;

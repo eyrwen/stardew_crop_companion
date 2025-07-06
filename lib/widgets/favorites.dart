@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:collection/collection.dart';
-import 'package:stardew_crop_companion/widgets/capitalized_text.dart';
 
+import 'capitalized_text.dart';
 import 'item_image.dart';
 
 class Favorites extends StatelessWidget {
-  final List favorites;
+  final List<String> favorites;
   final MainAxisAlignment mainAxisAlignment;
 
   const Favorites({
@@ -13,6 +12,14 @@ class Favorites extends StatelessWidget {
     required this.favorites,
     this.mainAxisAlignment = MainAxisAlignment.center,
   });
+
+  List<String> get _sortedFavorites {
+    return favorites.map((favorite) => favorite.toLowerCase()).toList()..sort();
+  }
+
+  int get _pivot {
+    return (favorites.length / 2).ceil();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -24,49 +31,51 @@ class Favorites extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Column(children: [SizedBox(height: 3), ItemImage.small('heart')]),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: favorites.length > 10
-                  ? favorites
-                        .slices(2)
-                        .map(
-                          (pair) => Row(
-                            spacing: 8.0,
-                            children: pair
-                                .map(
-                                  (fav) => Row(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    spacing: 8.0,
-                                    children: [
-                                      ItemImage.small(fav),
-                                      CapitalizedText(
-                                        fav,
-                                        style: Theme.of(
-                                          context,
-                                        ).textTheme.bodySmall,
-                                      ),
-                                    ],
-                                  ),
-                                )
-                                .toList(),
-                          ),
-                        )
-                        .toList()
-                  : favorites
-                        .map(
-                          (favorite) => Row(
-                            spacing: 8.0,
-                            children: [
-                              ItemImage.small(favorite),
-                              CapitalizedText(favorite),
-                            ],
-                          ),
-                        )
+            favorites.length > 4
+                ? Row(
+                    spacing: 8.0,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: _sortedFavorites.take(_pivot).map((favorite) {
+                          return FavoriteDetails(favorite: favorite);
+                        }).toList(),
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: _sortedFavorites.skip(_pivot).map((favorite) {
+                          return FavoriteDetails(favorite: favorite);
+                        }).toList(),
+                      ),
+                    ],
+                  )
+                : Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: _sortedFavorites
+                        .map((favorite) => FavoriteDetails(favorite: favorite))
                         .toList(),
-            ),
+                  ),
           ],
         ),
       ],
+    );
+  }
+}
+
+class FavoriteDetails extends StatelessWidget {
+  final String favorite;
+
+  const FavoriteDetails({super.key, required this.favorite});
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      spacing: 8.0,
+      children: [ItemImage.small(favorite), CapitalizedText(favorite)],
     );
   }
 }

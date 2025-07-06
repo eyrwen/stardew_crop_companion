@@ -2,61 +2,73 @@ import 'artisan_good_formulator.dart';
 import 'interface.dart';
 
 enum ProduceMachine {
-  mayonnaiseMachine("mayonnaiseMachine", "mayonnaise_machine.png", []),
-  jar("jar", "jar.png", [
+  mayonnaiseMachine(
+    "mayonnaiseMachine",
+    "Mayonnaise Machine",
+    "mayonnaise_machine.png",
+    [],
+  ),
+  oilMaker("oilMaker", "Oil Maker", "oil_maker.png", []),
+  mill("mill", "Mill", "mill.png", []),
+  butterChurn("butterChurn", "Butter Churn", "cornucopia_butter_churn.png", [
+    ProduceMachineOutput.nutButter(),
+    ProduceMachineOutput.butter(),
+  ]),
+  compactMill("compactMill", "Compact Mill", "cornucopia_compact_mill.png", []),
+  jar("jar", "Jar", "jar.png", [
     ProduceMachineOutput.jelly(),
     ProduceMachineOutput.pickles(),
   ]),
-  keg("keg", "keg.png", [
+  keg("keg", "Keg", "keg.png", [
     ProduceMachineOutput.wine(),
     ProduceMachineOutput.juice(),
     ProduceMachineOutput.nutMilk(),
   ]),
-  juicer('juicer', 'cornucopia_juicer.png', [
+  juicer('juicer', 'Juice Keg', 'cornucopia_juicer.png', [
     ProduceMachineOutput.juice(
       from: [ItemType.fruit, ItemType.vegetable, ItemType.forage],
     ),
   ]),
-  vinegarKeg("vinegarKeg", "cornucopia_vinegar_keg.png", []),
-  dehydrator("dehydrator", "dehydrator.png", [
+  vinegarKeg("vinegarKeg", "Vinegar Keg", "cornucopia_vinegar_keg.png", []),
+  yogurtMaker("yogurtJar", "Yogurt Jar", "cornucopia_yogurt_jar.png", [
+    ProduceMachineOutput.flavoredYogurt(),
+    ProduceMachineOutput.plainYogurt(),
+  ]),
+  beehive("beehive", "Beehive", "beehive.png", [ProduceMachineOutput.honey()]),
+  smoker("smoker", "Fish Smoker", "fish_smoker.png", [
+    ProduceMachineOutput.smokedFish(),
+  ]),
+  deluxeSmoker(
+    "deluxeSmoker",
+    "Deluxe Smoker",
+    "cornucopia_deluxe_smoker.png",
+    [ProduceMachineOutput.smokedEgg()],
+  ),
+  cheesePress("cheesePress", "Cheese Press", "cheesePress.png", [
+    ProduceMachineOutput.cheese(),
+  ]),
+  loom("loom", "Loom", "loom.png", []),
+  extruder("extruder", "Extruder", "cornucopia_extruder.png", []),
+
+  waxBarrel("waxBarrel", "Wax Barrel", "cornucopia_wax_barrel.png", [
+    ProduceMachineOutput.candles(),
+  ]),
+  dehydrator("dehydrator", "Dehydrator", "dehydrator.png", [
     ProduceMachineOutput.driedFruit(),
     ProduceMachineOutput.driedMushroom(),
     ProduceMachineOutput.driedVegetable(),
     ProduceMachineOutput.driedFlower(),
     ProduceMachineOutput.driedHerb(),
   ]),
-  dryingRack("dryingRack", "cornucopia_drying_rack.png", [
+  dryingRack("dryingRack", "Drying Rack", "cornucopia_drying_rack.png", [
     ProduceMachineOutput.driedFlower(),
     ProduceMachineOutput.driedHerb(),
   ]),
-  oilMaker("oilMaker", "oil_maker.png", []),
-  butterChurn("butterChurn", "cornucopia_butter_churn.png", [
-    ProduceMachineOutput.nutButter(),
-    ProduceMachineOutput.butter(),
-  ]),
-  beehive("beehive", "beehive.png", [ProduceMachineOutput.honey()]),
-  smoker("smoker", "fish_smoker.png", [ProduceMachineOutput.smokedFish()]),
-  deluxeSmoker("deluxeSmoker", "cornucopia_deluxe_smoker.png", [
-    ProduceMachineOutput.smokedEgg(),
-  ]),
-  mill("mill", "mill.png", []),
-  cheesePress("cheesePress", "cheesePress.png", [
-    ProduceMachineOutput.cheese(),
-  ]),
-  loom("loom", "loom.png", []),
-  compactMill("compactMill", "cornucopia_compact_mill.png", []),
-  extruder("extruder", "cornucopia_extruder.png", []),
-  yogurtMaker("yogurtJar", "cornucopia_yogurt_jar.png", [
-    ProduceMachineOutput.flavoredYogurt(),
-    ProduceMachineOutput.plainYogurt(),
-  ]),
-  alembic("alembic", "cornucopia_alembic.png", [
+  alembic("alembic", "Alembic", "cornucopia_alembic.png", [
     ProduceMachineOutput.essentialOil(),
-  ]),
-  waxBarrel("waxBarrel", "cornucopia_wax_barrel.png", [
-    ProduceMachineOutput.candles(),
   ]);
 
+  final String key;
   final String name;
   final String img;
   final List<ProduceMachineOutput> outputs;
@@ -67,23 +79,29 @@ enum ProduceMachine {
 
   static ProduceMachine from(String value) {
     return ProduceMachine.values.firstWhere(
-      (e) => e.name == value,
+      (e) => e.key == value,
       orElse: () => throw ArgumentError('Unknown produce machine: $value'),
     );
   }
 
-  const ProduceMachine(this.name, this.img, this.outputs);
+  const ProduceMachine(this.key, this.name, this.img, this.outputs);
 }
 
 class ProduceMachineOutput {
   final String outputName;
   final String? outputImg;
+  final int outputCount;
   final ArtisanGoodFormulator priceFormulator;
   final ArtisanGoodFormulator energyFormulator;
   final ArtisanGoodFormulator healthFormulator;
   final String time;
   final List<String> favorites;
   final List<ItemType> from;
+  final int inputCount;
+  final String? outputQuality;
+
+  get multiInput => inputCount > 1;
+  get multiOutput => outputCount > 1;
 
   const ProduceMachineOutput(
     this.outputName,
@@ -94,11 +112,17 @@ class ProduceMachineOutput {
     this.time, {
     this.favorites = const [],
     required this.from,
+    this.inputCount = 1,
+    this.outputCount = 1,
+    this.outputQuality,
   });
 
   ProduceMachineOutput.fromJson(Map<String, dynamic> json)
     : outputName = json['name'],
       outputImg = json['img'],
+      outputQuality = json['quality'],
+      outputCount = json['outputCount'] ?? 1,
+      inputCount = json['inputCount'] ?? 1,
       priceFormulator = json['priceFormulator'] != null
           ? PriceFormulator.fromJson(json['priceFormulator'])
           : PriceFormulator.exact(json['price'].toDouble()),
@@ -162,73 +186,62 @@ class ProduceMachineOutput {
     : this(
         "Dried Fruit",
         "dried_fruit.png",
-        const PriceFormulator(multiplier: 1.5, plus: 5),
-        const EnergyFormulator(
-          multiplier: 3,
-          inedibleMultiplier: 1.25,
-          dividedBy: 5,
-        ),
-        const HealthFormulator(
-          multiplier: 3,
-          inedibleMultiplier: 0.5618,
-          dividedBy: 5,
-        ),
+        const PriceFormulator(multiplier: 7.5, plus: 25),
+        const EnergyFormulator(multiplier: 3, inedibleMultiplier: 1.25),
+        const HealthFormulator(multiplier: 3, inedibleMultiplier: 0.5618),
         "1 day",
         from: const [ItemType.fruit],
+        inputCount: 5,
       );
 
   const ProduceMachineOutput.driedMushroom()
     : this(
         "Dried Mushroom",
         "dried_mushrooms.png",
-        const PriceFormulator(multiplier: 1.5, plus: 5),
-        const EnergyFormulator(
-          multiplier: 3,
-          inedibleMultiplier: 1.25,
-          dividedBy: 5,
-        ),
-        const HealthFormulator(
-          multiplier: 3,
-          inedibleMultiplier: 0.5618,
-          dividedBy: 5,
-        ),
+        const PriceFormulator(multiplier: 7.5, plus: 25),
+        const EnergyFormulator(multiplier: 3, inedibleMultiplier: 1.25),
+        const HealthFormulator(multiplier: 3, inedibleMultiplier: 0.5618),
         "1 day",
         from: const [ItemType.mushroom],
+        inputCount: 5,
       );
 
   const ProduceMachineOutput.driedVegetable()
     : this(
         "Dried Vegetable",
         "cornucopia_dried_vegetable.png",
-        const PriceFormulator(multiplier: 1.5, plus: 5),
+        const PriceFormulator(multiplier: 7.5, plus: 25),
         const EnergyFormulator.zero(),
         const HealthFormulator.zero(),
         "30 hrs",
         from: const [ItemType.vegetable],
+        inputCount: 5,
       );
 
   const ProduceMachineOutput.driedFlower([String? duration])
     : this(
         "Dried Flower",
         "cornucopia_dried_flower.png",
-        const PriceFormulator(multiplier: 10, plus: 50, dividedBy: 5),
+        const PriceFormulator(multiplier: 10, plus: 50),
         const EnergyFormulator.zero(),
         const HealthFormulator.zero(),
         duration ?? "30 hrs",
         favorites: const ["evelyn", "haley", "penny"],
         from: const [ItemType.flower],
+        inputCount: 5,
       );
 
   const ProduceMachineOutput.driedHerb()
     : this(
         "Dried Herb",
         "cornucopia_dried_herb.png",
-        const PriceFormulator(multiplier: 10, plus: 50, dividedBy: 5),
+        const PriceFormulator(multiplier: 10, plus: 50),
         const EnergyFormulator.zero(),
         const HealthFormulator.zero(),
         "30 hrs",
         favorites: const ["gus", "leah"],
         from: const [ItemType.herb],
+        inputCount: 5,
       );
 
   const ProduceMachineOutput.honey()
@@ -247,7 +260,7 @@ class ProduceMachineOutput {
     : this(
         "Essential Oil",
         "cornucopia_essential_oil.png",
-        const PriceFormulator(multiplier: 10, plus: 50, dividedBy: 5),
+        const PriceFormulator(multiplier: 10, plus: 50),
         const EnergyFormulator.zero(),
         const HealthFormulator.zero(),
         "40 hrs",
@@ -261,6 +274,7 @@ class ProduceMachineOutput {
           ItemType.nut,
           ItemType.vegetable,
         ],
+        inputCount: 5,
       );
 
   const ProduceMachineOutput.candles()

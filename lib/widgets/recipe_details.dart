@@ -11,7 +11,9 @@ class RecipeDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: recipe.favorites.isEmpty
+          ? CrossAxisAlignment.center
+          : CrossAxisAlignment.start,
       spacing: 8.0,
       children: [
         ItemImage.large(recipe.img),

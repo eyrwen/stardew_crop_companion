@@ -37,8 +37,8 @@ class ItemPageLayout<T extends Item> extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           IconButton(icon: Icon(Icons.arrow_back), onPressed: () => onBack()),
-          Expanded(
-            flex: 2,
+          ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 300, minWidth: 200),
             child: Column(
               spacing: 16.0,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -55,9 +55,9 @@ class ItemPageLayout<T extends Item> extends StatelessWidget {
                           children: [
                             ItemImage(item.img),
                             ItemLink(item: item),
+                            seasons ?? SizedBox.shrink(),
                             if (item.favorites.isNotEmpty)
                               Favorites(favorites: item.favorites),
-                            seasons ?? SizedBox.shrink(),
                           ],
                         ),
                       ),
@@ -133,18 +133,18 @@ class ItemPageLayout<T extends Item> extends StatelessWidget {
                 ),
                 Expanded(
                   child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       if (item.producable)
                         DetailsCard.scrollable(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.start,
-                            spacing: 16.0,
                             children: item.produceOutputs.entries
                                 .slices(6)
                                 .map(
                                   (subset) => Row(
-                                    spacing: 8.0,
+                                    spacing: 16.0,
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceBetween,
                                     crossAxisAlignment:

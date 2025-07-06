@@ -83,7 +83,7 @@ abstract class Item {
             )
           : null;
 
-  get producable => type != ItemType.other && produceOutputs.isNotEmpty;
+  get producable => produceOutputs.isNotEmpty;
 
   Map<ProduceMachine, ProduceMachineOutput> get produceOutputs {
     return ProduceMachine.values.fold(
