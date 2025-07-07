@@ -1,3 +1,4 @@
+import 'buff.dart';
 import 'produce_machine.dart';
 
 enum ItemType {
@@ -44,6 +45,7 @@ abstract class Item {
   final int energy;
   final int health;
   final Map<ProduceMachine, ProduceMachineOutput>? specialProduce;
+  final List<Buff> buffs;
 
   Item({
     required this.key,
@@ -58,6 +60,7 @@ abstract class Item {
     this.energy = 0,
     this.health = 0,
     this.specialProduce = const {},
+    this.buffs = const [],
   }) : url =
            url ?? 'https://stardewvalleywiki.com/${name.split(' ').join('_')}';
 
@@ -74,6 +77,10 @@ abstract class Item {
       cookable = json['cookable'] ?? true,
       energy = json['energy'] ?? 0,
       health = json['health'] ?? 0,
+      buffs = (json['buffs'] as List<dynamic>?)
+              ?.map((b) => Buff.fromJson(b as Map<String, dynamic>))
+              .toList() ??
+          [],
       specialProduce = json['specialProduce'] != null
           ? (json['specialProduce'] as Map<String, dynamic>).map(
               (key, value) => MapEntry(

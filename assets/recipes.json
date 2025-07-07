@@ -12,19 +12,10 @@
       "shrimp": 1,
       "commonmushroom": 1
     },
-    "buffs": {
-      "time": "7m",
-      "effects": [
-        {
-          "type": "farming",
-          "value": 2
-        },
-        {
-          "type": "maxEnergy",
-          "value": 30
-        }
-      ]
-    }
+    "buffs": [
+      { "type": "farming", "value": 2, "time": "7m" },
+      { "type": "maxEnergy", "value": 30, "time": "7m" }
+    ]
   },
   "tropicalCurry": {
     "name": "Tropical Curry",
@@ -39,15 +30,7 @@
       "pineapple": 1,
       "hotpepper": 1
     },
-    "buffs": {
-      "time": "5m 1s",
-      "effects": [
-        {
-          "type": "foraging",
-          "value": 4
-        }
-      ]
-    }
+    "buffs": [{ "type": "foraging", "value": 4, "time": "5m 1s" }]
   },
   "mangoStickyRice": {
     "name": "Mango Sticky Rice",
@@ -62,15 +45,7 @@
       "mango": 1,
       "rice": 1
     },
-    "buffs": {
-      "time": "5m 1s",
-      "effects": [
-        {
-          "type": "defense",
-          "value": 3
-        }
-      ]
-    }
+    "buffs": [{ "type": "defense", "value": 3, "time": "5m 1s" }]
   },
   "warpTotemDesert": {
     "name": "Warp Totem: Desert",
@@ -195,15 +170,7 @@
       ":any:": "mayonnaise",
       "redcabbage": 1
     },
-    "buffs": {
-      "time": "7m",
-      "effects": [
-        {
-          "type": "fishing",
-          "value": 2
-        }
-      ]
-    }
+    "buffs": [{ "type": "fishing", "value": 2, "time": "7m" }]
   },
   "dishOTheSea": {
     "name": "Dish O' The Sea",
@@ -217,15 +184,7 @@
       "sardine": 2,
       "hashbrowns": 1
     },
-    "buffs": {
-      "time": "5m 35s",
-      "effects": [
-        {
-          "type": "fishing",
-          "value": 3
-        }
-      ]
-    }
+    "buffs": [{ "type": "fishing", "value": 3, "time": "5m 35s" }]
   },
   "bakedfish": {
     "name": "Baked Fish",
@@ -239,15 +198,7 @@
       "bream": 1,
       ":any:": "flour"
     },
-    "buffs": {
-      "time": "5m 1s",
-      "effects": [
-        {
-          "type": "fishing",
-          "value": 2
-        }
-      ]
-    }
+    "buffs": [{ "type": "fishing", "value": 2, "time": "5m 1s" }]
   },
   "fishShirt": {
     "name": "Fish Shirt",
@@ -303,10 +254,7 @@
       "largemouthbass": 1,
       ":any_each:": ["oil", "flour"]
     },
-    "buffs": {
-      "time": "7m",
-      "effects": [{ "type": "magnetism", "value": 64 }]
-    }
+    "buffs": [{ "type": "magnetism", "value": 64, "time": "7m" }]
   },
   "troutSoup": {
     "name": "Trout Soup",
@@ -319,10 +267,7 @@
       "rainbowtrout": 1,
       "greenalgae": 1
     },
-    "buffs": {
-      "time": "4m 39s",
-      "effects": [{ "type": "fishing", "value": 1 }]
-    }
+    "buffs": [{ "type": "fishing", "value": 1, "time": "4m 39s" }]
   },
   "salmonDinner": {
     "name": "Salmon Dinner",
@@ -337,13 +282,10 @@
       "amaranth": 1,
       "kale": 1
     },
-    "buffs": {
-      "time": "7m",
-      "effects": [
-        { "type": "fishing", "value": 2 },
-        { "type": "defense", "value": 2 }
-      ]
-    }
+    "buffs": [
+      { "type": "fishing", "value": 2, "time": "7m" },
+      { "type": "defense", "value": 2, "time": "7m" }
+    ]
   },
   "fadedDenimShirt": {
     "name": "Faded Denim Shirt",
@@ -377,10 +319,7 @@
       "eel": 1,
       ":any:": "oil"
     },
-    "buffs": {
-      "time": "7m",
-      "effects": [{ "type": "luck", "value": 1 }]
-    }
+    "buffs": [{ "type": "luck", "value": 1, "time": "7m" }]
   },
   "spicyEel": {
     "name": "Spicy Eel",
@@ -423,10 +362,7 @@
       "squid": 1,
       ":any_each:": ["oil", "flour"]
     },
-    "buffs": {
-      "time": "7m",
-      "effects": [{ "type": "fishing", "value": 2 }]
-    }
+    "buffs": [{ "type": "fishing", "value": 2, "time": "7m" }]
   },
   "luckyLunch": {
     "name": "Lucky Lunch",
@@ -440,10 +376,7 @@
       "tortilla": 1,
       "bluejazz": 1
     },
-    "buffs": {
-      "time": "11m 1s",
-      "effects": [{ "type": "luck", "value": 3 }]
-    }
+    "buffs": [{ "type": "luck", "value": 3, "time": "11m 1s" }]
   },
   "tubeTop": {
     "name": "Tube Top",
@@ -492,10 +425,7 @@
       "midnightcarp": 1,
       "squidink": 1
     },
-    "buffs": {
-      "time": "3m 30s",
-      "effects": [{ "type": "fishing", "value": 4 }]
-    }
+    "buffs": [{ "type": "fishing", "value": 4, "time": "3m 30s" }]
   },
   "blobfishMask": {
     "name": "Blobfish Mask",
@@ -517,13 +447,10 @@
       "lobster": 1,
       ":any:": "milk"
     },
-    "buffs": {
-      "time": "16m 47s",
-      "effects": [
-        { "type": "fishing", "value": 3 },
-        { "type": "maxEnergy", "value": 50 }
-      ]
-    }
+    "buffs": [
+      { "type": "fishing", "value": 3, "time": "16m 47s" },
+      { "type": "maxEnergy", "value": 50, "time": "16m 47s" }
+    ]
   },
   "chowder": {
     "name": "Chowder",
@@ -537,10 +464,7 @@
       "clam": 1,
       ":any:": "milk"
     },
-    "buffs": {
-      "time": "16m 47s",
-      "effects": [{ "type": "fishing", "value": 1 }]
-    }
+    "buffs": [{ "type": "fishing", "value": 1, "time": "16m 47s" }]
   },
   "waterObelisk": {
     "name": "Water Obelisk",
@@ -566,10 +490,7 @@
       "periwinkle": 1,
       "tomato": 1
     },
-    "buffs": {
-      "time": "16m 47s",
-      "effects": [{ "type": "fishing", "value": 3 }]
-    }
+    "buffs": [{ "type": "fishing", "value": 3, "time": "16m 47s" }]
   },
   "raincoat": {
     "name": "Raincoat",
@@ -592,13 +513,10 @@
       "crab": 1,
       ":any_each:": ["oil", "flour", "egg"]
     },
-    "buffs": {
-      "time": "16m 47s",
-      "effects": [
-        { "type": "speed", "value": 1 },
-        { "type": "defense", "value": 1 }
-      ]
-    }
+    "buffs": [
+      { "type": "speed", "value": 1, "time": "16m 47s" },
+      { "type": "defense", "value": 1, "time": "16m 47s" }
+    ]
   },
   "shrimpCocktail": {
     "name": "Shrimp Cocktail",
@@ -612,13 +530,10 @@
       "tomato": 1,
       "wildhorseradish": 1
     },
-    "buffs": {
-      "time": "10m 2s",
-      "effects": [
-        { "type": "fishing", "value": 1 },
-        { "type": "luck", "value": 1 }
-      ]
-    }
+    "buffs": [
+      { "type": "fishing", "value": 1, "time": "10m 2s" },
+      { "type": "luck", "value": 1, "time": "10m 2s" }
+    ]
   },
   "escargot": {
     "name": "Escargot",
@@ -632,10 +547,7 @@
       "snail": 1,
       "garlic": 1
     },
-    "buffs": {
-      "time": "16m 47s",
-      "effects": [{ "type": "fishing", "value": 2 }]
-    }
+    "buffs": [{ "type": "fishing", "value": 2, "time": "16m 47s" }]
   },
   "strangeBun": {
     "name": "Strange Bun",
@@ -755,10 +667,7 @@
     "ingredients": {
       ":any_each:": ["egg", "flour"]
     },
-    "buffs": {
-      "time": "11m 11s",
-      "effects": [{ "type": "foraging", "value": 2 }]
-    }
+    "buffs": [{ "type": "foraging", "value": 2, "time": "11m 11s" }]
   },
   "chocolateCake": {
     "name": "Chocolate Cake",
@@ -877,13 +786,10 @@
       "hashbrowns": 1,
       "pancakes": 1
     },
-    "buffs": {
-      "time": "7m",
-      "effects": [
-        { "type": "farming", "value": 2 },
-        { "type": "maxEnergy", "value": 50 }
-      ]
-    }
+    "buffs": [
+      { "type": "farming", "value": 2, "time": "7m" },
+      { "type": "maxEnergy", "value": 50, "time": "7m" }
+    ]
   },
   "iceCream": {
     "name": "Ice Cream",
@@ -911,13 +817,10 @@
       "sugar": 1,
       "caveCarrot": 1
     },
-    "buffs": {
-      "time": "7m",
-      "effects": [
-        { "type": "mining", "value": 3 },
-        { "type": "magnetism", "value": 32 }
-      ]
-    }
+    "buffs": [
+      { "type": "mining", "value": 3, "time": "7m" },
+      { "type": "magnetism", "value": 32, "time": "7m" }
+    ]
   },
   "parsnipSoup": {
     "name": "Parsnip Soup",
@@ -959,13 +862,10 @@
       "pumpkin": 1,
       ":any:": "milk"
     },
-    "buffs": {
-      "time": "7m",
-      "effects": [
-        { "type": "defense", "value": 2 },
-        { "type": "luck", "value": 2 }
-      ]
-    }
+    "buffs": [
+      { "type": "defense", "value": 2, "time": "7m" },
+      { "type": "luck", "value": 2, "time": "7m" }
+    ]
   },
   "ricePudding": {
     "name": "Rice Pudding",
@@ -980,13 +880,10 @@
       ":any:": "milk",
       "sugar": 1
     },
-    "buffs": {
-      "time": "7m",
-      "effects": [
-        { "type": "farming", "value": 2 },
-        { "type": "maxEnergy", "value": 30 }
-      ]
-    }
+    "buffs": [
+      { "type": "farming", "value": 2, "time": "7m" },
+      { "type": "maxEnergy", "value": 30, "time": "7m" }
+    ]
   },
   "bananaPudding": {
     "name": "Banana Pudding",
@@ -1001,14 +898,11 @@
       ":any:": "milk",
       "sugar": 1
     },
-    "buffs": {
-      "time": "7m",
-      "effects": [
-        { "type": "mining", "value": 1 },
-        { "type": "luck", "value": 1 },
-        { "type": "defense", "value": 1 }
-      ]
-    }
+    "buffs": [
+      { "type": "mining", "value": 1, "time": "7m" },
+      { "type": "luck", "value": 1, "time": "7m" },
+      { "type": "defense", "value": 1, "time": "7m" }
+    ]
   },
   "sleevelessOveralls": {
     "name": "Sleeveless Overalls",
@@ -1122,10 +1016,7 @@
       "morel": 1,
       ":any:": "oil"
     },
-    "buffs": {
-      "time": "7m",
-      "effects": [{ "type": "attack", "value": 2 }]
-    }
+    "buffs": [{ "type": "attack", "value": 2, "time": "7m" }]
   },
   "stirFry": {
     "name": "Stir Fry",
@@ -1365,10 +1256,7 @@
       "blackberry": 2,
       "sugar": 1
     },
-    "buffs": {
-      "time": "7m",
-      "effects": [{ "type": "farming", "value": 2 }]
-    }
+    "buffs": [{ "type": "farming", "value": 2, "time": "7m" }]
   },
   "blueShirtOveralls": {
     "name": "Blue Shirt Overalls",
@@ -1404,10 +1292,7 @@
       "hazelnut": 1,
       "bread": 1
     },
-    "buffs": {
-      "time": "5m 35s",
-      "effects": [{ "type": "defense", "value": 2 }]
-    }
+    "buffs": [{ "type": "defense", "value": 2, "time": "5m 35s" }]
   },
   "brownOveralls": {
     "name": "Brown Overalls",
@@ -1497,10 +1382,7 @@
       "winterroot": 1,
       "cavecarrot": 1
     },
-    "buffs": {
-      "time": "5m 35s",
-      "effects": [{ "type": "attack", "value": 3 }]
-    }
+    "buffs": [{ "type": "attack", "value": 3, "time": "5m 35s" }]
   },
   "orangeBowShirt": {
     "name": "Orange Bow Shirt",
@@ -1524,10 +1406,7 @@
       "eggplant": 1,
       "cavecarrot": 1
     },
-    "buffs": {
-      "time": "5m 35s",
-      "effects": [{ "type": "foraging", "value": 3 }]
-    }
+    "buffs": [{ "type": "foraging", "value": 3, "time": "5m 35s" }]
   },
   "greenBeltedShirt": {
     "name": "Green Belted Shirt",
@@ -1561,10 +1440,7 @@
       "ginger": 3,
       "sugar": 1
     },
-    "buffs": {
-      "time": "5m",
-      "effects": [{ "type": "luck", "value": 1 }]
-    }
+    "buffs": [{ "type": "luck", "value": 1, "time": "5m" }]
   },
   "foragersHat": {
     "name": "Forager's Hat",
@@ -1712,10 +1588,7 @@
       "parsnip": 1,
       "omelet": 1
     },
-    "buffs": {
-      "time": "5m 35s",
-      "effects": [{ "type": "farming", "value": 3 }]
-    }
+    "buffs": [{ "type": "farming", "value": 3, "time": "5m 35s" }]
   },
   "beanHotpot": {
     "name": "Bean Hotpot",
@@ -1728,13 +1601,10 @@
     "ingredients": {
       "greenbean": 2
     },
-    "buffs": {
-      "time": "5m 35s",
-      "effects": [
-        { "type": "maxEnergy", "value": 30 },
-        { "type": "magnetism", "value": 32 }
-      ]
-    }
+    "buffs": [
+      { "type": "maxEnergy", "value": 30, "time": "5m 35s" },
+      { "type": "magnetism", "value": 32, "time": "5m 35s" }
+    ]
   },
   "cheeseCauliflower": {
     "name": "Cheese Cauliflower",
@@ -1760,10 +1630,7 @@
       "potato": 1,
       ":any:": "oil"
     },
-    "buffs": {
-      "time": "5m 35s",
-      "effects": [{ "type": "farming", "value": 1 }]
-    }
+    "buffs": [{ "type": "farming", "value": 1, "time": "5m 35s" }]
   },
   "oilOfGarlic": {
     "name": "Oil of Garlic",
@@ -1776,10 +1643,7 @@
       "garlic": 1,
       ":any:": "oil"
     },
-    "buffs": {
-      "time": "10m",
-      "effects": [{ "type": "oilOfGarlic" }]
-    }
+    "buffs": [{ "time": "10m", "effects": [{ "type": "oilOfGarlic" }] }]
   },
   "poi": {
     "name": "Poi",
@@ -1847,13 +1711,10 @@
       "eggplant": 1,
       "tomato": 1
     },
-    "buffs": {
-      "time": "4m 39s",
-      "effects": [
-        { "type": "mining", "value": 1 },
-        { "type": "defense", "value": 3 }
-      ]
-    }
+    "buffs": [
+      { "type": "mining", "value": 1, "time": "4m 39s" },
+      { "type": "defense", "value": 3, "time": "4m 39s" }
+    ]
   },
   "pizza": {
     "name": "Pizza",
@@ -1893,12 +1754,10 @@
       "squidink": 1,
       "tomato": 1
     },
-    "buffs": {
-      "effects": [
-        { "type": "mining", "value": 1, "time": "4m 39s" },
-        { "type": "squidInkRavioli", "time": "2m 59s" }
-      ]
-    }
+    "buffs": [
+      { "type": "mining", "value": 1, "time": "4m 39s" },
+      { "type": "squidInkRavioli", "time": "2m 59s" }
+    ]
   },
   "vegetableMedley": {
     "name": "Vegetable Medley",
@@ -1934,13 +1793,10 @@
       "hotpepper": 1,
       ":any:": "cheese"
     },
-    "buffs": {
-      "time": "7m",
-      "effects": [
-        { "type": "farming", "value": 2 },
-        { "type": "speed", "value": 1 }
-      ]
-    }
+    "buffs": [
+      { "type": "farming", "value": 2, "time": "7m" },
+      { "type": "speed", "value": 1, "time": "7m" }
+    ]
   },
   "shorts": {
     "name": "Shorts",
@@ -1985,10 +1841,7 @@
       "redcabbage": 1,
       "radish": 1
     },
-    "buffs": {
-      "time": "3m 30s",
-      "effects": [{ "type": "maxEnergy", "value": 50 }]
-    }
+    "buffs": [{ "type": "maxEnergy", "value": 50, "time": "3m 30s" }]
   },
   "coleslaw": {
     "name": "Coleslaw",
@@ -2056,13 +1909,10 @@
       "cranberries": 1,
       "artichoke": 1
     },
-    "buffs": {
-      "time": "7m",
-      "effects": [
-        { "type": "speed", "value": 1 },
-        { "type": "maxEnergy", "value": 40 }
-      ]
-    }
+    "buffs": [
+      { "type": "speed", "value": 1, "time": "7m" },
+      { "type": "maxEnergy", "value": 40, "time": "7m" }
+    ]
   },
   "autumnsBounty": {
     "name": "Autumn's Bounty",
@@ -2076,13 +1926,10 @@
       "pumpkin": 1,
       "yam": 1
     },
-    "buffs": {
-      "time": "7m 41s",
-      "effects": [
-        { "type": "foraging", "value": 2 },
-        { "type": "defense", "value": 2 }
-      ]
-    }
+    "buffs": [
+      { "type": "foraging", "value": 2, "time": "7m 41s" },
+      { "type": "defense", "value": 2, "time": "7m 41s" }
+    ]
   },
   "jackOLantern": {
     "name": "Jack-O-Lantern",
@@ -2132,10 +1979,7 @@
       "cranberries": 1,
       "sugar": 1
     },
-    "buff": {
-      "time": "3m 30s",
-      "effects": [{ "type": "mining", "value": 2 }]
-    }
+    "buff": [{ "type": "mining", "value": 2, "time": "3m 30s" }]
   },
   "eightiesShirt": {
     "name": "Eighties Shirt",
@@ -2161,14 +2005,11 @@
       "salmonberry": 15,
       "sugar": 1
     },
-    "buffs": {
-      "time": "18m 40s",
-      "effects": [
-        { "type": "farming", "value": 4 },
-        { "type": "foraging", "value": 2 },
-        { "type": "speed", "value": 2 }
-      ]
-    }
+    "buffs": [
+      { "type": "farming", "value": 4, "time": "18m 40s" },
+      { "type": "foraging", "value": 2, "time": "18m 40s" },
+      { "type": "speed", "value": 2, "time": "18m 40s" }
+    ]
   },
   "bakedPotato": {
     "name": "Baked Potato",
@@ -2198,13 +2039,10 @@
       "puppyfish": 1,
       ":any:": "oil"
     },
-    "buffs": {
-      "time": "5m 35s",
-      "effects": [
-        { "type": "attack", "value": 3 },
-        { "type": "speed", "value": 1 }
-      ]
-    }
+    "buffs": [
+      { "type": "attack", "value": 3, "time": "5m 35s" },
+      { "type": "speed", "value": 1, "time": "5m 35s" }
+    ]
   },
   "birchSyrup": {
     "name": "Birch Syrup",
@@ -2236,14 +2074,11 @@
       "goldenrod": 1,
       "winterstarrose": 1
     },
-    "buffs": {
-      "time": "9m 20s",
-      "effects": [
-        { "type": "foraging", "value": 2 },
-        { "type": "luck", "value": 2 },
-        { "type": "speed", "value": 2 }
-      ]
-    }
+    "buffs": [
+      { "type": "foraging", "value": 2, "time": "9m 20s" },
+      { "type": "luck", "value": 2, "time": "9m 20s" },
+      { "type": "speed", "value": 2, "time": "9m 20s" }
+    ]
   },
   "frogLegs": {
     "name": "Frog Legs",
@@ -2258,13 +2093,10 @@
       "frog": 1,
       ":any_each:": ["flour", "oil"]
     },
-    "buffs": {
-      "time": "5m 35s",
-      "effects": [
-        { "type": "speed", "value": 2 },
-        { "type": "defense", "value": 2 }
-      ]
-    }
+    "buffs": [
+      { "type": "speed", "value": 2, "time": "5m 35s" },
+      { "type": "defense", "value": 2, "time": "5m 35s" }
+    ]
   },
   "glazedButterfish": {
     "name": "Glazed Butterfish",
@@ -2280,13 +2112,10 @@
       "sugar": 1,
       ":any_each:": ["oil", "flour"]
     },
-    "buffs": {
-      "time": "5m 35s",
-      "effects": [
-        { "type": "fishing", "value": 2 },
-        { "type": "luck", "value": 2 }
-      ]
-    }
+    "buffs": [
+      { "type": "fishing", "value": 2, "time": "5m 35s" },
+      { "type": "luck", "value": 2, "time": "5m 35s" }
+    ]
   },
   "mixedBerryPie": {
     "name": "Mixed Berry Pie",
@@ -2317,13 +2146,10 @@
       "strawberry": 6,
       "sugar": 1
     },
-    "buffs": {
-      "time": "18m 40s",
-      "effects": [
-        { "type": "farming", "value": 3 },
-        { "type": "maxEnergy", "value": 50 }
-      ]
-    }
+    "buffs": [
+      { "type": "farming", "value": 3, "time": "18m 40s" },
+      { "type": "maxEnergy", "value": 50, "time": "18m 40s" }
+    ]
   },
   "mushroomBerryRice": {
     "name": "Mushroom Berry Rice",
@@ -2340,16 +2166,13 @@
       "redbaneberry": 10,
       "sugar": 2
     },
-    "buffs": {
-      "time": "9m 20s",
-      "effects": [
-        { "type": "mining", "value": 3 },
-        { "type": "maxEnergy", "value": -50 },
-        { "type": "magnetism", "value": 32 },
-        { "type": "attack", "value": 3 },
-        { "type": "defense", "value": 3 }
-      ]
-    }
+    "buffs": [
+      { "type": "mining", "value": 3, "time": "9m 20s" },
+      { "type": "maxEnergy", "value": -50, "time": "9m 20s" },
+      { "type": "magnetism", "value": 32, "time": "9m 20s" },
+      { "type": "attack", "value": 3, "time": "9m 20s" },
+      { "type": "defense", "value": 3, "time": "9m 20s" }
+    ]
   },
   "seaweedSalad": {
     "name": "Seaweed Salad",
@@ -2365,13 +2188,10 @@
       "dulseseaweed": 2,
       ":any:": "oil"
     },
-    "buffs": {
-      "time": "10m 30s",
-      "effects": [
-        { "type": "fishing", "value": 1 },
-        { "type": "maxEnergy", "value": 30 }
-      ]
-    }
+    "buffs": [
+      { "type": "fishing", "value": 1, "time": "10m 30s" },
+      { "type": "maxEnergy", "value": 30, "time": "10m 30s" }
+    ]
   },
   "voidDelight": {
     "name": "Void Delight",
@@ -2387,18 +2207,15 @@
       "voidessence": 50,
       "solaressence": 20
     },
-    "buffs": {
-      "time": "7m",
-      "effects": [
-        { "type": "mining", "value": 2 },
-        { "type": "luck", "value": 2 },
-        { "type": "maxEnergy", "value": 20 },
-        { "type": "speed", "value": 2 },
-        { "type": "magnetism", "value": 32 },
-        { "type": "attack", "value": 3 }
-      ]
-    }
-  },
+    "buffs": [
+      { "type": "mining", "value": 2, "time": "7m" },
+      { "type": "luck", "value": 2, "time": "7m" },
+      { "type": "maxEnergy", "value": 20, "time": "7m" },
+      { "type": "speed", "value": 2, "time": "7m" },
+      { "type": "magnetism", "value": 32, "time": "7m" },
+      { "type": "attack", "value": 3, "time": "7m" }
+    ]
+},
   "voidSalmonSushi": {
     "name": "Void Salmon Sushi",
     "img": "sve_void_salmon_sushi.png",
@@ -2413,15 +2230,12 @@
       "voidmayonnaise": 1,
       "seaweed": 3
     },
-    "buffs": {
-      "time": "14m",
-      "effects": [
-        { "type": "fishing", "value": 3 },
-        { "type": "maxEnergy", "value": 80 },
-        { "type": "luck", "value": 3 },
-        { "type": "defense", "value": 5 }
+    "buffs": [
+      { "type": "fishing", "value": 3, "time": "14m" },
+      { "type": "maxEnergy", "value": 80, "time": "14m" },
+      { "type": "luck", "value": 3, "time": "14m" },
+      { "type": "defense", "value": 5, "time": "14m" }
       ]
-    }
   },
   "hasteElixir": {
     "name": "Haste Elixir",
@@ -2438,10 +2252,9 @@
       "sugar": 1,
       "spicyEel": 1
     },
-    "buffs": {
-      "time": "5m",
-      "effects": [{ "type": "speed", "value": 3 }]
-    }
+    "buffs": [
+      { "type": "speed", "value": 3, "time": "5m" }
+    ]
   },
   "armorElixir": {
     "name": "Armor Elixir",
@@ -2458,10 +2271,9 @@
       "vinegar": 5,
       "bonefragment": 5
     },
-    "buffs": {
-      "time": "4m",
-      "effects": [{ "type": "defense", "value": 10 }]
-    }
+    "buffs": [
+      { "type": "defense", "value": 10, "time": "4m" }
+    ]
   },
   "heroElixir": {
     "name": "Hero Elixir",
@@ -2478,10 +2290,9 @@
       ":any:": "oil",
       "slime": 10
     },
-    "buffs": {
-      "time": "4m 40s",
-      "effects": [{ "type": "attack", "value": 20 }]
-    }
+    "buffs": [
+      { "type": "attack", "value": 20, "time": "4m 40s" }
+    ]
   },
   "fishDumpling": {
     "name": "Fish Dumpling",
@@ -2495,13 +2306,10 @@
     "ingredients": {
       ":any_each:": ["flour", "oil", "fish"]
     },
-    "buffs": {
-      "time": "5m 35s",
-      "effects": [
-        { "type": "fishing", "value": 2 },
-        { "type": "maxEnergy", "value": 50 }
-      ]
-    }
+    "buffs": [
+      { "type": "fishing", "value": 2, "time": "5m 35s" },
+      { "type": "maxEnergy", "value": 50, "time": "5m 35s" }
+    ]
   },
   "relaxedFitPants": {
     "name": "Relaxed Fit Pants",

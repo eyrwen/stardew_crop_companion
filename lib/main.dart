@@ -29,13 +29,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.lightBlue),
       ),
-      home: const MyHomePage(),
+      home: MyHomePage(),
     );
   }
 }
 
 class MyHomePage extends HookWidget {
-  const MyHomePage({super.key});
+  MyHomePage({super.key});
 
   Future<List<Crop>> _loadCrops() async {
     final cropJson = await json.decode(
@@ -75,17 +75,17 @@ class MyHomePage extends HookWidget {
         .toList();
   }
 
+  final List<Tab> TABS = [
+    const Tab(text: 'Crops', icon: ItemImage('farming')),
+    const Tab(text: 'Fish', icon: ItemImage('fishing')),
+  ];
+
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 3,
+      length: TABS.length,
       child: Scaffold(
-        bottomNavigationBar: TabBar(
-          tabs: [
-            Tab(text: 'Crops', icon: ItemImage('farming')),
-            Tab(text: 'Fish', icon: ItemImage('fishing')),
-          ],
-        ),
+        bottomNavigationBar: TabBar(tabs: TABS),
         body: SafeArea(
           child: Container(
             decoration: BoxDecoration(

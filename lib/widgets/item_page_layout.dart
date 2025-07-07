@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../data/interface.dart';
 import '../data/recipe.dart';
+import 'buffs.dart';
 import 'details_card.dart';
 import 'favorites.dart';
 import 'item_image.dart';
@@ -55,6 +56,7 @@ class ItemPageLayout<T extends Item> extends StatelessWidget {
                           children: [
                             ItemImage(item.img),
                             ItemLink(item: item),
+                            if(item.buffs.isNotEmpty) Buffs(buffs: item.buffs),
                             seasons ?? SizedBox.shrink(),
                             if (item.favorites.isNotEmpty)
                               Favorites(favorites: item.favorites),

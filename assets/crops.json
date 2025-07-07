@@ -645,7 +645,7 @@
         "energy": 3,
         "favorite": ["harvey"],
         "inputCount": 5,
-        "buffs": [{ "type": "speed", "value": 1, "duration": "1m 23s" }]
+        "buffs": [{ "type": "speed", "value": 1, "time": "1m 23s" }]
       }
     }
   },
@@ -1415,15 +1415,12 @@
     "price": 45,
     "health": 90,
     "energy": 225,
-    "buffs": {
-      "time": "90m",
-      "effects": [
-        { "type": "speed", "value": 2 },
-        { "type": "luck", "value": 2 },
-        { "type": "maxEnergy", "value": 50 },
-        { "type": "magnetism", "value": 32 }
-      ]
-    }
+    "buffs": [
+      { "type": "speed", "value": 2, "time": "90m" },
+      { "type": "luck", "value": 2, "time": "90m" },
+      { "type": "maxEnergy", "value": 50, "time": "90m" },
+      { "type": "magnetism", "value": 32, "time": "90m" }
+    ]
   },
   "greenmushroom": {
     "name": "Green Mushroom",
@@ -1434,14 +1431,11 @@
     "health": 625,
     "energy": 1250,
     "favorite": ["lance"],
-    "buffs": {
-      "time": "26m",
-      "effects": [
-        { "type": "luck", "value": 1 },
-        { "type": "maxEnergy", "value": 200 },
-        { "type": "magnetism", "value": 32 }
-      ]
-    }
+    "buffs": [
+      { "type": "luck", "value": 1, "time": "26m" },
+      { "type": "maxEnergy", "value": 200, "time": "26m" },
+      { "type": "magnetism", "value": 32, "time": "26m" }
+    ]
   },
   "diamondFlower": {
     "name": "Diamond Flower",
@@ -2182,10 +2176,7 @@
     "health": 39,
     "energy": 88,
     "quality": false,
-    "buffs": {
-      "duration": "7m",
-      "types": [{ "type": "fishing", "value": 1 }]
-    }
+    "buffs": [{ "type": "fishing", "value": 1, "time": "7m" }]
   },
   "riverjelly": {
     "name": "River Jelly",
@@ -2196,10 +2187,7 @@
     "health": 33,
     "energy": 75,
     "quality": false,
-    "buffs": {
-      "duration": "7m",
-      "types": [{ "type": "maxEnergy", "value": 30 }]
-    }
+    "buffs": [{ "type": "maxEnergy", "value": 30, "time": "7m" }]
   },
   "cavejelly": {
     "name": "Cave Jelly",
@@ -2210,10 +2198,7 @@
     "health": 33,
     "energy": 75,
     "quality": false,
-    "buffs": {
-      "duration": "7m",
-      "types": [{ "type": "luck", "value": 1 }]
-    }
+    "buffs": [{ "type": "luck", "value": 1, "time": "7m" }]
   },
   "cuminseeds": {
     "name": "Cumin Seeds",
