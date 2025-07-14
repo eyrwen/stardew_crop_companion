@@ -1,3 +1,4 @@
+import 'buff.dart';
 import 'interface.dart';
 
 enum RecipeType {
@@ -35,6 +36,7 @@ sealed class Recipe extends Item {
     required super.favorites,
     required this.ingredients,
     required this.recipeType,
+    super.buffs = const [],
   }) : super(type: ItemType.recipe, hasQuality: false);
 
   factory Recipe.fromJson(String key, Map<String, dynamic> json) {
@@ -52,6 +54,10 @@ sealed class Recipe extends Item {
           energy: json['energy'],
           health: json['health'],
           favorites: List<String>.from(json['favorite'] ?? []),
+          buffs: (json['buffs'] as List<dynamic>?)
+              ?.map((b) => Buff.fromJson(b as Map<String, dynamic>))
+              .toList() ??
+          []
         );
       case RecipeType.crafting:
         return CraftingRecipe(
@@ -62,6 +68,10 @@ sealed class Recipe extends Item {
           ingredients: IngredientList.fromJson(json['ingredients']),
           price: json['price'] ?? 0,
           favorites: List<String>.from(json['favorite'] ?? []),
+          buffs: (json['buffs'] as List<dynamic>?)
+              ?.map((b) => Buff.fromJson(b as Map<String, dynamic>))
+              .toList() ??
+          []
         );
       case RecipeType.building:
         return BuildingRecipe(
@@ -72,6 +82,10 @@ sealed class Recipe extends Item {
           ingredients: IngredientList.fromJson(json['ingredients']),
           price: json['price'] ?? 0,
           favorites: List<String>.from(json['favorite'] ?? []),
+          buffs: (json['buffs'] as List<dynamic>?)
+              ?.map((b) => Buff.fromJson(b as Map<String, dynamic>))
+              .toList() ??
+          []
         );
       case RecipeType.clothing:
         return ClothingRecipe(
@@ -82,6 +96,10 @@ sealed class Recipe extends Item {
           ingredients: IngredientList.fromJson(json['ingredients']),
           price: json['price'] ?? 0,
           favorites: List<String>.from(json['favorite'] ?? []),
+          buffs: (json['buffs'] as List<dynamic>?)
+              ?.map((b) => Buff.fromJson(b as Map<String, dynamic>))
+              .toList() ??
+          []
         );
     }
   }
@@ -105,6 +123,7 @@ class CookingRecipe extends Recipe {
     required this.energy,
     required this.health,
     super.favorites = const [],
+    super.buffs = const [],
   }) : super(recipeType: RecipeType.cooking);
 
   @override
@@ -122,6 +141,7 @@ class CraftingRecipe extends Recipe {
     required super.price,
     required super.ingredients,
     super.favorites = const [],
+    super.buffs = const [],
   }) : super(recipeType: RecipeType.crafting);
 }
 
@@ -134,6 +154,7 @@ class BuildingRecipe extends Recipe {
     required super.price,
     super.favorites = const [],
     required super.ingredients,
+    super.buffs = const [],
   }) : super(recipeType: RecipeType.building);
 }
 
@@ -146,6 +167,7 @@ class ClothingRecipe extends Recipe {
     required super.price,
     super.favorites = const [],
     required super.ingredients,
+    super.buffs = const [], 
   }) : super(recipeType: RecipeType.clothing);
 }
 

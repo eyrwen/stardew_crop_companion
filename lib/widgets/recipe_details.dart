@@ -1,7 +1,10 @@
-import 'package:flutter/material.dart';
-import 'package:stardew_crop_companion/data/recipe.dart';
-import 'package:stardew_crop_companion/widgets/favorites.dart';
-import 'package:stardew_crop_companion/widgets/item_image.dart';
+import 'package:flutter/material.dart' hide Tooltip;
+
+import '../data/recipe.dart';
+import 'buffs.dart';
+import 'favorites.dart';
+import 'item_image.dart';
+import 'tooltip.dart';
 
 class RecipeDetails extends StatelessWidget {
   final Recipe recipe;
@@ -10,7 +13,7 @@ class RecipeDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    final details = Row(
       crossAxisAlignment: recipe.favorites.isEmpty
           ? CrossAxisAlignment.center
           : CrossAxisAlignment.start,
@@ -32,5 +35,21 @@ class RecipeDetails extends StatelessWidget {
         ),
       ],
     );
+
+    return recipe.buffs.isNotEmpty
+        ? Tooltip(
+            content: Row(
+              children: [
+                Column(
+                  children: [
+                    Text(recipe.name),
+                  ],
+                ),
+              ],
+            ),
+            position: ElTooltipPosition.rightStart,
+            child: details,
+          )
+        : details;
   }
 }

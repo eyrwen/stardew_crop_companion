@@ -333,13 +333,10 @@
       "eel": 1,
       "hotpepper": 1
     },
-    "buffs": {
-      "time": "7m",
-      "effects": [
-        { "type": "luck", "value": 1 },
-        { "type": "speed", "value": 1 }
-      ]
-    }
+    "buffs": [
+      { "type": "luck", "value": 1, "time": "7m" },
+      { "type": "speed", "value": 1, "time": "7m" }
+    ]
   },
   "blueButtonedVest": {
     "name": "Blue Buttoned Vest",
@@ -1643,7 +1640,7 @@
       "garlic": 1,
       ":any:": "oil"
     },
-    "buffs": [{ "time": "10m", "effects": [{ "type": "oilOfGarlic" }] }]
+    "buffs": [{ "time": "10m", "type": "oilOfGarlic" }]
   },
   "poi": {
     "name": "Poi",
@@ -2215,7 +2212,7 @@
       { "type": "magnetism", "value": 32, "time": "7m" },
       { "type": "attack", "value": 3, "time": "7m" }
     ]
-},
+  },
   "voidSalmonSushi": {
     "name": "Void Salmon Sushi",
     "img": "sve_void_salmon_sushi.png",
@@ -2235,7 +2232,7 @@
       { "type": "maxEnergy", "value": 80, "time": "14m" },
       { "type": "luck", "value": 3, "time": "14m" },
       { "type": "defense", "value": 5, "time": "14m" }
-      ]
+    ]
   },
   "hasteElixir": {
     "name": "Haste Elixir",
@@ -2252,9 +2249,7 @@
       "sugar": 1,
       "spicyEel": 1
     },
-    "buffs": [
-      { "type": "speed", "value": 3, "time": "5m" }
-    ]
+    "buffs": [{ "type": "speed", "value": 3, "time": "5m" }]
   },
   "armorElixir": {
     "name": "Armor Elixir",
@@ -2271,9 +2266,7 @@
       "vinegar": 5,
       "bonefragment": 5
     },
-    "buffs": [
-      { "type": "defense", "value": 10, "time": "4m" }
-    ]
+    "buffs": [{ "type": "defense", "value": 10, "time": "4m" }]
   },
   "heroElixir": {
     "name": "Hero Elixir",
@@ -2290,9 +2283,7 @@
       ":any:": "oil",
       "slime": 10
     },
-    "buffs": [
-      { "type": "attack", "value": 20, "time": "4m 40s" }
-    ]
+    "buffs": [{ "type": "attack", "value": 20, "time": "4m 40s" }]
   },
   "fishDumpling": {
     "name": "Fish Dumpling",
