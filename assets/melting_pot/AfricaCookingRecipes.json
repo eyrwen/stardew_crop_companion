@@ -1,0 +1,33 @@
+{ 
+    "Changes": 
+    [
+        {
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries":
+            {
+                "{{ModId}}_AF_Couscous": "Cornucopia_SemolinaFlour 1 Cornucopia_OliveOil 1 Cornucopia_Butter 1/10 10/{{ModId}}_Couscous/none/{{i18n:object.Couscous.name}}",
+                "{{ModId}}_AF_Shakshouka": "-5 3 256 1 248 1 Cornucopia_OliveOil 1/10 10/{{ModId}}_Shakshouka/none/{{i18n:object.Shakshouka.name}}",
+                "{{ModId}}_AF_Griwech": "-5 1 184 1 245 1 246 1 Cornucopia_Butter 1/10 10/{{ModId}}_Griwech/none/{{i18n:object.Griwech.name}}",
+                "{{ModId}}_AF_Asida": "246 1 340 1 Cornucopia_Butter 1/10 10/{{ModId}}_Asida/none/{{i18n:object.Asida.name}}",
+                "{{ModId}}_AF_SesameCookies": "246 1 340 1 -5 1/10 10/{{ModId}}_SesameCookies/none/{{i18n:object.SesameCookies.name}}",
+                "{{ModId}}_AF_PannaCotta": "184 1 245 1 Cornucopia_Persimmon 1/10 10/{{ModId}}_PannaCotta/none/{{i18n:object.PannaCotta.name}}",
+                "{{ModId}}_AF_Banku": "Cornucopia_CornFlour 1/10 10/{{ModId}}_Banku/none/{{i18n:object.Banku.name}}",
+                "{{ModId}}_AF_Maduros": "247 1 Cornucopia_Plantain 2/10 10/{{ModId}}_Maduros/none/{{i18n:object.Maduros.name}}",
+                "{{ModId}}_AF_CassavaFufu": "Cornucopia_Cassava 3/10 10/{{ModId}}_CassavaFufu/none/{{i18n:object.CassavaFufu.name}}",
+                "{{ModId}}_AF_TshakaMadesu": "Cornucopia_Cassava 1 Cornucopia_PintoBeans 1 Cornucopia_Onion 1 Cornucopia_BellPepper 2/10 10/{{ModId}}_TshakaMadesu/none/{{i18n:object.TshakaMadesu.name}}",
+                "{{ModId}}_AF_Canjeero": "245 1 Cornucopia_CornFlour 1/10 10/{{ModId}}_Canjeero/none/{{i18n:object.Canjeero.name}}",
+                "{{ModId}}_AF_DateMaamoul": "246 1 184 1 245 1 Cornucopia_SemolinaFlour 1 Cornucopia_Butter 1/10 10/{{ModId}}_DateMaamoul/none/{{i18n:object.DateMaamoul.name}}",
+                "{{ModId}}_AF_Tamia": "246 1 248 1 Cornucopia_Dill 1 Cornucopia_Chickpea 1/10 10/{{ModId}}_Tamia/none/{{i18n:object.Tamia.name}}",
+                "{{ModId}}_AF_Ugali": "Cornucopia_CornFlour 1/10 10/{{ModId}}_Ugali/none/{{i18n:object.Ugali.name}}",
+                "{{ModId}}_AF_Paptert": "270 1 256 1 424 1 Cornucopia_Butter 1/10 10/{{ModId}}_Paptert/none/{{i18n:object.Paptert.name}}",
+                "{{ModId}}_AF_BakedPears": "Cornucopia_Pear 3 245 1 Cornucopia_Molasses 1/10 10/{{ModId}}_BakedPears/none/{{i18n:object.BakedPears.name}}",
+                "{{ModId}}_AF_OkraSoup": "Cornucopia_Okra 1 256 1 Cornucopia_Onion 1/10 10/{{ModId}}_OkraSoup/none/{{i18n:object.OkraSoup.name}}",
+                "{{ModId}}_AF_Mutakura": "Cornucopia_Peanut 3 270 1 Cornucopia_GreenPeas 1/10 10/{{ModId}}_Mutakura/none/{{i18n:object.Mutakura.name}}",
+                "{{ModId}}_AF_Fesikh": "{{ModId}}_GreyMullet 1/10 10/{{ModId}}_Fesikh/none/{{i18n:object.Fesikh.name}}",
+                "{{ModId}}_AF_Sfenji": "246 1 245 1 247 1/10 10/{{ModId}}_Sfenji/none/{{i18n:object.Sfenji.name}}",
+                "{{ModId}}_AF_MalsoukaSheets": "Cornucopia_SemolinaFlour 1/10 10/{{ModId}}_MalsoukaSheets/none/{{i18n:object.MalsoukaSheets.name}}"
+            }
+        }
+    ]
+}

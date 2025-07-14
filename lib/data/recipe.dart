@@ -20,8 +20,12 @@ enum RecipeType {
 
 sealed class Recipe extends Item {
   static List<Recipe> sort(List<Recipe> recipes) {
-    return recipes
-      ..sort((a, b) => a.recipeType.index.compareTo(b.recipeType.index));
+    return recipes..sort((a, b) {
+      if (a.recipeType == b.recipeType) {
+        return a.name.compareTo(b.name);
+      }
+      return a.recipeType.index.compareTo(b.recipeType.index);
+    });
   }
 
   final IngredientList ingredients;
@@ -31,8 +35,10 @@ sealed class Recipe extends Item {
     required super.key,
     required super.name,
     super.url,
+    super.id,
     required super.price,
     required super.img,
+    super.imgScale,
     required super.favorites,
     required this.ingredients,
     required this.recipeType,
@@ -48,6 +54,7 @@ sealed class Recipe extends Item {
       case RecipeType.cooking:
         return CookingRecipe(
           key: key,
+          id: json['id'],
           url: json['url'],
           name: json['name'],
           img: json['img'],
@@ -61,6 +68,7 @@ sealed class Recipe extends Item {
       case RecipeType.crafting:
         return CraftingRecipe(
           key: key,
+          id: json['id'],
           url: json['url'],
           name: json['name'],
           img: json['img'],
@@ -72,6 +80,7 @@ sealed class Recipe extends Item {
       case RecipeType.building:
         return BuildingRecipe(
           key: key,
+          id: json['id'],
           url: json['url'],
           name: json['name'],
           img: json['img'],
@@ -83,6 +92,7 @@ sealed class Recipe extends Item {
       case RecipeType.clothing:
         return ClothingRecipe(
           key: key,
+          id: json['id'],
           url: json['url'],
           name: json['name'],
           img: json['img'],
@@ -105,6 +115,8 @@ class CookingRecipe extends Recipe {
     required super.url,
     required super.name,
     required super.img,
+    super.imgScale,
+    super.id,
     required super.price,
     required super.ingredients,
     required super.energy,
@@ -122,6 +134,7 @@ class CookingRecipe extends Recipe {
 class CraftingRecipe extends Recipe {
   CraftingRecipe({
     required super.key,
+    super.id,
     required super.url,
     required super.name,
     required super.img,
@@ -135,6 +148,7 @@ class CraftingRecipe extends Recipe {
 class BuildingRecipe extends Recipe {
   BuildingRecipe({
     required super.key,
+    super.id,
     required super.url,
     required super.name,
     required super.img,
@@ -148,6 +162,7 @@ class BuildingRecipe extends Recipe {
 class ClothingRecipe extends Recipe {
   ClothingRecipe({
     required super.key,
+    super.id,
     required super.url,
     required super.name,
     required super.img,
@@ -200,11 +215,9 @@ class IngredientList {
 
   bool requires(Item item) {
     return strictIngredients.containsKey(item.key) ||
-        strictTypeIngredients.any(
-          (type) =>
-              (item.type.name.contains(type)) ||
-              item.key.toLowerCase().contains(type),
-        ) ||
-        flexibleIngredient.contains(item.key);
+        strictIngredients.containsKey(item.id) ||
+        strictTypeIngredients.any((type) => (item.type.name.contains(type))) ||
+        flexibleIngredient.contains(item.key) ||
+        flexibleIngredient.contains(item.id);
   }
 }

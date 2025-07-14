@@ -1,6 +1,7 @@
 {
   "commonmushroom": {
     "name": "Common Mushroom",
+    "id": "404",
     "url": "http://stardewvalleywiki.com/Common_Mushroom",
     "img": "commonmushroom.png",
 
@@ -79,6 +80,7 @@
   },
   "springonion": {
     "name": "Spring Onion",
+    "id": "399",
     "url": "http://stardewvalleywiki.com/Spring_Onion",
     "img": "springonion.png",
 
@@ -201,6 +203,7 @@
   },
   "wildplum": {
     "name": "Wild Plum",
+    "id": "406",
     "url": "http://stardewvalleywiki.com/Wild_Plum",
     "img": "wildplum.png",
     "type": "fruit",
@@ -293,6 +296,7 @@
   },
   "coconut": {
     "name": "Coconut",
+    "id": "88",
     "url": "http://stardewvalleywiki.com/Coconut",
     "img": "coconut.png",
 
@@ -340,6 +344,7 @@
   },
   "ginger": {
     "name": "Ginger",
+    "id": "829",
     "url": "http://stardewvalleywiki.com/Ginger",
     "img": "ginger.png",
     "type": "spice",
@@ -363,6 +368,7 @@
   },
   "carrot": {
     "name": "Carrot",
+    "id": "Carrot",
     "url": "https://stardewvalleywiki.com/Carrot",
     "img": "carrot.png",
 
@@ -391,6 +397,7 @@
   },
   "broccoli": {
     "name": "Broccoli",
+    "id": "Broccoli",
     "url": "https://stardewvalleywiki.com/Broccoli",
     "img": "broccoli.png",
 
@@ -493,6 +500,7 @@
   },
   "pineapple": {
     "name": "Pineapple",
+    "id": "832",
     "url": "http://stardewvalleywiki.com/Pineapple",
     "img": "pineapple.png",
 
@@ -521,6 +529,7 @@
   },
   "tealeaves": {
     "name": "Tea Leaves",
+    "id": "815",
     "url": "http://stardewvalleywiki.com/Tea_Leaves",
     "img": "tealeaves.png",
 
@@ -696,6 +705,7 @@
   },
   "greenbean": {
     "name": "Green Bean",
+    "id": "188",
     "url": "http://stardewvalleywiki.com/Green_Bean",
     "img": "greenbean.png",
 
@@ -710,6 +720,7 @@
   },
   "cauliflower": {
     "name": "Cauliflower",
+    "id": "190",
     "url": "http://stardewvalleywiki.com/Cauliflower",
     "img": "cauliflower.png",
 
@@ -725,6 +736,7 @@
   },
   "potato": {
     "name": "Potato",
+    "id": "192",
     "url": "http://stardewvalleywiki.com/Potato",
     "img": "potato.png",
 
@@ -739,6 +751,7 @@
   },
   "garlic": {
     "name": "Garlic",
+    "id": "248",
     "url": "http://stardewvalleywiki.com/Garlic",
     "img": "garlic.png",
     "type": "vegetable",
@@ -782,6 +795,7 @@
   },
   "kale": {
     "name": "Kale",
+    "id": "250",
     "url": "http://stardewvalleywiki.com/Kale",
     "img": "kale.png",
 
@@ -849,6 +863,7 @@
   },
   "tomato": {
     "name": "Tomato",
+    "id": "256",
     "url": "http://stardewvalleywiki.com/Tomato",
     "img": "tomato.png",
 
@@ -877,6 +892,7 @@
   },
   "hotpepper": {
     "name": "Hot Pepper",
+    "id": "260",
     "url": "http://stardewvalleywiki.com/Hot_Pepper",
     "img": "hotpepper.png",
 
@@ -921,6 +937,7 @@
   },
   "wheat": {
     "name": "Wheat",
+    "id": "262",
     "url": "http://stardewvalleywiki.com/Wheat",
     "img": "wheat.png",
 
@@ -989,6 +1006,7 @@
   },
   "starfruit": {
     "name": "Starfruit",
+    "id": "268",
     "url": "http://stardewvalleywiki.com/Starfruit",
     "img": "starfruit.png",
 
@@ -1004,6 +1022,7 @@
   },
   "corn": {
     "name": "Corn",
+    "id": "270",
     "url": "http://stardewvalleywiki.com/Corn",
     "img": "corn.png",
 
@@ -1033,6 +1052,7 @@
   },
   "eggplant": {
     "name": "Eggplant",
+    "id": "272",
     "url": "http://stardewvalleywiki.com/Eggplant",
     "img": "eggplant.png",
 
@@ -1061,6 +1081,7 @@
   },
   "pumpkin": {
     "name": "Pumpkin",
+    "id": "276",
     "url": "http://stardewvalleywiki.com/Pumpkin",
     "img": "pumpkin.png",
 
@@ -1119,6 +1140,7 @@
   },
   "beet": {
     "name": "Beet",
+    "id": "284",
     "url": "http://stardewvalleywiki.com/Beet",
     "img": "beet.png",
 
@@ -1175,6 +1197,7 @@
   },
   "strawberry": {
     "name": "Strawberry",
+    "id": "400",
     "url": "http://stardewvalleywiki.com/Strawberry",
     "img": "strawberry.png",
 
@@ -1190,6 +1213,7 @@
   },
   "cucumber": {
     "name": "Cucumber",
+    "id": "Cornucopia_Cucumber",
     "url": "https://stardew-valley-expanded.fandom.com/wiki/Cucumber",
     "img": "sve_cucumber.png",
 
@@ -1573,6 +1597,7 @@
   },
   "adzukibean": {
     "name": "Adzuki Bean",
+    "id": "Cornucopia_AdzukiBean",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Adzuki_Bean",
     "img": "cornucopia_adzukibean.png",
 
@@ -1612,6 +1637,7 @@
       "initial": 4,
       "regrow": 0
     },
+    "favorite": ["harvey"],
     "specialProduce": {
       "compactMill": {
         "name": "Aloe Gel",
@@ -1647,6 +1673,7 @@
     "price": 65,
     "health": 0,
     "energy": 0,
+    "favorite": ["leah"],
     "growth": {
       "initial": 9,
       "regrow": 0
@@ -1654,6 +1681,7 @@
   },
   "barley": {
     "name": "Barley",
+    "id": "Cornucopia_Barley",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Barley",
     "img": "cornucopia_barley.png",
 
@@ -1711,6 +1739,7 @@
   },
   "bellpepper": {
     "name": "Bell Pepper",
+    "id": "Cornucopia_BellPepper",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Bell_Pepper",
     "img": "cornucopia_bellpepper.png",
 
@@ -1736,6 +1765,7 @@
   },
   "blackbeans": {
     "name": "Black Beans",
+    "id": "Cornucopia_BlackBeans",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Black_Beans",
     "img": "cornucopia_blackbeans.png",
 
@@ -1838,6 +1868,7 @@
   },
   "cornucopia_butternutsquash": {
     "name": "Butternut Squash (Cornucopia)",
+    "id": "Cornucopia_ButternutSquash",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Butternut_Squash",
     "img": "cornucopia_butternutsquash.png",
 
@@ -1852,6 +1883,7 @@
   },
   "cabbage": {
     "name": "Cabbage",
+    "id": "Cornucopia_Cabbage",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Cabbage",
     "img": "cornucopia_cabbage.png",
     "type": "vegetable",
@@ -1883,6 +1915,7 @@
     "price": 225,
     "health": 50,
     "energy": 113,
+    "favorite": ["penny"],
     "growth": {
       "initial": 12,
       "regrow": 5
@@ -1942,6 +1975,7 @@
   },
   "cassava": {
     "name": "Cassava",
+    "id": "Cornucopia_Cassava",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Cassava",
     "img": "cornucopia_cassava.png",
 
@@ -1980,6 +2014,7 @@
   },
   "celery": {
     "name": "Celery",
+    "id": "Cornucopia_Celery",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Celery",
     "img": "cornucopia_celery.png",
 
@@ -2001,6 +2036,7 @@
     "price": 35,
     "health": 20,
     "energy": 45,
+    "favorite": ["caroline"],
     "growth": {
       "initial": 5,
       "regrow": 0
@@ -2008,6 +2044,7 @@
   },
   "chickpea": {
     "name": "Chickpea",
+    "id": "Cornucopia_Chickpea",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Chickpea",
     "img": "cornucopia_chickpea.png",
 
@@ -2050,6 +2087,7 @@
   },
   "cilantro": {
     "name": "Cilantro",
+    "id": "Cornucopia_Cilantro",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Cilantro",
     "img": "cornucopia_cilantro.png",
 
@@ -2099,6 +2137,7 @@
     "price": 80,
     "health": 0,
     "energy": 0,
+    "favorite": ["emily"],
     "growth": {
       "initial": 8,
       "regrow": 2
@@ -2117,6 +2156,7 @@
   },
   "seaweed": {
     "name": "Seaweed",
+    "id": "152",
     "url": "https://stardewvalleywiki.com/Seaweed",
     "img": "seaweed.png",
     "type": "other",
@@ -2220,6 +2260,7 @@
   },
   "daikon": {
     "name": "Daikon",
+    "id": "Cornucopia_Daikon",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Daikon",
     "img": "cornucopia_daikon.png",
     "type": "vegetable",
@@ -2276,6 +2317,7 @@
   },
   "dill": {
     "name": "Dill",
+    "id": "Cornucopia_Dill",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Dill",
     "img": "cornucopia_dill.png",
     "type": "herb",
@@ -2355,10 +2397,12 @@
     "type": "spice",
     "price": 2600,
     "health": 11,
-    "energy": 25
+    "energy": 25,
+    "favorite": ["caroline", "emily"]
   },
   "greenpeas": {
     "name": "Green Peas",
+    "id": "Cornucopia_GreenPeas",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Green_Peas",
     "img": "cornucopia_greenpeas.png",
     "type": "vegetable",
@@ -2377,6 +2421,7 @@
   },
   "habenero": {
     "name": "Habenero",
+    "id": "Cornucopia_Habenero",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Habenero",
     "img": "cornucopia_habenero.png",
     "type": "fruit",
@@ -2461,6 +2506,7 @@
   },
   "jalapeno": {
     "name": "Jalapeño",
+    "id": "Cornucopia_Jalapeno",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Jalapeño",
     "img": "cornucopia_jalapeno.png",
     "type": "fruit",
@@ -2500,6 +2546,7 @@
   },
   "kidneybeans": {
     "name": "Kidney Beans",
+    "id": "Cornucopia_KidneyBeans",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Kidney_Beans",
     "img": "cornucopia_kidneybeans.png",
     "type": "vegetable",
@@ -2509,12 +2556,14 @@
   },
   "kiwifruit": {
     "name": "Kiwifruit",
+    "id": "Cornucopia_Kiwi",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Kiwifruit",
     "img": "cornucopia_kiwifruit.png",
     "type": "fruit",
     "price": 85,
     "health": 22,
-    "energy": 50
+    "energy": 50,
+    "favorite": ["demetrius"]
   },
   "larkspur": {
     "name": "Larkspur",
@@ -2545,6 +2594,7 @@
   },
   "lettuce": {
     "name": "Lettuce",
+    "id": "Cornucopia_Lettuce",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Lettuce",
     "img": "cornucopia_lettuce.png",
     "type": "vegetable",
@@ -2569,7 +2619,8 @@
     "type": "spice",
     "price": 135,
     "health": 5,
-    "energy": 13
+    "energy": 13,
+    "favorite": ["elliott"]
   },
   "lily": {
     "name": "Lily",
@@ -2616,7 +2667,8 @@
     "type": "herb",
     "price": 50,
     "health": 9,
-    "energy": 20
+    "energy": 20,
+    "favorite": ["caroline"]
   },
   "morningGlory": {
     "name": "Morning Glory",
@@ -2638,6 +2690,7 @@
   },
   "oats": {
     "name": "Oats",
+    "id": "Cornucopia_Oats",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Oats",
     "img": "cornucopia_oats.png",
     "type": "vegetable",
@@ -2667,6 +2720,7 @@
   },
   "okra": {
     "name": "Okra",
+    "id": "Cornucopia_Okra",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Okra",
     "img": "cornucopia_okra.png",
     "type": "vegetable",
@@ -2676,6 +2730,7 @@
   },
   "onion": {
     "name": "Onion",
+    "id": "Cornucopia_Onion",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Onion",
     "img": "cornucopia_onion.png",
     "type": "vegetable",
@@ -2694,6 +2749,7 @@
   },
   "oregano": {
     "name": "Oregano",
+    "id": "Cornucopia_Oregano",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Oregano",
     "img": "cornucopia_oregano.png",
     "type": "herb",
@@ -2712,6 +2768,7 @@
   },
   "parsley": {
     "name": "Parsley",
+    "id": "Cornucopia_Parsley",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Parsley",
     "img": "cornucopia_parsley.png",
     "type": "herb",
@@ -2721,6 +2778,7 @@
   },
   "passionFruit": {
     "name": "Passion Fruit",
+    "id": "Cornucopia_PassionFruit",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Passion_Fruit",
     "img": "cornucopia_passionfruit.png",
     "type": "fruit",
@@ -2731,12 +2789,14 @@
   },
   "peanut": {
     "name": "Peanut",
+    "id": "Cornucopia_Peanut",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Peanut",
     "img": "cornucopia_peanut.png",
     "type": "nut",
     "price": 85,
     "health": 20,
     "energy": 45,
+    "favorite": ["sam"],
     "specialProduce": {
       "butterChurn": {
         "name": "Peanut Butter",
@@ -2796,6 +2856,7 @@
   },
   "pintoBeans": {
     "name": "Pinto Beans",
+    "id": "Cornucopia_PintoBeans",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Pinto_Beans",
     "img": "cornucopia_pintobeans.png",
     "type": "vegetable",
@@ -2910,7 +2971,8 @@
     "type": "herb",
     "price": 75,
     "health": 9,
-    "energy": 20
+    "energy": 20,
+    "favorite": ["evelyn"]
   },
   "sage": {
     "name": "Sage",
@@ -2919,7 +2981,8 @@
     "type": "herb",
     "price": 70,
     "health": 9,
-    "energy": 20
+    "energy": 20,
+    "favorite": ["magnus"]
   },
   "shallot": {
     "name": "Shallot",
@@ -2999,6 +3062,7 @@
   },
   "spinach": {
     "name": "Spinach",
+    "id": "Cornucopia_Spinach",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Spinach",
     "img": "cornucopia_spinach.png",
     "type": "vegetable",
@@ -3051,6 +3115,7 @@
     "price": 30,
     "health": 0,
     "energy": 0,
+    "favorite": ["leo"],
     "specialProduce": {
       "mill": {
         "name": "Sugar",
@@ -3082,6 +3147,7 @@
   },
   "sweetPotatoCornucopia": {
     "name": "Sweet Potato (Cornucopia)",
+    "id": "Cornucopia_SweetPotato",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Sweet_Potato",
     "img": "cornucopia_sweetpotato.png",
     "type": "vegetable",
@@ -3133,7 +3199,8 @@
     "type": "vegetable",
     "price": 75,
     "health": 11,
-    "energy": 25
+    "energy": 25,
+    "favorite": ["krobus", "marnie"]
   },
   "violet": {
     "name": "Violet",
@@ -3152,6 +3219,7 @@
     "price": 165,
     "health": 5,
     "energy": 13,
+    "favorite": ["shane"],
     "specialProduce": {
       "mayonnaiseMachine": {
         "name": "Wasabi Mayonnaise",
@@ -3222,12 +3290,14 @@
   },
   "zucchini": {
     "name": "Zucchini",
+    "id": "Cornucopia_Zucchini",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Zucchini",
     "img": "cornucopia_zucchini.png",
     "type": "vegetable",
     "price": 60,
     "health": 20,
     "energy": 45,
+    "favorite": ["sebastian"],
     "specialProduce": {
       "extruder": {
         "name": "Zoodles",
@@ -3242,6 +3312,7 @@
   },
   "bayLeaves": {
     "name": "Bay Leaves",
+    "id": "Cornucopia_BayLeaves",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Bay_Leaves",
     "img": "cornucopia_bayleaves.png",
     "type": "herb",
@@ -3285,7 +3356,8 @@
     "type": "mushroom",
     "price": 200,
     "health": 17,
-    "energy": 38
+    "energy": 38,
+    "favorite": ["leah"]
   },
   "elderberries": {
     "name": "Elderberries",
@@ -3340,6 +3412,7 @@
     "price": 35,
     "health": 9,
     "energy": 20,
+    "favorite": ["lewis"],
     "specialProduce": {
       "jar": {
         "name": "Brined Olives",
@@ -3390,6 +3463,7 @@
     }
   },
   "raspberry": {
+    "id": "Cornucopia_Raspberry",
     "name": "Raspberry",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Raspberry",
     "img": "cornucopia_raspberry.png",
@@ -3401,6 +3475,7 @@
   },
   "shiitake": {
     "name": "Shiitake",
+    "id": "Cornucopia_Shiitake",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Shiitake",
     "img": "cornucopia_shiitake.png",
     "type": "mushroom",
@@ -3410,6 +3485,7 @@
   },
   "vanilla": {
     "name": "Vanilla",
+    "id": "Cornucopia_Vanilla",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Vanilla",
     "img": "cornucopia_vanilla.png",
     "type": "spice",
@@ -3430,6 +3506,7 @@
   },
   "almond": {
     "name": "Almond",
+    "id": "Cornucopia_Almond",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Almond",
     "img": "cornucopia_almond.png",
     "type": "nut",
@@ -3439,6 +3516,7 @@
   },
   "avocado": {
     "name": "Avocado",
+    "id": "Cornucopia_Avocado",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Avocado",
     "img": "cornucopia_avocado.png",
     "type": "fruit",
@@ -3485,6 +3563,7 @@
   },
   "cashew": {
     "name": "Cashew",
+    "id": "Cornucopia_Cashew",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Cashew",
     "img": "cornucopia_cashew.png",
     "type": "nut",
@@ -3494,6 +3573,7 @@
   },
   "cinnamonSticks": {
     "name": "Cinnamon Sticks",
+    "id": "Cornucopia_CinnamonSticks",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Cinnamon_Sticks",
     "img": "cornucopia_cinnamon_sticks.png",
     "type": "spice",
@@ -3503,6 +3583,7 @@
   },
   "cocoaPod": {
     "name": "Cocoa Pod",
+    "id": "Cornucopia_CocoaPod",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Cocoa_Pod",
     "img": "cornucopia_cocoa_pod.png",
     "type": "forage",
@@ -3604,6 +3685,7 @@
   },
   "lemon": {
     "name": "Lemon",
+    "id": "Cornucopia_Lemon",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Lemon",
     "img": "cornucopia_lemon.png",
     "type": "fruit",
@@ -3623,6 +3705,7 @@
   },
   "lime": {
     "name": "Lime",
+    "id": "Cornucopia_Lime",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Lime",
     "img": "cornucopia_lime.png",
     "type": "fruit",
@@ -3666,7 +3749,8 @@
     "type": "herb",
     "price": 100,
     "health": 0,
-    "energy": 0
+    "energy": 0,
+    "favorite": ["harvey"]
   },
   "nectarine": {
     "name": "Nectarine",
@@ -3688,6 +3772,7 @@
   },
   "papaya": {
     "name": "Papaya",
+    "id": "Cornucopia_Papaya",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Papaya",
     "img": "cornucopia_papaya.png",
     "type": "fruit",
@@ -3697,6 +3782,7 @@
   },
   "pear": {
     "name": "Pear",
+    "id": "Cornucopia_Pear",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Pear",
     "img": "cornucopia_pear.png",
     "type": "fruit",
@@ -3716,6 +3802,7 @@
   },
   "persimmon": {
     "name": "Persimmon",
+    "id": "Cornucopia_Persimmon",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Persimmon",
     "img": "cornucopia_persimmon.png",
     "type": "fruit",
@@ -3725,15 +3812,18 @@
   },
   "pistachio": {
     "name": "Pistachio",
+    "id": "Cornucopia_Pistachio",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Pistachio",
     "img": "cornucopia_pistachio.png",
     "type": "nut",
     "price": 90,
     "health": 13,
-    "energy": 30
+    "energy": 30,
+    "favorite": ["harvey"]
   },
   "plantain": {
     "name": "Plantain",
+    "id": "Cornucopia_Plantain",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Plantain",
     "img": "cornucopia_plantain.png",
     "type": "fruit",
@@ -3781,13 +3871,14 @@
   },
   "walnut": {
     "name": "Walnut",
+    "id": "Cornucopia_Walnut",
     "url": "https://stardewcornucopia.wiki.gg/wiki/Walnut",
     "img": "cornucopia_walnut.png",
     "type": "nut",
     "price": 90,
     "health": 13,
     "energy": 30,
-    "favorite": ["linus"]
+    "favorite": ["leah"]
   },
   "wisteria": {
     "name": "Wisteria",
@@ -3818,6 +3909,7 @@
   },
   "apple": {
     "name": "Apple",
+    "id": "613",
     "url": "https://www.stardewvalleywiki.com/Apple",
     "img": "apple.png",
     "type": "fruit",
@@ -3838,6 +3930,7 @@
   },
   "apricot": {
     "name": "Apricot",
+    "id": "634",
     "url": "https://www.stardewvalleywiki.com/Apricot",
     "img": "apricot.png",
     "type": "fruit",
@@ -3847,6 +3940,7 @@
   },
   "banana": {
     "name": "Banana",
+    "id": "91",
     "url": "https://www.stardewvalleywiki.com/Banana",
     "img": "banana.png",
     "type": "fruit",
@@ -3856,6 +3950,7 @@
   },
   "cherry": {
     "name": "Cherry",
+    "id": "638",
     "url": "https://www.stardewvalleywiki.com/Cherry",
     "img": "cherry.png",
     "type": "fruit",
@@ -3894,6 +3989,7 @@
   },
   "peach": {
     "name": "Peach",
+    "id": "636",
     "url": "https://www.stardewvalleywiki.com/Peach",
     "img": "peach.png",
     "type": "fruit",
@@ -3904,6 +4000,7 @@
   },
   "pomegranate": {
     "name": "Pomegranate",
+    "id": "637",
     "url": "https://www.stardewvalleywiki.com/Pomegranate",
     "img": "pomegranate.png",
     "type": "fruit",
@@ -3920,5 +4017,71 @@
     "price": 1,
     "health": 1,
     "energy": 3
+  },
+  "honey": {
+    "name": "Honey",
+    "id": "340",
+    "url": "https://www.stardewvalleywiki.com/Honey",
+    "img": "honey.png",
+    "type": "other",
+    "price": 100,
+    "health": 0,
+    "energy": 0,
+    "specialProduce": {
+      "keg": {
+        "name": "Mead",
+        "img": "mead.png",
+        "price": 300,
+        "time": "6 days",
+        "health": 33,
+        "energy": 75,
+        "favorite": ["pam", "willy"]
+      },
+      "butterChurn": {
+        "name": "Honey Butter",
+        "img": "honey_butter.png",
+        "price": 250,
+        "time": "2 hrs",
+        "health": 0,
+        "energy": 0
+      },
+      "extruder": {
+        "name": "Beeswax",
+        "img": "cornucopia_beeswax.png",
+        "price": 200,
+        "time": "14 hrs",
+        "health": 0,
+        "energy": 0,
+        "favorite": ["demetrius"]
+      },
+      "yogurtJar": {
+        "name": "Flavored Yogurt",
+        "img": "cornucopia_flavored_yogurt.png",
+        "price": 650,
+        "time": "16 hrs",
+        "health": 17,
+        "energy": 38,
+        "favorite": ["jas", "marnie"]
+      }
+    }
+  },
+  "seaSalt": {
+    "name": "Sea Salt",
+    "url": "https://stardewcornucopia.wiki.gg/wiki/Sea_Salt",
+    "img": "sea_salt.png",
+    "type": "other",
+    "price": 60,
+    "health": 0,
+    "energy": 0,
+    "specialProduce": {
+      "compactMill": {
+        "name": "Salt",
+        "img": "salt.png",
+        "price": 140,
+        "time": "3 hrs",
+        "health": 0,
+        "energy": 0
+      }
+    }
   }
 }

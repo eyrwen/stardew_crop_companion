@@ -1,0 +1,46 @@
+{ 
+    "Changes": 
+    [
+        {
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries":
+            {
+                "{{ModId}}_NA_Poutine": "192 3 424 1/10 10/{{ModId}}_Poutine/none/{{i18n:object.Poutine.name}}",
+                "{{ModId}}_NA_NanaimoBars": "245 1 -5 1 88 1 Cornucopia_Butter 1 Cornucopia_Almond 1/10 10/{{ModId}}_NanaimoBars/none/{{i18n:object.NanaimoBars.name}}",
+                "{{ModId}}_NA_MushroomRice": "423 1 404 1 399 1 Cornucopia_GreenPeas 1/10 10/{{ModId}}_MushroomRice/none/{{i18n:object.MushroomRice.name}}",
+                "{{ModId}}_NA_StarFruitJuice": "268 1/10 10/{{ModId}}_StarFruitJuice/none/{{i18n:object.StarFruitJuice.name}}",
+                "{{ModId}}_NA_BananaPorridge": "91 1 {{ModId}}_CondensedMilk 1 Cornucopia_CoconutMilk 1 Cornucopia_CinnamonSticks 1/10 10/{{ModId}}_BananaPorridge/none/{{i18n:object.BananaPorridge.name}}",
+                "{{ModId}}_NA_Coquito": "-5 4 88 1 {{ModId}}_CondensedMilk 1 Cornucopia_CoconutMilk 1/10 10/{{ModId}}_Coquito/none/{{i18n:object.Coquito.name}}",
+                "{{ModId}}_NA_PinaColada": "832 1 Cornucopia_CoconutMilk 1/10 10/{{ModId}}_PinaColada/none/{{i18n:object.PinaColada.name}}",
+                "{{ModId}}_NA_CassavaPone": "Cornucopia_Cassava 1 88 1 276 1 -5 1 184 1 Cornucopia_Butter 1 Cornucopia_SweetPotato 1/10 10/{{ModId}}_CassavaPone/none/{{i18n:object.CassavaPone.name}}",
+                "{{ModId}}_NA_BenneBalls": "245 1 Cornucopia_Molasses 1/10 10/{{ModId}}_BenneBalls/none/{{i18n:object.BenneBalls.name}}",
+                "{{ModId}}_NA_Accra": "246 1 720 1 260 1 Cornucopia_BellPepper 1 Cornucopia_Onion 1 245 1 248 1/10 10/{{ModId}}_Accra/none/{{i18n:object.Accra.name}}",
+                "{{ModId}}_NA_PeanutPunch": "184 1 {{ModId}}_CondensedMilk 1 Cornucopia_PeanutButter 1 Cornucopia_CinnamonSticks 1/10 10/{{ModId}}_PeanutPunch/none/{{i18n:object.PeanutPunch.name}}",
+                "{{ModId}}_NA_Horchata": "423 1 Cornucopia_Almond 1 245 1 Cornucopia_CinnamonSticks 1/10 10/{{ModId}}_Horchata/none/{{i18n:object.Horchata.name}}",
+                "{{ModId}}_NA_AcornCrustedSalmon": "139 1 -5 2 309 1/10 10/{{ModId}}_AcornCrustedSalmon/none/{{i18n:object.AcornCrustedSalmon.name}}",
+                "{{ModId}}_NA_Jocon": "490 1 Cornucopia_ButternutSquash 1 256 1 248 1 Cornucopia_Jalapeno 1 Cornucopia_BellPepper 1 Cornucopia_Onion 1 Cornucopia_Salt 1 Cornucopia_Pepper 1 Cornucopia_Cilantro 1/10 10/{{ModId}}_Jocon/none/{{i18n:object.Jocon.name}}",
+                "{{ModId}}_NA_Guacamole": "Cornucopia_Avocado 1 256 1 Cornucopia_Onion 1 Cornucopia_Jalapeno 1 Cornucopia_Lime 1 Cornucopia_Cilantro 1/10 10/{{ModId}}_Guacamole/none/{{i18n:object.Guacamole.name}}",
+                "{{ModId}}_NA_PlantainEmpanada": "246 1 245 1 Cornucopia_Plantain 1 Cornucopia_KidneyBeans 1/10 10/{{ModId}}_PlantainEmpanada/none/{{i18n:object.PlantainEmpanada.name}}",
+                "{{ModId}}_NA_Shuco": "Cornucopia_CornFlour 1 490 1 Cornucopia_BlackBeans 1/10 10/{{ModId}}_Shuco/none/{{i18n:object.Shuco.name}}",
+                "{{ModId}}_NA_HorchataDeMorro": "{{ModId}}_Calabash 1 245 1 Cornucopia_Molasses 1 Cornucopia_ButternutSquash 1 Cornucopia_Peanut 3 Cornucopia_CinnamonSticks 1 Cornucopia_CocoaPod 1/10 10/{{ModId}}_HorchataDeMorro/none/{{i18n:object.HorchataDeMorro.name}}",
+                "{{ModId}}_NA_FrescoDeCebada": "246 1 184 1 400 3 Cornucopia_CinnamonSticks 1 245 1/10 10/{{ModId}}_FrescoDeCebada/none/{{i18n:object.FrescoDeCebada.name}}",
+                "{{ModId}}_NA_Riguas": "270 1 245 1 91 1 Cornucopia_Butter 1/10 10/{{ModId}}_Riguas/none/{{i18n:object.Riguas.name}}",
+                "{{ModId}}_NA_Baleada": "246 1 Cornucopia_PintoBeans 1 424 1/10 10/{{ModId}}_Baleada/none/{{i18n:object.Baleada.name}}",
+                "{{ModId}}_NA_GalloPinto": "423 1 Cornucopia_BlackBeans 1 Cornucopia_Onion 1 260 1/10 10/{{ModId}}_GalloPinto/none/{{i18n:object.GalloPinto.name}}",
+                "{{ModId}}_NA_Piononos": "Cornucopia_Plantain 1 424 1 Cornucopia_Butter 1 Cornucopia_PintoBeans 1/10 10/{{ModId}}_Piononos/none/{{i18n:object.Piononos.name}}",
+                "{{ModId}}_NA_Beignet": "246 1 -5 1 184 1 245 1 Cornucopia_Molasses 1 Cornucopia_Butter 1/10 10/{{ModId}}_Beignet/none/{{i18n:object.Beignet.name}}",
+                "{{ModId}}_NA_Etouffee": "715 1 Cornucopia_BellPepper 2 Cornucopia_Onion 1 Cornucopia_Celery 1/10 10/{{ModId}}_Etouffee/none/{{i18n:object.Etouffee.name}}",
+                "{{ModId}}_NA_CollaredGreens": "{{ModId}}_Collards 1/10 10/{{ModId}}_CollaredGreens/none/{{i18n:object.CollaredGreens.name}}",
+                "{{ModId}}_NA_Grits": "270 1 Cornucopia_Butter 1 340 1/10 10/{{ModId}}_Grits/none/{{i18n:object.Grits.name}}",
+                "{{ModId}}_NA_KeyLimePie": "246 1 245 1 -5 2 {{ModId}}_CondensedMilk 1 Cornucopia_Lime 3/10 10/{{ModId}}_KeyLimePie/none/{{i18n:object.KeyLimePie.name}}",
+                "{{ModId}}_NA_Cornbread": "Cornucopia_CornFlour 1 -5 2 184 1/10 10/{{ModId}}_Cornbread/none/{{i18n:object.Cornbread.name}}",
+                "{{ModId}}_NA_PaniPopo": "Cornucopia_CornFlour 1 -5 2 184 1 Cornucopia_Butter 1 Cornucopia_CoconutMilk 1/10 10/{{ModId}}_PaniPopo/none/{{i18n:object.PaniPopo.name}}",
+                "{{ModId}}_NA_FaalifuFai": "91 2 Cornucopia_CoconutMilk 1/10 10/{{ModId}}_FaalifuFai/none/{{i18n:object.FaalifuFai.name}}",
+                "{{ModId}}_NA_Supoesi": "Cornucopia_Papaya 2 Cornucopia_CoconutMilk 1 245 1 Cornucopia_Molasses 1/10 10/{{ModId}}_Supoesi/none/{{i18n:object.Supoesi.name}}",
+                "{{ModId}}_NA_BananaLumpia": "91 1 246 1 245 1 Cornucopia_Molasses 1 Cornucopia_CinnamonSticks 1/10 10/{{ModId}}_BananaLumpia/none/{{i18n:object.BananaLumpia.name}}",
+                "{{ModId}}_NA_PeachCobbler": "636 2 246 1 Cornucopia_Butter 1 184 1 245 1/10 10/{{ModId}}_PeachCobbler/none/{{i18n:object.PeachCobbler.name}}"
+            }
+        }
+    ]
+}

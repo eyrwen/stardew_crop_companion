@@ -1,0 +1,1491 @@
+{
+    "Changes":
+    [
+        {
+            "LogName": "Dulce de Leche",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_DulcedeLeche": {
+                    "Name": "{{ModId}}_DulcedeLeche",
+                    "DisplayName": "{{i18n:object.DulcedeLeche.name}}",
+                    "Description": "{{i18n:object.DulcedeLeche.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 102,
+                    "Texture": "Mods/{{ModId}}/LatinObjects",
+                    "SpriteIndex": 0,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_DulcedeLeche"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "DulcedeLeche_Name": "{{i18n:object.DulcedeLeche.name}}",
+                "DulcedeLeche_Description": "{{i18n:object.DulcedeLeche.description}}"
+            }
+        },
+
+        {
+            "LogName": "Vaca Frita",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_VacaFrita": {
+                    "Name": "{{ModId}}_VacaFrita",
+                    "DisplayName": "{{i18n:object.VacaFrita.name}}",
+                    "Description": "{{i18n:object.VacaFrita.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 437,
+                    "Texture": "Mods/{{ModId}}/LatinObjects",
+                    "SpriteIndex": 1,
+                    "Edibility": 30,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_VacaFrita"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "VacaFrita_Name": "{{i18n:object.VacaFrita.name}}",
+                "VacaFrita_Description": "{{i18n:object.VacaFrita.description}}"
+            }
+        },
+
+        {
+            "LogName": "Choripan",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Choripan": {
+                    "Name": "{{ModId}}_Choripan",
+                    "DisplayName": "{{i18n:object.Choripan.name}}",
+                    "Description": "{{i18n:object.Choripan.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 162,
+                    "Texture": "Mods/{{ModId}}/LatinObjects",
+                    "SpriteIndex": 2,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Choripan",
+                    "{{TMPHaramTag}}",
+                    "{{TMPTeryfTag}}"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Choripan_Name": "{{i18n:object.Choripan.name}}",
+                "Choripan_Description": "{{i18n:object.Choripan.description}}"
+            }
+        },
+
+        {
+            "LogName": "Arroz Con Queso",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_ArrozConQueso": {
+                    "Name": "{{ModId}}_ArrozConQueso",
+                    "DisplayName": "{{i18n:object.ArrozConQueso.name}}",
+                    "Description": "{{i18n:object.ArrozConQueso.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 567,
+                    "Texture": "Mods/{{ModId}}/LatinObjects",
+                    "SpriteIndex": 3,
+                    "Edibility": 25,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_ArrozConQueso"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "ArrozConQueso_Name": "{{i18n:object.ArrozConQueso.name}}",
+                "ArrozConQueso_Description": "{{i18n:object.ArrozConQueso.description}}"
+            }
+        },
+
+        {
+            "LogName": "Seafood Soup",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_SeafoodSoup": {
+                    "Name": "{{ModId}}_SeafoodSoup",
+                    "DisplayName": "{{i18n:object.SeafoodSoup.name}}",
+                    "Description": "{{i18n:object.SeafoodSoup.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 275,
+                    "Texture": "Mods/{{ModId}}/LatinObjects",
+                    "SpriteIndex": 4,
+                    "Edibility": 25,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "Seafood Soup",
+                    "{{TMPHaramTag}}",
+                    "{{TMPTeryfTag}}"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "SeafoodSoup_Name": "{{i18n:object.SeafoodSoup.name}}",
+                "SeafoodSoup_Description": "{{i18n:object.SeafoodSoup.description}}"
+            }
+        },
+
+        {
+            "LogName": "Chimichurri",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Chimichurri": {
+                    "Name": "{{ModId}}_Chimichurri",
+                    "DisplayName": "{{i18n:object.Chimichurri.name}}",
+                    "Description": "{{i18n:object.Chimichurri.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 275,
+                    "Texture": "Mods/{{ModId}}/LatinObjects",
+                    "SpriteIndex": 5,
+                    "Edibility": 25,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Chimichurri"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Chimichurri_Name": "{{i18n:object.Chimichurri.name}}",
+                "Chimichurri_Description": "{{i18n:object.Chimichurri.description}}"
+            }
+        },
+
+        {
+            "LogName": "Churrasco",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Churrasco": {
+                    "Name": "{{ModId}}_Churrasco",
+                    "DisplayName": "{{i18n:object.Churrasco.name}}",
+                    "Description": "{{i18n:object.Churrasco.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 576,
+                    "Texture": "Mods/{{ModId}}/LatinObjects",
+                    "SpriteIndex": 6,
+                    "Edibility": 35,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Churrasco"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Churrasco_Name": "{{i18n:object.Churrasco.name}}",
+                "Churrasco_Description": "{{i18n:object.Churrasco.description}}"
+            }
+        },
+
+        {
+            "LogName": "Shrimp Cassava",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_ShrimpCassava": {
+                    "Name": "{{ModId}}_ShrimpCassava",
+                    "DisplayName": "{{i18n:object.ShrimpCassava.name}}",
+                    "Description": "{{i18n:object.ShrimpCassava.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 594,
+                    "Texture": "Mods/{{ModId}}/LatinObjects",
+                    "SpriteIndex": 7,
+                    "Edibility": 45,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_ShrimpCassava",
+                    "{{TMPHaramTag}}",
+                    "{{TMPTeryfTag}}"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "ShrimpCassava_Name": "{{i18n:object.ShrimpCassava.name}}",
+                "ShrimpCassava_Description": "{{i18n:object.ShrimpCassava.description}}"
+            }
+        },
+
+        {
+            "LogName": "Black Bean Stew",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_BlackBeanStew": {
+                    "Name": "{{ModId}}_BlackBeanStew",
+                    "DisplayName": "{{i18n:object.BlackBeanStew.name}}",
+                    "Description": "{{i18n:object.BlackBeanStew.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 1458,
+                    "Texture": "Mods/{{ModId}}/LatinObjects",
+                    "SpriteIndex": 8,
+                    "Edibility": 50,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_BlackBeanStew",
+                    "{{TMPHaramTag}}",
+                    "{{TMPTeryfTag}}"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "BlackBeanStew_Name": "{{i18n:object.BlackBeanStew.name}}",
+                "BlackBeanStew_Description": "{{i18n:object.BlackBeanStew.description}}"
+            }
+        },
+
+        {
+            "LogName": "Sopaipillas",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Sopaipillas": {
+                    "Name": "{{ModId}}_Sopaipillas",
+                    "DisplayName": "{{i18n:object.Sopaipillas.name}}",
+                    "Description": "{{i18n:object.Sopaipillas.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 225,
+                    "Texture": "Mods/{{ModId}}/LatinObjects",
+                    "SpriteIndex": 9,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Sopaipillas"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Sopaipillas_Name": "{{i18n:object.Sopaipillas.name}}",
+                "Sopaipillas_Description": "{{i18n:object.Sopaipillas.description}}"
+            }
+        },
+
+        {
+            "LogName": "Ajiaco",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Ajiaco": {
+                    "Name": "{{ModId}}_Ajiaco",
+                    "DisplayName": "{{i18n:object.Ajiaco.name}}",
+                    "Description": "{{i18n:object.Ajiaco.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 509,
+                    "Texture": "Mods/{{ModId}}/LatinObjects",
+                    "SpriteIndex": 10,
+                    "Edibility": 40,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Ajiaco"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Ajiaco_Name": "{{i18n:object.Ajiaco.name}}",
+                "Ajiaco_Description": "{{i18n:object.Ajiaco.description}}"
+            }
+        },
+
+        {
+            "LogName": "Pastelito Criollo",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_PastelitoCriollo": {
+                    "Name": "{{ModId}}_PastelitoCriollo",
+                    "DisplayName": "{{i18n:object.PastelitoCriollo.name}}",
+                    "Description": "{{i18n:object.PastelitoCriollo.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 182,
+                    "Texture": "Mods/{{ModId}}/LatinObjects",
+                    "SpriteIndex": 11,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_PastelitoCriollo"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "PastelitoCriollo_Name": "{{i18n:object.PastelitoCriollo.name}}",
+                "PastelitoCriollo_Description": "{{i18n:object.PastelitoCriollo.description}}"
+            }
+        },
+
+        {
+            "LogName": "Potato Sausage Casserole",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_PotatoSausageCasserole": {
+                    "Name": "{{ModId}}_PotatoSausageCasserole",
+                    "DisplayName": "{{i18n:object.PotatoSausageCasserole.name}}",
+                    "Description": "{{i18n:object.PotatoSausageCasserole.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 73,
+                    "Texture": "Mods/{{ModId}}/LatinObjects",
+                    "SpriteIndex": 12,
+                    "Edibility": 45,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_PotatoSausageCasserole"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "PotatoSausageCasserole_Name": "{{i18n:object.PotatoSausageCasserole.name}}",
+                "PotatoSausageCasserole_Description": "{{i18n:object.PotatoSausageCasserole.description}}"
+            }
+        },
+
+        {
+            "LogName": "Ají de Gallina",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_AjídeGallina": {
+                    "Name": "{{ModId}}_AjídeGallina",
+                    "DisplayName": "{{i18n:object.AjídeGallina.name}}",
+                    "Description": "{{i18n:object.AjídeGallina.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 536,
+                    "Texture": "Mods/{{ModId}}/LatinObjects",
+                    "SpriteIndex": 13,
+                    "Edibility": 25,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_AjídeGallina"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "AjídeGallina_Name": "{{i18n:object.AjídeGallina.name}}",
+                "AjídeGallina_Description": "{{i18n:object.AjídeGallina.description}}"
+            }
+        },
+
+        {
+            "LogName": "Ceviche",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Ceviche": {
+                    "Name": "{{ModId}}_Ceviche",
+                    "DisplayName": "{{i18n:object.Ceviche.name}}",
+                    "Description": "{{i18n:object.Ceviche.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 455,
+                    "Texture": "Mods/{{ModId}}/LatinObjects",
+                    "SpriteIndex": 14,
+                    "Edibility": 25,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Ceviche"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Ceviche_Name": "{{i18n:object.Ceviche.name}}",
+                "Ceviche_Description": "{{i18n:object.Ceviche.description}}"
+            }
+        },
+
+        {
+            "LogName": "Beef Kebabs",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_BeefKebabs": {
+                    "Name": "{{ModId}}_BeefKebabs",
+                    "DisplayName": "{{i18n:object.BeefKebabs.name}}",
+                    "Description": "{{i18n:object.BeefKebabs.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 90,
+                    "Texture": "Mods/{{ModId}}/LatinObjects",
+                    "SpriteIndex": 15,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_BeefKebabs"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "BeefKebabs_Name": "{{i18n:object.BeefKebabs.name}}",
+                "BeefKebabs_Description": "{{i18n:object.BeefKebabs.description}}"
+            }
+        },
+
+        {
+            "LogName": "Coquitos",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Coquitos": {
+                    "Name": "{{ModId}}_Coquitos",
+                    "DisplayName": "{{i18n:object.Coquitos.name}}",
+                    "Description": "{{i18n:object.Coquitos.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 225,
+                    "Texture": "Mods/{{ModId}}/LatinObjects",
+                    "SpriteIndex": 16,
+                    "Edibility": 25,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Coquitos"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Coquitos_Name": "{{i18n:object.Coquitos.name}}",
+                "Coquitos_Description": "{{i18n:object.Coquitos.description}}"
+            }
+        },
+
+        {
+            "LogName": "Arroz Con Leche",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_ArrozConLeche": {
+                    "Name": "{{ModId}}_ArrozConLeche",
+                    "DisplayName": "{{i18n:object.ArrozConLeche.name}}",
+                    "Description": "{{i18n:object.ArrozConLeche.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 545,
+                    "Texture": "Mods/{{ModId}}/LatinObjects",
+                    "SpriteIndex": 17,
+                    "Edibility": 25,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_ArrozConLeche"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "ArrozConLeche_Name": "{{i18n:object.ArrozConLeche.name}}",
+                "ArrozConLeche_Description": "{{i18n:object.ArrozConLeche.description}}"
+            }
+        },
+
+        {
+            "LogName": "Arepa Reina Pepiada",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_ArepaReinaPepiada": {
+                    "Name": "{{ModId}}_ArepaReinaPepiada",
+                    "DisplayName": "{{i18n:object.ArepaReinaPepiada.name}}",
+                    "Description": "{{i18n:object.ArepaReinaPepiada.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 662,
+                    "Texture": "Mods/{{ModId}}/LatinObjects",
+                    "SpriteIndex": 18,
+                    "Edibility": 40,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_ArepaReinaPepiada"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "ArepaReinaPepiada_Name": "{{i18n:object.ArepaReinaPepiada.name}}",
+                "ArepaReinaPepiada_Description": "{{i18n:object.ArepaReinaPepiada.description}}"
+            }
+        },
+
+        {
+            "LogName": "Arroz Con Coco",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_ArrozConCoco": {
+                    "Name": "{{ModId}}_ArrozConCoco",
+                    "DisplayName": "{{i18n:object.ArrozConCoco.name}}",
+                    "Description": "{{i18n:object.ArrozConCoco.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 1116,
+                    "Texture": "Mods/{{ModId}}/LatinObjects",
+                    "SpriteIndex": 19,
+                    "Edibility": 35,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_ArrozConCoco"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "ArrozConCoco_Name": "{{i18n:object.ArrozConCoco.name}}",
+                "ArrozConCoco_Description": "{{i18n:object.ArrozConCoco.description}}"
+            }
+        },
+
+        {
+            "LogName": "Tequenos",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Tequenos": {
+                    "Name": "{{ModId}}_Tequenos",
+                    "DisplayName": "{{i18n:object.Tequenos.name}}",
+                    "Description": "{{i18n:object.Tequenos.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 342,
+                    "Texture": "Mods/{{ModId}}/LatinObjects",
+                    "SpriteIndex": 20,
+                    "Edibility": 45,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Tequenos"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Tequenos_Name": "{{i18n:object.Tequenos.name}}",
+                "Tequenos_Description": "{{i18n:object.Tequenos.description}}"
+            }
+        },
+
+        {
+            "LogName": "Toston",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Toston": {
+                    "Name": "{{ModId}}_Toston",
+                    "DisplayName": "{{i18n:object.Toston.name}}",
+                    "Description": "{{i18n:object.Toston.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 531,
+                    "Texture": "Mods/{{ModId}}/LatinObjects",
+                    "SpriteIndex": 21,
+                    "Edibility": 25,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Toston"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+        
+        {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "Toston_Name": "{{i18n:object.Toston.name}}",
+            "Toston_Description": "{{i18n:object.Toston.description}}"
+        }
+        },
+
+        {
+            "LogName": "Cuñapé",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Cuñapé": {
+                    "Name": "{{ModId}}_Cuñapé",
+                    "DisplayName": "{{i18n:object.Cuñapé.name}}",
+                    "Description": "{{i18n:object.Cuñapé.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 410,
+                    "Texture": "Mods/{{ModId}}/LatinObjects",
+                    "SpriteIndex": 22,
+                    "Edibility": 30,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Cuñapé"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+        
+        {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "Cuñapé_Name": "{{i18n:object.Cuñapé.name}}",
+            "Cuñapé_Description": "{{i18n:object.Cuñapé.description}}"
+        }
+        },
+
+          {
+              "LogName": "Latin Food Item Textures",
+              "Action": "Load",
+              "Target": "Mods/{{ModId}}/LatinObjects",
+              "FromFile": "Assets/Images/Food/ATasteOfLatin.png"
+          }
+      ]
+  }

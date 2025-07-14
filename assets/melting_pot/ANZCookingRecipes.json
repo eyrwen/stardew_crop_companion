@@ -1,0 +1,22 @@
+{ 
+    "Changes": 
+    [
+        {
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries":
+            {
+                "{{ModId}}_ANZ_Toroi": "250 1 723 3/10 10/{{ModId}}_Toroi/none/{{i18n:object.Toroi.name}}",
+                "{{ModId}}_ANZ_FishandChips": "699 1 246 1 192 2 346 1 Cornucopia_Lemon 1/10 10/{{ModId}}_FishandChips/none/{{i18n:object.FishandChips.name}}",
+                "{{ModId}}_ANZ_Pavlova": "-5 2 245 1 Cornucopia_CornFlour 1 Cornucopia_Lime 1 91 2 Cornucopia_Kiwi 2 268 1 Cornucopia_PassionFruit 1/10 10/{{ModId}}_Pavlova/none/{{i18n:object.Pavlova.name}}",
+                "{{ModId}}_ANZ_BBQShrimp": "720 3/10 10/{{ModId}}_BBQShrimp/none/{{i18n:object.BBQShrimp.name}}",
+                "{{ModId}}_ANZ_FairyBread": "216 1 Cornucopia_Butter 1 Cornucopia_PrismaticEssence 1/10 10/{{ModId}}_FairyBread/none/{{i18n:object.FairyBread.name}}",
+                "{{ModId}}_ANZ_HokeyPokey": "233 1 340 1/10 10/{{ModId}}_HokeyPokey/none/{{i18n:object.HokeyPokey.name}}",
+                "{{ModId}}_ANZ_AnzacBiscuit": "Cornucopia_Oats 1 246 1 88 1 245 1 Cornucopia_Butter 1/10 10/{{ModId}}_AnzacBiscuit/none/{{i18n:object.AnzacBiscuit.name}}",
+                "{{ModId}}_ANZ_AfghanBiscuit": "Cornucopia_CocoaPod 1 246 1 245 1 Cornucopia_Butter 1 Cornucopia_Walnut 1/10 10/{{ModId}}_AfghanBiscuit/none/{{i18n:object.AfghanBiscuit.name}}",
+                "{{ModId}}_ANZ_KangaPirau": "270 1 245 1 184 1/10 10/{{ModId}}_KangaPirau/none/{{i18n:object.KangaPirau.name}}",
+                "{{ModId}}_ANZ_KangaWaru": "Cornucopia_CornFlour 1 245 1 184 1 Cornucopia_Butter 1 Cornucopia_SweetPotato 1/10 10/{{ModId}}_KangaWaru/none/{{i18n:object.KangaWaru.name}}"
+            }
+        }
+    ]
+}

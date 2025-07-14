@@ -6,6 +6,7 @@ class Crop extends Item {
     required super.type,
     required super.name,
     required super.img,
+    super.id,
     super.url,
     required super.price,
     super.hasQuality = true,

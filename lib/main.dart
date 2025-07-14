@@ -1,13 +1,13 @@
-import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:stardew_crop_companion/utils/use_melting_pot_recipes.dart';
 
 import 'data/animal_product.dart';
 import 'data/crop.dart';
 import 'data/fish.dart';
 import 'data/interface.dart';
 import 'data/recipe.dart';
+import 'utils/use_json.dart';
 import 'widgets/fish_grid.dart';
 import 'widgets/fishing_locations.dart';
 import 'widgets/item_grid.dart';
@@ -37,44 +37,6 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends HookWidget {
   MyHomePage({super.key});
 
-  Future<List<Crop>> _loadCrops() async {
-    final cropJson = await json.decode(
-      await rootBundle.loadString('assets/crops.json'),
-    );
-    return cropJson.entries
-        .map<Crop>((entry) => Crop.fromJson(entry.key, entry.value))
-        .toList();
-  }
-
-  Future<List<Recipe>> _loadRecipes() async {
-    final recipeJson = await json.decode(
-      await rootBundle.loadString('assets/recipes.json'),
-    );
-    return recipeJson.entries
-        .map<Recipe>((entry) => Recipe.fromJson(entry.key, entry.value))
-        .toList();
-  }
-
-  Future<List<Fish>> _loadFish() async {
-    final fishJson = await json.decode(
-      await rootBundle.loadString('assets/fish.json'),
-    );
-    return fishJson.entries
-        .map<Fish>((entry) => Fish.fromJson(entry.key, entry.value))
-        .toList();
-  }
-
-  Future<List<AnimalProduct>> _loadAnimalProducts() async {
-    final animalProductJson = await json.decode(
-      await rootBundle.loadString('assets/animal_products.json'),
-    );
-    return animalProductJson.entries
-        .map<AnimalProduct>(
-          (entry) => AnimalProduct.fromJson(entry.key, entry.value),
-        )
-        .toList();
-  }
-
   final List<Tab> TABS = [
     const Tab(text: 'Crops', icon: ItemImage('farming')),
     const Tab(text: 'Fish', icon: ItemImage('fishing')),
@@ -82,6 +44,15 @@ class MyHomePage extends HookWidget {
 
   @override
   Widget build(BuildContext context) {
+    final loadCrops = useJson<Crop>('assets/crops.json', Crop.fromJson);
+    final loadFish = useJson<Fish>('assets/fish.json', Fish.fromJson);
+    final loadRecipes = useJson<Recipe>('assets/recipes.json', Recipe.fromJson);
+    final loadAnimalProducts = useJson<AnimalProduct>(
+      'assets/animal_products.json',
+      AnimalProduct.fromJson,
+    );
+    final loadMeltingPotRecipes = useMeltingPotRecipes();
+
     return DefaultTabController(
       length: TABS.length,
       child: Scaffold(
@@ -98,11 +69,16 @@ class MyHomePage extends HookWidget {
             child: TabBarView(
               children: [
                 CropsTab(
-                  allCrops: _loadCrops(),
-                  allAnimalProducts: _loadAnimalProducts(),
-                  allRecipes: _loadRecipes(),
+                  allCrops: loadCrops,
+                  allAnimalProducts: loadAnimalProducts,
+                  allRecipes: loadRecipes,
+                  allMeltingPotRecipes: loadMeltingPotRecipes,
                 ),
-                FishTab(allFish: _loadFish(), allRecipes: _loadRecipes()),
+                FishTab(
+                  allFish: loadFish,
+                  allRecipes: loadRecipes,
+                  allMeltingPotRecipes: loadMeltingPotRecipes,
+                ),
               ],
             ),
           ),
@@ -113,24 +89,21 @@ class MyHomePage extends HookWidget {
 }
 
 class CropsTab extends HookWidget {
-  final Future<List<Crop>> allCrops;
-  final Future<List<AnimalProduct>> allAnimalProducts;
-  final Future<List<Recipe>> allRecipes;
+  final AsyncSnapshot<List<Crop>> allCrops;
+  final AsyncSnapshot<List<AnimalProduct>> allAnimalProducts;
+  final AsyncSnapshot<List<Recipe>> allRecipes;
+  final AsyncSnapshot<List<Recipe>> allMeltingPotRecipes;
 
   const CropsTab({
     super.key,
     required this.allCrops,
     required this.allAnimalProducts,
     required this.allRecipes,
+    required this.allMeltingPotRecipes,
   });
 
   @override
   Widget build(BuildContext context) {
-    final crops = useFuture<List<Crop>>(useMemoized(() => allCrops));
-    final animalProducts = useFuture<List<AnimalProduct>>(
-      useMemoized(() => allAnimalProducts),
-    );
-    final recipes = useFuture<List<Recipe>>(useMemoized(() => allRecipes));
     final viewingItem = useState<Item?>(null);
 
     selectItem(Item item) {
@@ -140,25 +113,34 @@ class CropsTab extends HookWidget {
     if (viewingItem.value != null) {
       return ItemPageLayout(
         item: viewingItem.value!,
-        recipes:
-            recipes.data
-                ?.where((r) => r.requires(viewingItem.value!))
-                .toList() ??
-            [],
+        recipes: [
+          ...allRecipes.data!,
+          ...allMeltingPotRecipes.data!,
+        ].where((r) => r.requires(viewingItem.value!)).toList(),
         onBack: () => viewingItem.value = null,
       );
     }
-    if (crops.hasError) {
-      return Text(crops.error?.toString() ?? 'Error loading crops');
-    } else if (recipes.hasError) {
-      return Text(recipes.error?.toString() ?? 'Error loading recipes');
-    } else if (animalProducts.hasError) {
-      return Text(animalProducts.error?.toString() ?? 'Error loading products');
-    } else if (!crops.hasData || !recipes.hasData || !animalProducts.hasData) {
+    if (allCrops.hasError) {
+      return Text(allCrops.error?.toString() ?? 'Error loading crops');
+    } else if (allRecipes.hasError) {
+      return Text(allRecipes.error?.toString() ?? 'Error loading recipes');
+    } else if (allAnimalProducts.hasError) {
+      return Text(
+        allAnimalProducts.error?.toString() ?? 'Error loading products',
+      );
+    } else if (allMeltingPotRecipes.hasError) {
+      return Text(
+        allMeltingPotRecipes.error?.toString() ??
+            'Error loading melting pot recipes',
+      );
+    } else if (!allCrops.hasData ||
+        !allRecipes.hasData ||
+        !allAnimalProducts.hasData ||
+        !allMeltingPotRecipes.hasData) {
       return LinearProgressIndicator();
     } else {
       return ItemGrid(
-        items: [...crops.data!, ...animalProducts.data!],
+        items: [...allCrops.data!, ...allAnimalProducts.data!],
         onItemSelected: selectItem,
       );
     }
@@ -166,15 +148,19 @@ class CropsTab extends HookWidget {
 }
 
 class FishTab extends HookWidget {
-  final Future<List<Fish>> allFish;
-  final Future<List<Recipe>> allRecipes;
+  final AsyncSnapshot<List<Fish>> allFish;
+  final AsyncSnapshot<List<Recipe>> allRecipes;
+  final AsyncSnapshot<List<Recipe>> allMeltingPotRecipes;
 
-  const FishTab({super.key, required this.allFish, required this.allRecipes});
+  const FishTab({
+    super.key,
+    required this.allFish,
+    required this.allRecipes,
+    required this.allMeltingPotRecipes,
+  });
 
   @override
   Widget build(BuildContext context) {
-    final fish = useFuture<List<Fish>>(useMemoized(() => allFish));
-    final recipes = useFuture<List<Recipe>>(useMemoized(() => allRecipes));
     final viewingFish = useState<Fish?>(null);
 
     selectFish(Fish fish) {
@@ -185,11 +171,10 @@ class FishTab extends HookWidget {
       return ItemPageLayout(
         item: viewingFish.value!,
         seasons: FishingLocations(fish: viewingFish.value!),
-        recipes:
-            recipes.data
-                ?.where((r) => r.requires(viewingFish.value!))
-                .toList() ??
-            [],
+        recipes: [
+          ...allRecipes.data!,
+          ...allMeltingPotRecipes.data!,
+        ].where((r) => r.requires(viewingFish.value!)).toList(),
         additionalDetails: viewingFish.value!.pondOutputs.isNotEmpty
             ? PondOutputs(pondOutputs: viewingFish.value!.pondOutputs)
             : null,
@@ -197,14 +182,21 @@ class FishTab extends HookWidget {
       );
     }
 
-    if (fish.hasError) {
-      return Text(fish.error?.toString() ?? 'Error loading fish');
-    } else if (recipes.hasError) {
-      return Text(recipes.error?.toString() ?? 'Error loading recipes');
-    } else if (!fish.hasData || !recipes.hasData) {
+    if (allFish.hasError) {
+      return Text(allFish.error?.toString() ?? 'Error loading fish');
+    } else if (allRecipes.hasError) {
+      return Text(allRecipes.error?.toString() ?? 'Error loading recipes');
+    } else if (allMeltingPotRecipes.hasError) {
+      return Text(
+        allMeltingPotRecipes.error?.toString() ??
+            'Error loading melting pot recipes',
+      );
+    } else if (!allFish.hasData ||
+        !allRecipes.hasData ||
+        !allMeltingPotRecipes.hasData) {
       return LinearProgressIndicator();
     } else {
-      return FishGrid(fish: fish.data!, onFishSelected: selectFish);
+      return FishGrid(fish: allFish.data!, onFishSelected: selectFish);
     }
   }
 }

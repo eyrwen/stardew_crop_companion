@@ -16,6 +16,7 @@ class Fish extends Item {
     required super.name,
     required super.img,
     super.url,
+    super.id,
     required super.price,
     required this.pondOutputs,
     required this.locations,

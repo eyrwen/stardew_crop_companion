@@ -339,6 +339,7 @@ class ProduceMachineOutput {
         const HealthFormulator.zero(),
         "3 hrs",
         from: const [ItemType.nut],
+        favorites: const ["kent"],
       );
 
   const ProduceMachineOutput.fishOil()

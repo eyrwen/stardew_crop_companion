@@ -5,6 +5,7 @@ class ItemImage extends StatelessWidget {
   final double? height;
   final String? overlay;
   final double? overlayScale;
+  final double? imgScale;
 
   const ItemImage(
     this.imageName, {
@@ -12,6 +13,7 @@ class ItemImage extends StatelessWidget {
     this.height,
     this.overlay,
     this.overlayScale = 1.25,
+    this.imgScale,
   });
 
   const ItemImage.small(
@@ -19,6 +21,7 @@ class ItemImage extends StatelessWidget {
     super.key,
     this.overlay,
     this.overlayScale,
+    this.imgScale,
   }) : height = 16;
 
   const ItemImage.medium(
@@ -26,6 +29,7 @@ class ItemImage extends StatelessWidget {
     super.key,
     this.overlay,
     this.overlayScale,
+    this.imgScale,
   }) : height = 24;
 
   const ItemImage.large(
@@ -33,6 +37,7 @@ class ItemImage extends StatelessWidget {
     super.key,
     this.overlay,
     this.overlayScale,
+    this.imgScale,
   }) : height = 32;
 
   const ItemImage.xlarge(
@@ -40,6 +45,7 @@ class ItemImage extends StatelessWidget {
     super.key,
     this.overlay,
     this.overlayScale,
+    this.imgScale,
   }) : height = 96;
 
   get fullImageName =>
@@ -74,6 +80,8 @@ class ItemImage extends StatelessWidget {
       'assets/img/$fullImageName',
       height: height,
       semanticLabel: semanticLabel,
+      filterQuality: FilterQuality.none,
+      scale: imgScale ?? 1.0,
     );
   }
 }

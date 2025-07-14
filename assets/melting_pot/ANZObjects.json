@@ -1,0 +1,716 @@
+{ 
+    "Changes": 
+    [
+        {
+            "LogName": "Meat Pie",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_MeatPie": {
+                    "Name": "{{ModId}}_MeatPie",
+                    "DisplayName": "{{i18n:object.MeatPie.name}}",
+                    "Description": "{{i18n:object.MeatPie.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 338,
+                    "Texture": "Mods/{{ModId}}/ANZObjects",
+                    "SpriteIndex": 0,
+                    "Edibility": 25,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_MeatPie"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "MeatPie_Name": "{{i18n:object.MeatPie.name}}",
+                "MeatPie_Description": "{{i18n:object.MeatPie.description}}"
+            }
+        },
+
+        {
+            "LogName": "Toroi",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Toroi": {
+                    "Name": "{{ModId}}_Toroi",
+                    "DisplayName": "{{i18n:object.Toroi.name}}",
+                    "Description": "{{i18n:object.Toroi.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 207,
+                    "Texture": "Mods/{{ModId}}/ANZObjects",
+                    "SpriteIndex": 1,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Toroi"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Toroi_Name": "{{i18n:object.Toroi.name}}",
+                "Toroi_Description": "{{i18n:object.Toroi.description}}"
+            }
+        },
+
+        {
+            "LogName": "Fish and Chips",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_FishandChips": {
+                    "Name": "{{ModId}}_FishandChips",
+                    "DisplayName": "{{i18n:object.FishandChips.name}}",
+                    "Description": "{{i18n:object.FishandChips.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 549,
+                    "Texture": "Mods/{{ModId}}/ANZObjects",
+                    "SpriteIndex": 2,
+                    "Edibility": 30,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_FishAndChips"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "FishandChips_Name": "{{i18n:object.FishandChips.name}}",
+                "FishandChips_Description": "{{i18n:object.FishandChips.description}}"
+            }
+        },
+
+        {
+            "LogName": "Pavlova",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Pavlova": {
+                    "Name": "{{ModId}}_Pavlova",
+                    "DisplayName": "{{i18n:object.Pavlova.name}}",
+                    "Description": "{{i18n:object.Pavlova.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 1350,
+                    "Texture": "Mods/{{ModId}}/ANZObjects",
+                    "SpriteIndex": 3,
+                    "Edibility": 60,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Pavlova"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Pavlova_Name": "{{i18n:object.Pavlova.name}}",
+                "Pavlova_Description": "{{i18n:object.Pavlova.description}}"
+            }
+        },
+
+        {
+            "LogName": "BBQ Shrimp",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_BBQShrimp": {
+                    "Name": "{{ModId}}_BBQShrimp",
+                    "DisplayName": "{{i18n:object.BBQShrimp.name}}",
+                    "Description": "{{i18n:object.BBQShrimp.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 162,
+                    "Texture": "Mods/{{ModId}}/ANZObjects",
+                    "SpriteIndex": 4,
+                    "Edibility": 25,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_BBQShrimp",
+                    "{{TMPTeryfTag}}"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "BBQShrimp_Name": "{{i18n:object.BBQShrimp.name}}",
+                "BBQShrimp_Description": "{{i18n:object.BBQShrimp.description}}"
+            }
+        },
+
+        {
+            "LogName": "Fairy Bread",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_FairyBread": {
+                    "Name": "{{ModId}}_FairyBread",
+                    "DisplayName": "{{i18n:object.FairyBread.name}}",
+                    "Description": "{{i18n:object.FairyBread.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 234,
+                    "Texture": "Mods/{{ModId}}/ANZObjects",
+                    "SpriteIndex": 5,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_FairyBread"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "FairyBread_Name": "{{i18n:object.FairyBread.name}}",
+                "FairyBread_Description": "{{i18n:object.FairyBread.description}}"
+            }
+        },
+
+        {
+            "LogName": "Hokey Pokey",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_HokeyPokey": {
+                    "Name": "{{ModId}}_HokeyPokey",
+                    "DisplayName": "{{i18n:object.HokeyPokey.name}}",
+                    "Description": "{{i18n:object.HokeyPokey.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 198,
+                    "Texture": "Mods/{{ModId}}/ANZObjects",
+                    "SpriteIndex": 6,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_HokeyPokey"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "HokeyPokey_Name": "{{i18n:object.HokeyPokey.name}}",
+                "HokeyPokey_Description": "{{i18n:object.HokeyPokey.description}}"
+            }
+        },
+
+        {
+            "LogName": "Anzac Biscuit",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_AnzacBiscuit": {
+                    "Name": "{{ModId}}_AnzacBiscuit",
+                    "DisplayName": "{{i18n:object.AnzacBiscuit.name}}",
+                    "Description": "{{i18n:object.AnzacBiscuit.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 383,
+                    "Texture": "Mods/{{ModId}}/ANZObjects",
+                    "SpriteIndex": 7,
+                    "Edibility": 25,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_AnzacBiscuit"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "AnzacBiscuit_Name": "{{i18n:object.AnzacBiscuit.name}}",
+                "AnzacBiscuit_Description": "{{i18n:object.AnzacBiscuit.description}}"
+            }
+        },
+
+        {
+            "LogName": "Afghan Biscuit",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_AfghanBiscuit": {
+                    "Name": "{{ModId}}_AfghanBiscuit",
+                    "DisplayName": "{{i18n:object.AfghanBiscuit.name}}",
+                    "Description": "{{i18n:object.AfghanBiscuit.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 464,
+                    "Texture": "Mods/{{ModId}}/ANZObjects",
+                    "SpriteIndex": 8,
+                    "Edibility": 30,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_AfghanBiscuit"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "AfghanBiscuit_Name": "{{i18n:object.AfghanBiscuit.name}}",
+                "AfghanBiscuit_Description": "{{i18n:object.AfghanBiscuit.description}}"
+            }
+        },
+
+        {
+            "LogName": "Kanga Pirau",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_KangaPirau": {
+                    "Name": "{{ModId}}_KangaPirau",
+                    "DisplayName": "{{i18n:object.KangaPirau.name}}",
+                    "Description": "{{i18n:object.KangaPirau.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 203,
+                    "Texture": "Mods/{{ModId}}/ANZObjects",
+                    "SpriteIndex": 9,
+                    "Edibility": 30,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_KangaPirau"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "KangaPirau_Name": "{{i18n:object.KangaPirau.name}}",
+                "KangaPirau_Description": "{{i18n:object.KangaPirau.description}}"
+            }
+        },
+
+        {
+            "LogName": "Kanga Waru",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_KangaWaru": {
+                    "Name": "{{ModId}}_KangaWaru",
+                    "DisplayName": "{{i18n:object.KangaWaru.name}}",
+                    "Description": "{{i18n:object.KangaWaru.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 545,
+                    "Texture": "Mods/{{ModId}}/ANZObjects",
+                    "SpriteIndex": 10,
+                    "Edibility": 40,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_KangaWaru"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "KangaWaru_Name": "{{i18n:object.KangaWaru.name}}",
+                "KangaWaru_Description": "{{i18n:object.KangaWaru.description}}"
+            }
+        },
+
+          {
+              "LogName": "Australia and New Zealand Food Item Textures",
+              "Action": "Load",
+              "Target": "Mods/{{ModId}}/ANZObjects",
+              "FromFile": "Assets/Images/Food/ATasteOfAustralia&NewZealand.png"
+          }
+    ]
+}

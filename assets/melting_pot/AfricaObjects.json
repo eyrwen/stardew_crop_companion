@@ -1,0 +1,2232 @@
+{
+    "Changes":
+    [
+        {
+            "LogName": "Couscous",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Couscous": {
+                    "Name": "{{ModId}}_Couscous",
+                    "DisplayName": "{{i18n:object.Couscous.name}}",
+                    "Description": "{{i18n:object.Couscous.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 360,
+                    "Texture": "Mods/{{ModId}}/AfricaObjects",
+                    "SpriteIndex": 0,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Couscous"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+        
+        {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "Couscous_Name": "{{i18n:object.Couscous.name}}",
+            "Couscous_Description": "{{i18n:object.Couscous.description}}"
+        }
+        },
+
+        {
+            "LogName": "Shakshouka",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Shakshouka": {
+                    "Name": "{{ModId}}_Shakshouka",
+                    "DisplayName": "{{i18n:object.Shakshouka.name}}",
+                    "Description": "{{i18n:object.Shakshouka.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 378,
+                    "Texture": "Mods/{{ModId}}/AfricaObjects",
+                    "SpriteIndex": 1,
+                    "Edibility": 25,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Shakshouka"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+        
+        {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "Shakshouka_Name": "{{i18n:object.Shakshouka.name}}",
+            "Shakshouka_Description": "{{i18n:object.Shakshouka.description}}"
+        }
+        },
+
+        {
+            "LogName": "Griwech",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Griwech": {
+                    "Name": "{{ModId}}_Griwech",
+                    "DisplayName": "{{i18n:object.Griwech.name}}",
+                    "Description": "{{i18n:object.Griwech.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 428,
+                    "Texture": "Mods/{{ModId}}/AfricaObjects",
+                    "SpriteIndex": 2,
+                    "Edibility": 25,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Griwech"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+        
+        {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "Griwech_Name": "{{i18n:object.Griwech.name}}",
+            "Griwech_Description": "{{i18n:object.Griwech.description}}"
+        }
+        },
+
+        {
+            "LogName": "Asida",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Asida": {
+                    "Name": "{{ModId}}_Asida",
+                    "DisplayName": "{{i18n:object.Asida.name}}",
+                    "Description": "{{i18n:object.Asida.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 315,
+                    "Texture": "Mods/{{ModId}}/AfricaObjects",
+                    "SpriteIndex": 3,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Asida"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+        
+        {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "Asida_Name": "{{i18n:object.Asida.name}}",
+            "Asida_Description": "{{i18n:object.Asida.description}}"
+        }
+        },
+
+        {
+            "LogName": "Bazin",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Bazin": {
+                    "Name": "{{ModId}}_Bazin",
+                    "DisplayName": "{{i18n:object.Bazin.name}}",
+                    "Description": "{{i18n:object.Bazin.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 1071,
+                    "Texture": "Mods/{{ModId}}/AfricaObjects",
+                    "SpriteIndex": 4,
+                    "Edibility": 40,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Bazin"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+        
+        {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "Bazin_Name": "{{i18n:object.Bazin.name}}",
+            "Bazin_Description": "{{i18n:object.Bazin.description}}"
+        }
+        },
+
+        {
+            "LogName": "Sesame Cookies",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_SesameCookies": {
+                    "Name": "{{ModId}}_SesameCookies",
+                    "DisplayName": "{{i18n:object.SesameCookies.name}}",
+                    "Description": "{{i18n:object.SesameCookies.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 180,
+                    "Texture": "Mods/{{ModId}}/AfricaObjects",
+                    "SpriteIndex": 5,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_SesameCookies"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+        
+        {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "SesameCookies_Name": "{{i18n:object.SesameCookies.name}}",
+            "SesameCookies_Description": "{{i18n:object.SesameCookies.description}}"
+        }
+        },
+
+        {
+            "LogName": "Tkelia",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Tkelia": {
+                    "Name": "{{ModId}}_Tkelia",
+                    "DisplayName": "{{i18n:object.Tkelia.name}}",
+                    "Description": "{{i18n:object.Tkelia.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 932,
+                    "Texture": "Mods/{{ModId}}/AfricaObjects",
+                    "SpriteIndex": 6,
+                    "Edibility": 30,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Tkelia"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+        
+        {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "Tkelia_Name": "{{i18n:object.Tkelia.name}}",
+            "Tkelia_Description": "{{i18n:object.Tkelia.description}}"
+        }
+        },
+
+        {
+            "LogName": "Panna Cotta",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_PannaCotta": {
+                    "Name": "{{ModId}}_PannaCotta",
+                    "DisplayName": "{{i18n:object.PannaCotta.name}}",
+                    "Description": "{{i18n:object.PannaCotta.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 297,
+                    "Texture": "Mods/{{ModId}}/AfricaObjects",
+                    "SpriteIndex": 7,
+                    "Edibility": 30,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_PannaCotta"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+        
+        {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "PannaCotta_Name": "{{i18n:object.PannaCotta.name}}",
+            "PannaCotta_Description": "{{i18n:object.PannaCotta.description}}"
+        }
+        },
+
+        {
+            "LogName": "Banku",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Banku": {
+                    "Name": "{{ModId}}_Banku",
+                    "DisplayName": "{{i18n:object.Banku.name}}",
+                    "Description": "{{i18n:object.Banku.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 45,
+                    "Texture": "Mods/{{ModId}}/AfricaObjects",
+                    "SpriteIndex": 8,
+                    "Edibility": 15,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Banku"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+        
+        {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "Banku_Name": "{{i18n:object.Banku.name}}",
+            "Banku_Description": "{{i18n:object.Banku.description}}"
+        }
+        },
+
+        {
+            "LogName": "PalmNut Soup",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_PalmNutSoup": {
+                    "Name": "{{ModId}}_PalmNutSoup",
+                    "DisplayName": "{{i18n:object.PalmNutSoup.name}}",
+                    "Description": "{{i18n:object.PalmNutSoup.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 689,
+                    "Texture": "Mods/{{ModId}}/AfricaObjects",
+                    "SpriteIndex": 9,
+                    "Edibility": 30,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_PalmNutSoup"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+        
+        {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "PalmNutSoup_Name": "{{i18n:object.PalmNutSoup.name}}",
+            "PalmNutSoup_Description": "{{i18n:object.PalmNutSoup.description}}"
+        }
+        },
+
+        {
+            "LogName": "Maduros",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Maduros": {
+                    "Name": "{{ModId}}_Maduros",
+                    "DisplayName": "{{i18n:object.Maduros.name}}",
+                    "Description": "{{i18n:object.Maduros.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 405,
+                    "Texture": "Mods/{{ModId}}/AfricaObjects",
+                    "SpriteIndex": 10,
+                    "Edibility": 25,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Maduros"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+        
+        {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "Maduros_Name": "{{i18n:object.Maduros.name}}",
+            "Maduros_Description": "{{i18n:object.Maduros.description}}"
+        }
+        },
+
+        {
+            "LogName": "Cassava Fufu",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_CassavaFufu": {
+                    "Name": "{{ModId}}_CassavaFufu",
+                    "DisplayName": "{{i18n:object.CassavaFufu.name}}",
+                    "Description": "{{i18n:object.CassavaFufu.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 216,
+                    "Texture": "Mods/{{ModId}}/AfricaObjects",
+                    "SpriteIndex": 11,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_CassavaFufu"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+        
+        {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "CassavaFufu_Name": "{{i18n:object.CassavaFufu.name}}",
+            "CassavaFufu_Description": "{{i18n:object.CassavaFufu.description}}"
+        }
+        },
+
+        {
+            "LogName": "Tshaka Madesu",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_TshakaMadesu": {
+                    "Name": "{{ModId}}_TshakaMadesu",
+                    "DisplayName": "{{i18n:object.TshakaMadesu.name}}",
+                    "Description": "{{i18n:object.TshakaMadesu.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 315,
+                    "Texture": "Mods/{{ModId}}/AfricaObjects",
+                    "SpriteIndex": 12,
+                    "Edibility": 25,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_TshakaMadesu"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+        
+        {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "TshakaMadesu_Name": "{{i18n:object.TshakaMadesu.name}}",
+            "TshakaMadesu_Description": "{{i18n:object.TshakaMadesu.description}}"
+        }
+        },
+
+        {
+            "LogName": "Doro Wat",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_DoroWat": {
+                    "Name": "{{ModId}}_DoroWat",
+                    "DisplayName": "{{i18n:object.DoroWat.name}}",
+                    "Description": "{{i18n:object.DoroWat.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 306,
+                    "Texture": "Mods/{{ModId}}/AfricaObjects",
+                    "SpriteIndex": 13,
+                    "Edibility": 25,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_DoroWat"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+        
+        {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "DoroWat_Name": "{{i18n:object.DoroWat.name}}",
+            "DoroWat_Description": "{{i18n:object.DoroWat.description}}"
+        }
+        },
+
+        {
+            "LogName": "Kitfo",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Kitfo": {
+                    "Name": "{{ModId}}_Kitfo",
+                    "DisplayName": "{{i18n:object.Kitfo.name}}",
+                    "Description": "{{i18n:object.Kitfo.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 212,
+                    "Texture": "Mods/{{ModId}}/AfricaObjects",
+                    "SpriteIndex": 14,
+                    "Edibility": 25,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Kitfo"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+        
+        {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "Kitfo_Name": "{{i18n:object.Kitfo.name}}",
+            "Kitfo_Description": "{{i18n:object.Kitfo.description}}"
+        }
+        },
+
+        {
+            "LogName": "Canjeero",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Canjeero": {
+                    "Name": "{{ModId}}_Canjeero",
+                    "DisplayName": "{{i18n:object.Canjeero.name}}",
+                    "Description": "{{i18n:object.Canjeero.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 90,
+                    "Texture": "Mods/{{ModId}}/AfricaObjects",
+                    "SpriteIndex": 15,
+                    "Edibility": 15,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Canjeero"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+        
+        {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "Canjeero_Name": "{{i18n:object.Canjeero.name}}",
+            "Canjeero_Description": "{{i18n:object.Canjeero.description}}"
+        }
+        },
+
+        {
+            "LogName": "Bariis Isku",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_BariisIsku": {
+                    "Name": "{{ModId}}_BariisIsku",
+                    "DisplayName": "{{i18n:object.BariisIsku.name}}",
+                    "Description": "{{i18n:object.BariisIsku.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 959,
+                    "Texture": "Mods/{{ModId}}/AfricaObjects",
+                    "SpriteIndex": 16,
+                    "Edibility": 30,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_BariisIsku"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+        
+        {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "BariisIsku_Name": "{{i18n:object.BariisIsku.name}}",
+            "BariisIsku_Description": "{{i18n:object.BariisIsku.description}}"
+        }
+        },
+
+        {
+            "LogName": "DateMaamoul",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_DateMaamoul": {
+                    "Name": "{{ModId}}_DateMaamoul",
+                    "DisplayName": "{{i18n:object.DateMaamoul.name}}",
+                    "Description": "{{i18n:object.DateMaamoul.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 428,
+                    "Texture": "Mods/{{ModId}}/AfricaObjects",
+                    "SpriteIndex": 17,
+                    "Edibility": 25,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_DateMaamoul"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+        
+        {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "DateMaamoul_Name": "{{i18n:object.DateMaamoul.name}}",
+            "DateMaamoul_Description": "{{i18n:object.DateMaamoul.description}}"
+        }
+        },
+
+        {
+            "LogName": "Peanut Soup",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_PeanutSoup": {
+                    "Name": "{{ModId}}_PeanutSoup",
+                    "DisplayName": "{{i18n:object.PeanutSoup.name}}",
+                    "Description": "{{i18n:object.PeanutSoup.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 878,
+                    "Texture": "Mods/{{ModId}}/AfricaObjects",
+                    "SpriteIndex": 18,
+                    "Edibility": 45,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_PeanutSoup"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+        
+        {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "PeanutSoup_Name": "{{i18n:object.PeanutSoup.name}}",
+            "PeanutSoup_Description": "{{i18n:object.PeanutSoup.description}}"
+        }
+        },
+
+        {
+            "LogName": "Tamia",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Tamia": {
+                    "Name": "{{ModId}}_Tamia",
+                    "DisplayName": "{{i18n:object.Tamia.name}}",
+                    "Description": "{{i18n:object.Tamia.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 207,
+                    "Texture": "Mods/{{ModId}}/AfricaObjects",
+                    "SpriteIndex": 19,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Tamia"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+        
+        {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "Tamia_Name": "{{i18n:object.Tamia.name}}",
+            "Tamia_Description": "{{i18n:object.Tamia.description}}"
+        }
+        },
+
+        {
+            "LogName": "Ugali",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Ugali": {
+                    "Name": "{{ModId}}_Ugali",
+                    "DisplayName": "{{i18n:object.Ugali.name}}",
+                    "Description": "{{i18n:object.Ugali.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 45,
+                    "Texture": "Mods/{{ModId}}/AfricaObjects",
+                    "SpriteIndex": 20,
+                    "Edibility": 15,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Ugali"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+        
+        {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "Ugali_Name": "{{i18n:object.Ugali.name}}",
+            "Ugali_Description": "{{i18n:object.Ugali.description}}"
+        }
+        },
+
+        {
+            "LogName": "Nyama Choma",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_NyamaChoma": {
+                    "Name": "{{ModId}}_NyamaChoma",
+                    "DisplayName": "{{i18n:object.NyamaChoma.name}}",
+                    "Description": "{{i18n:object.NyamaChoma.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 90,
+                    "Texture": "Mods/{{ModId}}/AfricaObjects",
+                    "SpriteIndex": 21,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_NyamaChoma"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+        
+        {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "NyamaChoma_Name": "{{i18n:object.NyamaChoma.name}}",
+            "NyamaChoma_Description": "{{i18n:object.NyamaChoma.description}}"
+        }
+        },
+
+        {
+            "LogName": "Matooke",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Matooke": {
+                    "Name": "{{ModId}}_Matooke",
+                    "DisplayName": "{{i18n:object.Matooke.name}}",
+                    "Description": "{{i18n:object.Matooke.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 459,
+                    "Texture": "Mods/{{ModId}}/AfricaObjects",
+                    "SpriteIndex": 22,
+                    "Edibility": 30,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Matooke"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+        
+        {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "Matooke_Name": "{{i18n:object.Matooke.name}}",
+            "Matooke_Description": "{{i18n:object.Matooke.description}}"
+        }
+        },
+
+        {
+            "LogName": "Seswaa",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Seswaa": {
+                    "Name": "{{ModId}}_Seswaa",
+                    "DisplayName": "{{i18n:object.Seswaa.name}}",
+                    "Description": "{{i18n:object.Seswaa.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 162,
+                    "Texture": "Mods/{{ModId}}/AfricaObjects",
+                    "SpriteIndex": 23,
+                    "Edibility": 30,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Seswaa"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+        
+        {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "Seswaa_Name": "{{i18n:object.Seswaa.name}}",
+            "Seswaa_Description": "{{i18n:object.Seswaa.description}}"
+        }
+        },
+
+        {
+            "LogName": "Paptert",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Paptert": {
+                    "Name": "{{ModId}}_Paptert",
+                    "DisplayName": "{{i18n:object.Paptert.name}}",
+                    "Description": "{{i18n:object.Paptert.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 486,
+                    "Texture": "Mods/{{ModId}}/AfricaObjects",
+                    "SpriteIndex": 24,
+                    "Edibility": 45,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Paptert"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+        
+        {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "Paptert_Name": "{{i18n:object.Paptert.name}}",
+            "Paptert_Description": "{{i18n:object.Paptert.description}}"
+        }
+        },
+
+        {
+            "LogName": "Sausage Rolls",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_SausageRolls": {
+                    "Name": "{{ModId}}_SausageRolls",
+                    "DisplayName": "{{i18n:object.SausageRolls.name}}",
+                    "Description": "{{i18n:object.SausageRolls.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 1305,
+                    "Texture": "Mods/{{ModId}}/AfricaObjects",
+                    "SpriteIndex": 25,
+                    "Edibility": 15,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_SausageRolls"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+        
+        {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "SausageRolls_Name": "{{i18n:object.SausageRolls.name}}",
+            "SausageRolls_Description": "{{i18n:object.SausageRolls.description}}"
+        }
+        },
+
+        {
+            "LogName": "Baked Pears",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_BakedPears": {
+                    "Name": "{{ModId}}_BakedPears",
+                    "DisplayName": "{{i18n:object.BakedPears.name}}",
+                    "Description": "{{i18n:object.BakedPears.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 545,
+                    "Texture": "Mods/{{ModId}}/AfricaObjects",
+                    "SpriteIndex": 26,
+                    "Edibility": 15,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_BakedPears"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+        
+        {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "BakedPears_Name": "{{i18n:object.BakedPears.name}}",
+            "BakedPears_Description": "{{i18n:object.BakedPears.description}}"
+        }
+        },
+
+        {
+            "LogName": "Okra Soup",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_OkraSoup": {
+                    "Name": "{{ModId}}_OkraSoup",
+                    "DisplayName": "{{i18n:object.OkraSoup.name}}",
+                    "Description": "{{i18n:object.OkraSoup.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 212,
+                    "Texture": "Mods/{{ModId}}/AfricaObjects",
+                    "SpriteIndex": 27,
+                    "Edibility": 15,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_OkraSoup"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+        
+        {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "OkraSoup_Name": "{{i18n:object.OkraSoup.name}}",
+            "OkraSoup_Description": "{{i18n:object.OkraSoup.description}}"
+        }
+        },
+
+        {
+            "LogName": "Mutakura",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Mutakura": {
+                    "Name": "{{ModId}}_Mutakura",
+                    "DisplayName": "{{i18n:object.Mutakura.name}}",
+                    "Description": "{{i18n:object.Mutakura.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 306,
+                    "Texture": "Mods/{{ModId}}/AfricaObjects",
+                    "SpriteIndex": 28,
+                    "Edibility": 15,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Mutakura"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+        
+        {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "Mutakura_Name": "{{i18n:object.Mutakura.name}}",
+            "Mutakura_Description": "{{i18n:object.Mutakura.description}}"
+        }
+        },
+
+        {
+            "LogName": "Dovi",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Dovi": {
+                    "Name": "{{ModId}}_Dovi",
+                    "DisplayName": "{{i18n:object.Dovi.name}}",
+                    "Description": "{{i18n:object.Dovi.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 626,
+                    "Texture": "Mods/{{ModId}}/AfricaObjects",
+                    "SpriteIndex": 29,
+                    "Edibility": 35,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Dovi"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+        
+        {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "Dovi_Name": "{{i18n:object.Dovi.name}}",
+            "Dovi_Description": "{{i18n:object.Dovi.description}}"
+        }
+        },
+
+        {
+            "LogName": "Fesikh",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Fesikh": {
+                    "Name": "{{ModId}}_Fesikh",
+                    "DisplayName": "{{i18n:object.Fesikh.name}}",
+                    "Description": "{{i18n:object.Fesikh.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 100,
+                    "Texture": "Mods/{{ModId}}/AfricaObjects",
+                    "SpriteIndex": 30,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Fesikh"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+        
+        {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "Fesikh_Name": "{{i18n:object.Fesikh.name}}",
+            "Fesikh_Description": "{{i18n:object.Fesikh.description}}"
+        }
+        },
+
+        {
+            "LogName": "Hawawshi",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Hawawshi": {
+                    "Name": "{{ModId}}_Hawawshi",
+                    "DisplayName": "{{i18n:object.Hawawshi.name}}",
+                    "Description": "{{i18n:object.Hawawshi.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 311,
+                    "Texture": "Mods/{{ModId}}/AfricaObjects",
+                    "SpriteIndex": 31,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Hawawshi"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+        
+        {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "Hawawshi_Name": "{{i18n:object.Hawawshi.name}}",
+            "Hawawshi_Description": "{{i18n:object.Hawawshi.description}}"
+        }
+        },
+
+        {
+            "LogName": "Sfenji",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Sfenji": {
+                    "Name": "{{ModId}}_Sfenji",
+                    "DisplayName": "{{i18n:object.Sfenji.name}}",
+                    "Description": "{{i18n:object.Sfenji.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 180,
+                    "Texture": "Mods/{{ModId}}/AfricaObjects",
+                    "SpriteIndex": 32,
+                    "Edibility": 15,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Sfenji"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+        
+        {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "Sfenji_Name": "{{i18n:object.Sfenji.name}}",
+            "Sfenji_Description": "{{i18n:object.Sfenji.description}}"
+        }
+        },
+
+        {
+            "LogName": "Brik",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Brik": {
+                    "Name": "{{ModId}}_Brik",
+                    "DisplayName": "{{i18n:object.Brik.name}}",
+                    "Description": "{{i18n:object.Brik.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 243,
+                    "Texture": "Mods/{{ModId}}/AfricaObjects",
+                    "SpriteIndex": 33,
+                    "Edibility": 30,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Brik"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+        
+        {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "Brik_Name": "{{i18n:object.Brik.name}}",
+            "Brik_Description": "{{i18n:object.Brik.description}}"
+        }
+        },
+
+        {
+            "LogName":"Malsouka Sheets",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries":
+            {
+                "{{ModId}}_MalsoukaSheets":
+                {
+                    "Name": "{{ModId}}_MalsoukaSheets",
+                    "DisplayName": "{{i18n:object.MalsoukaSheets.name}}",
+                    "Description": "{{i18n:object.MalsoukaSheets.description}}",
+                    "Type": "Basic",
+                    "Category": -7,
+                    "Price": 45,
+                    "Texture": "Mods/{{ModId}}/AfricaObjects",
+                    "SpriteIndex": 34,
+                    "Edibility": 5,
+                    "IsDrink": false,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "color_yellow",
+                    "TMP_MalsoukaSheets"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+    
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "MalsoukaSheets_Name": "{{i18n:object.MalsoukaSheets.name}}",
+                "MalsoukaSheets_Description": "{{i18n:object.MalsoukaSheets.description}}"
+            }
+        },
+
+          {
+              "LogName": "Africa Food Item Textures",
+              "Action": "Load",
+              "Target": "Mods/{{ModId}}/AfricaObjects",
+              "FromFile": "Assets/Images/Food/ATasteOfAfrica.png"
+          }
+      ]
+  }

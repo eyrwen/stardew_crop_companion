@@ -1,0 +1,4261 @@
+{
+    "Changes":
+    [
+        {
+            "LogName": "Aloo Sheddo",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_AlooSheddo": {
+                    "Name": "{{ModId}}_AlooSheddo",
+                    "DisplayName": "{{i18n:object.AlooSheddo.name}}",
+                    "Description": "{{i18n:object.AlooSheddo.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 342,
+                    "Texture": "Mods/{{ModId}}/AsiaObjects",
+                    "SpriteIndex": 0,
+                    "Edibility": 25,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_AlooSheddo"
+                    ],
+                    "CustomFields": null
+                }
+            }
+  },
+  
+  {
+    "Action":"EditData",
+    "Target": "Strings/Objects",
+    "Entries":
+    {
+        "AlooSheddo_Name": "{{i18n:object.AlooSheddo.name}}",
+        "AlooSheddo_Description": "{{i18n:object.AlooSheddo.description}}"
+    }
+  },
+
+  {
+    "LogName": "Veg Pulao",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_VegPulao": {
+            "Name": "{{ModId}}_VegPulao",
+            "DisplayName": "{{i18n:object.VegPulao.name}}",
+            "Description": "{{i18n:object.VegPulao.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 1049,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 1,
+            "Edibility": 55,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMp_Pulao"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+"VegPulao_Name": "{{i18n:object.VegPulao.name}}",
+"VegPulao_Description": "{{i18n:object.VegPulao.description}}"
+}
+},
+
+{
+    "LogName": "Sandesh Sweet",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_SandeshSweet": {
+            "Name": "{{ModId}}_SandeshSweet",
+            "DisplayName": "{{i18n:object.SandeshSweet.name}}",
+            "Description": "{{i18n:object.SandeshSweet.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 203,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 2,
+            "Edibility": 30,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_SandeshSweet",
+            "food_sweet"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+"SandeshSweet_Name": "{{i18n:object.SandeshSweet.name}}",
+"SandeshSweet_Description": "{{i18n:object.SandeshSweet.description}}"
+}
+},
+
+{
+    "LogName": "Hainanese Chicken Rice",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_HainaneseChickenRice": {
+            "Name": "{{ModId}}_HainaneseChickenRice",
+            "DisplayName": "{{i18n:object.HainaneseChickenRice.name}}",
+            "Description": "{{i18n:object.HainaneseChickenRice.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 522,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 3,
+            "Edibility": 25,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_HainaneseChickenRice"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+"HainaneseChickenRice_Name": "{{i18n:object.HainaneseChickenRice.name}}",
+"HainaneseChickenRice_Description": "{{i18n:object.HainaneseChickenRice.description}}"
+}
+},
+
+{
+    "LogName": "Fried Turnip Cake",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_FriedTurnipCake": {
+            "Name": "{{ModId}}_FriedTurnipCake",
+            "DisplayName": "{{i18n:object.FriedTurnipCake.name}}",
+            "Description": "{{i18n:object.FriedTurnipCake.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 707,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 4,
+            "Edibility": 25,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_FriedTurnipCake"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+"FriedTurnipCake_Name": "{{i18n:object.FriedTurnipCake.name}}",
+"FriedTurnipCake_Description": "{{i18n:object.FriedTurnipCake.description}}"
+}
+},
+
+{
+    "LogName": "Satay",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_Satay": {
+            "Name": "{{ModId}}_Satay",
+            "DisplayName": "{{i18n:object.Satay.name}}",
+            "Description": "{{i18n:object.Satay.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 437,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 5,
+            "Edibility": 25,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_Satay"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+"Satay_Name": "{{i18n:object.Satay.name}}",
+"Satay_Description": "{{i18n:object.Satay.description}}"
+}
+},
+
+{
+    "LogName": "Bak Kwa",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_BakKwa": {
+            "Name": "{{ModId}}_BakKwa",
+            "DisplayName": "{{i18n:object.BakKwa.name}}",
+            "Description": "{{i18n:object.BakKwa.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 1503,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 6,
+            "Edibility": 40,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_BakKwa",
+            "{{TMPHaramTag}}",
+            "{{TMPTeryfTag}}"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+"BakKwa_Name": "{{i18n:object.BakKwa.name}}",
+"BakKwa_Description": "{{i18n:object.BakKwa.description}}"
+}
+},
+
+{
+    "LogName": "Rojak",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_Rojak": {
+            "Name": "{{ModId}}_Rojak",
+            "DisplayName": "{{i18n:object.Rojak.name}}",
+            "Description": "{{i18n:object.Rojak.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 738,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 7,
+            "Edibility": 25,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_Rojak"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+"Rojak_Name": "{{i18n:object.Rojak.name}}",
+"Rojak_Description": "{{i18n:object.Rojak.description}}"
+}
+},
+
+{
+    "LogName": "Laksa Noodle Soup",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_LaksaNoodleSoup": {
+            "Name": "{{ModId}}_LaksaNoodleSoup",
+            "DisplayName": "{{i18n:object.LaksaNoodleSoup.name}}",
+            "Description": "{{i18n:object.LaksaNoodleSoup.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 1017,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 8,
+            "Edibility": 20,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_LaksaNoodleSoup"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "LaksaNoodleSoup_Name": "{{i18n:object.LaksaNoodleSoup.name}}",
+    "LaksaNoodleSoup_Description": "{{i18n:object.LaksaNoodleSoup.description}}"
+}
+},
+
+{
+    "LogName": "ChilliCrab",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_ChilliCrab": {
+            "Name": "{{ModId}}_ChilliCrab",
+            "DisplayName": "{{i18n:object.ChilliCrab.name}}",
+            "Description": "{{i18n:object.ChilliCrab.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 567,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 9,
+            "Edibility": 25,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_ChilliCrab",
+            "{{TMPTeryfTag}}"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "ChilliCrab_Name": "{{i18n:object.ChilliCrab.name}}",
+    "ChilliCrab_Description": "{{i18n:object.ChilliCrab.description}}"
+}
+},
+
+{
+    "LogName": "Three Earth Fruits",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_ThreeEarthFruits": {
+            "Name": "{{ModId}}_ThreeEarthFruits",
+            "DisplayName": "{{i18n:object.ThreeEarthFruits.name}}",
+            "Description": "{{i18n:object.ThreeEarthFruits.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 626,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 10,
+            "Edibility": 25,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_ThreeEarthFruit"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "ThreeEarthFruits_Name": "{{i18n:object.ThreeEarthFruits.name}}",
+    "ThreeEarthFruits_Description": "{{i18n:object.ThreeEarthFruits.description}}"
+}
+},
+
+{
+    "LogName": "Crispy Fried Rabbit",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_CrispyFriedRabbit": {
+            "Name": "{{ModId}}_CrispyFriedRabbit",
+            "DisplayName": "{{i18n:object.CrispyFriedRabbit.name}}",
+            "Description": "{{i18n:object.CrispyFriedRabbit.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 2349,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 11,
+            "Edibility": 35,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_CrispyFriedRabbit",
+            "{{TMPTeryfTag}}"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "CrispyFriedRabbit_Name": "{{i18n:object.CrispyFriedRabbit.name}}",
+    "CrispyFriedRabbit_Description": "{{i18n:object.CrispyFriedRabbit.description}}"
+}
+},
+
+{
+    "LogName": "Minced Pork Noodles",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_MincedPorkNoodles": {
+            "Name": "{{ModId}}_MincedPorkNoodles",
+            "DisplayName": "{{i18n:object.MincedPorkNoodles.name}}",
+            "Description": "{{i18n:object.MincedPorkNoodles.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 1445,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 12,
+            "Edibility": 60,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_MincedPorkNoodles",
+            "{{TMPTeryfTag}}",
+            "{{TMPHaramTag}}"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "MincedPorkNoodles_Name": "{{i18n:object.MincedPorkNoodles.name}}",
+    "MincedPorkNoodles_Description": "{{i18n:object.MincedPorkNoodles.description}}"
+}
+},
+
+{
+    "LogName": "Pork Bao",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_PorkBao": {
+            "Name": "{{ModId}}_PorkBao",
+            "DisplayName": "{{i18n:object.PorkBao.name}}",
+            "Description": "{{i18n:object.PorkBao.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 1337,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 13,
+            "Edibility": 30,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_PorkBao",
+            "{{TMPTeryfTag}}",
+            "{{TMPHaramTag}}"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "PorkBao_Name": "{{i18n:object.PorkBao.name}}",
+    "PorkBao_Description": "{{i18n:object.PorkBao.description}}"
+}
+},
+
+{
+    "LogName": "Choo Chee Fish",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_ChooCheeFish": {
+            "Name": "{{ModId}}_ChooCheeFish",
+            "DisplayName": "{{i18n:object.ChooCheeFish.name}}",
+            "Description": "{{i18n:object.ChooCheeFish.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 243,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 14,
+            "Edibility": 15,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_ChooCheeFish"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "ChooCheeFish_Name": "{{i18n:object.ChooCheeFish.name}}",
+    "ChooCheeFish_Description": "{{i18n:object.ChooCheeFish.description}}"
+}
+},
+
+{
+    "LogName": "Tom Yum Gai",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_TomYumGai": {
+            "Name": "{{ModId}}_TomYumGai",
+            "DisplayName": "{{i18n:object.TomYumGai.name}}",
+            "Description": "{{i18n:object.TomYumGai.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 405,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 15,
+            "Edibility": 30,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_TomYumGai"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "TomYumGai_Name": "{{i18n:object.TomYumGai.name}}",
+    "TomYumGai_Description": "{{i18n:object.TomYumGai.description}}"
+}
+},
+
+{
+    "LogName": "Candied Egg Yolks",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_CandiedEggYolks": {
+            "Name": "{{ModId}}_CandiedEggYolks",
+            "DisplayName": "{{i18n:object.CandiedEggYolks.name}}",
+            "Description": "{{i18n:object.CandiedEggYolks.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 131,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 16,
+            "Edibility": 45,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMp_CandiedEggYolks"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "CandiedEggYolks_Name": "{{i18n:object.CandiedEggYolks.name}}",
+    "CandiedEggYolks_Description": "{{i18n:object.CandiedEggYolks.description}}"
+}
+},
+
+{
+    "LogName": "Pad Thai",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_PadThai": {
+            "Name": "{{ModId}}_PadThai",
+            "DisplayName": "{{i18n:object.PadThai.name}}",
+            "Description": "{{i18n:object.PadThai.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 680,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 17,
+            "Edibility": 20,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_PadThai",
+            "{{TMPTeryfTag}}",
+            "{{TMPHaramTag}}"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "PadThai_Name": "{{i18n:object.PadThai.name}}",
+    "PadThai_Description": "{{i18n:object.PadThai.description}}"
+}
+},
+
+{
+    "LogName": "Klepon",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_Klepon": {
+            "Name": "{{ModId}}_Klepon",
+            "DisplayName": "{{i18n:object.Klepon.name}}",
+            "Description": "{{i18n:object.Klepon.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 90,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 18,
+            "Edibility": 20,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_Klepon"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "Klepon_Name": "{{i18n:object.Klepon.name}}",
+    "Klepon_Description": "{{i18n:object.Klepon.description}}"
+}
+},
+
+{
+    "LogName": "Eurasian Beef Stew",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_EurasianBeefStew": {
+            "Name": "{{ModId}}_EurasianBeefStew",
+            "DisplayName": "{{i18n:object.EurasianBeefStew.name}}",
+            "Description": "{{i18n:object.EurasianBeefStew.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 671,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 19,
+            "Edibility": 25,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_EurasianBeefStew"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "EurasianBeefStew_Name": "{{i18n:object.EurasianBeefStew.name}}",
+    "EurasianBeefStew_Description": "{{i18n:object.EurasianBeefStew.description}}"
+}
+},
+
+{
+    "LogName": "Coconut Rice",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_CoconutRice": {
+            "Name": "{{ModId}}_CoconutRice",
+            "DisplayName": "{{i18n:object.CoconutRice.name}}",
+            "Description": "{{i18n:object.CoconutRice.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 369,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 20,
+            "Edibility": 20,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_CoconutRice"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "CoconutRice_Name": "{{i18n:object.CoconutRice.name}}",
+    "CoconutRice_Description": "{{i18n:object.CoconutRice.description}}"
+}
+},
+
+{
+    "LogName": "Pattaya Fried Rice",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_PattayaFriedRice": {
+            "Name": "{{ModId}}_PattayaFriedRice",
+            "DisplayName": "{{i18n:object.PattayaFriedRice.name}}",
+            "Description": "{{i18n:object.PattayaFriedRice.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 540,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 21,
+            "Edibility": 30,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_PattayaFriedRice"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "PattayaFriedRice_Name": "{{i18n:object.PattayaFriedRice.name}}",
+    "PattayaFriedRice_Description": "{{i18n:object.PattayaFriedRice.description}}"
+}
+},
+
+{
+    "LogName": "Pineapple Tart",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_PineappleTart": {
+            "Name": "{{ModId}}_PineappleTart",
+            "DisplayName": "{{i18n:object.PineappleTart.name}}",
+            "Description": "{{i18n:object.PineappleTart.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 540,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 22,
+            "Edibility": 55,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMp_PineappleTart"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "PineappleTart_Name": "{{i18n:object.PineappleTart.name}}",
+    "PineappleTart_Description": "{{i18n:object.PineappleTart.description}}"
+}
+},
+
+{
+    "LogName": "Pho Ga",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_PhoGa": {
+            "Name": "{{ModId}}_PhoGa",
+            "DisplayName": "{{i18n:object.PhoGa.name}}",
+            "Description": "{{i18n:object.PhoGa.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 680,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 23,
+            "Edibility": 15,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_PhoGa"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "PhoGa_Name": "{{i18n:object.PhoGa.name}}",
+    "PhoGa_Description": "{{i18n:object.PhoGa.description}}"
+}
+},
+
+{
+    "LogName": "Pho Bo",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_PhoBo": {
+            "Name": "{{ModId}}_PhoBo",
+            "DisplayName": "{{i18n:object.PhoBo.name}}",
+            "Description": "{{i18n:object.PhoBo.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 635,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 24,
+            "Edibility": 25,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_PhoBo"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "PhoBo_Name": "{{i18n:object.PhoBo.name}}",
+    "PhoBo_Description": "{{i18n:object.PhoBo.description}}"
+}
+},
+
+{
+    "LogName": "Bitter Melon Pork Soup",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_BitterMelonPorkSoup": {
+            "Name": "{{ModId}}_BitterMelonPorkSoup",
+            "DisplayName": "{{i18n:object.BitterMelonPorkSoup.name}}",
+            "Description": "{{i18n:object.BitterMelonPorkSoup.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 1472,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 25,
+            "Edibility": 30,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_BitterMelonPorkSoup",
+            "{{TMPTeryfTag}}",
+            "{{TMPHaramTag}}"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "BitterMelonPorkSoup_Name": "{{i18n:object.BitterMelonPorkSoup.name}}",
+    "BitterMelonPorkSoup_Description": "{{i18n:object.BitterMelonPorkSoup.description}}"
+}
+},
+
+{
+    "LogName": "Roast Pig",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_RoastPig": {
+            "Name": "{{ModId}}_RoastPig",
+            "DisplayName": "{{i18n:object.RoastPig.name}}",
+            "Description": "{{i18n:object.RoastPig.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 1770,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 26,
+            "Edibility": 30,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_RoastPig",
+            "{{TMPTeryfTag}}",
+            "{{TMPHaramTag}}"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "RoastPig_Name": "{{i18n:object.RoastPig.name}}",
+    "RoastPig_Description": "{{i18n:object.RoastPig.description}}"
+}
+},
+
+{
+    "LogName": "KareKare",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_KareKare": {
+            "Name": "{{ModId}}_KareKare",
+            "DisplayName": "{{i18n:object.KareKare.name}}",
+            "Description": "{{i18n:object.KareKare.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 338,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 27,
+            "Edibility": 25,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_KareKare"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "KareKare_Name": "{{i18n:object.KareKare.name}}",
+    "KareKare_Description": "{{i18n:object.KareKare.description}}"
+}
+},
+
+{
+    "LogName": "Coconut Milk Pudding",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_CoconutMilkPudding": {
+            "Name": "{{ModId}}_CoconutMilkPudding",
+            "DisplayName": "{{i18n:object.CoconutMilkPudding.name}}",
+            "Description": "{{i18n:object.CoconutMilkPudding.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 282,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 28,
+            "Edibility": 20,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_CoconutMilkPudding"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "CoconutMilkPudding_Name": "{{i18n:object.CoconutMilkPudding.name}}",
+    "CoconutMilkPudding_Description": "{{i18n:object.CoconutMilkPudding.description}}"
+}
+},
+
+{
+    "LogName": "Dry Pot Cauliflower",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_DryPotCauliflower": {
+            "Name": "{{ModId}}_DryPotCauliflower",
+            "DisplayName": "{{i18n:object.DryPotCauliflower.name}}",
+            "Description": "{{i18n:object.DryPotCauliflower.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 1508,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 29,
+            "Edibility": 40,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_DryPotCauliflower",
+            "{{TMPTeryfTag}}",
+            "{{TMPHaramTag}}"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "DryPotCauliflower_Name": "{{i18n:object.DryPotCauliflower.name}}",
+    "DryPotCauliflower_Description": "{{i18n:object.DryPotCauliflower.description}}"
+}
+},
+
+{
+    "LogName": "Lao Gan Ma Chili Crisp with Mushroom",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_LaoGanMaChiliCrispwithMushroom": {
+            "Name": "{{ModId}}_LaoGanMaChiliCrispwithMushroom",
+            "DisplayName": "{{i18n:object.LaoGanMaChiliCrispwithMushroom.name}}",
+            "Description": "{{i18n:object.LaoGanMaChiliCrispwithMushroom.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 378,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 30,
+            "Edibility": 20,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_LaoGanMaChiliCrispwithMushroom"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "LaoGanMaChiliCrispwithMushroom_Name": "{{i18n:object.LaoGanMaChiliCrispwithMushroom.name}}",
+    "LaoGanMaChiliCrispwithMushroom_Description": "{{i18n:object.LaoGanMaChiliCrispwithMushroom.description}}"
+}
+},
+
+{
+    "LogName": "Chive Stir Fry",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_ChiveStirFry": {
+            "Name": "{{ModId}}_ChiveStirFry",
+            "DisplayName": "{{i18n:object.ChiveStirFry.name}}",
+            "Description": "{{i18n:object.ChiveStirFry.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 1319,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 31,
+            "Edibility": 50,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_ChiveStirFry",
+            "{{TMPTeryfTag}}",
+            "{{TMPHaramTag}}"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "ChiveStirFry_Name": "{{i18n:object.ChiveStirFry.name}}",
+    "ChiveStirFry_Description": "{{i18n:object.ChiveStirFry.description}}"
+}
+},
+
+{
+    "LogName": "Mapo Tofu",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_MapoTofu": {
+            "Name": "{{ModId}}_MapoTofu",
+            "DisplayName": "{{i18n:object.MapoTofu.name}}",
+            "Description": "{{i18n:object.MapoTofu.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 675,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 32,
+            "Edibility": 30,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_MapoTofu"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "MapoTofu_Name": "{{i18n:object.MapoTofu.name}}",
+    "MapoTofu_Description": "{{i18n:object.MapoTofu.description}}"
+}
+},
+
+{
+    "LogName": "Pork Dumpling",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_PorkDumpling": {
+            "Name": "{{ModId}}_PorkDumpling",
+            "DisplayName": "{{i18n:object.PorkDumpling.name}}",
+            "Description": "{{i18n:object.PorkDumpling.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 1377,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 33,
+            "Edibility": 45,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_PorkDumpling",
+            "{{TMPTeryfTag}}",
+            "{{TMPHaramTag}}"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "PorkDumpling_Name": "{{i18n:object.PorkDumpling.name}}",
+    "PorkDumpling_Description": "{{i18n:object.PorkDumpling.description}}"
+}
+},
+
+{
+    "LogName": "Tsukimi Udon",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_TsukimiUdon": {
+            "Name": "{{ModId}}_TsukimiUdon",
+            "DisplayName": "{{i18n:object.TsukimiUdon.name}}",
+            "Description": "{{i18n:object.TsukimiUdon.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 261,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 34,
+            "Edibility": 25,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_TsukimiUdon"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "TsukimiUdon_Name": "{{i18n:object.TsukimiUdon.name}}",
+    "TsukimiUdon_Description": "{{i18n:object.TsukimiUdon.description}}"
+}
+},
+
+{
+    "LogName": "Sardine Bowl",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_SardineBowl": {
+            "Name": "{{ModId}}_SardineBowl",
+            "DisplayName": "{{i18n:object.SardineBowl.name}}",
+            "Description": "{{i18n:object.SardineBowl.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 234,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 35,
+            "Edibility": 15,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_SardineBowl"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "SardineBowl_Name": "{{i18n:object.SardineBowl.name}}",
+    "SardineBowl_Description": "{{i18n:object.SardineBowl.description}}"
+}
+},
+
+{
+    "LogName": "Monjayaki",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_Monjayaki": {
+            "Name": "{{ModId}}_Monjayaki",
+            "DisplayName": "{{i18n:object.Monjayaki.name}}",
+            "Description": "{{i18n:object.Monjayaki.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 711,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 36,
+            "Edibility": 30,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_Monjayaki"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "Monjayaki_Name": "{{i18n:object.Monjayaki.name}}",
+    "Monjayaki_Description": "{{i18n:object.Monjayaki.description}}"
+}
+},
+
+{
+    "LogName": "Bulgogi",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_Bulgogi": {
+            "Name": "{{ModId}}_Bulgogi",
+            "DisplayName": "{{i18n:object.Bulgogi.name}}",
+            "Description": "{{i18n:object.Bulgogi.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 486,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 37,
+            "Edibility": 42,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_Bulgogi"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "Bulgogi_Name": "{{i18n:object.Bulgogi.name}}",
+    "Bulgogi_Description": "{{i18n:object.Bulgogi.description}}"
+}
+},
+
+{
+    "LogName": "Bibimbap",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_Bibimbap": {
+            "Name": "{{ModId}}_Bibimbap",
+            "DisplayName": "{{i18n:object.Bibimbap.name}}",
+            "Description": "{{i18n:object.Bibimbap.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 365,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 38,
+            "Edibility": 40,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_Bibimbap"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "Bibimbap_Name": "{{i18n:object.Bibimbap.name}}",
+    "Bibimbap_Description": "{{i18n:object.Bibimbap.description}}"
+}
+},
+
+{
+    "LogName": "Japchae",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_Japchae": {
+            "Name": "{{ModId}}_Japchae",
+            "DisplayName": "{{i18n:object.Japchae.name}}",
+            "Description": "{{i18n:object.Japchae.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 1485,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 39,
+            "Edibility": 30,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_Japchae",
+            "{{TMPTeryfTag}}",
+            "{{TMPHaramTag}}"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "Japchae_Name": "{{i18n:object.Japchae.name}}",
+    "Japchae_Description": "{{i18n:object.Japchae.description}}"
+}
+},
+
+{
+    "LogName": "LayeredRiceCake",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_LayeredRiceCake": {
+            "Name": "{{ModId}}_LayeredRiceCake",
+            "DisplayName": "{{i18n:object.LayeredRiceCake.name}}",
+            "Description": "{{i18n:object.LayeredRiceCake.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 360,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 40,
+            "Edibility": 20,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_LayeredRiceCake"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "LayeredRiceCake_Name": "{{i18n:object.LayeredRiceCake.name}}",
+    "LayeredRiceCake_Description": "{{i18n:object.LayeredRiceCake.description}}"
+}
+},
+
+{
+    "LogName": "Bawan",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_Bawan": {
+            "Name": "{{ModId}}_Bawan",
+            "DisplayName": "{{i18n:object.Bawan.name}}",
+            "Description": "{{i18n:object.Bawan.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 1328,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 41,
+            "Edibility": 45,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_Bawan",
+            "{{TMPTeryfTag}}",
+            "{{TMPHaramTag}}"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "Bawan_Name": "{{i18n:object.Bawan.name}}",
+    "Bawan_Description": "{{i18n:object.Bawan.description}}"
+}
+},
+
+{
+    "LogName": "Tea Eggs",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_TeaEggs": {
+            "Name": "{{ModId}}_TeaEggs",
+            "DisplayName": "{{i18n:object.TeaEggs.name}}",
+            "Description": "{{i18n:object.TeaEggs.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 131,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 42,
+            "Edibility": 20,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_TeaEggs"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "TeaEggs_Name": "{{i18n:object.TeaEggs.name}}",
+    "TeaEggs_Description": "{{i18n:object.TeaEggs.description}}"
+}
+},
+
+{
+    "LogName": "Sticky Rice",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_StickyRice": {
+            "Name": "{{ModId}}_StickyRice",
+            "DisplayName": "{{i18n:object.StickyRice.name}}",
+            "Description": "{{i18n:object.StickyRice.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 1512,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 43,
+            "Edibility": 35,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_StickyRice",
+            "{{TMPTeryfTag}}",
+            "{{TMPHaramTag}}"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "StickyRice_Name": "{{i18n:object.StickyRice.name}}",
+    "StickyRice_Description": "{{i18n:object.StickyRice.description}}"
+}
+},
+
+{
+    "LogName": "Buuz",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_Buuz": {
+            "Name": "{{ModId}}_Buuz",
+            "DisplayName": "{{i18n:object.Buuz.name}}",
+            "Description": "{{i18n:object.Buuz.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 239,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 44,
+            "Edibility": 25,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_Buuz"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "Buuz_Name": "{{i18n:object.Buuz.name}}",
+    "Buuz_Description": "{{i18n:object.Buuz.description}}"
+}
+},
+
+{
+    "LogName": "Khuushuur",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_Khuushuur": {
+            "Name": "{{ModId}}_Khuushuur",
+            "DisplayName": "{{i18n:object.Khuushuur.name}}",
+            "Description": "{{i18n:object.Khuushuur.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 329,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 45,
+            "Edibility": 20,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_Khuushuur"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "Khuushuur_Name": "{{i18n:object.Khuushuur.name}}",
+    "Khuushuur_Description": "{{i18n:object.Khuushuur.description}}"
+}
+},
+
+{
+    "LogName": "Tsuivan",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_Tsuivan": {
+            "Name": "{{ModId}}_Tsuivan",
+            "DisplayName": "{{i18n:object.Tsuivan.name}}",
+            "Description": "{{i18n:object.Tsuivan.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 522,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 46,
+            "Edibility": 35,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_Tsuivan"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "Tsuivan_Name": "{{i18n:object.Tsuivan.name}}",
+    "Tsuivan_Description": "{{i18n:object.Tsuivan.description}}"
+}
+},
+
+{
+    "LogName": "Qabili",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_Qabili": {
+            "Name": "{{ModId}}_Qabili",
+            "DisplayName": "{{i18n:object.Qabili.name}}",
+            "Description": "{{i18n:object.Qabili.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 1229,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 47,
+            "Edibility": 40,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_Qabili"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "Qabili_Name": "{{i18n:object.Qabili.name}}",
+    "Qabili_Description": "{{i18n:object.Qabili.description}}"
+}
+},
+
+{
+    "LogName": "Potato Wrap",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_PotatoWrap": {
+            "Name": "{{ModId}}_PotatoWrap",
+            "DisplayName": "{{i18n:object.PotatoWrap.name}}",
+            "Description": "{{i18n:object.PotatoWrap.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 756,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 48,
+            "Edibility": 45,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_PotatoWrap"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "PotatoWrap_Name": "{{i18n:object.PotatoWrap.name}}",
+    "PotatoWrap_Description": "{{i18n:object.PotatoWrap.description}}"
+}
+},
+
+{
+    "LogName": "Cardamom Fudge",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_CardamomFudge": {
+            "Name": "{{ModId}}_CardamomFudge",
+            "DisplayName": "{{i18n:object.CardamomFudge.name}}",
+            "Description": "{{i18n:object.CardamomFudge.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 1112,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 49,
+            "Edibility": 30,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_CardamomFudge"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "CardamomFudge_Name": "{{i18n:object.CardamomFudge.name}}",
+    "CardamomFudge_Description": "{{i18n:object.CardamomFudge.description}}"
+}
+},
+
+{
+    "LogName": "Aloo Gobi",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_AlooGobi": {
+            "Name": "{{ModId}}_AlooGobi",
+            "DisplayName": "{{i18n:object.AlooGobi.name}}",
+            "Description": "{{i18n:object.AlooGobi.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 365,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 50,
+            "Edibility": 20,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_AlooGobi"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "AlooGobi_Name": "{{i18n:object.AlooGobi.name}}",
+    "AlooGobi_Description": "{{i18n:object.AlooGobi.description}}"
+}
+},
+
+{
+    "LogName": "Semolina Porridge",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_SemolinaPorridge": {
+            "Name": "{{ModId}}_SemolinaPorridge",
+            "DisplayName": "{{i18n:object.SemolinaPorridge.name}}",
+            "Description": "{{i18n:object.SemolinaPorridge.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 333,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 51,
+            "Edibility": 40,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_SemolinaPorridge"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "SemolinaPorridge_Name": "{{i18n:object.SemolinaPorridge.name}}",
+    "SemolinaPorridge_Description": "{{i18n:object.SemolinaPorridge.description}}"
+}
+},
+
+{
+    "LogName": "Beetroot Oats",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_BeetrootOats": {
+            "Name": "{{ModId}}_BeetrootOats",
+            "DisplayName": "{{i18n:object.BeetrootOats.name}}",
+            "Description": "{{i18n:object.BeetrootOats.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 788,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 52,
+            "Edibility": 20,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_BeetrootOats"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "BeetrootOats_Name": "{{i18n:object.BeetrootOats.name}}",
+    "BeetrootOats_Description": "{{i18n:object.BeetrootOats.description}}"
+}
+},
+
+{
+    "LogName": "Rainbow Sandwich",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_RainbowSandwich": {
+            "Name": "{{ModId}}_RainbowSandwich",
+            "DisplayName": "{{i18n:object.RainbowSandwich.name}}",
+            "Description": "{{i18n:object.RainbowSandwich.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 185,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 53,
+            "Edibility": 40,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_RainbowSandwich"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "RainbowSandwich_Name": "{{i18n:object.RainbowSandwich.name}}",
+    "RainbowSandwich_Description": "{{i18n:object.RainbowSandwich.description}}"
+}
+},
+
+{
+    "LogName": "Madoonovkufteh",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_Madoonovkufteh": {
+            "Name": "{{ModId}}_Madoonovkufteh",
+            "DisplayName": "{{i18n:object.Madoonovkufteh.name}}",
+            "Description": "{{i18n:object.Madoonovkufteh.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 837,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 54,
+            "Edibility": 20,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_Madoonovkufteh"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "Madoonovkufteh_Name": "{{i18n:object.Madoonovkufteh.name}}",
+    "Madoonovkufteh_Description": "{{i18n:object.Madoonovkufteh.description}}"
+}
+},
+
+{
+    "LogName": "Spinach Pie",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_SpinachPie": {
+            "Name": "{{ModId}}_SpinachPie",
+            "DisplayName": "{{i18n:object.SpinachPie.name}}",
+            "Description": "{{i18n:object.SpinachPie.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 464,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 55,
+            "Edibility": 25,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMp_SpinachPie"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "SpinachPie_Name": "{{i18n:object.SpinachPie.name}}",
+    "SpinachPie_Description": "{{i18n:object.SpinachPie.description}}"
+}
+},
+
+{
+    "LogName": "Ghormeh Sabzi",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_GhormehSabzi": {
+            "Name": "{{ModId}}_GhormehSabzi",
+            "DisplayName": "{{i18n:object.GhormehSabzi.name}}",
+            "Description": "{{i18n:object.GhormehSabzi.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 446,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 56,
+            "Edibility": 20,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_GhormehSabzi"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "GhormehSabzi_Name": "{{i18n:object.GhormehSabzi.name}}",
+    "GhormehSabzi_Description": "{{i18n:object.GhormehSabzi.description}}"
+}
+},
+
+{
+    "LogName": "Havij Polo",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_HavijPolo": {
+            "Name": "{{ModId}}_HavijPolo",
+            "DisplayName": "{{i18n:object.HavijPolo.name}}",
+            "Description": "{{i18n:object.HavijPolo.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 477,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 57,
+            "Edibility": 30,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_HavijPolo"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "HavijPolo_Name": "{{i18n:object.HavijPolo.name}}",
+    "HavijPolo_Description": "{{i18n:object.HavijPolo.description}}"
+}
+},
+
+{
+    "LogName": "Kibbeh",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_Kibbeh": {
+            "Name": "{{ModId}}_Kibbeh",
+            "DisplayName": "{{i18n:object.Kibbeh.name}}",
+            "Description": "{{i18n:object.Kibbeh.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 824,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 58,
+            "Edibility": 30,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_Kibbeh"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "Kibbeh_Name": "{{i18n:object.Kibbeh.name}}",
+    "Kibbeh_Description": "{{i18n:object.Kibbeh.description}}"
+}
+},
+
+{
+    "LogName": "Labneh",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_Labneh": {
+            "Name": "{{ModId}}_Labneh",
+            "DisplayName": "{{i18n:object.Labneh.name}}",
+            "Description": "{{i18n:object.Labneh.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 374,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 59,
+            "Edibility": 20,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_Labneh"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "Labneh_Name": "{{i18n:object.Labneh.name}}",
+    "Labneh_Description": "{{i18n:object.Labneh.description}}"
+}
+},
+
+{
+    "LogName": "Grilled Eggplants",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_GrilledEggplants": {
+            "Name": "{{ModId}}_GrilledEggplants",
+            "DisplayName": "{{i18n:object.GrilledEggplants.name}}",
+            "Description": "{{i18n:object.GrilledEggplants.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 315,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 60,
+            "Edibility": 20,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_GrilledEggplants"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "GrilledEggplants_Name": "{{i18n:object.GrilledEggplants.name}}",
+    "GrilledEggplants_Description": "{{i18n:object.GrilledEggplants.description}}"
+}
+},
+
+{
+    "LogName": "Chicken Fatteh",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_ChickenFatteh": {
+            "Name": "{{ModId}}_ChickenFatteh",
+            "DisplayName": "{{i18n:object.ChickenFatteh.name}}",
+            "Description": "{{i18n:object.ChickenFatteh.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 828,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 61,
+            "Edibility": 30,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_ChickenFatteh"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "ChickenFatteh_Name": "{{i18n:object.ChickenFatteh.name}}",
+    "ChickenFatteh_Description": "{{i18n:object.ChickenFatteh.description}}"
+}
+},
+
+{
+    "LogName": "Sweet Noodle Casserole",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_SweetNoodleCasserole": {
+            "Name": "{{ModId}}_SweetNoodleCasserole",
+            "DisplayName": "{{i18n:object.SweetNoodleCasserole.name}}",
+            "Description": "{{i18n:object.SweetNoodleCasserole.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 3150,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 62,
+            "Edibility": 40,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_SweetNoodleCasserole"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "SweetNoodleCasserole_Name": "{{i18n:object.SweetNoodleCasserole.name}}",
+    "SweetNoodleCasserole_Description": "{{i18n:object.SweetNoodleCasserole.description}}"
+}
+},
+
+{
+    "LogName": "Kenafeh",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_Kenafeh": {
+            "Name": "{{ModId}}_Kenafeh",
+            "DisplayName": "{{i18n:object.Kenafeh.name}}",
+            "Description": "{{i18n:object.Kenafeh.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 837,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 63,
+            "Edibility": 30,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_Kenafeh"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "Kenafeh_Name": "{{i18n:object.Kenafeh.name}}",
+    "Kenafeh_Description": "{{i18n:object.Kenafeh.description}}"
+}
+},
+
+{
+    "LogName": "Sambusa",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_Sambusa": {
+            "Name": "{{ModId}}_Sambusa",
+            "DisplayName": "{{i18n:object.Sambusa.name}}",
+            "Description": "{{i18n:object.Sambusa.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 612,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 64,
+            "Edibility": 50,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_Sambusa"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "Sambusa_Name": "{{i18n:object.Sambusa.name}}",
+    "Sambusa_Description": "{{i18n:object.Sambusa.description}}"
+}
+},
+
+{
+    "LogName": "Sirniki",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": 
+    {
+        "{{ModId}}_Sirniki": {
+            "Name": "{{ModId}}_Sirniki",
+            "DisplayName": "{{i18n:object.Sirniki.name}}",
+            "Description": "{{i18n:object.Sirniki.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 387,
+            "Texture": "Mods/{{ModId}}/AsiaObjects",
+            "SpriteIndex": 65,
+            "Edibility": 40,
+            "IsDrink": false,
+            "Buffs": [
+            {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+                },
+                "CustomFields": null
+            }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+            "TMP_Sirniki"
+            ],
+            "CustomFields": null
+        }
+    }
+},
+
+{
+"Action":"EditData",
+"Target": "Strings/Objects",
+"Entries":
+{
+    "Sirniki_Name": "{{i18n:object.Sirniki.name}}",
+    "Sirniki_Description": "{{i18n:object.Sirniki.description}}"
+}
+},
+          {
+              "LogName": "Asia Food Item Textures",
+              "Action": "Load",
+              "Target": "Mods/{{ModId}}/AsiaObjects",
+              "FromFile": "Assets/Images/Food/ATasteOfAsia.png"
+          }
+      ]
+  }

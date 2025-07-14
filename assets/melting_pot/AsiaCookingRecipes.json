@@ -1,0 +1,42 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/CookingRecipes",
+      "Entries": {
+        "{{ModId}}_AS_AlooSheddo": "192 2 Cornucopia_Onion 1 Cornucopia_BellPepper 1 Cornucopia_Cilantro 1/10 10/{{ModId}}_AlooSheddo/none/{{i18n:object.AlooSheddo.name}}",
+        "{{ModId}}_AS_VegPulao": "423 1 192 1 190 1 Carrot 2 Broccoli 3 Raisins 1 Cornucopia_BellPepper 1/10 10/{{ModId}}_VegPulao/none/{{i18n:object.VegPulao.name}}",
+        "{{ModId}}_AS_SandeshSweet": "184 1 245 1 Cornucopia_Lemon 1/10 10/{{ModId}}_SandeshSweet/none/{{i18n:object.SandeshSweet.name}}",
+        "{{ModId}}_AS_FriedTurnipCake": "246 1 247 1 248 4 -5 4 Cornucopia_Daikon 1/10 10/{{ModId}}_FriedTurnipCake/none/{{i18n:object.FriedTurnipCake.name}}",
+        "{{ModId}}_AS_Rojak": "Cornucopia_Tofu 1 Cornucopia_Cucumber 1 Cornucopia_Peanut 5 Cornucopia_Lime 1 832 1/10 10/{{ModId}}_Rojak/none/{{i18n:object.Rojak.name}}",
+        "{{ModId}}_AS_ChilliCrab": "717 1 256 1 248 6 -5 1 829 1/10 10/{{ModId}}_ChilliCrab/none/{{i18n:object.ChilliCrab.name}}",
+        "{{ModId}}_AS_ThreeEarthFruits": "192 2 272 1 248 3 Cornucopia_Onion 1 829 1 Cornucopia_BellPepper 1 Cornucopia_SoySauce 1/10 10/{{ModId}}_ThreeEarthFruits/none/{{i18n:object.ThreeEarthFruits.name}}",
+        "{{ModId}}_AS_ChooCheeFish": "132 1 247 1 260 1 245 1 Cornucopia_Cilantro 1/10 10/{{ModId}}_ChooCheeFish/none/{{i18n:object.ChooCheeFish.name}}",
+        "{{ModId}}_AS_CandiedEggYolks": "442 3 245 1/10 10/{{ModId}}_CandiedEggYolks/none/{{i18n:object.CandiedEggYolks.name}}",
+        "{{ModId}}_AS_PadThai": "Cornucopia_Tofu 1 246 1 245 1 247 1 248 1 Cornucopia_Onion 1 Cornucopia_BellPepper 1/10 10/{{ModId}}_PadThai/none/{{i18n:object.PadThai.name}}",
+        "{{ModId}}_AS_Klepon": "246 1 245 1 88 1/10 10/{{ModId}}_Klepon/none/{{i18n:object.Klepon.name}}",
+        "{{ModId}}_AS_CoconutRice": "423 1 Cornucopia_CoconutMilk 1 829 1/10 10/{{ModId}}_CoconutRice/none/{{i18n:object.CoconutRice.name}}",
+        "{{ModId}}_AS_PineappleTart": "832 2/10 10/{{ModId}}_PineappleTart/none/{{i18n:object.PineappleTart.name}}",
+        "{{ModId}}_AS_CoconutMilkPudding": "245 1 88 1 270 1 {{ModId}}_CondensedMilk/10 10/{{ModId}}_CoconutMilkPudding/none/{{i18n:object.CoconutMilkPudding.name}}",
+        "{{ModId}}_AS_LaoGanMaChiliCrispwithMushroom": "260 1 Cornucopia_Shiitake 1 399 1 248 1 829 1/10 10/{{ModId}}_LaoGanMaChiliCrispwithMushroom/none/{{i18n:object.LaoGanMaChiliCrispwithMushroom.name}}",
+        "{{ModId}}_AS_TsukimiUdon": "Cornucopia_WheatNoodles 1 -5 2 399 1/10 10/{{ModId}}_TsukimiUdon/none/{{i18n:object.TsukimiUdon.name}}",
+        "{{ModId}}_AS_SardineBowl": "131 5 423 1 -5 2 152 1/10 10/{{ModId}}_SardineBowl/none/{{i18n:object.SardineBowl.name}}",
+        "{{ModId}}_AS_Monjayaki": "246 1 424 1 Cornucopia_Cabbage 1 Cornucopia_Pepper 1 Cornucopia_FishSauce 1/10 10/{{ModId}}_Monjayaki/none/{{i18n:object.Monjayaki.name}}",
+        "{{ModId}}_AS_LayeredRiceCake": "246 1 245 1 Cornucopia_AdzukiBean 5/10 10/{{ModId}}_LayeredRiceCake/none/{{i18n:object.LayeredRiceCake.name}}",
+        "{{ModId}}_AS_TeaEggs": "-5 1 Cornucopia_Celery 1 815 1/10 10/{{ModId}}_TeaEggs/none/{{i18n:object.TeaEggs.name}}",
+        "{{ModId}}_AS_PotatoWrap": "192 1 229 1 250 1 256 1 Carrot 1 Cornucopia_Onion 1 Cornucopia_Jalapeno 1 Cornucopia_Cucumber 1 Cornucopia_Lettuce 1 Cornucopia_PlainYogurt 1/10 10/{{ModId}}_PotatoWrap/none/{{i18n:object.PotatoWrap.name}}",
+        "{{ModId}}_AS_CardamomFudge": "184 1 245 1 Cornucopia_Walnut 5 Cornucopia_Almond 5 Cornucopia_Pistachio 1 {{ModId}}_Cardamom 1/10 10/{{ModId}}_CardamomFudge/none/{{i18n:object.CardamomFudge.name}}",
+        "{{ModId}}_AS_AlooGobi": "190 1 192 1 Cornucopia_OliveOil 1/10 10/{{ModId}}_AlooGobi/none/{{i18n:object.AlooGobi.name}}",
+        "{{ModId}}_AS_SemolinaPorridge": "Cornucopia_SemolinaFlour 1 Cornucopia_Onion 1 Carrot 1 188 1 Cornucopia_Cilantro 1 829 1 Cornucopia_GreenPeas 1 Cornucopia_Cashew 5/10 10/{{ModId}}_SemolinaPorridge/none/{{i18n:object.SemolinaPorridge.name}}",
+        "{{ModId}}_AS_BeetrootOats": "284 1 Cornucopia_Oats 1 Cornucopia_SemolinaFlour 1 Cornucopia_PlainYogurt 1 Cornucopia_Cashew 5/10 10/{{ModId}}_BeetrootOats/none/{{i18n:object.BeetrootOats.name}}",
+        "{{ModId}}_AS_RainbowSandwich": "284 1 Carrot 2 Cornucopia_Spinach 1/10 10/{{ModId}}_RainbowSandwich/none/{{i18n:object.RainbowSandwich.name}}",
+        "{{ModId}}_AS_SpinachPie": "246 1 424 1 Cornucopia_Butter 1 Cornucopia_Spinach 1/10 10/{{ModId}}_SpinachPie/none/{{i18n:object.SpinachPie.name}}",
+        "{{ModId}}_AS_Labneh": "184 1 Cornucopia_Pistachio 1 Cornucopia_PlainYogurt 1/10 10/{{ModId}}_Labneh/none/{{i18n:object.Labneh.name}}",
+        "{{ModId}}_AS_GrilledEggplants": "272 1 248 1 Cornucopia_Jalapeno 2 Cornucopia_OliveOil 1/10 10/{{ModId}}_GrilledEggplants/none/{{i18n:object.GrilledEggplants.name}}",
+        "{{ModId}}_AS_SweetNoodleCasserole": "245 1 Raisins 5 -5 3 Cornucopia_WheatNoodles 1 Cornucopia_OliveOil 1/10 10/{{ModId}}_SweetNoodleCasserole/none/{{i18n:object.SweetNoodleCasserole.name}}",
+        "{{ModId}}_AS_Kenafeh": "246 1 424 1 Cornucopia_Butter 1 Cornucopia_Pistachio 5/10 10/{{ModId}}_Kenafeh/none/{{i18n:object.Kenafeh.name}}",
+        "{{ModId}}_AS_Sirniki": "246 1 245 1 424 1 344 1 -5 2/10 10/{{ModId}}_Sirniki/none/{{i18n:object.Sirniki.name}}"
+      }
+    }
+  ]
+}

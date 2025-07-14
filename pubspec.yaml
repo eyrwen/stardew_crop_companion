@@ -64,6 +64,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/img/
+    - assets/melting_pot/
     - assets/crops.json
     - assets/recipes.json
     - assets/fish.json

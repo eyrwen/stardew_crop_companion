@@ -1,0 +1,26 @@
+{ 
+    "Changes": 
+    [
+        {
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries":
+            {
+                "{{ModId}}_L_DulcedeLeche": "{{ModId}}_CondensedMilk 1/10 10/{{ModId}}_DulcedeLeche/none/{{i18n:object.DulcedeLeche.name}}",
+                "{{ModId}}_L_ArrozConQueso": "423 1 184 1 424 1 Cornucopia_Onion 1 248 1/10 10/{{ModId}}_ArrozConQueso/none/{{i18n:object.ArrozConQueso.name}}",
+                "{{ModId}}_L_SeafoodSoup": "-4 1 248 1 256 1 Cornucopia_Onion 1 Cornucopia_BellPepper 1/10 10/{{ModId}}_SeafoodSoup/none/{{i18n:object.SeafoodSoup.name}}",
+                "{{ModId}}_L_Chimichurri": "Cornucopia_Parsley 1 248 1 Cornucopia_Oregano 1 419 1 Cornucopia_Lemon 1/10 10/{{ModId}}_Chimichurri/none/{{i18n:object.Chimichurri.name}}",
+                "{{ModId}}_L_ShrimpCassava": "720 1 Cornucopia_Cassava 1 Cornucopia_Onion 1 248 1  256 1 Cornucopia_Cilantro 1 Cornucopia_CoconutMilk 1/10 10/{{ModId}}_ShrimpCassava/none/{{i18n:object.ShrimpCassava.name}}",
+                "{{ModId}}_L_Sopaipillas": "Cornucopia_ButternutSquash 1 246 1/10 10/{{ModId}}_Sopaipillas/none/{{i18n:object.Sopaipillas.name}}",
+                "{{ModId}}_L_PastelitoCriollo": "{{ModId}}_DulcedeLeche 1 246 1 245 1/10 10/{{ModId}}_PastelitoCriollo/none/{{i18n:object.PastelitoCriollo.name}}",
+                "{{ModId}}_L_Ceviche": "136 1 720 1 270 1 248 1 Cornucopia_Habanero 1 Cornucopia_Onion 1/10 10/{{ModId}}_Ceviche/none/{{i18n:object.Ceviche.name}}",
+                "{{ModId}}_L_Coquitos": "88 1 -5 2 245 1/10 10/{{ModId}}_Coquitos/none/{{i18n:object.Coquitos.name}}",
+                "{{ModId}}_L_ArrozConLeche": "423 1 184 1 245 1 Cornucopia_CinnamonSticks 1 Cornucopia_Lemon 1/10 10/{{ModId}}_ArrozConLeche/none/{{i18n:object.ArrozConLeche.name}}",
+                "{{ModId}}_L_ArrozConCoco": "423 1 245 1 88 1 Cornucopia_CoconutMilk 1 Raisins 1 Cornucopia_CinnamonSticks 1/10 10/{{ModId}}_ArrozConCoco/none/{{i18n:object.ArrozConCoco.name}}",
+                "{{ModId}}_L_Tequenos": "246 1 245 1 -5 1 424 1/10 10/{{ModId}}_Tequenos/none/{{i18n:object.Tequenos.name}}",
+                "{{ModId}}_L_Toston": "247 1 Cornucopia_Plantain 2 Cornucopia_Salt 1/10 10/{{ModId}}_Toston/none/{{i18n:object.Toston.name}}",
+                "{{ModId}}_L_Cuñapé": "246 1 184 1 424 1 -5 1/10 10/{{ModId}}_Cuñapé/none/{{i18n:object.Cuñapé.name}}"
+            }
+        }
+    ]
+}

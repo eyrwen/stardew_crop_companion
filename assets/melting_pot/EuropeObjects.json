@@ -1,0 +1,5656 @@
+{
+    "Changes":
+    [
+
+    {
+      "LogName": "Add Cullen Skink",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": 
+      {
+        "{{ModId}}_Cullen_Skink": {
+              "Name": "{{ModId}}_CullenSkink",
+              "DisplayName": "{{i18n:object.CullenSkink.name}}",
+              "Description": "{{i18n:object.CullenSkink.description}}",
+              "Type": "Cooking",
+              "Category": -7,
+              "Price": 747,
+              "Texture": "Mods/{{ModId}}/EuropeObjects",
+              "SpriteIndex": 0,
+              "Edibility": 32,
+              "IsDrink": false,
+              "Buffs": [
+                {
+                  "Id": "Food",
+                  "BuffId": null,
+                  "Duration": 600,
+                  "GlowColor": null,
+                  "CustomAttributes": {
+                    "FarmingLevel": 0.0,
+                    "FishingLevel": 5.0,
+                    "MiningLevel": 0.0,
+                    "LuckLevel": 0.0,
+                    "ForagingLevel": 0.0,
+                    "MaxStamina": 30.0,
+                    "MagneticRadius": 0.0,
+                    "Speed": 0.0,
+                    "Defense": 0.0,
+                    "Attack": 0.0
+                  },
+                  "CustomFields": null
+                }
+              ],
+              "GeodeDropsDefaultItems": false,
+              "GeodeDrops": null,
+              "ArtifactSpotChances": null,
+              "CanBeGivenAsGift": true,
+              "CanBeTrashed": true,
+              "ExcludeFromFishingCollection": false,
+              "ExcludeFromShippingCollection": false,
+              "ExcludeFromRandomSale": false,
+              "ContextTags": [
+                "color_yellow",
+                "food_lunch",
+                "TMP_CullenSkink"
+              ],
+              "CustomFields": null
+            }
+        }
+    },
+
+    {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "CullenSkink_Name": "{{i18n:object.CullenSkink.name}}",
+            "CullenSkink_Description": "{{i18n:object.CullenSkink.description}}"
+        }
+    },
+
+    {
+        "LogName": "Add Haggis",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+      "{{ModId}}_Haggis": {
+                "Name": "{{ModId}}_Haggis",
+                "DisplayName": "{{i18n:object.Haggis.name}}",
+                "Description": "{{i18n:object.Haggis.description}}",
+                "Type": "Cooking",
+                "Category": -7,
+                "Price": 585,
+                "Texture": "Mods/{{ModId}}/EuropeObjects",
+                "SpriteIndex": 1,
+                "Edibility": 20,
+                "IsDrink": false,
+                "Buffs": [
+                  {
+                    "Id": "Food",
+                    "BuffId": null,
+                    "Duration": 60,
+                    "GlowColor": null,
+                    "CustomAttributes": {
+                      "FarmingLevel": 10.0,
+                      "FishingLevel": 0.0,
+                      "MiningLevel": 0.0,
+                      "LuckLevel": 0.0,
+                      "ForagingLevel": 0.0,
+                      "MaxStamina": 0.0,
+                      "MagneticRadius": 0.0,
+                      "Speed": 0.0,
+                      "Defense": 0.0,
+                      "Attack": 0.0
+                    },
+                    "CustomFields": null
+                  }
+                ],
+                "GeodeDropsDefaultItems": false,
+                "GeodeDrops": null,
+                "ArtifactSpotChances": null,
+                "CanBeGivenAsGift": true,
+                "CanBeTrashed": true,
+                "ExcludeFromFishingCollection": false,
+                "ExcludeFromShippingCollection": false,
+                "ExcludeFromRandomSale": false,
+                "ContextTags": [
+                  "color_orange",
+                  "TMP_Haggis",
+                  "{{TMPHaramTag}}",
+                    "{{TMPTeryfTag}}"
+                ],
+                "CustomFields": null
+              }
+      },
+      
+      "When": {
+      "HasMod |contains = DIGUS.ANIMALHUSBANDRYMOD": true
+      }
+      
+    },
+      
+    {
+      "Action":"EditData",
+      "Target": "Strings/Objects",
+      "Entries":
+      {
+        "Haggis_Name": "{{i18n:object.Haggis.name}}",
+        "Haggis_Description": "{{i18n:object.Haggis.description}}"
+      }
+    },
+      
+    {
+            "LogName": "Add Empanada",
+			      "Action": "EditData",
+			      "Target": "Data/Objects",
+			      "Entries": {
+				    "{{ModId}}_Empanada": {
+                    "Name": "{{ModId}}_Empanada",
+                    "DisplayName": "{{i18n:object.empanada.name}}",
+                    "Description": "{{i18n:object.empanada.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 1058,
+                    "Texture": "Mods/{{ModId}}/EuropeObjects",
+                    "SpriteIndex": 2,
+                    "Edibility": 34,
+                    "IsDrink": false,
+                    "Buffs": [
+                      {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                          "FarmingLevel": 0.0,
+                          "FishingLevel": 0.0,
+                          "MiningLevel": 0.0,
+                          "LuckLevel": 0.0,
+                          "ForagingLevel": 0.0,
+                          "MaxStamina": 0.0,
+                          "MagneticRadius": 0.0,
+                          "Speed": 0.0,
+                          "Defense": 0.0,
+                          "Attack": 0.0
+                        },
+                        "CustomFields": null
+                      }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                      "color_orange",
+                      "TMP_Empanada"
+                    ],
+                    "CustomFields": null
+                  }
+			}
+		},
+
+    {
+      "Action":"EditData",
+      "Target": "Strings/Objects",
+      "Entries":
+      {
+          "Empanada_Name": "{{i18n:object.Empanada.name}}",
+          "Empanada_Description": "{{i18n:object.Empanada.description}}"
+      }
+    },
+
+    {
+        "LogName": "Add Black Pudding",
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "Entries": 
+        {
+          "{{ModId}}_Black_Pudding": {
+                "Name": "{{ModId}}_BlackPudding",
+                "DisplayName": "{{i18n:object.BlackPudding.name}}",
+                "Description": "{{i18n:object.BlackPudding.description}}",
+                "Type": "Cooking",
+                "Category": -7,
+                "Price": 1341,
+                "Texture": "Mods/{{ModId}}/EuropeObjects",
+                "SpriteIndex": 3,
+                "Edibility": 30,
+                "IsDrink": false,
+                "Buffs": [
+                  {
+                    "Id": "Food",
+                    "BuffId": null,
+                    "Duration": 60,
+                    "GlowColor": null,
+                    "CustomAttributes": {
+                      "FarmingLevel": 6.0,
+                      "FishingLevel": 0.0,
+                      "MiningLevel": 0.0,
+                      "LuckLevel": 0.0,
+                      "ForagingLevel": 0.0,
+                      "MaxStamina": 0.0,
+                      "MagneticRadius": 0.0,
+                      "Speed": 0.0,
+                      "Defense": 0.0,
+                      "Attack": 0.0
+                    },
+                    "CustomFields": null
+                  }
+                ],
+                "GeodeDropsDefaultItems": false,
+                "GeodeDrops": null,
+                "ArtifactSpotChances": null,
+                "CanBeGivenAsGift": true,
+                "CanBeTrashed": true,
+                "ExcludeFromFishingCollection": false,
+                "ExcludeFromShippingCollection": false,
+                "ExcludeFromRandomSale": false,
+                "ContextTags": [
+                  "color_red",
+                  "TMP_BlackPudding",
+                  "{{TMPHaramTag}}",
+                    "{{TMPTeryfTag}}"
+                ],
+                "CustomFields": null
+              }
+  },
+
+  "When": {
+    "HasMod |contains = DIGUS.ANIMALHUSBANDRYMOD": true
+ }
+    },
+
+    {
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "BlackPudding_Name": "{{i18n:object.BlackPudding.name}}",
+      "BlackPudding_Description": "{{i18n:object.BlackPudding.description}}"
+  }
+    },
+
+    {
+      "LogName": "Add Cranachan",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": {
+    "{{ModId}}_Cranachan": {
+              "Name": "{{ModId}}_Cranachan",
+              "DisplayName": "{{i18n:object.Cranachan.name}}",
+              "Description": "{{i18n:object.Cranachan.description}}",
+              "Type": "Cooking",
+              "Category": -7,
+              "Price": 302,
+              "Texture": "Mods/{{ModId}}/EuropeObjects",
+              "SpriteIndex": 4,
+              "Edibility": 15,
+              "IsDrink": false,
+              "Buffs": [
+                {
+                  "Id": "Food",
+                  "BuffId": null,
+                  "Duration": 600,
+                  "GlowColor": null,
+                  "CustomAttributes": {
+                    "FarmingLevel": 0.0,
+                    "FishingLevel": 0.0,
+                    "MiningLevel": 0.0,
+                    "LuckLevel": 0.0,
+                    "ForagingLevel": 0.0,
+                    "MaxStamina": 0.0,
+                    "MagneticRadius": 0.0,
+                    "Speed": 0.0,
+                    "Defense": 0.0,
+                    "Attack": 0.0
+                  },
+                  "CustomFields": null
+                }
+              ],
+              "GeodeDropsDefaultItems": false,
+              "GeodeDrops": null,
+              "ArtifactSpotChances": null,
+              "CanBeGivenAsGift": true,
+              "CanBeTrashed": true,
+              "ExcludeFromFishingCollection": false,
+              "ExcludeFromShippingCollection": false,
+              "ExcludeFromRandomSale": false,
+              "ContextTags": [
+                "color_red",
+                "Cranachan",
+                "Parfait",
+                "Dessert",
+                "TMP"
+              ],
+              "CustomFields": null
+            }
+    }
+    
+    },
+
+    {
+      "Action":"EditData",
+      "Target": "Strings/Objects",
+      "Entries":
+      {
+          "Cranachan_Name": "{{i18n:object.Cranachan.name}}",
+          "Cranachan_Description": "{{i18n:object.Cranachan.description}}"
+      }
+    },
+
+  {
+    "LogName": "Add Tablet",
+  "Action": "EditData",
+  "Target": "Data/Objects",
+  "Entries": {
+  "{{ModId}}_Tablet": {
+            "Name": "{{ModId}}_Tablet",
+            "DisplayName": "{{i18n:object.Tablet.name}}",
+            "Description": "{{i18n:object.Tablet.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 122,
+            "Texture": "Mods/{{ModId}}/EuropeObjects",
+            "SpriteIndex": 5,
+            "Edibility": 21,
+            "IsDrink": false,
+            "Buffs": [
+              {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 600,
+                "GlowColor": null,
+                "CustomAttributes": {
+                  "FarmingLevel": 0.0,
+                  "FishingLevel": 0.0,
+                  "MiningLevel": 0.0,
+                  "LuckLevel": 0.0,
+                  "ForagingLevel": 0.0,
+                  "MaxStamina": 0.0,
+                  "MagneticRadius": 0.0,
+                  "Speed": 2.0,
+                  "Defense": 0.0,
+                  "Attack": 0.0
+                },
+                "CustomFields": null
+              }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+              "color_orange",
+              "TMP_Tablet"
+            ],
+            "CustomFields": null
+          }
+  }
+  
+  },
+  
+      {
+          "Action":"EditData",
+          "Target": "Strings/Objects",
+          "Entries":
+          {
+              "Tablet_Name": "{{i18n:object.Tablet.name}}",
+              "Tablet_Description": "{{i18n:object.Tablet.description}}"
+          }
+      },
+
+        {
+          "LogName": "Add Apple Turnover",
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "Entries": {
+        "{{ModId}}_AppleTurnover": {
+                  "Name": "{{ModId}}_AppleTurnover",
+                  "DisplayName": "{{i18n:object.AppleTurnover.name}}",
+                  "Description": "{{i18n:object.AppleTurnover.description}}",
+                  "Type": "Cooking",
+                  "Category": -7,
+                  "Price": 88,
+                  "Texture": "Mods/{{ModId}}/EuropeObjects",
+                  "SpriteIndex": 6,
+                  "Edibility": 34,
+                  "IsDrink": false,
+                  "Buffs": [
+                    {
+                      "Id": "Food",
+                      "BuffId": null,
+                      "Duration": 600,
+                      "GlowColor": null,
+                      "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                      },
+                      "CustomFields": null
+                    }
+                  ],
+                  "GeodeDropsDefaultItems": false,
+                  "GeodeDrops": null,
+                  "ArtifactSpotChances": null,
+                  "CanBeGivenAsGift": true,
+                  "CanBeTrashed": true,
+                  "ExcludeFromFishingCollection": false,
+                  "ExcludeFromShippingCollection": false,
+                  "ExcludeFromRandomSale": false,
+                  "ContextTags": [
+                    "color_orange",
+                    "TMP_AppleTurnover"
+                  ],
+                  "CustomFields": null
+                }
+        }
+        
+        },
+
+        {
+          "Action":"EditData",
+          "Target": "Strings/Objects",
+          "Entries":
+          {
+              "AppleTurnover_Name": "{{i18n:object.AppleTurnover.name}}",
+              "AppleTurnover_Description": "{{i18n:object.AppleTurnover.description}}"
+          }
+      },
+
+        {
+          "LogName": "Add OatCakes",
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "Entries": {
+        "{{ModId}}_OatCakes": {
+                  "Name": "{{ModId}}_OatCakes",
+                  "DisplayName": "{{i18n:object.OatCakes.name}}",
+                  "Description": "{{i18n:object.OatCakes.description}}",
+                  "Type": "Cooking",
+                  "Category": -7,
+                  "Price": 38,
+                  "Texture": "Mods/{{ModId}}/EuropeObjects",
+                  "SpriteIndex": 7,
+                  "Edibility": 12,
+                  "IsDrink": false,
+                  "Buffs": [
+                    {
+                      "Id": "Food",
+                      "BuffId": null,
+                      "Duration": 600,
+                      "GlowColor": null,
+                      "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                      },
+                      "CustomFields": null
+                    }
+                  ],
+                  "GeodeDropsDefaultItems": false,
+                  "GeodeDrops": null,
+                  "ArtifactSpotChances": null,
+                  "CanBeGivenAsGift": true,
+                  "CanBeTrashed": true,
+                  "ExcludeFromFishingCollection": false,
+                  "ExcludeFromShippingCollection": false,
+                  "ExcludeFromRandomSale": false,
+                  "ContextTags": [
+                    "color_yellow",
+                    "TMP_OatCakes"
+                  ],
+                  "CustomFields": null
+                }
+        }
+        
+        },
+
+        {
+          "Action":"EditData",
+          "Target": "Strings/Objects",
+          "Entries":
+          {
+              "OatCakes_Name": "{{i18n:object.OatCakes.name}}",
+              "OatCakes_Description": "{{i18n:object.OatCakes.description}}"
+          }
+      },
+
+        {
+          "LogName": "Add Pork Pie",
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "Entries": {
+        "{{ModId}}_PorkPie": {
+                  "Name": "{{ModId}}_PorkPie",
+                  "DisplayName": "{{i18n:object.PorkPie.name}}",
+                  "Description": "{{i18n:object.PorkPie.description}}",
+                  "Type": "Cooking",
+                  "Category": -7,
+                  "Price": 472,
+                  "Texture": "Mods/{{ModId}}/EuropeObjects",
+                  "SpriteIndex": 8,
+                  "Edibility": 44,
+                  "IsDrink": false,
+                  "Buffs": [
+                    {
+                      "Id": "Food",
+                      "BuffId": null,
+                      "Duration": 60,
+                      "GlowColor": null,
+                      "CustomAttributes": {
+                        "FarmingLevel": 5.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                      },
+                      "CustomFields": null
+                    }
+                  ],
+                  "GeodeDropsDefaultItems": false,
+                  "GeodeDrops": null,
+                  "ArtifactSpotChances": null,
+                  "CanBeGivenAsGift": true,
+                  "CanBeTrashed": true,
+                  "ExcludeFromFishingCollection": false,
+                  "ExcludeFromShippingCollection": false,
+                  "ExcludeFromRandomSale": false,
+                  "ContextTags": [
+                    "color_orange",
+                    "TMP_PorkPie",
+                    "TMPHaramTag",
+                    "TMPTeryfTag"
+                  ],
+                  "CustomFields": null
+                }
+        },
+
+        "When": {
+          "HasMod |contains = DIGUS.ANIMALHUSBANDRYMOD": true
+       }
+        
+        },
+
+        {
+          "Action":"EditData",
+          "Target": "Strings/Objects",
+          "Entries":
+          {
+              "PorkPie_Name": "{{i18n:object.PorkPie.name}}",
+              "PorkPie_Description": "{{i18n:object.PorkPie.description}}"
+          }
+      },
+
+      {
+        "LogName": "Add Karelian pasty",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+      "{{ModId}}_KarelianPasty": {
+                "Name": "{{ModId}}_KarelianPasty",
+                "DisplayName": "{{i18n:object.KarelianPasty.name}}",
+                "Description": "{{i18n:object.KarelianPasty.description}}",
+                "Type": "Cooking",
+                "Category": -7,
+                "Price": 43,
+                "Texture": "Mods/{{ModId}}/EuropeObjects",
+                "SpriteIndex": 9,
+                "Edibility": 25,
+                "IsDrink": false,
+                "Buffs": [
+                  {
+                    "Id": "Food",
+                    "BuffId": null,
+                    "Duration": 90,
+                    "GlowColor": null,
+                    "CustomAttributes": {
+                      "FarmingLevel": 7.0,
+                      "FishingLevel": 0.0,
+                      "MiningLevel": 0.0,
+                      "LuckLevel": 0.0,
+                      "ForagingLevel": 0.0,
+                      "MaxStamina": 0.0,
+                      "MagneticRadius": 0.0,
+                      "Speed": 0.0,
+                      "Defense": 0.0,
+                      "Attack": 0.0
+                    },
+                    "CustomFields": null
+                  }
+                ],
+                "GeodeDropsDefaultItems": false,
+                "GeodeDrops": null,
+                "ArtifactSpotChances": null,
+                "CanBeGivenAsGift": true,
+                "CanBeTrashed": true,
+                "ExcludeFromFishingCollection": false,
+                "ExcludeFromShippingCollection": false,
+                "ExcludeFromRandomSale": false,
+                "ContextTags": [
+                  "color_orange",
+                  "TMP_KarelianPasty"
+                ],
+                "CustomFields": null
+              }
+      }
+      
+      },
+
+      {
+        "Action":"EditData",
+        "Target": "Strings/Objects",
+        "Entries":
+        {
+            "KarelianPasty_Name": "{{i18n:object.KarelianPasty.name}}",
+            "KarelianPasty_Description": "{{i18n:object.KarelianPasty.description}}"
+        }
+    },
+
+    {
+      "LogName": "Add Easter Pudding",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": {
+    "{{ModId}}_EasterPudding": {
+              "Name": "{{ModId}}_EasterPudding",
+              "DisplayName": "{{i18n:object.EasterPudding.name}}",
+              "Description": "{{i18n:object.EasterPudding.description}}",
+              "Type": "Cooking",
+              "Category": -7,
+              "Price": 125,
+              "Texture": "Mods/{{ModId}}/EuropeObjects",
+              "SpriteIndex": 10,
+              "Edibility": 25,
+              "IsDrink": false,
+              "Buffs": [
+                {
+                  "Id": "Food",
+                  "BuffId": null,
+                  "Duration": 90,
+                  "GlowColor": null,
+                  "CustomAttributes": {
+                    "FarmingLevel": 0.0,
+                    "FishingLevel": 0.0,
+                    "MiningLevel": 0.0,
+                    "LuckLevel": 0.0,
+                    "ForagingLevel": 0.0,
+                    "MaxStamina": 0.0,
+                    "MagneticRadius": 0.0,
+                    "Speed": 0.0,
+                    "Defense": 0.0,
+                    "Attack": 0.0
+                  },
+                  "CustomFields": null
+                }
+              ],
+              "GeodeDropsDefaultItems": false,
+              "GeodeDrops": null,
+              "ArtifactSpotChances": null,
+              "CanBeGivenAsGift": true,
+              "CanBeTrashed": true,
+              "ExcludeFromFishingCollection": false,
+              "ExcludeFromShippingCollection": false,
+              "ExcludeFromRandomSale": false,
+              "ContextTags": [
+                "color_orange",
+                "TMP_EasterPudding"
+              ],
+              "CustomFields": null
+            }
+    }
+    
+    },
+
+    {
+      "Action":"EditData",
+      "Target": "Strings/Objects",
+      "Entries":
+      {
+          "EasterPudding_Name": "{{i18n:object.EasterPudding.name}}",
+          "EasterPudding_Description": "{{i18n:object.EasterPudding.description}}"
+      }
+  },
+
+  {
+    "LogName": "Add Karelian Hot Pot",
+  "Action": "EditData",
+  "Target": "Data/Objects",
+  "Entries": {
+  "{{ModId}}_KarelianHotPot": {
+            "Name": "{{ModId}}_KarelianHotPot",
+            "DisplayName": "{{i18n:object.KarelianHotPot.name}}",
+            "Description": "{{i18n:object.KarelianHotPot.description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 252,
+            "Texture": "Mods/{{ModId}}/EuropeObjects",
+            "SpriteIndex": 11,
+            "Edibility": 10,
+            "IsDrink": false,
+            "Buffs": [
+              {
+                "Id": "Food",
+                "BuffId": null,
+                "Duration": 90,
+                "GlowColor": null,
+                "CustomAttributes": {
+                  "FarmingLevel": 0.0,
+                  "FishingLevel": 0.0,
+                  "MiningLevel": 0.0,
+                  "LuckLevel": 0.0,
+                  "ForagingLevel": 0.0,
+                  "MaxStamina": 20.0,
+                  "MagneticRadius": 0.0,
+                  "Speed": 0.0,
+                  "Defense": 0.0,
+                  "Attack": 0.0
+                },
+                "CustomFields": null
+              }
+            ],
+            "GeodeDropsDefaultItems": false,
+            "GeodeDrops": null,
+            "ArtifactSpotChances": null,
+            "CanBeGivenAsGift": true,
+            "CanBeTrashed": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "ContextTags": [
+              "color_orange",
+              "TMP_KarelianHotPot",
+              "TMPHaramTag",
+              "TMPTeryfTag"
+            ],
+            "CustomFields": null
+          }
+  },
+
+  "When": {
+    "HasMod |contains = DIGUS.ANIMALHUSBANDRYMOD": true
+ }
+  
+  },
+
+  {
+    "Action":"EditData",
+    "Target": "Strings/Objects",
+    "Entries":
+    {
+        "KarelianHotPot_Name": "{{i18n:object.KarelianHotPot.name}}",
+        "KarelianHotPot_Description": "{{i18n:object.KarelianHotPot.description}}"
+    }
+},
+
+{
+  "LogName": "Add Fish Pie",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_FishPie": {
+          "Name": "{{ModId}}_FishPie",
+          "DisplayName": "{{i18n:object.FishPie.name}}",
+          "Description": "{{i18n:object.FishPie.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 153,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 12,
+          "Edibility": 25,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 5.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 20.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_FishPie",
+            "{{TMPHaramTag}}",
+                    "{{TMPTeryfTag}}"
+          ],
+          "CustomFields": null
+        }
+},
+
+"When": {
+  "HasMod |contains = DIGUS.ANIMALHUSBANDRYMOD": true
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "FishPie_Name": "{{i18n:object.FishPie.name}}",
+      "FishPie_Description": "{{i18n:object.FishPie.description}}"
+  }
+},
+
+{
+  "LogName": "Add Cabbage Rolls",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_CabbageRolls": {
+          "Name": "{{ModId}}_CabbageRolls",
+          "DisplayName": "{{i18n:object.CabbageRolls.name}}",
+          "Description": "{{i18n:object.CabbageRolls.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 54,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 13,
+          "Edibility": 44,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_green",
+            "TMP_CabbageRolls"
+          ],
+          "CustomFields": null
+        }
+},
+
+"When": {
+  "HasMod |contains = DIGUS.ANIMALHUSBANDRYMOD": true
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "CabbageRolls_Name": "{{i18n:object.CabbageRolls.name}}",
+      "CabbageRolls_Description": "{{i18n:object.CabbageRolls.description}}"
+  }
+},
+
+{
+  "LogName": "Add Cabbage Casserole",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_CabbageCasserole": {
+          "Name": "{{ModId}}_CabbageCasserole",
+          "DisplayName": "{{i18n:object.CabbageCasserole.name}}",
+          "Description": "{{i18n:object.CabbageCasserole.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 170,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 14,
+          "Edibility": 64,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_green",
+            "TMP_CabbageCasserole",
+            "{{TMPHaramTag}}",
+                    "{{TMPTeryfTag}}"
+          ],
+          "CustomFields": null
+        }
+},
+
+"When": {
+  "HasMod |contains = DIGUS.ANIMALHUSBANDRYMOD": true
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "CabbageCasserole_Name": "{{i18n:object.CabbageCasserole.name}}",
+      "CabbageCasserole_Description": "{{i18n:object.CabbageCasserole.description}}"
+  }
+},
+
+{
+  "LogName": "Add Lingonberry Porridge",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_LingonberryPorridge": {
+          "Name": "{{ModId}}_LingonberryPorridge",
+          "DisplayName": "{{i18n:object.LingonberryPorridge.name}}",
+          "Description": "{{i18n:object.LingonberryPorridge.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 15,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 15,
+          "Edibility": 17,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_red",
+            "TMP_LingonberryPorridge"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "LingonberryPorridge_Name": "{{i18n:object.LingonberryPorridge.name}}",
+      "LingonberryPorridge_Description": "{{i18n:object.LingonberryPorridge.description}}"
+  }
+},
+
+{
+  "LogName": "Add Finnish Cinnamon Roll",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_FinnishCinnamonRoll": {
+          "Name": "{{ModId}}_FinnishCinnamonRoll",
+          "DisplayName": "{{i18n:object.FinnishCinnamonRoll.name}}",
+          "Description": "{{i18n:object.FinnishCinnamonRoll.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 82,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 16,
+          "Edibility": 25,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_FinnishCinnamonRoll"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "FinnishCinnamonRoll_Name": "{{i18n:object.FinnishCinnamonRoll.name}}",
+      "FinnishCinnamonRoll_Description": "{{i18n:object.FinnishCinnamonRoll.description}}"
+  }
+},
+
+{
+  "LogName": "Add Sourdough Rye",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_SourdoughRye": {
+          "Name": "{{ModId}}_SourdoughRye",
+          "DisplayName": "{{i18n:object.SourdoughRye.name}}",
+          "Description": "{{i18n:object.SourdoughRye.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 50,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 17,
+          "Edibility": 15,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_SourdoughRye"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "SourdoughRye_Name": "{{i18n:object.SourdoughRye.name}}",
+      "SourdoughRye_Description": "{{i18n:object.SourdoughRye.description}}"
+  }
+},
+
+{
+  "LogName": "Add Squeaky Cheese",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_SqueakyCheese": {
+          "Name": "{{ModId}}_SqueakyCheese",
+          "DisplayName": "{{i18n:object.SqueakyCheese.name}}",
+          "Description": "{{i18n:object.SqueakyCheese.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 169,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 18,
+          "Edibility": 36,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_yellow",
+            "TMP_SqueakyCheese"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "SqueakyCheese_Name": "{{i18n:object.SqueakyCheese.name}}",
+      "SqueakyCheese_Description": "{{i18n:object.SqueakyCheese.description}}"
+  }
+},
+
+{
+  "LogName": "Add Soda Bread",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_SodaBread": {
+          "Name": "{{ModId}}_SodaBread",
+          "DisplayName": "{{i18n:object.SodaBread.name}}",
+          "Description": "{{i18n:object.SodaBread.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 199,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 19,
+          "Edibility": 25,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_SodaBread"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "SodaBread_Name": "{{i18n:object.SodaBread.name}}",
+      "SodaBread_Description": "{{i18n:object.SodaBread.description}}"
+  }
+},
+
+{
+  "LogName": "Add Beef Wellington",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_BeefWellington": {
+          "Name": "{{ModId}}_BeefWellington",
+          "DisplayName": "{{i18n:object.BeefWellington.name}}",
+          "Description": "{{i18n:object.BeefWellington.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 85,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 20,
+          "Edibility": 30,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_BeefWellington"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "BeefWellington_Name": "{{i18n:object.BeefWellington.name}}",
+      "BeefWellington_Description": "{{i18n:object.BeefWellington.description}}"
+  }
+},
+
+{
+  "LogName": "Add Scotch Duck Eggs",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_ScotchDuckEggs": {
+          "Name": "{{ModId}}_ScotchDuckEggs",
+          "DisplayName": "{{i18n:object.ScotchDuckEggs.name}}",
+          "Description": "{{i18n:object.ScotchDuckEggs.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 170,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 21,
+          "Edibility": 45,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_ScotchDuckEggs",
+            "{{TMPHaramTag}}",
+                    "{{TMPTeryfTag}}"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "ScotchDuckEggs_Name": "{{i18n:object.ScotchDuckEggs.name}}",
+      "ScotchDuckEggs_Description": "{{i18n:object.ScotchDuckEggs.description}}"
+  }
+},
+
+{
+  "LogName": "Add Irish Mashed Potatoes",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_IrishMashedPotatoes": {
+          "Name": "{{ModId}}_IrishMashedPotatoes",
+          "DisplayName": "{{i18n:object.IrishMashedPotatoes.name}}",
+          "Description": "{{i18n:object.IrishMashedPotatoes.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 94,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 22,
+          "Edibility": 28,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_yellow",
+            "TMP_IrishMashedPotatoes"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "IrishMashedPotatoes_Name": "{{i18n:object.IrishMashedPotatoes.name}}",
+      "IrishMashedPotatoes_Description": "{{i18n:object.IrishMashedPotatoes.description}}"
+  }
+},
+
+{
+  "LogName": "Add RuneBerg Cakes",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_RuneBergCakes": {
+          "Name": "{{ModId}}_RuneBergCakes",
+          "DisplayName": "{{i18n:object.RuneBergCakes.name}}",
+          "Description": "{{i18n:object.RuneBergCakes.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 103,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 23,
+          "Edibility": 28,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_red",
+            "TMP_RuneBergCakes"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "RuneBergCakes_Name": "{{i18n:object.RuneBergCakes.name}}",
+      "RuneBergCakes_Description": "{{i18n:object.RuneBergCakes.description}}"
+  }
+},
+
+{
+  "LogName": "Add Churros",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_Churros": {
+          "Name": "{{ModId}}_Churros",
+          "DisplayName": "{{i18n:object.Churros.name}}",
+          "Description": "{{i18n:object.Churros.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 82,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 22,
+          "Edibility": 20,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 1.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_Churros"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "Churros_Name": "{{i18n:object.Churros.name}}",
+      "Churros_Description": "{{i18n:object.Churros.description}}"
+  }
+},
+
+{
+  "LogName": "Add Croquettes",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_Croquettes": {
+          "Name": "{{ModId}}_Croquettes",
+          "DisplayName": "{{i18n:object.Croquettes.name}}",
+          "Description": "{{i18n:object.Croquettes.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 188,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 25,
+          "Edibility": 20,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_Croquettes"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "Croquettes_Name": "{{i18n:object.Croquettes.name}}",
+      "Croquettes_Description": "{{i18n:object.Croquettes.description}}"
+  }
+},
+
+{
+  "LogName": "Add Guava Pastelito",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_GuavaPastelito": {
+          "Name": "{{ModId}}_GuavaPastelito",
+          "DisplayName": "{{i18n:object.GuavaPastelito.name}}",
+          "Description": "{{i18n:object.GuavaPastelito.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 111,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 26,
+          "Edibility": 20,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_GuavaPastelito"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "GuavaPastelito_Name": "{{i18n:object.GuavaPastelito.name}}",
+      "GuavaPastelito_Description": "{{i18n:object.GuavaPastelito.description}}"
+  }
+},
+
+{
+  "LogName": "Add Beef Pastelito",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_BeefPastelito": {
+          "Name": "{{ModId}}_BeefPastelito",
+          "DisplayName": "{{i18n:object.BeefPastelito.name}}",
+          "Description": "{{i18n:object.BeefPastelito.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 129,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 27,
+          "Edibility": 25,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_BeefPastelito"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "BeefPastelito_Name": "{{i18n:object.BeefPastelito.name}}",
+      "BeefPastelito_Description": "{{i18n:object.BeefPastelito.description}}"
+  }
+},
+
+{
+  "LogName": "Add Guava Paste",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_GuavaPaste": {
+          "Name": "{{ModId}}_GuavaPaste",
+          "DisplayName": "{{i18n:object.GuavaPaste.name}}",
+          "Description": "{{i18n:object.GuavaPaste.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 129,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 28,
+          "Edibility": 25,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_GuavaPaste"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "GuavaPaste_Name": "{{i18n:object.GuavaPaste.name}}",
+      "GuavaPaste_Description": "{{i18n:object.GuavaPaste.description}}"
+  }
+},
+
+{
+  "LogName": "Add Spanish Spicy Potatoes",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_SpanishSpicyPotatoes": {
+          "Name": "{{ModId}}_SpanishSpicyPotatoes",
+          "DisplayName": "{{i18n:object.SpanishSpicyPotatoes.name}}",
+          "Description": "{{i18n:object.SpanishSpicyPotatoes.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 84,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 29,
+          "Edibility": 20,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_SpanishSpicyPotatoes"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "SpanishSpicyPotatoes_Name": "{{i18n:object.SpanishSpicyPotatoes.name}}",
+      "SpanishSpicyPotatoes_Description": "{{i18n:object.SpanishSpicyPotatoes.description}}"
+  }
+},
+
+{
+  "LogName": "Spanish Seafood Rice",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_SpanishSeafoodRice": {
+          "Name": "{{ModId}}_SpanishSeafoodRice",
+          "DisplayName": "{{i18n:object.SpanishSeafoodRice.name}}",
+          "Description": "{{i18n:object.SpanishSeafoodRice.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 75,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 30,
+          "Edibility": 25,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_SpanishSeafoodRice",
+            "{{TMPTeryfTag}}"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "SpanishSeafoodRice_Name": "{{i18n:object.SpanishSeafoodRice.name}}",
+      "SpanishSeafoodRice_Description": "{{i18n:object.SpanishSeafoodRice.description}}"
+  }
+},
+
+{
+  "LogName": "Horchata De Chufa",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_HorchataDeChufa": {
+          "Name": "{{ModId}}_HorchataDeChufa",
+          "DisplayName": "{{i18n:object.HorchataDeChufa.name}}",
+          "Description": "{{i18n:object.HorchataDeChufa.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 53,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 31,
+          "Edibility": 16,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_HorchataChufa"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "HorchataDeChufa_Name": "{{i18n:object.HorchataDeChufa.name}}",
+      "HorchataDeChufa_Description": "{{i18n:object.HorchataDeChufa.description}}"
+  }
+},
+
+{
+  "LogName": "Tomato Bread With Cheese Pincho",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_TomatoBreadWithCheesePincho": {
+          "Name": "{{ModId}}_TomatoBreadWithCheesePincho",
+          "DisplayName": "{{i18n:object.TomatoBreadWithCheesePincho.name}}",
+          "Description": "{{i18n:object.TomatoBreadWithCheesePincho.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 91,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 32,
+          "Edibility": 51,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_Pincho"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "TomatoBreadWithCheesePincho_Name": "{{i18n:object.TomatoBreadWithCheesePincho.name}}",
+      "TomatoBreadWithCheesePincho_Description": "{{i18n:object.TomatoBreadWithCheesePincho.description}}"
+  }
+},
+
+{
+  "LogName": "Flan",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_Flan": {
+          "Name": "{{ModId}}_Flan",
+          "DisplayName": "{{i18n:object.Flan.name}}",
+          "Description": "{{i18n:object.Flan.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 94,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 33,
+          "Edibility": 32,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_Flan"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "Flan_Name": "{{i18n:object.Flan.name}}",
+      "Flan_Description": "{{i18n:object.Flan.description}}"
+  }
+},
+
+{
+  "LogName": "Chorizo",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_Chorizo": {
+          "Name": "{{ModId}}_Chorizo",
+          "DisplayName": "{{i18n:object.Chorizo.name}}",
+          "Description": "{{i18n:object.Chorizo.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 187,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 34,
+          "Edibility": 24,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_red",
+            "TMP_Chorizo",
+            "{{TMPHaramTag}}",
+            "{{TMPTeryfTag}}"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "Chorizo_Name": "{{i18n:object.Chorizo.name}}",
+      "Chorizo_Description": "{{i18n:object.Chorizo.description}}"
+  }
+},
+
+{
+  "LogName": "Chorizo in Cider",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_ChorizoInCider": {
+          "Name": "{{ModId}}_ChorizoInCider",
+          "DisplayName": "{{i18n:object.ChorizoInCider.name}}",
+          "Description": "{{i18n:object.ChorizoInCider.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 140,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 35,
+          "Edibility": 25,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 1.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_red",
+            "TMP_ChorizoCider",
+            "{{TMPHaramTag}}",
+            "{{TMPTeryfTag}}"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "ChorizoInCider_Name": "{{i18n:object.ChorizoInCider.name}}",
+      "ChorizoInCider_Description": "{{i18n:object.ChorizoInCider.description}}"
+  }
+},
+
+{
+  "LogName": "Spanish Seafood Paella",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_SpanishSeafoodPaella": {
+          "Name": "{{ModId}}_SpanishSeafoodPaella",
+          "DisplayName": "{{i18n:object.SpanishSeafoodPaella.name}}",
+          "Description": "{{i18n:object.SpanishSeafoodPaella.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 56,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 36,
+          "Edibility": 20,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_SpanishSeafoodPaella",
+            "{{TMPTeryfTag}}"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "SpanishSeafoodPaella_Name": "{{i18n:object.SpanishSeafoodPaella.name}}",
+      "SpanishSeafoodPaella_Description": "{{i18n:object.SpanishSeafoodPaella.description}}"
+  }
+},
+
+{
+  "LogName": "Blistered Padron Peppers",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_BlisteredPadronPeppers": {
+          "Name": "{{ModId}}_BlisteredPadronPeppers",
+          "DisplayName": "{{i18n:object.BlisteredPadronPeppers.name}}",
+          "Description": "{{i18n:object.BlisteredPadronPeppers.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 59,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 37,
+          "Edibility": 15,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_green",
+            "TMP_BlisteredPadronPeppers"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "BlisteredPadronPeppers_Name": "{{i18n:object.BlisteredPadronPeppers.name}}",
+      "BlisteredPadronPeppers_Description": "{{i18n:object.BlisteredPadronPeppers.description}}"
+  }
+},
+
+{
+  "LogName": "Polish Doughnuts",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_PolishDoughnuts": {
+          "Name": "{{ModId}}_PolishDoughnuts",
+          "DisplayName": "{{i18n:object.PolishDoughnuts.name}}",
+          "Description": "{{i18n:object.PolishDoughnuts.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 97,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 38,
+          "Edibility": 25,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_Doughnut"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "PolishDoughnuts_Name": "{{i18n:object.PolishDoughnuts.name}}",
+      "PolishDoughnuts_Description": "{{i18n:object.PolishDoughnuts.description}}"
+  }
+},
+
+{
+  "LogName": "Pierogi",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_Pierogi": {
+          "Name": "{{ModId}}_Pierogi",
+          "DisplayName": "{{i18n:object.Pierogi.name}}",
+          "Description": "{{i18n:object.Pierogi.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 130,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 39,
+          "Edibility": 25,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_Pierogi",
+            "{{TMPHaramTag}}",
+            "{{TMPTeryfTag}}"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "Pierogi_Name": "{{i18n:object.Pierogi.name}}",
+      "Pierogi_Description": "{{i18n:object.Pierogi.description}}"
+  }
+},
+
+{
+  "LogName": "Polish Cabbage Rolls",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_PolishCabbageRolls": {
+          "Name": "{{ModId}}_PolishCabbageRolls",
+          "DisplayName": "{{i18n:object.PolishCabbageRolls.name}}",
+          "Description": "{{i18n:object.PolishCabbageRolls.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 245,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 40,
+          "Edibility": 42,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_green",
+            "TMP_CabbageRolls",
+            "{{TMPHaramTag}}",
+            "{{TMPTeryfTag}}"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "PolishCabbageRolls_Name": "{{i18n:object.PolishCabbageRolls.name}}",
+      "PolishCabbageRolls_Description": "{{i18n:object.PolishCabbageRolls.description}}"
+  }
+},
+
+{
+  "LogName": "Sour Rye Soup",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_SourRyeSoup": {
+          "Name": "{{ModId}}_SourRyeSoup",
+          "DisplayName": "{{i18n:object.SourRyeSoup.name}}",
+          "Description": "{{i18n:object.SourRyeSoup.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 110,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 41,
+          "Edibility": 20,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_yellow",
+            "TMP_SourRyeSoup"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "SourRyeSoup_Name": "{{i18n:object.SourRyeSoup.name}}",
+      "SourRyeSoup_Description": "{{i18n:object.SourRyeSoup.description}}"
+  }
+},
+
+{
+  "LogName": "Torn Pancakes",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_TornPancakes": {
+          "Name": "{{ModId}}_TornPancakes",
+          "DisplayName": "{{i18n:object.TornPancakes.name}}",
+          "Description": "{{i18n:object.TornPancakes.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 73,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 42,
+          "Edibility": 25,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_TornPancake",
+            "food_breakfast"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "TornPancakes_Name": "{{i18n:object.TornPancakes.name}}",
+      "TornPancakes_Description": "{{i18n:object.TornPancakes.description}}"
+  }
+},
+
+{
+  "LogName": "Sacher-torte Cake",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_SachertorteCake": {
+          "Name": "{{ModId}}_SachertorteCake",
+          "DisplayName": "{{i18n:object.SachertorteCake.name}}",
+          "Description": "{{i18n:object.SachertorteCake.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 68,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 43,
+          "Edibility": 30,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_SachertorteCake"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "SachertorteCake_Name": "{{i18n:object.SachertorteCake.name}}",
+      "SachertorteCake_Description": "{{i18n:object.SachertorteCake.description}}"
+  }
+},
+
+{
+  "LogName": "Apricot Dumplings",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_ApricotDumplings": {
+          "Name": "{{ModId}}_ApricotDumplings",
+          "DisplayName": "{{i18n:object.ApricotDumplings.name}}",
+          "Description": "{{i18n:object.ApricotDumplings.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 68,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 44,
+          "Edibility": 35,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_ApricotDumpling"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "ApricotDumplings_Name": "{{i18n:object.ApricotDumplings.name}}",
+      "ApricotDumplings_Description": "{{i18n:object.ApricotDumplings.description}}"
+  }
+},
+
+{
+  "LogName": "Potato Salad",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_PotatoSalad": {
+          "Name": "{{ModId}}_PotatoSalad",
+          "DisplayName": "{{i18n:object.PotatoSalad.name}}",
+          "Description": "{{i18n:object.PotatoSalad.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 88,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 45,
+          "Edibility": 25,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_yellow",
+            "TMP_PotatoSalad"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "PotatoSalad_Name": "{{i18n:object.PotatoSalad.name}}",
+      "PotatoSalad_Description": "{{i18n:object.PotatoSalad.description}}"
+  }
+},
+
+{
+  "LogName": "StroopWafel",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_StroopWafel": {
+          "Name": "{{ModId}}_StroopWafel",
+          "DisplayName": "{{i18n:object.StroopWafel.name}}",
+          "Description": "{{i18n:object.StroopWafel.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 101,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 46,
+          "Edibility": 20,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_StroopWafel"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "StroopWafel_Name": "{{i18n:object.StroopWafel.name}}",
+      "StroopWafel_Description": "{{i18n:object.StroopWafel.description}}"
+  }
+},
+
+{
+  "LogName": "Gyro",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_Gyro": {
+          "Name": "{{ModId}}_Gyro",
+          "DisplayName": "{{i18n:object.Gyro.name}}",
+          "Description": "{{i18n:object.Gyro.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 275,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 47,
+          "Edibility": 45,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_yellow",
+            "TMP_Gyro",
+            "{{TMPHaramTag}}",
+            "{{TMPTeryfTag}}"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "Gyro_Name": "{{i18n:object.Gyro.name}}",
+      "Gyro_Description": "{{i18n:object.Gyro.description}}"
+  }
+},
+
+{
+  "LogName": "Giouvetsi",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_Giouvetsi": {
+          "Name": "{{ModId}}_Giouvetsi",
+          "DisplayName": "{{i18n:object.Giouvetsi.name}}",
+          "Description": "{{i18n:object.Giouvetsi.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 78,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 48,
+          "Edibility": 48,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_yellow",
+            "TMP_Giouvetsi"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "Giouvetsi_Name": "{{i18n:object.Giouvetsi.name}}",
+      "Giouvetsi_Description": "{{i18n:object.Giouvetsi.description}}"
+  }
+},
+
+{
+  "LogName": "Greek Lasagna",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_GreekLasagna": {
+          "Name": "{{ModId}}_GreekLasagna",
+          "DisplayName": "{{i18n:object.GreekLasagna.name}}",
+          "Description": "{{i18n:object.GreekLasagna.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 89,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 49,
+          "Edibility": 42,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_GreekLasagna"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "GreekLasagna_Name": "{{i18n:object.GreekLasagna.name}}",
+      "GreekLasagna_Description": "{{i18n:object.GreekLasagna.description}}"
+  }
+},
+
+{
+  "LogName": "Stuffed Veggies",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_StuffedVeggies": {
+          "Name": "{{ModId}}_StuffedVeggies",
+          "DisplayName": "{{i18n:object.StuffedVeggies.name}}",
+          "Description": "{{i18n:object.StuffedVeggies.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 99,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 50,
+          "Edibility": 20,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_StuffedVeggies"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "StuffedVeggies_Name": "{{i18n:object.StuffedVeggies.name}}",
+      "StuffedVeggies_Description": "{{i18n:object.StuffedVeggies.description}}"
+  }
+},
+
+{
+  "LogName": "Greek Dolmades",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_GreekDolmades": {
+          "Name": "{{ModId}}_GreekDolmades",
+          "DisplayName": "{{i18n:object.GreekDolmades.name}}",
+          "Description": "{{i18n:object.GreekDolmades.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 70,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 51,
+          "Edibility": 15,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_green",
+            "TMP_Dolmades"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "GreekDolmades_Name": "{{i18n:object.GreekDolmades.name}}",
+      "GreekDolmades_Description": "{{i18n:object.GreekDolmades.description}}"
+  }
+},
+
+{
+  "LogName": "Greek Meatballs",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_GreekMeatballs": {
+          "Name": "{{ModId}}_GreekMeatballs",
+          "DisplayName": "{{i18n:object.GreekMeatballs.name}}",
+          "Description": "{{i18n:object.GreekMeatballs.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 70,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 52,
+          "Edibility": 35,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_GreekMeatballs",
+            "{{TMPHaramTag}}",
+            "{{TMPTeryfTag}}"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "GreekMeatballs_Name": "{{i18n:object.GreekMeatballs.name}}",
+      "GreekMeatballs_Description": "{{i18n:object.GreekMeatballs.description}}"
+  }
+},
+
+{
+  "LogName": "Semla",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_Semla": {
+          "Name": "{{ModId}}_Semla",
+          "DisplayName": "{{i18n:object.Semla.name}}",
+          "Description": "{{i18n:object.Semla.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 107,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 53,
+          "Edibility": 20,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_Semla"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "Semla_Name": "{{i18n:object.Semla.name}}",
+      "Semla_Description": "{{i18n:object.Semla.description}}"
+  }
+},
+
+{
+  "LogName": "Swedish Meatballs",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_SwedishMeatballs": {
+          "Name": "{{ModId}}_SwedishMeatballs",
+          "DisplayName": "{{i18n:object.SwedishMeatballs.name}}",
+          "Description": "{{i18n:object.SwedishMeatballs.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 343,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 54,
+          "Edibility": 46,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_SwedishMeatballs",
+            "{{TMPHaramTag}}",
+            "{{TMPTeryfTag}}"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "SwedishMeatballs_Name": "{{i18n:object.SwedishMeatballs.name}}",
+      "SwedishMeatballs_Description": "{{i18n:object.SwedishMeatballs.description}}"
+  }
+},
+
+{
+  "LogName": "Pickled Herring",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_PickledHerring": {
+          "Name": "{{ModId}}_PickledHerring",
+          "DisplayName": "{{i18n:object.PickledHerring.name}}",
+          "Description": "{{i18n:object.PickledHerring.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 72,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 55,
+          "Edibility": 25,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "TMP_PickledHerring"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "PickledHerring_Name": "{{i18n:object.PickledHerring.name}}",
+      "PickledHerring_Description": "{{i18n:object.PickledHerring.description}}"
+  }
+},
+
+{
+  "LogName": "Swedish Crispbread",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_SwedishCrispBread": {
+          "Name": "{{ModId}}_SwedishCrispBread",
+          "DisplayName": "{{i18n:object.SwedishCrispBread.name}}",
+          "Description": "{{i18n:object.SwedishCrispBread.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 75,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 56,
+          "Edibility": 30,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_CrispBread"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "SwedishCrispBread_Name": "{{i18n:object.SwedishCrispBread.name}}",
+      "SwedishCrispBread_Description": "{{i18n:object.SwedishCrispBread.description}}"
+  }
+},
+
+{
+  "LogName": "Norewegian Meatballs",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_NorewegianMeatballs": {
+          "Name": "{{ModId}}_NorewegianMeatballs",
+          "DisplayName": "{{i18n:object.NorewegianMeatballs.name}}",
+          "Description": "{{i18n:object.NorewegianMeatballs.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 97,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 57,
+          "Edibility": 25,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_Meatballs"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "NorewegianMeatballs_Name": "{{i18n:object.NorewegianMeatballs.name}}",
+      "NorewegianMeatballs_Description": "{{i18n:object.NorewegianMeatballs.description}}"
+  }
+},
+
+{
+  "LogName": "Norewegian Lamb Ribs",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_NorewegianLambRibs": {
+          "Name": "{{ModId}}_NorewegianLambRibs",
+          "DisplayName": "{{i18n:object.NorewegianLambRibs.name}}",
+          "Description": "{{i18n:object.NorewegianLambRibs.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 97,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 58,
+          "Edibility": 50,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_LambRibs"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "NorewegianLambRibs_Name": "{{i18n:object.NorewegianLambRibs.name}}",
+      "NorewegianLambRibs_Description": "{{i18n:object.NorewegianLambRibs.description}}"
+  }
+},
+
+{
+  "LogName": "Bramboraky",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_Bramboraky": {
+          "Name": "{{ModId}}_Bramboraky",
+          "DisplayName": "{{i18n:object.Bramboraky.name}}",
+          "Description": "{{i18n:object.Bramboraky.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 77,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 59,
+          "Edibility": 25,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_Bramboraky"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "Bramboraky_Name": "{{i18n:object.Bramboraky.name}}",
+      "Bramboraky_Description": "{{i18n:object.Bramboraky.description}}"
+  }
+},
+
+{
+  "LogName": "Fruit Kolache",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_FruitKolache": {
+          "Name": "{{ModId}}_FruitKolache",
+          "DisplayName": "{{i18n:object.FruitKolache.name}}",
+          "Description": "{{i18n:object.FruitKolache.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 95,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 60,
+          "Edibility": 30,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_red",
+            "TMP_Kolache"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "FruitKolache_Name": "{{i18n:object.FruitKolache.name}}",
+      "FruitKolache_Description": "{{i18n:object.FruitKolache.description}}"
+  }
+},
+
+{
+  "LogName": "Fruit Dumplings",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_FruitDumplings": {
+          "Name": "{{ModId}}_FruitDumplings",
+          "DisplayName": "{{i18n:object.FruitDumplings.name}}",
+          "Description": "{{i18n:object.FruitDumplings.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 85,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 61,
+          "Edibility": 35,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_yellow",
+            "TMP_FruitDumplings"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "FruitDumplings_Name": "{{i18n:object.FruitDumplings.name}}",
+      "FruitDumplings_Description": "{{i18n:object.FruitDumplings.description}}"
+  }
+},
+
+{
+  "LogName": "Creme Brulee",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_CremeBrulee": {
+          "Name": "{{ModId}}_CremeBrulee",
+          "DisplayName": "{{i18n:object.CremeBrulee.name}}",
+          "Description": "{{i18n:object.CremeBrulee.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 67,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 62,
+          "Edibility": 25,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_yellow",
+            "TMP_CremeBrulee"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "CremeBrulee_Name": "{{i18n:object.CremeBrulee.name}}",
+      "CremeBrulee_Description": "{{i18n:object.CremeBrulee.description}}"
+  }
+},
+
+{
+  "LogName": "Ratatoullie Provencale",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_RatatoullieProvencale": {
+          "Name": "{{ModId}}_RatatoullieProvencale",
+          "DisplayName": "{{i18n:object.RatatoullieProvencale.name}}",
+          "Description": "{{i18n:object.RatatoullieProvencale.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 75,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 63,
+          "Edibility": 20,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_Ratatoullie"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "RatatoullieProvencale_Name": "{{i18n:object.RatatoullieProvencale.name}}",
+      "RatatoullieProvencale_Description": "{{i18n:object.RatatoullieProvencale.description}}"
+  }
+},
+
+{
+  "LogName": "Mille-Feuille",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_Mille-Feuille": {
+          "Name": "{{ModId}}_Mille-Feuille",
+          "DisplayName": "{{i18n:object.Mille-Feuille.name}}",
+          "Description": "{{i18n:object.Mille-Feuille.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 83,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 64,
+          "Edibility": 25,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_Mille-Feuille"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "Mille-Feuille_Name": "{{i18n:object.Mille-Feuille.name}}",
+      "Mille-Feuille_Description": "{{i18n:object.Mille-Feuille.description}}"
+  }
+},
+
+{
+  "LogName": "Arbroath Smokies",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_ArbroathSmokies": {
+          "Name": "{{ModId}}_ArbroathSmokies",
+          "DisplayName": "{{i18n:object.ArbroathSmokies.name}}",
+          "Description": "{{i18n:object.ArbroathSmokies.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 83,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 65,
+          "Edibility": 20,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_AbroathSmokies",
+            "{{TMPTeryfTag}}"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "ArbroathSmokies_Name": "{{i18n:object.ArbroathSmokies.name}}",
+      "ArbroathSmokies_Description": "{{i18n:object.ArbroathSmokies.description}}"
+  }
+},
+
+{
+  "LogName": "Frisian Sugar Bread",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_FrisianSugarBread": {
+          "Name": "{{ModId}}_FrisianSugarBread",
+          "DisplayName": "{{i18n:object.FrisianSugarBread.name}}",
+          "Description": "{{i18n:object.FrisianSugarBread.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 95,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 66,
+          "Edibility": 25,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_FrisianSugarBread"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "FrisianSugarBread_Name": "{{i18n:object.FrisianSugarBread.name}}",
+      "FrisianSugarBread_Description": "{{i18n:object.FrisianSugarBread.description}}"
+  }
+},
+
+{
+  "LogName": "Kale-Potato Mash",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_KalePotatoMash": {
+          "Name": "{{ModId}}_KalePotatoMash",
+          "DisplayName": "{{i18n:object.KalePotatoMash.name}}",
+          "Description": "{{i18n:object.KalePotatoMash.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 98,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 67,
+          "Edibility": 30,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_KalePotatoMash"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "KalePotatoMash_Name": "{{i18n:object.KalePotatoMash.name}}",
+      "KalePotatoMash_Description": "{{i18n:object.KalePotatoMash.description}}"
+  }
+},
+
+{
+  "LogName": "Deep Fried Sausage",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_DeepFriedSausage": {
+          "Name": "{{ModId}}_DeepFriedSausage",
+          "DisplayName": "{{i18n:object.DeepFriedSausage.name}}",
+          "Description": "{{i18n:object.DeepFriedSausage.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 155,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 68,
+          "Edibility": 40,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_DeepFriedSausage"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "DeepFriedSausage_Name": "{{i18n:object.DeepFriedSausage.name}}",
+      "DeepFriedSausage_Description": "{{i18n:object.DeepFriedSausage.description}}"
+  }
+},
+
+{
+  "LogName": "Dutch Hutspot",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_DutchHutspot": {
+          "Name": "{{ModId}}_DutchHutspot",
+          "DisplayName": "{{i18n:object.DutchHutspot.name}}",
+          "Description": "{{i18n:object.DutchHutspot.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 73,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 69,
+          "Edibility": 45,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_DutchHutspot"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "DutchHutspot_Name": "{{i18n:object.DutchHutspot.name}}",
+      "DutchHutspot_Description": "{{i18n:object.DutchHutspot.description}}"
+  }
+},
+
+{
+  "LogName": "Bubble and Squeak",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_BubbleAndSqueak": {
+          "Name": "{{ModId}}_BubbleAndSqueak",
+          "DisplayName": "{{i18n:object.BubbleAndSqueak.name}}",
+          "Description": "{{i18n:object.BubbleAndSqueak.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 198,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 70,
+          "Edibility": 30,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_BubbleAndSqueak"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "BubbleAndSqueak_Name": "{{i18n:object.BubbleAndSqueak.name}}",
+      "BubbleAndSqueak_Description": "{{i18n:object.BubbleAndSqueak.description}}"
+  }
+},
+
+{
+  "LogName": "Toad In The Hole",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_ToadInTheHole": {
+          "Name": "{{ModId}}_ToadInTheHole",
+          "DisplayName": "{{i18n:object.ToadInTheHole.name}}",
+          "Description": "{{i18n:object.ToadInTheHole.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 155,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 71,
+          "Edibility": 30,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_ToadInTheHole"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "ToadInTheHole_Name": "{{i18n:object.ToadInTheHole.name}}",
+      "ToadInTheHole_Description": "{{i18n:object.ToadInTheHole.description}}"
+  }
+},
+
+{
+  "LogName": "Manchester Tart",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_ManchesterTart": {
+          "Name": "{{ModId}}_ManchesterTart",
+          "DisplayName": "{{i18n:object.ManchesterTart.name}}",
+          "Description": "{{i18n:object.ManchesterTart.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 84,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 72,
+          "Edibility": 35,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_ManchesterTart"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "ManchesterTart_Name": "{{i18n:object.ManchesterTart.name}}",
+      "ManchesterTart_Description": "{{i18n:object.ManchesterTart.description}}"
+  }
+},
+
+{
+  "LogName": "Tottenham Cake",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_TottenhamCake": {
+          "Name": "{{ModId}}_TottenhamCake",
+          "DisplayName": "{{i18n:object.TottenhamCake.name}}",
+          "Description": "{{i18n:object.TottenhamCake.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 49,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 73,
+          "Edibility": 25,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_TottenhamCake"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "TottenhamCake_Name": "{{i18n:object.TottenhamCake.name}}",
+      "TottenhamCake_Description": "{{i18n:object.TottenhamCake.description}}"
+  }
+},
+
+{
+  "LogName": "Lemon Bars",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_LemonBars": {
+          "Name": "{{ModId}}_LemonBars",
+          "DisplayName": "{{i18n:object.LemonBars.name}}",
+          "Description": "{{i18n:object.LemonBars.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 66,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 74,
+          "Edibility": 25,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "color_orange",
+            "TMP_LemonBars"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "LemonBars_Name": "{{i18n:object.LemonBars.name}}",
+      "LemonBars_Description": "{{i18n:object.LemonBars.description}}"
+  }
+},
+
+{
+  "LogName": "Plum Dumplings",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_PlumDumplings": {
+          "Name": "{{ModId}}_PlumDumplings",
+          "DisplayName": "{{i18n:object.PlumDumplings.name}}",
+          "Description": "{{i18n:object.PlumDumplings.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 83,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 75,
+          "Edibility": 25,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "TMP_PlumDumplings"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "PlumDumplings_Name": "{{i18n:object.PlumDumplings.name}}",
+      "PlumDumplings_Description": "{{i18n:object.PlumDumplings.description}}"
+  }
+},
+
+{
+  "LogName": "Egg Stuffed Meatloaf",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_EggStuffedMeatloaf": {
+          "Name": "{{ModId}}_EggStuffedMeatloaf",
+          "DisplayName": "{{i18n:object.EggStuffedMeatloaf.name}}",
+          "Description": "{{i18n:object.EggStuffedMeatloaf.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 313,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 76,
+          "Edibility": 40,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "TMP_EggStuffedMeatloaf",
+            "{{TMPHaramTag}}",
+            "{{TMPTeryfTag}}"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "EggStuffedMeatloaf_Name": "{{i18n:object.EggStuffedMeatloaf.name}}",
+      "EggStuffedMeatloaf_Description": "{{i18n:object.EggStuffedMeatloaf.description}}"
+  }
+},
+
+{
+  "LogName": "Walnut Crescent Cookies",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_WalnutCrescentCookies": {
+          "Name": "{{ModId}}_WalnutCrescentCookies",
+          "DisplayName": "{{i18n:object.WalnutCrescentCookies.name}}",
+          "Description": "{{i18n:object.WalnutCrescentCookies.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 63,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 77,
+          "Edibility": 20,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "TMP_WalnutCrescentCookies"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "WalnutCrescentCookies_Name": "{{i18n:object.WalnutCrescentCookies.name}}",
+      "WalnutCrescentCookies_Description": "{{i18n:object.WalnutCrescentCookies.description}}"
+  }
+},
+
+{
+  "LogName": "Ropa Vieja",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_RopaVieja": {
+          "Name": "{{ModId}}_RopaVieja",
+          "DisplayName": "{{i18n:object.RopaVieja.name}}",
+          "Description": "{{i18n:object.RopaVieja.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 63,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 78,
+          "Edibility": 30,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "TMP_RopaVieja"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "RopaVieja_Name": "{{i18n:object.RopaVieja.name}}",
+      "RopaVieja_Description": "{{i18n:object.RopaVieja.description}}"
+  }
+},
+
+{
+  "LogName": "Macaron",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_Macaron": {
+          "Name": "{{ModId}}_Macaron",
+          "DisplayName": "{{i18n:object.Macaron.name}}",
+          "Description": "{{i18n:object.Macaron.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 180,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 79,
+          "Edibility": 25,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "TMP_Macaron"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "Macaron_Name": "{{i18n:object.Macaron.name}}",
+      "Macaron_Description": "{{i18n:object.Macaron.description}}"
+  }
+},
+
+{
+  "LogName": "Turron",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_Turron": {
+          "Name": "{{ModId}}_Turron",
+          "DisplayName": "{{i18n:object.Turron.name}}",
+          "Description": "{{i18n:object.Turron.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 180,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 80,
+          "Edibility": 30,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "TMP_Turron"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "Turron_Name": "{{i18n:object.Turron.name}}",
+      "Turron_Description": "{{i18n:object.Turron.description}}"
+  }
+},
+
+{
+  "LogName": "Pkhali",
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries": {
+"{{ModId}}_Pkhali": {
+          "Name": "{{ModId}}_Pkhali",
+          "DisplayName": "{{i18n:object.Pkhali.name}}",
+          "Description": "{{i18n:object.Pkhali.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 504,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 81,
+          "Edibility": 30,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "TMP_Pkhali"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "Pkhali_Name": "{{i18n:object.Pkhali.name}}",
+      "Pkhali_Description": "{{i18n:object.Pkhali.description}}"
+  }
+},
+
+{
+  "LogName": "Ajapsandali",
+  "Action": "EditData",
+  "Target": "Data/Objects",
+  "Entries": {
+  "{{ModId}}_Ajapsandali": {
+          "Name": "{{ModId}}_Ajapsandali",
+          "DisplayName": "{{i18n:object.Ajapsandali.name}}",
+          "Description": "{{i18n:object.Ajapsandali.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 401,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 82,
+          "Edibility": 15,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "TMP_Ajapsandali"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "Ajapsandali_Name": "{{i18n:object.Ajapsandali.name}}",
+      "Ajapsandali_Description": "{{i18n:object.Ajapsandali.description}}"
+  }
+},
+
+{
+  "LogName": "Khachapuri",
+  "Action": "EditData",
+  "Target": "Data/Objects",
+  "Entries": {
+  "{{ModId}}_Khachapuri": {
+          "Name": "{{ModId}}_Khachapuri",
+          "DisplayName": "{{i18n:object.Khachapuri.name}}",
+          "Description": "{{i18n:object.Khachapuri.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 342,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 83,
+          "Edibility": 50,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "TMP_Khachapuri"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "Khachapuri_Name": "{{i18n:object.Khachapuri.name}}",
+      "Khachapuri_Description": "{{i18n:object.Khachapuri.description}}"
+  }
+},
+
+{
+  "LogName": "Adjaruli",
+  "Action": "EditData",
+  "Target": "Data/Objects",
+  "Entries": {
+  "{{ModId}}_Adjaruli": {
+          "Name": "{{ModId}}_Adjaruli",
+          "DisplayName": "{{i18n:object.Adjaruli.name}}",
+          "Description": "{{i18n:object.Adjaruli.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 680,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 84,
+          "Edibility": 40,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "TMP_Adjaruli"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "Adjaruli_Name": "{{i18n:object.Adjaruli.name}}",
+      "Adjaruli_Description": "{{i18n:object.Adjaruli.description}}"
+  }
+},
+
+{
+  "LogName": "Mtsvadi",
+  "Action": "EditData",
+  "Target": "Data/Objects",
+  "Entries": {
+  "{{ModId}}_Mtsvadi": {
+          "Name": "{{ModId}}_Mtsvadi",
+          "DisplayName": "{{i18n:object.Mtsvadi.name}}",
+          "Description": "{{i18n:object.Mtsvadi.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 1229,
+          "Texture": "Mods/{{ModId}}/EuropeObjects",
+          "SpriteIndex": 85,
+          "Edibility": 30,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "Duration": 600,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [
+            "TMP_Mtsvadi",
+            "{{TMPHaramTag}}",
+            "{{TMPTeryfTag}}"
+          ],
+          "CustomFields": null
+        }
+}
+
+},
+
+{
+  "Action":"EditData",
+  "Target": "Strings/Objects",
+  "Entries":
+  {
+      "Mtsvadi_Name": "{{i18n:object.Mtsvadi.name}}",
+      "Mtsvadi_Description": "{{i18n:object.Mtsvadi.description}}"
+  }
+},
+        {
+            "LogName": "Europe Food Item Textures",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/EuropeObjects",
+            "FromFile": "Assets/Images/Food/ATasteOfEurope.png"
+        }
+    ]
+}

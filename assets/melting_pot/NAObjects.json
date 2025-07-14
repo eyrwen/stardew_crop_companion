@@ -1,0 +1,4074 @@
+{
+    "Changes":
+    [
+        {
+            "LogName": "Poutine",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Poutine": {
+                    "Name": "{{ModId}}_Poutine",
+                    "DisplayName": "{{i18n:object.Poutine.name}}",
+                    "Description": "{{i18n:object.Poutine.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 423,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 0,
+                    "Edibility": 30,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Poutine"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Poutine_Name": "{{i18n:object.Poutine.name}}",
+                "Poutine_Description": "{{i18n:object.Poutine.description}}"
+            }
+        },
+
+        {
+            "LogName": "Nanaimo Bars",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_NanaimoBars": {
+                    "Name": "{{ModId}}_NanaimoBars",
+                    "DisplayName": "{{i18n:object.NanaimoBars.name}}",
+                    "Description": "{{i18n:object.NanaimoBars.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 441,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 1,
+                    "Edibility": 25,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_NanaimoBars"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "NanaimoBars_Name": "{{i18n:object.NanaimoBars.name}}",
+                "NanaimoBars_Description": "{{i18n:object.NanaimoBars.description}}"
+            }
+        },
+
+        {
+            "LogName": "Souse",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Souse": {
+                    "Name": "{{ModId}}_Souse",
+                    "DisplayName": "{{i18n:object.Souse.name}}",
+                    "Description": "{{i18n:object.Souse.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 432,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 2,
+                    "Edibility": 45,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Souse"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Souse_Name": "{{i18n:object.Souse.name}}",
+                "Souse_Description": "{{i18n:object.Souse.description}}"
+            }
+        },
+
+        {
+            "LogName": "Cuban Sandwich",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_CubanSandwich": {
+                    "Name": "{{ModId}}_CubanSandwich",
+                    "DisplayName": "{{i18n:object.CubanSandwich.name}}",
+                    "Description": "{{i18n:object.CubanSandwich.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 1958,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 3,
+                    "Edibility": 60,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_CubanSandwich",
+                    "{{TMPHaramTag}}",
+                    "{{TMPTeryfTag}}"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "CubanSandwich_Name": "{{i18n:object.CubanSandwich.name}}",
+                "CubanSandwich_Description": "{{i18n:object.CubanSandwich.description}}"
+            }
+        },
+
+        {
+            "LogName": "Arroz Con Picadillo",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_ArrozConPicadillo": {
+                    "Name": "{{ModId}}_ArrozConPicadillo",
+                    "DisplayName": "{{i18n:object.ArrozConPicadillo.name}}",
+                    "Description": "{{i18n:object.ArrozConPicadillo.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 1035,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 4,
+                    "Edibility": 25,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Picadillo"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "ArrozConPicadillo_Name": "{{i18n:object.ArrozConPicadillo.name}}",
+                "ArrozConPicadillo_Description": "{{i18n:object.ArrozConPicadillo.description}}"
+            }
+        },
+
+        {
+            "LogName": "Arroz Con Salchicha",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_ArrozConSalchicha": {
+                    "Name": "{{ModId}}_ArrozConSalchicha",
+                    "DisplayName": "{{i18n:object.ArrozConSalchicha.name}}",
+                    "Description": "{{i18n:object.ArrozConSalchicha.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 774,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 5,
+                    "Edibility": 25,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Salchicha",
+                    "{{TMPHaramTag}}",
+                    "{{TMPTeryfTag}}"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "ArrozConSalchicha_Name": "{{i18n:object.ArrozConSalchicha.name}}",
+                "ArrozConSalchicha_Description": "{{i18n:object.ArrozConSalchicha.description}}"
+            }
+        },
+
+        {
+            "LogName": "Bocadito",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Bocadito": {
+                    "Name": "{{ModId}}_Bocadito",
+                    "DisplayName": "{{i18n:object.Bocadito.name}}",
+                    "Description": "{{i18n:object.Bocadito.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 990,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 6,
+                    "Edibility": 30,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Bocadito",
+                    "{{TMPHaramTag}}",
+                    "{{TMPTeryfTag}}"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Bocadito_Name": "{{i18n:object.Bocadito.name}}",
+                "Bocadito_Description": "{{i18n:object.Bocadito.description}}"
+            }
+        },
+
+        {
+            "LogName": "Mushroom Rice",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_MushroomRice": {
+                    "Name": "{{ModId}}_MushroomRice",
+                    "DisplayName": "{{i18n:object.MushroomRice.name}}",
+                    "Description": "{{i18n:object.MushroomRice.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 194,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 7,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_MushroomRice"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "MushroomRice_Name": "{{i18n:object.MushroomRice.name}}",
+                "MushroomRice_Description": "{{i18n:object.MushroomRice.description}}"
+            }
+        },
+
+        {
+            "LogName": "Griot",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Griot": {
+                    "Name": "{{ModId}}_Griot",
+                    "DisplayName": "{{i18n:object.Griot.name}}",
+                    "Description": "{{i18n:object.Griot.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 1125,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 8,
+                    "Edibility": 30,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Griot",
+                    "{{TMPHaramTag}}",
+                    "{{TMPTeryfTag}}"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Griot_Name": "{{i18n:object.Griot.name}}",
+                "Griot_Description": "{{i18n:object.Griot.description}}"
+            }
+        },
+
+        {
+            "LogName": "Jerk Chicken",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_JerkChicken": {
+                    "Name": "{{ModId}}_JerkChicken",
+                    "DisplayName": "{{i18n:object.JerkChicken.name}}",
+                    "Description": "{{i18n:object.JerkChicken.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 225,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 9,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_JerkChicken"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "JerkChicken_Name": "{{i18n:object.JerkChicken.name}}",
+                "JerkChicken_Description": "{{i18n:object.JerkChicken.description}}"
+            }
+        },
+
+        {
+            "LogName": "StarFruit Juice",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_StarFruitJuice": {
+                    "Name": "{{ModId}}_StarFruitJuice",
+                    "DisplayName": "{{i18n:object.StarFruitJuice.name}}",
+                    "Description": "{{i18n:object.StarFruitJuice.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 675,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 10,
+                    "Edibility": 25,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_StarFruitJuice"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "StarFruitJuice_Name": "{{i18n:object.StarFruitJuice.name}}",
+                "StarFruitJuice_Description": "{{i18n:object.StarFruitJuice.description}}"
+            }
+        },
+
+        {
+            "LogName": "Banana Porridge",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_BananaPorridge": {
+                    "Name": "{{ModId}}_BananaPorridge",
+                    "DisplayName": "{{i18n:object.BananaPorridge.name}}",
+                    "Description": "{{i18n:object.BananaPorridge.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 588,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 11,
+                    "Edibility": 30,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_BananaPorridge"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "BananaPorridge_Name": "{{i18n:object.BananaPorridge.name}}",
+                "BananaPorridge_Description": "{{i18n:object.BananaPorridge.description}}"
+            }
+        },
+
+        {
+            "LogName": "Coquito",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Coquito": {
+                    "Name": "{{ModId}}_Coquito",
+                    "DisplayName": "{{i18n:object.Coquito.name}}",
+                    "Description": "{{i18n:object.Coquito.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 597,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 12,
+                    "Edibility": 30,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Coquito"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Coquito_Name": "{{i18n:object.Coquito.name}}",
+                "Coquito_Description": "{{i18n:object.Coquito.description}}"
+            }
+        },
+
+        {
+            "LogName": "Pina Colada",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_PinaColada": {
+                    "Name": "{{ModId}}_PinaColada",
+                    "DisplayName": "{{i18n:object.PinaColada.name}}",
+                    "Description": "{{i18n:object.PinaColada.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 495,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 13,
+                    "Edibility": 55,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_PinaColada"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "PinaColada_Name": "{{i18n:object.PinaColada.name}}",
+                "PinaColada_Description": "{{i18n:object.PinaColada.description}}"
+            }
+        },
+
+        {
+            "LogName": "Cassava Pone",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_CassavaPone": {
+                    "Name": "{{ModId}}_CassavaPone",
+                    "DisplayName": "{{i18n:object.CassavaPone.name}}",
+                    "Description": "{{i18n:object.CassavaPone.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 950,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 14,
+                    "Edibility": 30,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_CassavaPone"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "CassavaPone_Name": "{{i18n:object.CassavaPone.name}}",
+                "CassavaPone_Description": "{{i18n:object.CassavaPone.description}}"
+            }
+        },
+
+        {
+            "LogName": "Benne Balls",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_BenneBalls": {
+                    "Name": "{{ModId}}_BenneBalls",
+                    "DisplayName": "{{i18n:object.BenneBalls.name}}",
+                    "Description": "{{i18n:object.BenneBalls.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 180,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 15,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_BenneBalls"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "BenneBalls_Name": "{{i18n:object.BenneBalls.name}}",
+                "BenneBalls_Description": "{{i18n:object.BenneBalls.description}}"
+            }
+        },
+
+        {
+            "LogName": "Accra",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Accra": {
+                    "Name": "{{ModId}}_Accra",
+                    "DisplayName": "{{i18n:object.Accra.name}}",
+                    "Description": "{{i18n:object.Accra.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 401,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 16,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Accra"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Accra_Name": "{{i18n:object.Accra.name}}",
+                "Accra_Description": "{{i18n:object.Accra.description}}"
+            }
+        },
+
+        {
+            "LogName": "Peanut Punch",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_PeanutPunch": {
+                    "Name": "{{ModId}}_PeanutPunch",
+                    "DisplayName": "{{i18n:object.PeanutPunch.name}}",
+                    "Description": "{{i18n:object.PeanutPunch.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 521,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 17,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_PeanutPunch"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "PeanutPunch_Name": "{{i18n:object.PeanutPunch.name}}",
+                "PeanutPunch_Description": "{{i18n:object.PeanutPunch.description}}"
+            }
+        },
+
+        {
+            "LogName": "Pelau",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Pelau": {
+                    "Name": "{{ModId}}_Pelau",
+                    "DisplayName": "{{i18n:object.Pelau.name}}",
+                    "Description": "{{i18n:object.Pelau.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 932,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 18,
+                    "Edibility": 30,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Pelau"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Pelau_Name": "{{i18n:object.Pelau.name}}",
+                "Pelau_Description": "{{i18n:object.Pelau.description}}"
+            }
+        },
+
+        {
+            "LogName": "Horchata",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Horchata": {
+                    "Name": "{{ModId}}_Horchata",
+                    "DisplayName": "{{i18n:object.Horchata.name}}",
+                    "Description": "{{i18n:object.Horchata.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 342,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 19,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Horchata"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Horchata_Name": "{{i18n:object.Horchata.name}}",
+                "Horchata_Description": "{{i18n:object.Horchata.description}}"
+            }
+        },
+
+        {
+            "LogName": "Burrito",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Burrito": {
+                    "Name": "{{ModId}}_Burrito",
+                    "DisplayName": "{{i18n:object.Burrito.name}}",
+                    "Description": "{{i18n:object.Burrito.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 459,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 20,
+                    "Edibility": 30,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Burrito"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Burrito_Name": "{{i18n:object.Burrito.name}}",
+                "Burrito_Description": "{{i18n:object.Burrito.description}}"
+            }
+        },
+
+        {
+            "LogName": "Enchiladas",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Enchiladas": {
+                    "Name": "{{ModId}}_Enchiladas",
+                    "DisplayName": "{{i18n:object.Enchiladas.name}}",
+                    "Description": "{{i18n:object.Enchiladas.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 356,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 21,
+                    "Edibility": 30,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Enchiladas"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Enchiladas_Name": "{{i18n:object.Enchiladas.name}}",
+                "Enchiladas_Description": "{{i18n:object.Enchiladas.description}}"
+            }
+        },
+
+        {
+            "LogName": "Quesadilla",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Quesadilla": {
+                    "Name": "{{ModId}}_Quesadilla",
+                    "DisplayName": "{{i18n:object.Quesadilla.name}}",
+                    "Description": "{{i18n:object.Quesadilla.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 522,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 22,
+                    "Edibility": 65,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Quesadilla"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Quesadilla_Name": "{{i18n:object.Quesadilla.name}}",
+                "Quesadilla_Description": "{{i18n:object.Quesadilla.description}}"
+            }
+        },
+
+        {
+            "LogName": "Succotash",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Succotash": {
+                    "Name": "{{ModId}}_Succotash",
+                    "DisplayName": "{{i18n:object.Succotash.name}}",
+                    "Description": "{{i18n:object.Succotash.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 1260,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 23,
+                    "Edibility": 40,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Succotash",
+                    "{{TMPHaramTag}}",
+                    "{{TMPTeryfTag}}"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Succotash_Name": "{{i18n:object.Succotash.name}}",
+                "Succotash_Description": "{{i18n:object.Succotash.description}}"
+            }
+        },
+
+        {
+            "LogName": "Acorn Crusted Salmon",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_AcornCrustedSalmon": {
+                    "Name": "{{ModId}}_AcornCrustedSalmon",
+                    "DisplayName": "{{i18n:object.AcornCrustedSalmon.name}}",
+                    "Description": "{{i18n:object.AcornCrustedSalmon.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 158,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 24,
+                    "Edibility": 30,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMp_AcornCrustedSalmon"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "AcornCrustedSalmon_Name": "{{i18n:object.AcornCrustedSalmon.name}}",
+                "AcornCrustedSalmon_Description": "{{i18n:object.AcornCrustedSalmon.description}}"
+            }
+        },
+
+        {
+            "LogName": "Jocon",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Jocon": {
+                    "Name": "{{ModId}}_Jocon",
+                    "DisplayName": "{{i18n:object.Jocon.name}}",
+                    "Description": "{{i18n:object.Jocon.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 536,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 25,
+                    "Edibility": 40,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Jocon"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Jocon_Name": "{{i18n:object.Jocon.name}}",
+                "Jocon_Description": "{{i18n:object.Jocon.description}}"
+            }
+        },
+
+        {
+            "LogName": "Guacamole",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Guacamole": {
+                    "Name": "{{ModId}}_Guacamole",
+                    "DisplayName": "{{i18n:object.Guacamole.name}}",
+                    "Description": "{{i18n:object.Guacamole.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 450,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 26,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Guacamole"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Guacamole_Name": "{{i18n:object.Guacamole.name}}",
+                "Guacamole_Description": "{{i18n:object.Guacamole.description}}"
+            }
+        },
+
+        {
+            "LogName": "Kakik",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Kakik": {
+                    "Name": "{{ModId}}_Kakik",
+                    "DisplayName": "{{i18n:object.Kakik.name}}",
+                    "Description": "{{i18n:object.Kakik.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 684,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 27,
+                    "Edibility": 25,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Kakik"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Kakik_Name": "{{i18n:object.Kakik.name}}",
+                "Kakik_Description": "{{i18n:object.Kakik.description}}"
+            }
+        },
+
+        {
+            "LogName": "Pepian",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Pepian": {
+                    "Name": "{{ModId}}_Pepian",
+                    "DisplayName": "{{i18n:object.Pepian.name}}",
+                    "Description": "{{i18n:object.Pepian.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 144,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 28,
+                    "Edibility": 30,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Pepian"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Pepian_Name": "{{i18n:object.Pepian.name}}",
+                "Pepian_Description": "{{i18n:object.Pepian.description}}"
+            }
+        },
+
+        {
+            "LogName": "Jocon De Pollo",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_JoconDePollo": {
+                    "Name": "{{ModId}}_JoconDePollo",
+                    "DisplayName": "{{i18n:object.JoconDePollo.name}}",
+                    "Description": "{{i18n:object.JoconDePollo.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 708,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 29,
+                    "Edibility": 40,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_JoconDePollo"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "JoconDePollo_Name": "{{i18n:object.JoconDePollo.name}}",
+                "JoconDePollo_Description": "{{i18n:object.JoconDePollo.description}}"
+            }
+        },
+
+        {
+            "LogName": "Plantain Empanada",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_PlantainEmpanada": {
+                    "Name": "{{ModId}}_PlantainEmpanada",
+                    "DisplayName": "{{i18n:object.PlantainEmpanada.name}}",
+                    "Description": "{{i18n:object.PlantainEmpanada.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 279,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 30,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_PlantainEmpanada"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "PlantainEmpanada_Name": "{{i18n:object.PlantainEmpanada.name}}",
+                "PlantainEmpanada_Description": "{{i18n:object.PlantainEmpanada.description}}"
+            }
+        },
+
+        {
+            "LogName": "Pupusas",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Pupusas": {
+                    "Name": "{{ModId}}_Pupusas",
+                    "DisplayName": "{{i18n:object.Pupusas.name}}",
+                    "Description": "{{i18n:object.Pupusas.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 1485,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 31,
+                    "Edibility": 55,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Pupusas",
+                    "{{TMPHaramTag}}",
+                    "{{TMPTeryfTag}}"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Pupusas_Name": "{{i18n:object.Pupusas.name}}",
+                "Pupusas_Description": "{{i18n:object.Pupusas.description}}"
+            }
+        },
+
+        {
+            "LogName": "Shuco",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Shuco": {
+                    "Name": "{{ModId}}_Shuco",
+                    "DisplayName": "{{i18n:object.Shuco.name}}",
+                    "Description": "{{i18n:object.Shuco.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 104,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 32,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Shuco"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Shuco_Name": "{{i18n:object.Shuco.name}}",
+                "Shuco_Description": "{{i18n:object.Shuco.description}}"
+            }
+        },
+
+        {
+            "LogName": "Horchata De Morro",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_HorchataDeMorro": {
+                    "Name": "{{ModId}}_HorchataDeMorro",
+                    "DisplayName": "{{i18n:object.HorchataDeMorro.name}}",
+                    "Description": "{{i18n:object.HorchataDeMorro.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 864,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 33,
+                    "Edibility": 30,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_HorchataDeMorro"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "HorchataDeMorro_Name": "{{i18n:object.HorchataDeMorro.name}}",
+                "HorchataDeMorro_Description": "{{i18n:object.HorchataDeMorro.description}}"
+            }
+        },
+
+        {
+            "LogName": "Fresco De Cebada",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_FrescoDeCebada": {
+                    "Name": "{{ModId}}_FrescoDeCebada",
+                    "DisplayName": "{{i18n:object.FrescoDeCebada.name}}",
+                    "Description": "{{i18n:object.FrescoDeCebada.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 437,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 34,
+                    "Edibility": 40,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_FrescoDeCebada"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "FrescoDeCebada_Name": "{{i18n:object.FrescoDeCebada.name}}",
+                "FrescoDeCebada_Description": "{{i18n:object.FrescoDeCebada.description}}"
+            }
+        },
+
+        {
+            "LogName": "Riguas",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Riguas": {
+                    "Name": "{{ModId}}_Riguas",
+                    "DisplayName": "{{i18n:object.Riguas.name}}",
+                    "Description": "{{i18n:object.Riguas.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 405,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 35,
+                    "Edibility": 40,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Riguas"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Riguas_Name": "{{i18n:object.Riguas.name}}",
+                "Riguas_Description": "{{i18n:object.Riguas.description}}"
+            }
+        },
+
+        {
+            "LogName": "Pastelito De Chucho",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_PastelitoDeChucho": {
+                    "Name": "{{ModId}}_PastelitoDeChucho",
+                    "DisplayName": "{{i18n:object.PastelitoDeChucho.name}}",
+                    "Description": "{{i18n:object.PastelitoDeChucho.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 468,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 36,
+                    "Edibility": 35,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_PastelitoDeChucho"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "PastelitoDeChucho_Name": "{{i18n:object.PastelitoDeChucho.name}}",
+                "PastelitoDeChucho_Description": "{{i18n:object.PastelitoDeChucho.description}}"
+            }
+        },
+
+        {
+            "LogName": "Gallo En Chicha",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_GalloEnChicha": {
+                    "Name": "{{ModId}}_GalloEnChicha",
+                    "DisplayName": "{{i18n:object.GalloEnChicha.name}}",
+                    "Description": "{{i18n:object.GalloEnChicha.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 594,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 37,
+                    "Edibility": 30,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_GalloEnChicha"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "GalloEnChicha_Name": "{{i18n:object.GalloEnChicha.name}}",
+                "GalloEnChicha_Description": "{{i18n:object.GalloEnChicha.description}}"
+            }
+        },
+
+        {
+            "LogName": "Baleada",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Baleada": {
+                    "Name": "{{ModId}}_Baleada",
+                    "DisplayName": "{{i18n:object.Baleada.name}}",
+                    "Description": "{{i18n:object.Baleada.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 266,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 38,
+                    "Edibility": 60,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Baleada"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Baleada_Name": "{{i18n:object.Baleada.name}}",
+                "Baleada_Description": "{{i18n:object.Baleada.description}}"
+            }
+        },
+
+        {
+            "LogName": "Tapado Olanchano",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_TapadoOlanchano": {
+                    "Name": "{{ModId}}_TapadoOlanchano",
+                    "DisplayName": "{{i18n:object.TapadoOlanchano.name}}",
+                    "Description": "{{i18n:object.TapadoOlanchano.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 1463,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 39,
+                    "Edibility": 45,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_TapadoOlanchano",
+                    "{{TMPHaramTag}}",
+                    "{{TMPTeryfTag}}"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "TapadoOlanchano_Name": "{{i18n:object.TapadoOlanchano.name}}",
+                "TapadoOlanchano_Description": "{{i18n:object.TapadoOlanchano.description}}"
+            }
+        },
+
+        {
+            "LogName": "Snail Soup",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_SnailSoup": {
+                    "Name": "{{ModId}}_SnailSoup",
+                    "DisplayName": "{{i18n:object.SnailSoup.name}}",
+                    "Description": "{{i18n:object.SnailSoup.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 491,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 40,
+                    "Edibility": 45,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_SnailSoup",
+                    "{{TMPHaramTag}}",
+                    "{{TMPTeryfTag}}"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "SnailSoup_Name": "{{i18n:object.SnailSoup.name}}",
+                "SnailSoup_Description": "{{i18n:object.SnailSoup.description}}"
+            }
+        },
+
+        {
+            "LogName": "Montuca",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Montuca": {
+                    "Name": "{{ModId}}_Montuca",
+                    "DisplayName": "{{i18n:object.Montuca.name}}",
+                    "Description": "{{i18n:object.Montuca.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 1877,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 41,
+                    "Edibility": 40,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Montuca",
+                    "{{TMPHaramTag}}",
+                    "{{TMPTeryfTag}}"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Montuca_Name": "{{i18n:object.Montuca.name}}",
+                "Montuca_Description": "{{i18n:object.Montuca.description}}"
+            }
+        },
+
+        {
+            "LogName": "Gallo Pinto",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_GalloPinto": {
+                    "Name": "{{ModId}}_GalloPinto",
+                    "DisplayName": "{{i18n:object.GalloPinto.name}}",
+                    "Description": "{{i18n:object.GalloPinto.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 243,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 42,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_GalloPinto"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "GalloPinto_Name": "{{i18n:object.GalloPinto.name}}",
+                "GalloPinto_Description": "{{i18n:object.GalloPinto.description}}"
+            }
+        },
+
+        {
+            "LogName": "Piononos",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Piononos": {
+                    "Name": "{{ModId}}_Piononos",
+                    "DisplayName": "{{i18n:object.Piononos.name}}",
+                    "Description": "{{i18n:object.Piononos.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 73,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 43,
+                    "Edibility": 25,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Piononos"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Piononos_Name": "{{i18n:object.Piononos.name}}",
+                "Piononos_Description": "{{i18n:object.Piononos.description}}"
+            }
+        },
+
+        {
+            "LogName": "Beignet",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Beignet": {
+                    "Name": "{{ModId}}_Beignet",
+                    "DisplayName": "{{i18n:object.Beignet.name}}",
+                    "Description": "{{i18n:object.Beignet.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 563,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 44,
+                    "Edibility": 30,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Beignet"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Beignet_Name": "{{i18n:object.Beignet.name}}",
+                "Beignet_Description": "{{i18n:object.Beignet.description}}"
+            }
+        },
+
+        {
+            "LogName": "PoBoy",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_PoBoy": {
+                    "Name": "{{ModId}}_PoBoy",
+                    "DisplayName": "{{i18n:object.PoBoy.name}}",
+                    "Description": "{{i18n:object.PoBoy.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 464,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 45,
+                    "Edibility": 40,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_PoBoy"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "PoBoy_Name": "{{i18n:object.PoBoy.name}}",
+                "PoBoy_Description": "{{i18n:object.PoBoy.description}}"
+            }
+        },
+
+        {
+            "LogName": "Gumbo",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Gumbo": {
+                    "Name": "{{ModId}}_Gumbo",
+                    "DisplayName": "{{i18n:object.Gumbo.name}}",
+                    "Description": "{{i18n:object.Gumbo.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 540,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 46,
+                    "Edibility": 25,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Gumbo"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Gumbo_Name": "{{i18n:object.Gumbo.name}}",
+                "Gumbo_Description": "{{i18n:object.Gumbo.description}}"
+            }
+        },
+
+        {
+            "LogName": "Etouffee",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Etouffee": {
+                    "Name": "{{ModId}}_Etouffee",
+                    "DisplayName": "{{i18n:object.Etouffee.name}}",
+                    "Description": "{{i18n:object.Etouffee.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 378,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 47,
+                    "Edibility": 30,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Etouffee"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Etouffee_Name": "{{i18n:object.Etouffee.name}}",
+                "Etouffee_Description": "{{i18n:object.Etouffee.description}}"
+            }
+        },
+
+        {
+            "LogName": "Jambalaya",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Jambalaya": {
+                    "Name": "{{ModId}}_Jambalaya",
+                    "DisplayName": "{{i18n:object.Jambalaya.name}}",
+                    "Description": "{{i18n:object.Jambalaya.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 900,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 48,
+                    "Edibility": 30,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Jambalaya"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Jambalaya_Name": "{{i18n:object.Jambalaya.name}}",
+                "Jambalaya_Description": "{{i18n:object.Jambalaya.description}}"
+            }
+        },
+
+        {
+            "LogName": "Biscuits And Gravy",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_BiscuitsAndGravy": {
+                    "Name": "{{ModId}}_BiscuitsAndGravy",
+                    "DisplayName": "{{i18n:object.BiscuitsAndGravy.name}}",
+                    "Description": "{{i18n:object.BiscuitsAndGravy.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 495,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 49,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_BiscuitsAndGravy",
+                    "{{TMPHaramTag}}",
+                    "{{TMPTeryfTag}}"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "BiscuitsAndGravy_Name": "{{i18n:object.BiscuitsAndGravy.name}}",
+                "BiscuitsAndGravy_Description": "{{i18n:object.BiscuitsAndGravy.description}}"
+            }
+        },
+
+        {
+            "LogName": "Collared Greens",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_CollaredGreens": {
+                    "Name": "{{ModId}}_CollaredGreens",
+                    "DisplayName": "{{i18n:object.CollaredGreens.name}}",
+                    "Description": "{{i18n:object.CollaredGreens.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 20,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 50,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_CollaredGreens"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "CollaredGreens_Name": "{{i18n:object.CollaredGreens.name}}",
+                "CollaredGreens_Description": "{{i18n:object.CollaredGreens.description}}"
+            }
+        },
+
+        {
+            "LogName": "Grits",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Grits": {
+                    "Name": "{{ModId}}_Grits",
+                    "DisplayName": "{{i18n:object.Grits.name}}",
+                    "Description": "{{i18n:object.Grits.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 315,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 51,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Grits",
+                    "{{TMPHaramTag}}",
+                    "{{TMPTeryfTag}}"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Grits_Name": "{{i18n:object.Grits.name}}",
+                "Grits_Description": "{{i18n:object.Grits.description}}"
+            }
+        },
+
+        {
+            "LogName": "Key Lime Pie",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_KeyLimePie": {
+                    "Name": "{{ModId}}_KeyLimePie",
+                    "DisplayName": "{{i18n:object.KeyLimePie.name}}",
+                    "Description": "{{i18n:object.KeyLimePie.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 417,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 52,
+                    "Edibility": 25,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_KeyLimePie"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "KeyLimePie_Name": "{{i18n:object.KeyLimePie.name}}",
+                "KeyLimePie_Description": "{{i18n:object.KeyLimePie.description}}"
+            }
+        },
+
+        {
+            "LogName": "Cornbread",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Cornbread": {
+                    "Name": "{{ModId}}_Cornbread",
+                    "DisplayName": "{{i18n:object.Cornbread.name}}",
+                    "Description": "{{i18n:object.Cornbread.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 248,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 53,
+                    "Edibility": 30,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Cornbread"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Cornbread_Name": "{{i18n:object.Cornbread.name}}",
+                "Cornbread_Description": "{{i18n:object.Cornbread.description}}"
+            }
+        },
+
+        {
+            "LogName": "Loco Moco",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_LocoMoco": {
+                    "Name": "{{ModId}}_LocoMoco",
+                    "DisplayName": "{{i18n:object.LocoMoco.name}}",
+                    "Description": "{{i18n:object.LocoMoco.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 626,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 54,
+                    "Edibility": 30,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_LocoMoco",
+                    "{{TMPHaramTag}}",
+                    "{{TMPTeryfTag}}"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "LocoMoco_Name": "{{i18n:object.LocoMoco.name}}",
+                "LocoMoco_Description": "{{i18n:object.LocoMoco.description}}"
+            }
+        },
+
+        {
+            "LogName": "Pani Popo",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_PaniPopo": {
+                    "Name": "{{ModId}}_PaniPopo",
+                    "DisplayName": "{{i18n:object.PaniPopo.name}}",
+                    "Description": "{{i18n:object.PaniPopo.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 653,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 55,
+                    "Edibility": 30,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_PaniPopo"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "PaniPopo_Name": "{{i18n:object.PaniPopo.name}}",
+                "PaniPopo_Description": "{{i18n:object.PaniPopo.description}}"
+            }
+        },
+
+        {
+            "LogName": "Fa’alifu Fa’i",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_FaalifuFai": {
+                    "Name": "{{ModId}}_FaalifuFai",
+                    "DisplayName": "{{i18n:object.FaalifuFai.name}}",
+                    "Description": "{{i18n:object.FaalifuFai.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 495,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 56,
+                    "Edibility": 40,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_FaalifuFai",
+                    "TMP"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "FaalifuFai_Name": "{{i18n:object.FaalifuFai.name}}",
+                "FaalifuFai_Description": "{{i18n:object.FaalifuFai.description}}"
+            }
+        },
+
+        {
+            "LogName": "Supoesi",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_Supoesi": {
+                    "Name": "{{ModId}}_Supoesi",
+                    "DisplayName": "{{i18n:object.Supoesi.name}}",
+                    "Description": "{{i18n:object.Supoesi.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 648,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 57,
+                    "Edibility": 25,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_Supoesi"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "Supoesi_Name": "{{i18n:object.Supoesi.name}}",
+                "Supoesi_Description": "{{i18n:object.Supoesi.description}}"
+            }
+        },
+
+        {
+            "LogName": "Kalua Pork",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_KaluaPork": {
+                    "Name": "{{ModId}}_KaluaPork",
+                    "DisplayName": "{{i18n:object.KaluaPork.name}}",
+                    "Description": "{{i18n:object.KaluaPork.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 1242,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 58,
+                    "Edibility": 30,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_KaluaPork",
+                    "{{TMPHaramTag}}",
+                    "{{TMPTeryfTag}}"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "KaluaPork_Name": "{{i18n:object.KaluaPork.name}}",
+                "KaluaPork_Description": "{{i18n:object.KaluaPork.description}}"
+            }
+        },
+
+        {
+            "LogName": "Banana Lumpia",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_BananaLumpia": {
+                    "Name": "{{ModId}}_BananaLumpia",
+                    "DisplayName": "{{i18n:object.BananaLumpia.name}}",
+                    "Description": "{{i18n:object.BananaLumpia.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 486,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 59,
+                    "Edibility": 35,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_BananaLumpia"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "BananaLumpia_Name": "{{i18n:object.BananaLumpia.name}}",
+                "BananaLumpia_Description": "{{i18n:object.BananaLumpia.description}}"
+            }
+        },
+
+        {
+            "LogName": "Spam Musubi",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_SpamMusubi": {
+                    "Name": "{{ModId}}_SpamMusubi",
+                    "DisplayName": "{{i18n:object.SpamMusubi.name}}",
+                    "Description": "{{i18n:object.SpamMusubi.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 1908,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 60,
+                    "Edibility": 25,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_SpamMusubi",
+                    "{{TMPHaramTag}}",
+                    "{{TMPTeryfTag}}"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "SpamMusubi_Name": "{{i18n:object.SpamMusubi.name}}",
+                "SpamMusubi_Description": "{{i18n:object.SpamMusubi.description}}"
+            }
+        },
+
+        {
+            "LogName": "Sloppy Joe",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_SloppyJoe": {
+                    "Name": "{{ModId}}_SloppyJoe",
+                    "DisplayName": "{{i18n:object.SloppyJoe.name}}",
+                    "Description": "{{i18n:object.SloppyJoe.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 257,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 61,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_SloppyJoe",
+                    "{{TMPHaramTag}}",
+                    "{{TMPTeryfTag}}"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "SloppyJoe_Name": "{{i18n:object.SloppyJoe.name}}",
+                "SloppyJoe_Description": "{{i18n:object.SloppyJoe.description}}"
+            }
+        },
+
+        {
+            "LogName": "Peach Cobbler",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                "{{ModId}}_PeachCobbler": {
+                    "Name": "{{ModId}}_PeachCobbler",
+                    "DisplayName": "{{i18n:object.PeachCobbler.name}}",
+                    "Description": "{{i18n:object.PeachCobbler.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 509,
+                    "Texture": "Mods/{{ModId}}/NAObjects",
+                    "SpriteIndex": 62,
+                    "Edibility": 30,
+                    "IsDrink": false,
+                    "Buffs": [
+                    {
+                        "Id": "Food",
+                        "BuffId": null,
+                        "Duration": 600,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0
+                        },
+                        "CustomFields": null
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                    "TMP_PeachCobbler"
+                    ],
+                    "CustomFields": null
+                }
+            }
+        },
+
+        {
+            "Action":"EditData",
+            "Target": "Strings/Objects",
+            "Entries":
+            {
+                "PeachCobbler_Name": "{{i18n:object.PeachCobbler.name}}",
+                "PeachCobbler_Description": "{{i18n:object.PeachCobbler.description}}"
+            }
+        },
+
+          {
+              "LogName": "North America Food Item Textures",
+              "Action": "Load",
+              "Target": "Mods/{{ModId}}/NAObjects",
+              "FromFile": "Assets/Images/Food/ATasteOfNorthAmerica.png"
+          }
+      ]
+  }

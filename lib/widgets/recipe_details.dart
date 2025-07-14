@@ -2,7 +2,6 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart' hide Tooltip;
 import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:stardew_crop_companion/widgets/item_value_column.dart';
 
 import '../data/recipe.dart';
 import 'buffs.dart';
@@ -29,7 +28,7 @@ class RecipeDetails extends HookWidget {
             ? Tooltip(
                 content: Container(
                   constraints: BoxConstraints(
-                    maxWidth: recipe.buffs.isNotEmpty ? 200 : 60,
+                    maxWidth: recipe.buffs.isNotEmpty ? 200 : 65,
                     maxHeight: math.max(
                       65,
                       (20.0 * recipe.buffs.length) +
@@ -68,9 +67,9 @@ class RecipeDetails extends HookWidget {
                 ),
                 controller: tooltipController,
                 position: ElTooltipPosition.topStart,
-                child: ItemImage.large(recipe.img),
+                child: ItemImage.large(recipe.img, imgScale: recipe.imgScale),
               )
-            : ItemImage.large(recipe.img),
+            : ItemImage.large(recipe.img, imgScale: recipe.imgScale),
         Flexible(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,

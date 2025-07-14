@@ -62,6 +62,7 @@
   },
   "sardine": {
     "name": "Sardine",
+    "id": "131",
     "url": "https://stardewvalleywiki.com/Sardine",
     "img": "sardine.png",
     "locations": {
@@ -89,6 +90,7 @@
   },
   "bream": {
     "name": "Bream",
+    "id": "132",
     "url": "https://stardewvalleywiki.com/Bream",
     "img": "bream.png",
     "locations": {
@@ -107,6 +109,7 @@
   },
   "largemouthbass": {
     "name": "Largemouth Bass",
+    "id": "136",
     "url": "https://stardewvalleywiki.com/Largemouth_Bass",
     "img": "largemouth_bass.png",
     "locations": {
@@ -165,6 +168,7 @@
   },
   "salmon": {
     "name": "Salmon",
+    "id": "139",
     "url": "https://stardewvalleywiki.com/Salmon",
     "img": "salmon.png",
     "locations": {
@@ -337,6 +341,7 @@
   },
   "herring": {
     "name": "Herring",
+    "id": "147",
     "url": "https://stardewvalleywiki.com/Herring",
     "img": "herring.png",
     "locations": {
@@ -405,6 +410,7 @@
   },
   "squid": {
     "name": "Squid",
+    "id": "151",
     "url": "https://stardewvalleywiki.com/Squid",
     "img": "squid.png",
     "locations": {
@@ -417,7 +423,18 @@
     "price": 80,
     "health": 11,
     "energy": 25,
-    "pond": { "squid_ink": 1 }
+    "pond": { "squid_ink": 1 },
+    "specialProduce": {
+      "deluxeSmoker": {
+        "name": "Dried Squid",
+        "img": "dried_squid.png",
+        "price": 1525,
+        "time": "50 min",
+        "energy": 38,
+        "health": 17,
+        "favorite": ["willy", "linus", "leo"]
+      }
+    }
   },
   "seacucumber": {
     "name": "Sea Cucumber",
@@ -630,6 +647,7 @@
   },
   "tigertrout": {
     "name": "Tiger Trout",
+    "id": "699",
     "url": "https://stardewvalleywiki.com/Tiger_Trout",
     "img": "tiger_trout.png",
     "locations": {
@@ -773,6 +791,7 @@
   },
   "halibut": {
     "name": "Halibut",
+    "id": "708",
     "url": "https://stardewvalleywiki.com/Halibut",
     "img": "halibut.png",
     "locations": {
@@ -924,7 +943,18 @@
     "price": 100,
     "health": 17,
     "energy": 38,
-    "pond": { "squid_ink": "1-2" }
+    "pond": { "squid_ink": "1-2" },
+    "specialProduce": {
+      "deluxeSmoker": {
+        "name": "Dried Squid",
+        "img": "dried_squid.png",
+        "price": 1525,
+        "time": "50 min",
+        "energy": 38,
+        "health": 17,
+        "favorite": ["willy", "linus", "leo"]
+      }
+    }
   },
   "spookfish": {
     "name": "Spook Fish",
@@ -1158,6 +1188,7 @@
   },
   "lobster": {
     "name": "Lobster",
+    "id": "715",
     "url": "https://stardewvalleywiki.com/Lobster",
     "img": "lobster.png",
     "locations": {
@@ -1229,6 +1260,7 @@
   },
   "crab": {
     "name": "Crab",
+    "id": "717",
     "url": "https://stardewvalleywiki.com/Crab",
     "img": "crab.png",
     "locations": {
@@ -1277,6 +1309,7 @@
   },
   "mussel": {
     "name": "Mussel",
+    "id": "719",
     "url": "https://stardewvalleywiki.com/Mussel",
     "img": "mussel.png",
     "locations": {
@@ -1301,6 +1334,7 @@
   },
   "shrimp": {
     "name": "Shrimp",
+    "id": "720",
     "url": "https://stardewvalleywiki.com/Shrimp",
     "img": "shrimp.png",
     "locations": {
@@ -1380,6 +1414,7 @@
   },
   "oyster": {
     "name": "Oyster",
+    "id": "723",
     "url": "https://stardewvalleywiki.com/Oyster",
     "img": "oyster.png",
     "locations": {

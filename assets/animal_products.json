@@ -9,6 +9,7 @@
   },
   "largeEgg": {
     "name": "Large Egg",
+    "id": "174",
     "img": "large_egg.png",
     "type": "egg",
     "price": 95,
@@ -73,6 +74,7 @@
   },
   "milk": {
     "name": "Milk",
+    "id": "184",
     "img": "milk.png",
     "type": "milk",
     "price": 125,
@@ -195,6 +197,7 @@
   },
   "duckEgg": {
     "name": "Duck Egg",
+    "id": "442",
     "img": "duck_egg.png",
     "price": 95,
     "energy": 38,

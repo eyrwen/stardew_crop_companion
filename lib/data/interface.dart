@@ -33,9 +33,11 @@ enum ItemType {
 
 abstract class Item {
   final String key;
+  final String? id;
   final ItemType type;
   final String name;
   final String img;
+  final double? imgScale;
   final String url;
   final int price;
   final bool hasQuality;
@@ -52,6 +54,8 @@ abstract class Item {
     required this.type,
     required this.name,
     required this.img,
+    this.imgScale,
+    this.id,
     url,
     required this.price,
     this.hasQuality = true,
@@ -66,8 +70,10 @@ abstract class Item {
 
   Item.fromJson(this.key, Map<String, dynamic> json)
     : type = ItemType.from(json['type']),
+      id = json['id'],
       name = json['name'],
       img = json['img'],
+      imgScale = null,
       url =
           json['url'] ??
           'https://stardewvalleywiki.com/${json['name'].split(' ').join('_')}',
@@ -110,4 +116,3 @@ abstract class Item {
     );
   }
 }
-
