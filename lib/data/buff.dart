@@ -41,3 +41,31 @@ class Buff {
       time = json['time'] ?? '0s',
       value = json['value'] ?? 0;
 }
+
+class BuffList {
+  final List<Buff> buffs;
+
+  const BuffList(this.buffs);
+
+  factory BuffList.fromJson(List<dynamic>? json) {
+    return BuffList(
+      json?.map((b) => Buff.fromJson(b as Map<String, dynamic>)).toList() ?? [],
+    );
+  }
+
+  get isEmpty => buffs.isEmpty;
+  get isNotEmpty => buffs.isNotEmpty;
+  int get length => buffs.length;
+
+  Buff operator [](int index) => buffs[index];
+  List<Buff> toList() => buffs;
+
+  get times {
+    return buffs.fold<List<String>>([], (times, buff) {
+      if (!times.contains(buff.time)) {
+        return [...times, buff.time];
+      }
+      return times;
+    });
+  }
+}

@@ -2,7 +2,8 @@ import 'package:el_tooltip/el_tooltip.dart';
 import 'package:flutter/material.dart' hide Tooltip;
 import 'package:flutter_hooks/flutter_hooks.dart';
 
-export 'package:el_tooltip/el_tooltip.dart' show ElTooltipPosition, ElTooltipController;
+export 'package:el_tooltip/el_tooltip.dart'
+    show ElTooltipPosition, ElTooltipController;
 
 class Tooltip extends HookWidget {
   final Widget child;
@@ -20,7 +21,9 @@ class Tooltip extends HookWidget {
 
   @override
   Widget build(BuildContext context) {
-    final tooltipController = useMemoized(() => controller ?? ElTooltipController());
+    final tooltipController = useMemoized(
+      () => controller ?? ElTooltipController(),
+    );
     final tooltipStatus = useValueListenable(tooltipController);
 
     return ElTooltip(

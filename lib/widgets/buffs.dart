@@ -1,10 +1,11 @@
+import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 
 import '../data/buff.dart';
 import 'item_image.dart';
 
 class Buffs extends StatelessWidget {
-  final List<Buff> buffs;
+  final BuffList buffs;
 
   const Buffs({super.key, required this.buffs});
 
@@ -13,24 +14,47 @@ class Buffs extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: buffs
+          .toList()
+          .groupListsBy((buff) => buff.time)
+          .entries
           .map(
-            (buff) => Column(
+            (entry) => Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Row(
-                  spacing: 8.0,
                   mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  spacing: 8.0,
                   children: [
-                    ItemImage.small(buff.type.img),
-                    Text(
-                      '${buff.type.name} (${buff.value > 0 ? '+' : ''}${buff.value})',
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      spacing: 2.0,
+                      children: entry.value
+                          .map((buff) => ItemImage.small(buff.type.img))
+                          .toList(),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: entry.value
+                          .map((buff) => Text(buff.type.name))
+                          .toList(),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: entry.value
+                          .map(
+                            (buff) => Text(
+                              '${buff.value > 0 ? '+' : ''}${buff.value}',
+                            ),
+                          )
+                          .toList(),
                     ),
                   ],
                 ),
                 Row(
                   spacing: 8.0,
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: [ItemImage.small('time'), Text(buff.time)],
+                  children: [ItemImage.small('time'), Text(entry.key)],
                 ),
               ],
             ),

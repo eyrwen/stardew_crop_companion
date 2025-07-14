@@ -45,7 +45,7 @@ abstract class Item {
   final int energy;
   final int health;
   final Map<ProduceMachine, ProduceMachineOutput>? specialProduce;
-  final List<Buff> buffs;
+  final BuffList buffs;
 
   Item({
     required this.key,
@@ -60,7 +60,7 @@ abstract class Item {
     this.energy = 0,
     this.health = 0,
     this.specialProduce = const {},
-    this.buffs = const [],
+    this.buffs = const BuffList([]),
   }) : url =
            url ?? 'https://stardewvalleywiki.com/${name.split(' ').join('_')}';
 
@@ -77,10 +77,7 @@ abstract class Item {
       cookable = json['cookable'] ?? true,
       energy = json['energy'] ?? 0,
       health = json['health'] ?? 0,
-      buffs = (json['buffs'] as List<dynamic>?)
-              ?.map((b) => Buff.fromJson(b as Map<String, dynamic>))
-              .toList() ??
-          [],
+      buffs = BuffList.fromJson(json['buffs'] as List<dynamic>?),
       specialProduce = json['specialProduce'] != null
           ? (json['specialProduce'] as Map<String, dynamic>).map(
               (key, value) => MapEntry(
@@ -113,3 +110,4 @@ abstract class Item {
     );
   }
 }
+
