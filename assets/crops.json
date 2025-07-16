@@ -2785,7 +2785,7 @@
     "price": 220,
     "health": 22,
     "energy": 50,
-    "love": ["haley"]
+    "favorite": ["haley"]
   },
   "peanut": {
     "name": "Peanut",

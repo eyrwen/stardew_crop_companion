@@ -11,15 +11,23 @@ import 'search.dart';
 class FishGrid extends HookWidget {
   final List<Fish> fish;
   final Function(Fish) onFishSelected;
+  final TextEditingController searchController;
+  final ValueNotifier<bool> rainFilter;
+  final ValueNotifier<Season?> seasonFilter;
+  final ValueNotifier<bool> legendaryFilter;
 
-  const FishGrid({super.key, required this.fish, required this.onFishSelected});
+  const FishGrid({
+    super.key,
+    required this.fish,
+    required this.onFishSelected,
+    required this.searchController,
+    required this.rainFilter,
+    required this.seasonFilter,
+    required this.legendaryFilter,
+  });
 
   @override
   Widget build(BuildContext context) {
-    final rainFilter = useState<bool>(false);
-    final seasonFilter = useState<Season?>(null);
-    final legendaryFilter = useState<bool>(false);
-
     final filteredFish = fish.where((fish) {
       final matchesWeather =
           (!rainFilter.value || fish.exclusiveToRain) || fish.legendary;
@@ -46,6 +54,7 @@ class FishGrid extends HookWidget {
         onFishSelected(item as Fish);
       },
       getItemDecoration: (Item item) => ItemDecoration(fish: item as Fish),
+      searchController: searchController,
     );
   }
 }

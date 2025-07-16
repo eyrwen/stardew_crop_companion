@@ -10,6 +10,7 @@ class ItemGrid extends HookWidget {
   final Function(Item) onItemSelected;
   final Widget? Function(Item)? getItemDecoration;
   final Widget? filterTools;
+  final TextEditingController searchController;
 
   const ItemGrid({
     super.key,
@@ -17,6 +18,7 @@ class ItemGrid extends HookWidget {
     required this.onItemSelected,
     this.getItemDecoration,
     this.filterTools,
+    required this.searchController,
   });
 
   List<Item> get _sortedItems =>
@@ -24,17 +26,16 @@ class ItemGrid extends HookWidget {
 
   @override
   Widget build(BuildContext context) {
-    final search = useTextEditingController();
-    useListenable(search);
+    useListenable(searchController);
 
     final filteredItems = _sortedItems.where((item) {
-      return search.text.isEmpty ||
-          item.name.toLowerCase().contains(search.text.toLowerCase());
+      return searchController.text.isEmpty ||
+          item.name.toLowerCase().contains(searchController.text.toLowerCase());
     }).toList();
 
     return Column(
       children: [
-        Search(controller: search),
+        Search(controller: searchController),
         filterTools ?? SizedBox.shrink(),
         Expanded(
           child: GridView.extent(

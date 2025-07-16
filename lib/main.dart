@@ -53,6 +53,15 @@ class MyHomePage extends HookWidget {
     );
     final loadMeltingPotRecipes = useMeltingPotRecipes();
 
+    final viewingFish = useState<Fish?>(null);
+    final fishSearch = useTextEditingController();
+    final fishRainFilter = useState<bool>(false);
+    final fishSeasonFilter = useState<Season?>(null);
+    final fishLegendaryFilter = useState<bool>(false);
+
+    final viewingCrop = useState<Item?>(null);
+    final cropSearch = useTextEditingController();
+
     return DefaultTabController(
       length: TABS.length,
       child: Scaffold(
@@ -73,11 +82,26 @@ class MyHomePage extends HookWidget {
                   allAnimalProducts: loadAnimalProducts,
                   allRecipes: loadRecipes,
                   allMeltingPotRecipes: loadMeltingPotRecipes,
+                  onCropSelected: (Item item) {
+                    viewingCrop.value = item;
+                  },
+                  onBack: () => viewingCrop.value = null,
+                  searchController: cropSearch,
+                  currentCrop: viewingCrop.value,
                 ),
                 FishTab(
                   allFish: loadFish,
                   allRecipes: loadRecipes,
                   allMeltingPotRecipes: loadMeltingPotRecipes,
+                  onFishSelected: (Fish fish) {
+                    viewingFish.value = fish;
+                  },
+                  onBack: () => viewingFish.value = null,
+                  searchController: fishSearch,
+                  rainFilter: fishRainFilter,
+                  seasonFilter: fishSeasonFilter,
+                  legendaryFilter: fishLegendaryFilter,
+                  currentFish: viewingFish.value,
                 ),
               ],
             ),
@@ -93,6 +117,10 @@ class CropsTab extends HookWidget {
   final AsyncSnapshot<List<AnimalProduct>> allAnimalProducts;
   final AsyncSnapshot<List<Recipe>> allRecipes;
   final AsyncSnapshot<List<Recipe>> allMeltingPotRecipes;
+  final Function(Item) onCropSelected;
+  final Function() onBack;
+  final TextEditingController searchController;
+  final Item? currentCrop;
 
   const CropsTab({
     super.key,
@@ -100,24 +128,22 @@ class CropsTab extends HookWidget {
     required this.allAnimalProducts,
     required this.allRecipes,
     required this.allMeltingPotRecipes,
+    required this.onCropSelected,
+    required this.onBack,
+    required this.searchController,
+    this.currentCrop,
   });
 
   @override
   Widget build(BuildContext context) {
-    final viewingItem = useState<Item?>(null);
-
-    selectItem(Item item) {
-      viewingItem.value = item;
-    }
-
-    if (viewingItem.value != null) {
+    if (currentCrop != null) {
       return ItemPageLayout(
-        item: viewingItem.value!,
+        item: currentCrop!,
         recipes: [
           ...allRecipes.data!,
           ...allMeltingPotRecipes.data!,
-        ].where((r) => r.requires(viewingItem.value!)).toList(),
-        onBack: () => viewingItem.value = null,
+        ].where((r) => r.requires(currentCrop!)).toList(),
+        onBack: onBack,
       );
     }
     if (allCrops.hasError) {
@@ -141,7 +167,8 @@ class CropsTab extends HookWidget {
     } else {
       return ItemGrid(
         items: [...allCrops.data!, ...allAnimalProducts.data!],
-        onItemSelected: selectItem,
+        onItemSelected: onCropSelected,
+        searchController: searchController,
       );
     }
   }
@@ -151,34 +178,42 @@ class FishTab extends HookWidget {
   final AsyncSnapshot<List<Fish>> allFish;
   final AsyncSnapshot<List<Recipe>> allRecipes;
   final AsyncSnapshot<List<Recipe>> allMeltingPotRecipes;
+  final Function(Fish) onFishSelected;
+  final Function() onBack;
+  final TextEditingController searchController;
+  final ValueNotifier<bool> rainFilter;
+  final ValueNotifier<Season?> seasonFilter;
+  final ValueNotifier<bool> legendaryFilter;
+  final Fish? currentFish;
 
   const FishTab({
     super.key,
     required this.allFish,
     required this.allRecipes,
     required this.allMeltingPotRecipes,
+    required this.onFishSelected,
+    required this.onBack,
+    required this.searchController,
+    required this.rainFilter,
+    required this.seasonFilter,
+    required this.legendaryFilter,
+    this.currentFish,
   });
 
   @override
   Widget build(BuildContext context) {
-    final viewingFish = useState<Fish?>(null);
-
-    selectFish(Fish fish) {
-      viewingFish.value = fish;
-    }
-
-    if (viewingFish.value != null) {
+    if (currentFish != null) {
       return ItemPageLayout(
-        item: viewingFish.value!,
-        seasons: FishingLocations(fish: viewingFish.value!),
+        item: currentFish!,
+        seasons: FishingLocations(fish: currentFish!),
         recipes: [
           ...allRecipes.data!,
           ...allMeltingPotRecipes.data!,
-        ].where((r) => r.requires(viewingFish.value!)).toList(),
-        additionalDetails: viewingFish.value!.pondOutputs.isNotEmpty
-            ? PondOutputs(pondOutputs: viewingFish.value!.pondOutputs)
+        ].where((r) => r.requires(currentFish!)).toList(),
+        additionalDetails: currentFish!.pondOutputs.isNotEmpty
+            ? PondOutputs(pondOutputs: currentFish!.pondOutputs)
             : null,
-        onBack: () => viewingFish.value = null,
+        onBack: onBack,
       );
     }
 
@@ -196,7 +231,14 @@ class FishTab extends HookWidget {
         !allMeltingPotRecipes.hasData) {
       return LinearProgressIndicator();
     } else {
-      return FishGrid(fish: allFish.data!, onFishSelected: selectFish);
+      return FishGrid(
+        fish: allFish.data!,
+        onFishSelected: onFishSelected,
+        searchController: searchController,
+        rainFilter: rainFilter,
+        seasonFilter: seasonFilter,
+        legendaryFilter: legendaryFilter,
+      );
     }
   }
 }
